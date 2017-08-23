@@ -20,7 +20,7 @@
     
     
       
-        <title>Lab1 - CompSci HQ</title>
+        <title>Getting started - CompSci HQ</title>
       
     
     
@@ -85,7 +85,7 @@
                 </span>
               
             
-            Lab1
+            Getting started
           
         </span>
       </div>
@@ -189,18 +189,30 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../../outline/" title="Outline" class="md-nav__link">
+      Outline
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3" checked>
     
-    <label class="md-nav__link" for="nav-2-2">
+    <label class="md-nav__link" for="nav-2-3">
       Labs
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-2">
+      <label class="md-nav__title" for="nav-2-3">
         Labs
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -221,11 +233,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Lab1
+        Getting started
       </label>
     
-    <a href="./" title="Lab1" class="md-nav__link md-nav__link--active">
-      Lab1
+    <a href="./" title="Getting started" class="md-nav__link md-nav__link--active">
+      Getting started
     </a>
     
       
@@ -448,7 +460,7 @@
                 
                 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>I personally be using my own Ubuntu system and not a VM. You are free to do whichever you wish, but the VM environment below is quite slow.</p>
+<p>I personally be using my own Ubuntu system and not a VM. You are free to do whichever you wish, but the VM environment below can be quite slow.</p>
 </div>
 <h1 id="introduction-to-vagrant-and-php-with-text-editor-home-setup">Introduction to Vagrant and PHP with text editor, Home setup<a class="headerlink" href="#introduction-to-vagrant-and-php-with-text-editor-home-setup" title="Permanent link">&para;</a></h1>
 <h2 id="part-1-vagrant-virtual-machine-provisioning">Part 1 – Vagrant virtual machine provisioning<a class="headerlink" href="#part-1-vagrant-virtual-machine-provisioning" title="Permanent link">&para;</a></h2>
@@ -578,7 +590,7 @@ will create the output as shown in the image, using a text editor like
 Notepad++ or Atom.</p>
 <ul>
 <li>
-<p><img src="../../img/lab1_multiplication_table.png" width="184" height="253" /> use HTML5
+<p><img src="../../../img/lab1_multiplication_table.png" width="184" height="253" /> use HTML5
     tags, including doctype and html tag</p>
 </li>
 <li>
@@ -613,7 +625,7 @@ Notepad++ or Atom.</p>
 <p>Browse to <a href="http://labs.app/lab1"><strong><a href="http://labs.app/lab1">http://labs.app/lab1</a></strong></a>. Since we
 named the file index.php, NginX will open it by default. If you named it
 something else, write it in the address bar.</p>
-<p><img src="./media/image2.png" width="223" height="95" /><br />
+<p><img src="../../../img/lab1_tools.png" width="223" height="95" /><br />
 The results of the program should appear!</p>
 <p>Recall: Firefox (as well as the other major browsers) come with a suite
 of developer tools. Open the menu in Firefox, select Developer and
@@ -626,10 +638,10 @@ shared folder will be lost the next time you log in.</p>
 <h2 id="solving-intermittent-502-bad-gateway-issues">SOLVING INTERMITTENT 502 BAD GATEWAY ISSUES<a class="headerlink" href="#solving-intermittent-502-bad-gateway-issues" title="Permanent link">&para;</a></h2>
 <p>If you are victim, you may have to make sure that nginx and php config
 match:</p>
-<p>Go to /etc/php/7.1/fpm/pool.d/ , edit www.conf (use sudo nano) and edit
-the line listen = /run/php/php7.1-fpm.sock to
-/<strong>var</strong>/run/php/php7.1-fpm.sock</p>
-<p>Exit and save the file, then run sudo service php7.1-fpm restart</p>
+<p>Go to <code>/etc/php/7.1/fpm/pool.d/</code> , edit <code>www.conf</code> (use <code>sudo nano</code>) and edit
+the line <code>listen = /run/php/php7.1-fpm.sock</code> to
+<code>listen = var/run/php/php7.1-fpm.sock</code></p>
+<p>Exit and save the file, then run <code>sudo service php7.1-fpm restart</code></p>
 <h2 id="setting-up-your-laptophome-system">Setting up your laptop/home system<a class="headerlink" href="#setting-up-your-laptophome-system" title="Permanent link">&para;</a></h2>
 <p>The following instructions are provided for a Windows 7.1+ syste, If you
 are running Linux or IOS, the steps will be simpler. See this
@@ -677,17 +689,21 @@ below.</p>
 <p>Add to the end:</p>
 </li>
 </ol>
-<p>192.168.10.10 dawson.app</p>
-<p>192.168.10.10 news.app</p>
-<p>192.168.10.10 todo.app</p>
-<p>192.168.10.10 labs.app</p>
-<p>192.168.10.10 reader.app</p>
-<p>192.168.10.10 badresto.app</p>
-<ol>
-<li>
-<p>get your ssh keys, if required. Follow the steps in the lab above to
+<p><div class="codehilite"><pre><span></span>192.168.10.10 dawson.app
+
+192.168.10.10 news.app
+
+192.168.10.10 todo.app
+
+192.168.10.10 labs.app
+
+192.168.10.10 reader.app
+
+192.168.10.10 badresto.app
+</pre></div>
+1.  get your ssh keys, if required. Follow the steps in the lab above to
     check if they exist in the $HOME directory</p>
-</li>
+<ol>
 <li>
 <p>decide where you want your Homestead and PHPCode directories and
     make them</p>
@@ -699,20 +715,21 @@ below.</p>
 <p>open gitbash</p>
 </li>
 <li>
-<p>run the following commands:</p>
+<p>run the following commands:
+<div class="codehilite"><pre><span></span>$ vagrant box add laravel/homestead
+</pre></div>
+<div class="codehilite"><pre><span></span>$ git clone https://github.com/laravel/homestead.git Homestead
+</pre></div>
+<div class="codehilite"><pre><span></span>$ <span class="nb">cd</span> Homestead
+</pre></div>
+<div class="codehilite"><pre><span></span>$ git checkout v5.4.0
+</pre></div>
+<div class="codehilite"><pre><span></span>$ bash init.sh
+</pre></div></p>
 </li>
+<li>edit the <code>Homestead/Homestead.yaml</code> file (look at the one you have in
+your <code>H:</code> drive)</li>
 </ul>
-</li>
-</ol>
-<p>vagrant box add laravel/homestead</p>
-<p>git clone <a href="https://github.com/laravel/homestead.git">https://github.com/laravel/homestead.git</a> Homestead</p>
-<p>cd Homestead</p>
-<p>git checkout v5.4.0</p>
-<p>bash init.sh</p>
-<ol>
-<li>
-<p>edit the Homestead/Homestead.yaml file (look at the one you have in
-    your H: drive)</p>
 </li>
 <li>
 <p>in the folders section, provide to mapping to the PHPCode folder you
@@ -721,28 +738,28 @@ below.</p>
 </ol>
 <p>folders:</p>
 <ul>
-<li>map: h:/PHPCode</li>
+<li>map: <code>h:/PHPCode</code></li>
 </ul>
-<p>to: /home/vagrant/Code</p>
+<p>to: <code>/home/vagrant/Code</code></p>
 <ul>
-<li>if you added the sites to the etc/hosts files, also add them to
-    the Homestead.yaml. For example:</li>
+<li>if you added the sites to the <code>etc/hosts</code> files, also add them to
+    the <code>Homestead.yaml</code>. For example:
+<div class="codehilite"><pre><span></span>sites:
+
+- map: labs.app
+</pre></div></li>
 </ul>
-<p>sites:</p>
-<ul>
-<li>map: labs.app</li>
-</ul>
-<p>to: /home/vagrant/Code/labs</p>
+<p>to: <code>/home/vagrant/Code/labs</code></p>
 <ol>
 <li>
-<p>each time you want to boot up:vagrant up</p>
+<p>each time you want to boot up:<code>vagrant up</code></p>
 </li>
 <li>
-<p>to ssh in: either vagrant ssh or ssh vagrant@192.168.10.10, with
-    password vagrant</p>
+<p>to ssh in: either <code>vagrant ssh</code> or <code>ssh vagrant@192.168.10.10</code>, with
+    password <code>vagrant</code></p>
 </li>
 <li>
-<p>to shut down: vagrant halt</p>
+<p>to shut down: <code>vagrant halt</code></p>
 </li>
 </ol>
                 
@@ -763,7 +780,7 @@ below.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../introduction/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../outline/" title="Outline" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -772,7 +789,7 @@ below.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Introduction
+                Outline
               </span>
             </div>
           </a>

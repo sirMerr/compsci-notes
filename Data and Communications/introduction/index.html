@@ -182,35 +182,12 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
+      
     
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Introduction
-      </label>
     
     <a href="./" title="Introduction" class="md-nav__link md-nav__link--active">
       Introduction
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#dte-dce" title="DTE &amp; DCE" class="md-nav__link">
-    DTE &amp; DCE
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
     
   </li>
 
@@ -438,20 +415,8 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
   
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#dte-dce" title="DTE &amp; DCE" class="md-nav__link">
-    DTE &amp; DCE
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
   
 </nav>
                   </div>
@@ -464,13 +429,123 @@
               
                 
                 
-                  <h1>Introduction</h1>
-                
                 <h2 id="dte-dce">DTE &amp; DCE<a class="headerlink" href="#dte-dce" title="Permanent link">&para;</a></h2>
 <ul>
 <li>data terminal equipment</li>
 <li>data communications equipment</li>
 </ul>
+<h1 id="network-utilities">Network Utilities<a class="headerlink" href="#network-utilities" title="Permanent link">&para;</a></h1>
+<h2 id="protocol-and-pinging">Protocol and Pinging<a class="headerlink" href="#protocol-and-pinging" title="Permanent link">&para;</a></h2>
+<p>Set of rules governing sending and receiving packets</p>
+<h3 id="ping">Ping<a class="headerlink" href="#ping" title="Permanent link">&para;</a></h3>
+<p>Ping can be used for diagnosing if a website is down or for self diagnosis.</p>
+<div class="codehilite"><pre><span></span>$ ping <span class="m">127</span>.0.0.1
+$ ping localhost
+
+// Response
+<span class="m">64</span> bytes from <span class="m">127</span>.0.0.1: <span class="nv">icmp_seq</span><span class="o">=</span><span class="m">0</span> <span class="nv">ttl</span><span class="o">=</span><span class="m">64</span> <span class="nv">time</span><span class="o">=</span><span class="m">0</span>.053 ms
+<span class="m">64</span> bytes from <span class="m">127</span>.0.0.1: <span class="nv">icmp_seq</span><span class="o">=</span><span class="m">1</span> <span class="nv">ttl</span><span class="o">=</span><span class="m">64</span> <span class="nv">time</span><span class="o">=</span><span class="m">0</span>.044 ms
+^C
+--- localhost ping statistics ---
+<span class="m">2</span> packets transmitted, <span class="m">2</span> packets received, <span class="m">0</span>.0% packet loss
+round-trip min/avg/max/stddev <span class="o">=</span> <span class="m">0</span>.044/0.049/0.053/0.004 ms
+</pre></div>
+
+<h4 id="timeout">timeout<a class="headerlink" href="#timeout" title="Permanent link">&para;</a></h4>
+<p>More time elapsed between an event and a response event than expected</p>
+<h3 id="127001-and-localhost">127.0.0.1 and localhost<a class="headerlink" href="#127001-and-localhost" title="Permanent link">&para;</a></h3>
+<p>This refers to yourself. So if you ping that, you're pinging yourself. </p>
+<h3 id="fqdn">FQDN<a class="headerlink" href="#fqdn" title="Permanent link">&para;</a></h3>
+<p>Fully Qualified Domain Name &rarr; <code>www</code> like from <code>www.microsoft.com</code>
+* It's not 1 machine for 1 FQDN
+* It's possible to have more than 1 FQDN on a machine
+* Opposite also possible, common for big sites</p>
+<h3 id="dns">DNS<a class="headerlink" href="#dns" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Important service that serves as a resolver. </li>
+<li>You take a FQDN, give it to DNS to resolve and it gives an ip number. </li>
+<li>You can do the inverse too.</li>
+<li><code>IP# = DNS(FQDN)</code></li>
+</ul>
+<h3 id="tracert">tracert<a class="headerlink" href="#tracert" title="Permanent link">&para;</a></h3>
+<h3 id="strace-route">strace route<a class="headerlink" href="#strace-route" title="Permanent link">&para;</a></h3>
+<p>Shows router path from sender to receiver &rarr; looked pinging with increasing TTLs (time to live)</p>
+<h3 id="pathping">pathping<a class="headerlink" href="#pathping" title="Permanent link">&para;</a></h3>
+<h3 id="ipconfig">ipconfig<a class="headerlink" href="#ipconfig" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Tells you a lot about yourself. </li>
+<li><code>/all</code> is all information</li>
+<li><code>/displaydns</code> cacheing</li>
+<li><code>/flushdns</code> casheing</li>
+<li><code>/release</code> -- gave up DHCP lease<ul>
+<li>Dynamic Host Configuration Protocol</li>
+</ul>
+</li>
+<li><code>/reverse</code></li>
+</ul>
+<h3 id="netstat">netstat<a class="headerlink" href="#netstat" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>-e</code></li>
+<li><code>-a</code></li>
+<li>Info on TCP activity<ul>
+<li>TCP is an important protocol</li>
+</ul>
+</li>
+<li>Advanced</li>
+</ul>
+<h3 id="route-print">route print<a class="headerlink" href="#route-print" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>routing
+table info
+</pre></div>
+
+
+<h2 id="identifiers">Identifiers<a class="headerlink" href="#identifiers" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Levels</th>
+<th align="center">Identifiers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td>6</td>
+<td align="center">FQDN</td>
+</tr>
+<tr>
+<td>5</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td></td>
+<td align="center">^ dns v</td>
+</tr>
+<tr>
+<td>4</td>
+<td align="center">port #</td>
+</tr>
+<tr>
+<td>3</td>
+<td align="center">IP #</td>
+</tr>
+<tr>
+<td></td>
+<td align="center">^ arp v</td>
+</tr>
+<tr>
+<td>2</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>1</td>
+<td align="center">MAC address</td>
+</tr>
+</tbody>
+</table>
                 
                   
                 

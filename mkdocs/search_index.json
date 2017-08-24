@@ -7,13 +7,83 @@
         }, 
         {
             "location": "/Data and Communications/introduction/", 
-            "text": "DTE \n DCE\n\n\n\n\ndata terminal equipment\n\n\ndata communications equipment", 
+            "text": "DTE \n DCE\n\n\n\n\ndata terminal equipment\n\n\ndata communications equipment\n\n\n\n\nNetwork Utilities\n\n\nProtocol and Pinging\n\n\nSet of rules governing sending and receiving packets\n\n\nPing\n\n\nPing can be used for diagnosing if a website is down or for self diagnosis.\n\n\n$ ping \n127\n.0.0.1\n$ ping localhost\n\n// Response\n\n64\n bytes from \n127\n.0.0.1: \nicmp_seq\n=\n0\n \nttl\n=\n64\n \ntime\n=\n0\n.053 ms\n\n64\n bytes from \n127\n.0.0.1: \nicmp_seq\n=\n1\n \nttl\n=\n64\n \ntime\n=\n0\n.044 ms\n^C\n--- localhost ping statistics ---\n\n2\n packets transmitted, \n2\n packets received, \n0\n.0% packet loss\nround-trip min/avg/max/stddev \n=\n \n0\n.044/0.049/0.053/0.004 ms\n\n\n\n\ntimeout\n\n\nMore time elapsed between an event and a response event than expected\n\n\n127.0.0.1 and localhost\n\n\nThis refers to yourself. So if you ping that, you're pinging yourself. \n\n\nFQDN\n\n\nFully Qualified Domain Name \n \nwww\n like from \nwww.microsoft.com\n\n* It's not 1 machine for 1 FQDN\n* It's possible to have more than 1 FQDN on a machine\n* Opposite also possible, common for big sites\n\n\nDNS\n\n\n\n\nImportant service that serves as a resolver. \n\n\nYou take a FQDN, give it to DNS to resolve and it gives an ip number. \n\n\nYou can do the inverse too.\n\n\nIP# = DNS(FQDN)\n\n\n\n\ntracert\n\n\nstrace route\n\n\nShows router path from sender to receiver \n looked pinging with increasing TTLs (time to live)\n\n\npathping\n\n\nipconfig\n\n\n\n\nTells you a lot about yourself. \n\n\n/all\n is all information\n\n\n/displaydns\n cacheing\n\n\n/flushdns\n casheing\n\n\n/release\n -- gave up DHCP lease\n\n\nDynamic Host Configuration Protocol\n\n\n\n\n\n\n/reverse\n\n\n\n\nnetstat\n\n\n\n\n-e\n\n\n-a\n\n\nInfo on TCP activity\n\n\nTCP is an important protocol\n\n\n\n\n\n\nAdvanced\n\n\n\n\nroute print\n\n\nrouting\ntable info\n\n\n\n\n\nIdentifiers\n\n\n\n\n\n\n\n\nLevels\n\n\nIdentifiers\n\n\n\n\n\n\n\n\n\n\n7\n\n\n6\n\n\n\n\n\n\n6\n\n\nFQDN\n\n\n\n\n\n\n5\n\n\n\n\n\n\n\n\n\n\n^ dns v\n\n\n\n\n\n\n4\n\n\nport #\n\n\n\n\n\n\n3\n\n\nIP #\n\n\n\n\n\n\n\n\n^ arp v\n\n\n\n\n\n\n2\n\n\n\n\n\n\n\n\n1\n\n\nMAC address", 
             "title": "Introduction"
         }, 
         {
             "location": "/Data and Communications/introduction/#dte-dce", 
             "text": "data terminal equipment  data communications equipment", 
             "title": "DTE &amp; DCE"
+        }, 
+        {
+            "location": "/Data and Communications/introduction/#network-utilities", 
+            "text": "", 
+            "title": "Network Utilities"
+        }, 
+        {
+            "location": "/Data and Communications/introduction/#protocol-and-pinging", 
+            "text": "Set of rules governing sending and receiving packets", 
+            "title": "Protocol and Pinging"
+        }, 
+        {
+            "location": "/Data and Communications/introduction/#ping", 
+            "text": "Ping can be used for diagnosing if a website is down or for self diagnosis.  $ ping  127 .0.0.1\n$ ping localhost\n\n// Response 64  bytes from  127 .0.0.1:  icmp_seq = 0   ttl = 64   time = 0 .053 ms 64  bytes from  127 .0.0.1:  icmp_seq = 1   ttl = 64   time = 0 .044 ms\n^C\n--- localhost ping statistics --- 2  packets transmitted,  2  packets received,  0 .0% packet loss\nround-trip min/avg/max/stddev  =   0 .044/0.049/0.053/0.004 ms", 
+            "title": "Ping"
+        }, 
+        {
+            "location": "/Data and Communications/introduction/#timeout", 
+            "text": "More time elapsed between an event and a response event than expected", 
+            "title": "timeout"
+        }, 
+        {
+            "location": "/Data and Communications/introduction/#127001-and-localhost", 
+            "text": "This refers to yourself. So if you ping that, you're pinging yourself.", 
+            "title": "127.0.0.1 and localhost"
+        }, 
+        {
+            "location": "/Data and Communications/introduction/#fqdn", 
+            "text": "Fully Qualified Domain Name    www  like from  www.microsoft.com \n* It's not 1 machine for 1 FQDN\n* It's possible to have more than 1 FQDN on a machine\n* Opposite also possible, common for big sites", 
+            "title": "FQDN"
+        }, 
+        {
+            "location": "/Data and Communications/introduction/#dns", 
+            "text": "Important service that serves as a resolver.   You take a FQDN, give it to DNS to resolve and it gives an ip number.   You can do the inverse too.  IP# = DNS(FQDN)", 
+            "title": "DNS"
+        }, 
+        {
+            "location": "/Data and Communications/introduction/#tracert", 
+            "text": "", 
+            "title": "tracert"
+        }, 
+        {
+            "location": "/Data and Communications/introduction/#strace-route", 
+            "text": "Shows router path from sender to receiver   looked pinging with increasing TTLs (time to live)", 
+            "title": "strace route"
+        }, 
+        {
+            "location": "/Data and Communications/introduction/#pathping", 
+            "text": "", 
+            "title": "pathping"
+        }, 
+        {
+            "location": "/Data and Communications/introduction/#ipconfig", 
+            "text": "Tells you a lot about yourself.   /all  is all information  /displaydns  cacheing  /flushdns  casheing  /release  -- gave up DHCP lease  Dynamic Host Configuration Protocol    /reverse", 
+            "title": "ipconfig"
+        }, 
+        {
+            "location": "/Data and Communications/introduction/#netstat", 
+            "text": "-e  -a  Info on TCP activity  TCP is an important protocol    Advanced", 
+            "title": "netstat"
+        }, 
+        {
+            "location": "/Data and Communications/introduction/#route-print", 
+            "text": "routing\ntable info", 
+            "title": "route print"
+        }, 
+        {
+            "location": "/Data and Communications/introduction/#identifiers", 
+            "text": "Levels  Identifiers      7  6    6  FQDN    5      ^ dns v    4  port #    3  IP #     ^ arp v    2     1  MAC address", 
+            "title": "Identifiers"
         }, 
         {
             "location": "/Internet App Dev III (PHP)/introduction/", 

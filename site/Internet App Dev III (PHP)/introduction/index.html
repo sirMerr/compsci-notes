@@ -1,0 +1,889 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Notes for Semester 5 of Computer Science at Dawson">
+      
+      
+      
+        <meta name="author" content="Tiffany">
+      
+      
+        <link rel="shortcut icon" href="../../images/favicon.ico">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.4">
+    
+    
+      
+        <title>Introduction - CompSci HQ</title>
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr-1df76c4e58.js"></script>
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application-769c285a91.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-02c2a4388f.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Firacode:300,400,400i,700|Firacode">
+        <style>body,input{font-family:"Firacode","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Firacode","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="blue-grey" data-md-color-accent="blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="../.." title="CompSci HQ" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  Internet App Dev III (PHP)
+                </span>
+              
+            
+            Introduction
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    CompSci HQ
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Data and Communications
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Data and Communications
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Data and Communications/introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Internet App Dev III (PHP)
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Internet App Dev III (PHP)
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Introduction
+      </label>
+    
+    <a href="./" title="Introduction" class="md-nav__link md-nav__link--active">
+      Introduction
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#history" title="History" class="md-nav__link">
+    History
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#client-side" title="Client side" class="md-nav__link">
+    Client side
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#server-side" title="Server side" class="md-nav__link">
+    Server side
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#web-server" title="Web Server" class="md-nav__link">
+    Web Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development-environment" title="Development Environment" class="md-nav__link">
+    Development Environment
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lab-and-home-setup" title="Lab and Home setup" class="md-nav__link">
+    Lab and Home setup
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hello-php" title="Hello PHP" class="md-nav__link">
+    Hello PHP
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-html-php-embedded-indexphp" title="Example 1 - HTML &amp; PHP embedded index.php " class="md-nav__link">
+    Example 1 - HTML &amp; PHP embedded index.php 
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-only-php" title="Example 2 - Only PHP" class="md-nav__link">
+    Example 2 - Only PHP
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables" title="Variables" class="md-nav__link">
+    Variables
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variable-naming" title="Variable Naming" class="md-nav__link">
+    Variable Naming
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-3-using-variables" title="Example 3 - Using Variables" class="md-nav__link">
+    Example 3 - Using Variables
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operators" title="Operators" class="md-nav__link">
+    Operators
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../outline/" title="Outline" class="md-nav__link">
+      Outline
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
+    
+    <label class="md-nav__link" for="nav-3-3">
+      Labs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        Labs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../labs/getting-started/" title="Getting started" class="md-nav__link">
+      Getting started
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Software Dev Project (Java)
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Software Dev Project (Java)
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Software Dev Project (Java)/introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Software Dev Project (Java)/jam-specifications/" title="Jam specifications" class="md-nav__link">
+      Jam specifications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Software Dev Project (Java)/outline/" title="Outline" class="md-nav__link">
+      Outline
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      Week01
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        Week01
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4-1" type="checkbox" id="nav-4-4-1">
+    
+    <label class="md-nav__link" for="nav-4-4-1">
+      Lab
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-4-1">
+        Lab
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Software Dev Project (Java)/Week01/lab/warmup-dice-game/" title="Warmup dice game" class="md-nav__link">
+      Warmup dice game
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#history" title="History" class="md-nav__link">
+    History
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#client-side" title="Client side" class="md-nav__link">
+    Client side
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#server-side" title="Server side" class="md-nav__link">
+    Server side
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#web-server" title="Web Server" class="md-nav__link">
+    Web Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development-environment" title="Development Environment" class="md-nav__link">
+    Development Environment
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lab-and-home-setup" title="Lab and Home setup" class="md-nav__link">
+    Lab and Home setup
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hello-php" title="Hello PHP" class="md-nav__link">
+    Hello PHP
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-html-php-embedded-indexphp" title="Example 1 - HTML &amp; PHP embedded index.php " class="md-nav__link">
+    Example 1 - HTML &amp; PHP embedded index.php 
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-only-php" title="Example 2 - Only PHP" class="md-nav__link">
+    Example 2 - Only PHP
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables" title="Variables" class="md-nav__link">
+    Variables
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variable-naming" title="Variable Naming" class="md-nav__link">
+    Variable Naming
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-3-using-variables" title="Example 3 - Using Variables" class="md-nav__link">
+    Example 3 - Using Variables
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operators" title="Operators" class="md-nav__link">
+    Operators
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Introduction</h1>
+                
+                <p>We will have three projects. One a web scraping one, one a speed reading (heavy js) and a combined android/php web app for students.</p>
+<h2 id="history">History<a class="headerlink" href="#history" title="Permanent link">&para;</a></h2>
+<ul>
+<li>1996 - PHP first release<ul>
+<li>Perl, C</li>
+</ul>
+</li>
+<li>Larabel -&gt; really popular</li>
+<li>2017 - PHP 7.1
+~ 00 - Java</li>
+</ul>
+<h2 id="client-side">Client side<a class="headerlink" href="#client-side" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Web browser</li>
+<li>HTML</li>
+<li>CSS</li>
+<li>JS</li>
+</ul>
+<h2 id="server-side">Server side<a class="headerlink" href="#server-side" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Database (ex: Oracle)</li>
+<li>MySQL</li>
+<li>Postgres (using this one)</li>
+</ul>
+<h2 id="web-server">Web Server<a class="headerlink" href="#web-server" title="Permanent link">&para;</a></h2>
+<ul>
+<li>IIS (ASP.NET)</li>
+<li>Apache</li>
+<li>NGING (using this one)</li>
+</ul>
+<p>NGinx will tell the PHP interpreter to interpret the file, and the interpreter will create an html based on the request.</p>
+<h2 id="development-environment">Development Environment<a class="headerlink" href="#development-environment" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Virtual Machine</li>
+<li>Linux Ubuntu</li>
+<li>NGINX</li>
+<li>postgres</li>
+</ul>
+<h3 id="lab-and-home-setup">Lab and Home setup<a class="headerlink" href="#lab-and-home-setup" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Vagrant<ul>
+<li>Preprovision VM so that each vagrant box is exactly the same</li>
+</ul>
+</li>
+<li>Homestead<ul>
+<li>Vagrant box preprovisioned with recommended "Stack" for <code>php-laravel</code>, which has above</li>
+</ul>
+</li>
+<li>Docker<ul>
+<li>Lighter than the Vagrant engine</li>
+<li>However, only available on Windows 10 and we have systems in Windows 7 😢</li>
+</ul>
+</li>
+</ul>
+<p>This will all be completely headless (no GUI).</p>
+<h2 id="hello-php">Hello PHP<a class="headerlink" href="#hello-php" title="Permanent link">&para;</a></h2>
+<h4 id="example-1-html-php-embedded-indexphp">Example 1 - <small>HTML &amp; PHP embedded index.php </small><a class="headerlink" href="#example-1-html-php-embedded-indexphp" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><span class="x">&lt;!DOCTYPE html&gt;</span>
+<span class="x">&lt;html&gt;</span>
+<span class="x">    &lt;head&gt;</span>
+<span class="x">    &lt;/head&gt;</span>
+<span class="x">    &lt;body&gt;</span>
+<span class="x">        &lt;p&gt; Plain HTML &lt;/p&gt;</span>
+<span class="x">        &lt;p&gt;</span>
+<span class="x">            </span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="s2">&quot;Hello World&quot;</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="x"></span>
+<span class="x">        &lt;/p&gt;</span>
+<span class="x">    &lt;/body&gt;</span>
+</pre></div>
+
+<h4 id="example-2-only-php">Example 2 - <small>Only PHP</small><a class="headerlink" href="#example-2-only-php" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span> 
+    <span class="k">echo</span> <span class="s2">&quot;&lt;!DOCTYPE html&gt;&quot;</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="s2">&quot;&lt;html&gt;&quot;</span><span class="p">;</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+
+<h2 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Weakly typed =&gt; <strong>No decorations</strong></li>
+</ul>
+<p>| Datatypes |
+| interger |
+| floatingpoint |
+| string |
+| boolean |
+| array |</p>
+<h3 id="variable-naming">Variable Naming<a class="headerlink" href="#variable-naming" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Start with $</li>
+<li>next char must be letter or _</li>
+<li>only alphanumeric and _</li>
+<li>case sensitive (<strong>except functions</strong>)</li>
+</ul>
+<h4 id="example-3-using-variables">Example 3 - <small>Using Variables</small><a class="headerlink" href="#example-3-using-variables" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span> 
+    <span class="nv">$quantity</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
+    <span class="nv">$price</span> <span class="o">=</span> <span class="mf">119.50</span><span class="p">;</span>
+    <span class="nv">$tax</span> <span class="o">=</span> <span class="mf">0.01</span><span class="p">;</span>
+    <span class="nv">$total</span> <span class="o">=</span> <span class="p">(</span><span class="nv">$quantity</span> <span class="o">*</span> <span class="nv">$price</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="nv">$tax</span><span class="p">);</span>
+    <span class="nv">$total</span> <span class="o">=</span> <span class="nb">number_format</span><span class="p">(</span><span class="nv">$total</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
+    <span class="k">echo</span> <span class="s2">&quot;&lt;p&gt;The total is &quot;</span><span class="o">.</span><span class="nv">$total</span><span class="o">.</span><span class="s2">&quot;&lt;/p&gt;&quot;</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+
+<h2 id="operators">Operators<a class="headerlink" href="#operators" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>*</code> <code>/</code> <code>%</code></li>
+<li><code>++</code> <code>--</code></li>
+<li><code>+</code> <code>-</code></li>
+<li><code>**</code> (power)</li>
+<li><code>=</code></li>
+<li><code>+=</code></li>
+<li><code>.=</code> (concatenation)</li>
+<li><code>&amp;&amp;</code></li>
+<li><code>|</code></li>
+<li><code>xor</code> (exclusive or)</li>
+<li><code>==</code> equals (value)</li>
+<li><code>===</code> identity (value and type)</li>
+<li><code>!=</code> </li>
+<li><code>!==</code></li>
+<li><code>&gt;&lt;</code> </li>
+<li><code>&gt;= &lt;=</code> </li>
+<li><code>&lt;==&gt;</code> like compareto, negative 0 positive</li>
+<li><code>??</code> null </li>
+</ul>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../Data and Communications/introduction/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Introduction
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../outline/" title="Outline" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Outline
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application-c35428f87f.js"></script>
+      
+      
+      <script>app.initialize({url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

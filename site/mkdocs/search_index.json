@@ -6,144 +6,874 @@
             "title": "Home"
         }, 
         {
-            "location": "/PHP/introduction/", 
-            "text": "Introduction\n\n\nWe will have three projects. One a web scraping one, one a speed reading (heavy js) and a combined android/php web app for students.\n\n\nHistory\n\n\n\n\n1996 - PHP first release\n\n\nPerl, C\n\n\n\n\n\n\nLarabel -\n really popular\n\n\n2017 - PHP 7.1\n~ 00 - Java\n\n\n\n\nClient side\n\n\n\n\nWeb browser\n\n\nHTML\n\n\nCSS\n\n\nJS\n\n\n\n\nServer side\n\n\n\n\nDatabase (ex: Oracle)\n\n\nMySQL\n\n\nPostgres (using this one)\n\n\n\n\nWeb Server\n\n\n\n\nIIS (ASP.NET)\n\n\nApache\n\n\nNGING (using this one)\n\n\n\n\nNGinx will tell the PHP interpreter to interpret the file, and the interpreter will create an html based on the request.\n\n\nDevelopment Environment\n\n\n\n\nVirtual Machine\n\n\nLinux Ubuntu\n\n\nNGINX\n\n\npostgres\n\n\n\n\nLab and Home setup\n\n\n\n\nVagrant\n\n\nPreprovision VM so that each vagrant box is exactly the same\n\n\n\n\n\n\nHomestead\n\n\nVagrant box preprovisioned with recommended \"Stack\" for \nphp-laravel\n, which has above\n\n\n\n\n\n\nDocker\n\n\nLighter than the Vagrant engine\n\n\nHowever, only available on Windows 10 and we have systems in Windows 7 \ud83d\ude22\n\n\n\n\n\n\n\n\nThis will all be completely headless (no GUI).\n\n\nHello PHP\n\n\nExample 1 - \nHTML \n PHP embedded index.php \n\n\n!DOCTYPE html\n\n\nhtml\n\n\n    \nhead\n\n\n    \n/head\n\n\n    \nbody\n\n\n        \np\n Plain HTML \n/p\n\n\n        \np\n\n\n            \n?php\n \necho\n \nHello World\n;\n \n?\n\n\n        \n/p\n\n\n    \n/body\n\n\n\n\n\nExample 2 - \nOnly PHP\n\n\n?php\n \n    \necho\n \n!DOCTYPE html\n;\n\n    \necho\n \nhtml\n;\n\n\n?\n\n\n\n\n\nVariables\n\n\n\n\nWeakly typed =\n \nNo decorations\n\n\n\n\n| Datatypes |\n| interger |\n| floatingpoint |\n| string |\n| boolean |\n| array |\n\n\nVariable Naming\n\n\n\n\nStart with $\n\n\nnext char must be letter or _\n\n\nonly alphanumeric and _\n\n\ncase sensitive (\nexcept functions\n)\n\n\n\n\nExample 3 - \nUsing Variables\n\n\n?php\n \n    \n$quantity\n \n=\n \n50\n;\n\n    \n$price\n \n=\n \n119.50\n;\n\n    \n$tax\n \n=\n \n0.01\n;\n\n    \n$total\n \n=\n \n(\n$quantity\n \n*\n \n$price\n)\n \n*\n \n(\n1\n \n+\n \n$tax\n);\n\n    \n$total\n \n=\n \nnumber_format\n(\n$total\n,\n2\n);\n\n    \necho\n \np\nThe total is \n.\n$total\n.\n/p\n\n\n?\n\n\n\n\n\nOperators\n\n\n\n\n*\n \n/\n \n%\n\n\n++\n \n--\n\n\n+\n \n-\n\n\n**\n (power)\n\n\n=\n\n\n+=\n\n\n.=\n (concatenation)\n\n\n\n\n|\n\n\nxor\n (exclusive or)\n\n\n==\n equals (value)\n\n\n===\n identity (value and type)\n\n\n!=\n \n\n\n!==\n\n\n \n\n\n= \n=\n \n\n\n==\n like compareto, negative 0 positive\n\n\n??\n null", 
+            "location": "/Data and Communications/introduction/", 
+            "text": "DTE \n DCE\n\n\n\n\ndata terminal equipment\n\n\ndata communications equipment\n\n\n\n\nNetwork Utilities\n\n\nProtocol and Pinging\n\n\nSet of rules governing sending and receiving packets\n\n\nPing\n\n\nPing can be used for diagnosing if a website is down or for self diagnosis.\n\n\n$ ping \n127\n.0.0.1\n$ ping localhost\n\n// Response\n\n64\n bytes from \n127\n.0.0.1: \nicmp_seq\n=\n0\n \nttl\n=\n64\n \ntime\n=\n0\n.053 ms\n\n64\n bytes from \n127\n.0.0.1: \nicmp_seq\n=\n1\n \nttl\n=\n64\n \ntime\n=\n0\n.044 ms\n^C\n--- localhost ping statistics ---\n\n2\n packets transmitted, \n2\n packets received, \n0\n.0% packet loss\nround-trip min/avg/max/stddev \n=\n \n0\n.044/0.049/0.053/0.004 ms\n\n\n\n\ntimeout\n\n\nMore time elapsed between an event and a response event than expected\n\n\n127.0.0.1 and localhost\n\n\nThis refers to yourself. So if you ping that, you're pinging yourself. \n\n\nFQDN\n\n\nFully Qualified Domain Name \n \nwww\n like from \nwww.microsoft.com\n\n* It's not 1 machine for 1 FQDN\n* It's possible to have more than 1 FQDN on a machine\n* Opposite also possible, common for big sites\n\n\nDNS\n\n\n\n\nImportant service that serves as a resolver. \n\n\nYou take a FQDN, give it to DNS to resolve and it gives an ip number. \n\n\nYou can do the inverse too.\n\n\nIP# = DNS(FQDN)\n\n\n\n\ntracert\n\n\nstrace route\n\n\nShows router path from sender to receiver \n looked pinging with increasing TTLs (time to live)\n\n\npathping\n\n\nipconfig\n\n\n\n\nTells you a lot about yourself. \n\n\n/all\n is all information\n\n\n/displaydns\n cacheing\n\n\n/flushdns\n casheing\n\n\n/release\n -- gave up DHCP lease\n\n\nDynamic Host Configuration Protocol\n\n\n\n\n\n\n/reverse\n\n\n\n\nnetstat\n\n\n\n\n-e\n\n\n-a\n\n\nInfo on TCP activity\n\n\nTCP is an important protocol\n\n\n\n\n\n\nAdvanced\n\n\n\n\nroute print\n\n\nrouting\ntable info\n\n\n\n\n\nIdentifiers\n\n\n\n\n\n\n\n\nLevels\n\n\nIdentifiers\n\n\n\n\n\n\n\n\n\n\n7\n\n\n6\n\n\n\n\n\n\n6\n\n\nFQDN\n\n\n\n\n\n\n5\n\n\n\n\n\n\n\n\n\n\n^ dns v\n\n\n\n\n\n\n4\n\n\nport #\n\n\n\n\n\n\n3\n\n\nIP #\n\n\n\n\n\n\n\n\n^ arp v\n\n\n\n\n\n\n2\n\n\n\n\n\n\n\n\n1\n\n\nMAC address", 
             "title": "Introduction"
         }, 
         {
-            "location": "/PHP/introduction/#introduction", 
-            "text": "We will have three projects. One a web scraping one, one a speed reading (heavy js) and a combined android/php web app for students.", 
+            "location": "/Data and Communications/introduction/#dte-dce", 
+            "text": "data terminal equipment  data communications equipment", 
+            "title": "DTE &amp; DCE"
+        }, 
+        {
+            "location": "/Data and Communications/introduction/#network-utilities", 
+            "text": "", 
+            "title": "Network Utilities"
+        }, 
+        {
+            "location": "/Data and Communications/introduction/#protocol-and-pinging", 
+            "text": "Set of rules governing sending and receiving packets", 
+            "title": "Protocol and Pinging"
+        }, 
+        {
+            "location": "/Data and Communications/introduction/#ping", 
+            "text": "Ping can be used for diagnosing if a website is down or for self diagnosis.  $ ping  127 .0.0.1\n$ ping localhost\n\n// Response 64  bytes from  127 .0.0.1:  icmp_seq = 0   ttl = 64   time = 0 .053 ms 64  bytes from  127 .0.0.1:  icmp_seq = 1   ttl = 64   time = 0 .044 ms\n^C\n--- localhost ping statistics --- 2  packets transmitted,  2  packets received,  0 .0% packet loss\nround-trip min/avg/max/stddev  =   0 .044/0.049/0.053/0.004 ms", 
+            "title": "Ping"
+        }, 
+        {
+            "location": "/Data and Communications/introduction/#timeout", 
+            "text": "More time elapsed between an event and a response event than expected", 
+            "title": "timeout"
+        }, 
+        {
+            "location": "/Data and Communications/introduction/#127001-and-localhost", 
+            "text": "This refers to yourself. So if you ping that, you're pinging yourself.", 
+            "title": "127.0.0.1 and localhost"
+        }, 
+        {
+            "location": "/Data and Communications/introduction/#fqdn", 
+            "text": "Fully Qualified Domain Name    www  like from  www.microsoft.com \n* It's not 1 machine for 1 FQDN\n* It's possible to have more than 1 FQDN on a machine\n* Opposite also possible, common for big sites", 
+            "title": "FQDN"
+        }, 
+        {
+            "location": "/Data and Communications/introduction/#dns", 
+            "text": "Important service that serves as a resolver.   You take a FQDN, give it to DNS to resolve and it gives an ip number.   You can do the inverse too.  IP# = DNS(FQDN)", 
+            "title": "DNS"
+        }, 
+        {
+            "location": "/Data and Communications/introduction/#tracert", 
+            "text": "", 
+            "title": "tracert"
+        }, 
+        {
+            "location": "/Data and Communications/introduction/#strace-route", 
+            "text": "Shows router path from sender to receiver   looked pinging with increasing TTLs (time to live)", 
+            "title": "strace route"
+        }, 
+        {
+            "location": "/Data and Communications/introduction/#pathping", 
+            "text": "", 
+            "title": "pathping"
+        }, 
+        {
+            "location": "/Data and Communications/introduction/#ipconfig", 
+            "text": "Tells you a lot about yourself.   /all  is all information  /displaydns  cacheing  /flushdns  casheing  /release  -- gave up DHCP lease  Dynamic Host Configuration Protocol    /reverse", 
+            "title": "ipconfig"
+        }, 
+        {
+            "location": "/Data and Communications/introduction/#netstat", 
+            "text": "-e  -a  Info on TCP activity  TCP is an important protocol    Advanced", 
+            "title": "netstat"
+        }, 
+        {
+            "location": "/Data and Communications/introduction/#route-print", 
+            "text": "routing\ntable info", 
+            "title": "route print"
+        }, 
+        {
+            "location": "/Data and Communications/introduction/#identifiers", 
+            "text": "Levels  Identifiers      7  6    6  FQDN    5      ^ dns v    4  port #    3  IP #     ^ arp v    2     1  MAC address", 
+            "title": "Identifiers"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/introduction/", 
+            "text": "We will have three projects. One a web scraping one, one a speed reading (heavy js) and a combined android/php web app for students.\n\n\nHistory\n\n\n\n\n1996 - PHP first release\n\n\nPerl, C\n\n\n\n\n\n\nLarabel -\n really popular\n\n\n2017 - PHP 7.1\n~ 00 - Java\n\n\n\n\nClient side\n\n\n\n\nWeb browser\n\n\nHTML\n\n\nCSS\n\n\nJS\n\n\n\n\nServer side\n\n\n\n\nDatabase (ex: Oracle)\n\n\nMySQL\n\n\nPostgres (using this one)\n\n\n\n\nWeb Server\n\n\n\n\nIIS (ASP.NET)\n\n\nApache\n\n\nNGING (using this one)\n\n\n\n\nNGinx will tell the PHP interpreter to interpret the file, and the interpreter will create an html based on the request.\n\n\nDevelopment Environment\n\n\n\n\nVirtual Machine\n\n\nLinux Ubuntu\n\n\nNGINX\n\n\npostgres\n\n\n\n\nLab and Home setup\n\n\n\n\nVagrant\n\n\nPreprovision VM so that each vagrant box is exactly the same\n\n\n\n\n\n\nHomestead\n\n\nVagrant box preprovisioned with recommended \"Stack\" for \nphp-laravel\n, which has above\n\n\n\n\n\n\nDocker\n\n\nLighter than the Vagrant engine\n\n\nHowever, only available on Windows 10 and we have systems in Windows 7 \ud83d\ude22\n\n\n\n\n\n\n\n\nThis will all be completely headless (no GUI).\n\n\nHello PHP\n\n\nExample 1 - \nHTML \n PHP embedded index.php \n\n\n!DOCTYPE html\n\n\nhtml\n\n\n    \nhead\n\n\n    \n/head\n\n\n    \nbody\n\n\n        \np\n Plain HTML \n/p\n\n\n        \np\n\n\n            \n?php\n \necho\n \nHello World\n;\n \n?\n\n\n        \n/p\n\n\n    \n/body\n\n\n\n\n\nExample 2 - \nOnly PHP\n\n\n?php\n \n    \necho\n \n!DOCTYPE html\n;\n\n    \necho\n \nhtml\n;\n\n\n?\n\n\n\n\n\nVariables\n\n\n\n\nWeakly typed =\n \nNo decorations\n\n\n\n\n| Datatypes |\n| interger |\n| floatingpoint |\n| string |\n| boolean |\n| array |\n\n\nVariable Naming\n\n\n\n\nStart with $\n\n\nnext char must be letter or _\n\n\nonly alphanumeric and _\n\n\ncase sensitive (\nexcept functions\n)\n\n\n\n\nExample 3 - \nUsing Variables\n\n\n?php\n \n    \n$quantity\n \n=\n \n50\n;\n\n    \n$price\n \n=\n \n119.50\n;\n\n    \n$tax\n \n=\n \n0.01\n;\n\n    \n$total\n \n=\n \n(\n$quantity\n \n*\n \n$price\n)\n \n*\n \n(\n1\n \n+\n \n$tax\n);\n\n    \n$total\n \n=\n \nnumber_format\n(\n$total\n,\n2\n);\n\n    \necho\n \np\nThe total is \n.\n$total\n.\n/p\n\n\n?\n\n\n\n\n\nOperators\n\n\n\n\n*\n \n/\n \n%\n\n\n++\n \n--\n\n\n+\n \n-\n\n\n**\n (power)\n\n\n=\n\n\n+=\n\n\n.=\n (concatenation)\n\n\n\n\n|\n\n\nxor\n (exclusive or)\n\n\n==\n equals (value)\n\n\n===\n identity (value and type)\n\n\n!=\n \n\n\n!==\n\n\n \n\n\n= \n=\n \n\n\n==\n like compareto, negative 0 positive\n\n\n??\n null", 
             "title": "Introduction"
         }, 
         {
-            "location": "/PHP/introduction/#history", 
+            "location": "/Internet App Dev III (PHP)/introduction/#history", 
             "text": "1996 - PHP first release  Perl, C    Larabel -  really popular  2017 - PHP 7.1\n~ 00 - Java", 
             "title": "History"
         }, 
         {
-            "location": "/PHP/introduction/#client-side", 
+            "location": "/Internet App Dev III (PHP)/introduction/#client-side", 
             "text": "Web browser  HTML  CSS  JS", 
             "title": "Client side"
         }, 
         {
-            "location": "/PHP/introduction/#server-side", 
+            "location": "/Internet App Dev III (PHP)/introduction/#server-side", 
             "text": "Database (ex: Oracle)  MySQL  Postgres (using this one)", 
             "title": "Server side"
         }, 
         {
-            "location": "/PHP/introduction/#web-server", 
+            "location": "/Internet App Dev III (PHP)/introduction/#web-server", 
             "text": "IIS (ASP.NET)  Apache  NGING (using this one)   NGinx will tell the PHP interpreter to interpret the file, and the interpreter will create an html based on the request.", 
             "title": "Web Server"
         }, 
         {
-            "location": "/PHP/introduction/#development-environment", 
+            "location": "/Internet App Dev III (PHP)/introduction/#development-environment", 
             "text": "Virtual Machine  Linux Ubuntu  NGINX  postgres", 
             "title": "Development Environment"
         }, 
         {
-            "location": "/PHP/introduction/#lab-and-home-setup", 
+            "location": "/Internet App Dev III (PHP)/introduction/#lab-and-home-setup", 
             "text": "Vagrant  Preprovision VM so that each vagrant box is exactly the same    Homestead  Vagrant box preprovisioned with recommended \"Stack\" for  php-laravel , which has above    Docker  Lighter than the Vagrant engine  However, only available on Windows 10 and we have systems in Windows 7 \ud83d\ude22     This will all be completely headless (no GUI).", 
             "title": "Lab and Home setup"
         }, 
         {
-            "location": "/PHP/introduction/#hello-php", 
+            "location": "/Internet App Dev III (PHP)/introduction/#hello-php", 
             "text": "", 
             "title": "Hello PHP"
         }, 
         {
-            "location": "/PHP/introduction/#example-1-html-php-embedded-indexphp", 
+            "location": "/Internet App Dev III (PHP)/introduction/#example-1-html-php-embedded-indexphp", 
             "text": "!DOCTYPE html  html       head       /head       body           p  Plain HTML  /p           p               ?php   echo   Hello World ;   ?           /p       /body", 
             "title": "Example 1 - HTML &amp; PHP embedded index.php "
         }, 
         {
-            "location": "/PHP/introduction/#example-2-only-php", 
+            "location": "/Internet App Dev III (PHP)/introduction/#example-2-only-php", 
             "text": "?php  \n     echo   !DOCTYPE html ; \n     echo   html ;  ?", 
             "title": "Example 2 - Only PHP"
         }, 
         {
-            "location": "/PHP/introduction/#variables", 
+            "location": "/Internet App Dev III (PHP)/introduction/#variables", 
             "text": "Weakly typed =   No decorations   | Datatypes |\n| interger |\n| floatingpoint |\n| string |\n| boolean |\n| array |", 
             "title": "Variables"
         }, 
         {
-            "location": "/PHP/introduction/#variable-naming", 
+            "location": "/Internet App Dev III (PHP)/introduction/#variable-naming", 
             "text": "Start with $  next char must be letter or _  only alphanumeric and _  case sensitive ( except functions )", 
             "title": "Variable Naming"
         }, 
         {
-            "location": "/PHP/introduction/#example-3-using-variables", 
+            "location": "/Internet App Dev III (PHP)/introduction/#example-3-using-variables", 
             "text": "?php  \n     $quantity   =   50 ; \n     $price   =   119.50 ; \n     $tax   =   0.01 ; \n     $total   =   ( $quantity   *   $price )   *   ( 1   +   $tax ); \n     $total   =   number_format ( $total , 2 ); \n     echo   p The total is  . $total . /p  ?", 
             "title": "Example 3 - Using Variables"
         }, 
         {
-            "location": "/PHP/introduction/#operators", 
+            "location": "/Internet App Dev III (PHP)/introduction/#operators", 
             "text": "*   /   %  ++   --  +   -  **  (power)  =  +=  .=  (concatenation)   |  xor  (exclusive or)  ==  equals (value)  ===  identity (value and type)  !=    !==     =  =    ==  like compareto, negative 0 positive  ??  null", 
             "title": "Operators"
         }, 
         {
-            "location": "/PHP/labs/lab1/", 
-            "text": "Note\n\n\nI personally be using my own Ubuntu system and not a VM. You are free to do whichever you wish, but the VM environment below is quite slow.\n\n\n\n\nIntroduction to Vagrant and PHP with text editor, Home setup\n\n\nPart 1 \u2013 Vagrant virtual machine provisioning\n\n\nWe are using Vagrant in this course to ensure all students have the same\nvirtual machine configured on all lab computers and at home. Vagrant is\na tool that greatly helps sharing Virtual Machines with the exact same\nconfiguration. The vagrant box that we use is Homestead, which is\nrecommended by Laravel (a PHP framework that we will use later in the\nsemester).\n\n\nHomestead has the following development stack preinstalled: Ubuntu\nLinux, NginX web server, PostGres database, PHP.\n\n\nIn the first part of the lab, we will explore our system, make sure that\nwe can boot the virtual machine on the lab workstation and execute a\nbasic PHP script.\n\n\nCreate the Homestead folder\n\n\nCopy the folder \nS:\\\\CompSci\\\\524\\\\Homestead to your H: drive\n. You should\nnow have H:\\Homestead directory with the same contents as\n\nS:\\\\CompSci\\\\524\\\\Homestead\n.\n\n\n**Create the shared folder\n\n\nOne of the really nice features of Vagrant is how easy it is to get both\nthe host system (Windows 10 machine) and the virtual machine (Ubuntu) to\nsee and share the same directory.\n\n\nCreate a folder called PHPCode in your H: drive. You will save all your\nlabs and projects in this folder. Create the following directories\nwithin PHPCode to match the lab setup:\n\n\n\n\n\n\n\n\nlabs\n\n\n\n\n\n\nbadresto\n\n\n\n\n\n\nreader\n\n\n\n\n\n\ndawson\n\n\n\n\n\n\nnews\n\n\n\n\n\n\ntodo\n\n\n\n\n\n\n\n\n(spoiler: these are some of the labs and projects you\u2019ll be working on\nthis semester!)\n\n\nGet your ssh keys\n\n\nCheck if you already have a .ssh folder in your home directory (H: drive\nshould be setup as your $HOME in the labs). If you have an .ssh\ndirectory, you have already generated ssh keys (probably for git). If\nnot:\n\n\nOpen a Git Bash console in your H drive (right-click in Windows\nExplorer, Git Bash Here)\n\n\nMake sure you are in H: \n pwd\n\n\nRun these commands:\n\n$ mkdir -p .ssh \n \ncd\n .ssh\n\n\n\n$ ssh-keygen -t rsa -b \n4096\n -C \nyouremail@address.here\n\n\n\nPress enter to save the key in \n/h/.ssh/id\\_rsa\n\n\nBoot the virtual machine configured for the PHP course\n\n\nYou will be doing this every lab:\n\n\nOpen a Git Bash window in \nH:/Homestead\n (right-click in explorer). This\nopens a Bash shell emulator on your Window system.\n\n\nMake sure you are in \n/h/Homestead\n\n\nRun this command:\n\n$ vagrant up\n\n\n\nWhen this command finishes (a few minutes) your Virtual Machine is up\nand running!!\n\n\nSSH into the virtual machine\n\n\nOur Ubuntu VM is headless \u2013 meaning that we don\u2019t have a GUI interface\nto Linux. Yay Command line only\n\n\nWhenever you want to log into the booted VM (e.g., to check the\nconfiguration or access the database), type in this command from your\nGit Bash window in \nH:\\\\Homestead\n.\n\n\n$ vagrant ssh\n\n\nYou are now in the VM!\n\n\ncd\n to the Code directory \n-\ngt\n; you are now in the PHPCode shared folder\nSo the \nH:/PHPCode\n folder in Windows is the same as the\n\n/home/vagrant/Code\n folder in the VM.\n\n\n\n\nNOTE: there is a known Vagrant bug where you may not see the command\nprompt while \nssh\n-ing with vagrant \nssh\n. If that is that case, exit and\ntry \nssh vagrant@192.168.10.10\n, with password \nvagrant\n\n\n\n\nThis \u201cmagic\u201d of the shared directory is courtesy of the \nHomestead.yaml\n\nfile. If you open it in Notepad++ (or use less or nano or vim from the\nLinux side), you\u2019ll see a section that indicates the folder mapping.\n\n\nRun a simple script\n\n\nOnce the VM is up and running, we can run PHP scripts.\n\n\nCopy \nS:/CompSci/524/lab0\n to your \nH:/PHPCode/labs folder\n.\n\n\nOpen a browser (hint: Firefox is my favourite), and go to\n\nhttp://labs.app/lab0\n\n\nYou should see a page that contains output of the PHP configuration on\nthe VM. Don\u2019t worry too much about the content, if you see it, you know\nyour VM is serving up your PHP files as required.\n\n\nHow does this work?\n\n\nAll the lab computers have been set to associate certain hostnames to\nitself: you can see this in the file\n\n\nC:/Windows/System32/drivers/etc/hosts\n\n\nNotice, for example, that the host labs.app is associated with the IP\naddress \n192.168.10.10\n (in fact all hostnames are associated with this IP\naddress). The hosts file enables you to override the DNS for a domain on\nthat machine. Your machine will look at the IP address provided\n(\n192.168.10.10\n) instead of going through a DNS. This IP address\n(\n192.168\n) is in the private IP address range, so we can map with no\nworries.\n\n\nNow look at \nH:/Homestead/Homestead.yaml\n: you will see that the IP\naddress is the one being used by you Vagrant VM 9and its NginX web\nserver. Further down, you see that the sites are associated with\ndifferent folders in VM; these folders are all in the shared\n\n/home/vagrant/Code\n folder (which is your \nH:/PHPCode\n folder)\n\n\nIf you open the \nlab0/index.php file\n, you will a single line in the php\ntags \n\u2013 phpinfo()\n is the function that outputs the PHP configuration.\n\n\nNginX, the web server, is configured by default to return \nindex.html\n,\n\nindex.html\n directly, or interpret \nindex.php\n through the PHP interpreter.\nThat\u2019s what happened when you browsed to \nlabs.app/lab0\n.\n\n\nCreate and debug your own PHP Script\n\n\nCreate a folder \nH:\\\\PHPCode\\\\labs\\\\lab1\n (or in the Linux VM\n\nCode/labs/lab1\n in the VM), and write a PHP script named index.php that\nwill create the output as shown in the image, using a text editor like\nNotepad++ or Atom.\n\n\n\n\n\n\n use HTML5\n    tags, including doctype and html tag\n\n\n\n\n\n\nthe php code will fill in the contents of a table, with echo\u2019s\n    within a nested loop\n\n\n\n\n\n\nno styling is required\n\n\n\n\n\n\nrecall: PHP variable names start with $; for loops look pretty much\n    the same as java.\n\n\n\n\n\n\nPHP coding\n    conventions\n\n    use the \u201cEgyptian brackets\u201d/\u201dK\nR style braces\u201d in control structures\n    \u2013 which means the opening brace is written on the same line as the\n    conditional clause and the closing brace is always written on its\n    own line.\n\n\n\n\n\n\n\n\nE.g.:\n\n\nif ($a != 2) {\n\n\n$a = 2;\n\n\n}\n\n\n(As an aside, this is also the\n \n*common Java style\n*\n).\n\n\n\n\nTesting the PHP Script\n\n\nBrowse to \nhttp://labs.app/lab1\n. Since we\nnamed the file index.php, NginX will open it by default. If you named it\nsomething else, write it in the address bar.\n\n\n\nThe results of the program should appear!\n\n\nRecall: Firefox (as well as the other major browsers) come with a suite\nof developer tools. Open the menu in Firefox, select Developer and\nToggle Tools (or Ctrl+Shift+I). You will see the http messages and other\ninformation that is \nvery\n useful when debugging web applications.\n\n\nShutting down the VM\n\n\nUse the command vagrant halt to gracefully shutdown your VM. Note that\nthe VM is subject to deep-freeze, so any changes anywhere except the\nshared folder will be lost the next time you log in.\n\n\nSOLVING INTERMITTENT 502 BAD GATEWAY ISSUES\n\n\nIf you are victim, you may have to make sure that nginx and php config\nmatch:\n\n\nGo to /etc/php/7.1/fpm/pool.d/ , edit www.conf (use sudo nano) and edit\nthe line listen = /run/php/php7.1-fpm.sock to\n/\nvar\n/run/php/php7.1-fpm.sock\n\n\nExit and save the file, then run sudo service php7.1-fpm restart\n\n\nSetting up your laptop/home system\n\n\nThe following instructions are provided for a Windows 7.1+ syste, If you\nare running Linux or IOS, the steps will be simpler. See this\n\nlink\n, and compare to the notes\nbelow.\n\n\n\n\n\n\nmake sure your BIOS/UEFI supports hardware virtualization and it is\n    enabled\n\n\n\n\n\n\nmake sure HyperV is disabled (Control panel - uninstall a program \u2013\n    program and features \u2013 turn Windows features on/off \u2013\n    uncheck HyperV)\n\n\n\n\n\n\ninstall Git for Windows to have gitbash:\n    \nhttps://git-for-windows.github.io\n\n\n\n\nchoose default install options (select Windows\n    Explorer Integration. Select \nUse Git from the Windows Command\n    Prompt\n radio button so that Git can be run from the\n    command line.)\n\n\n\n\n\n\n\n\ninstall VirtualBox 5.1.x (latest version) :\n    \nhttps://www.virtualbox.org/wiki/Downloads\n\n\n\n\n\n\ninstall Vagrant 1.9.x (latest version):\n    \nhttps://www.vagrantup.com/downloads.html\n\n\n\n\n\n\nif desired, setup your hosts to be the same as school\n\n\n\n\n\n\nopen Notepad as admin\n\n\n\n\n\n\nEdit C:/Windows/System32/drivers/etc/hosts (nb: make sure Notepad is\n    looking at all files, not just .txt)\n\n\n\n\n\n\nAdd to the end:\n\n\n\n\n\n\n192.168.10.10 dawson.app\n\n\n192.168.10.10 news.app\n\n\n192.168.10.10 todo.app\n\n\n192.168.10.10 labs.app\n\n\n192.168.10.10 reader.app\n\n\n192.168.10.10 badresto.app\n\n\n\n\n\n\nget your ssh keys, if required. Follow the steps in the lab above to\n    check if they exist in the $HOME directory\n\n\n\n\n\n\ndecide where you want your Homestead and PHPCode directories and\n    make them\n\n\n\n\n\n\nIn the containing directory:\n\n\n\n\n\n\nopen gitbash\n\n\n\n\n\n\nrun the following commands:\n\n\n\n\n\n\n\n\n\n\nvagrant box add laravel/homestead\n\n\ngit clone \nhttps://github.com/laravel/homestead.git\n Homestead\n\n\ncd Homestead\n\n\ngit checkout v5.4.0\n\n\nbash init.sh\n\n\n\n\n\n\nedit the Homestead/Homestead.yaml file (look at the one you have in\n    your H: drive)\n\n\n\n\n\n\nin the folders section, provide to mapping to the PHPCode folder you\n    created in step 8. e.g.,\n\n\n\n\n\n\nfolders:\n\n\n\n\nmap: h:/PHPCode\n\n\n\n\nto: /home/vagrant/Code\n\n\n\n\nif you added the sites to the etc/hosts files, also add them to\n    the Homestead.yaml. For example:\n\n\n\n\nsites:\n\n\n\n\nmap: labs.app\n\n\n\n\nto: /home/vagrant/Code/labs\n\n\n\n\n\n\neach time you want to boot up:vagrant up\n\n\n\n\n\n\nto ssh in: either vagrant ssh or ssh vagrant@192.168.10.10, with\n    password vagrant\n\n\n\n\n\n\nto shut down: vagrant halt", 
-            "title": "Lab1"
+            "location": "/Internet App Dev III (PHP)/outline/", 
+            "text": "COURSE OUTLINE \nInternet Application Development III\n\n\n\n\nNumber: 420-524-DW \n\n\nPonderation: \n\n\nCredits: 3\n\n\n\n\n\n\n\n\nPrerequisites\n\n\n\n\nSuccessful completion of all Year 2 420.A0 courses\n\n\n\n\nCo-requisites\n\n\n\n\n\n\n420-517-DW Software Development Project \u2013 Java III\n\n\n\n\n\n\n420-518-DW Mobile Software Development - Android\n\n\n\n\n\n\n420-544-DW Data Communications \n Networking\n\n\n\n\n\n\n\n\nNote\n\n\nYou must pass this course as well as the three co-requisite courses in order to progress to the sixth semester of the Computer Science Technology Program.\n\n\n\n\nDescription\n\n\nThe student will be introduced to the concepts and techniques of\nserver-side Web programming. The student will use PHP, JavaScript, and a\ndatabase to create dynamic Web applications, and Web APIs to respond to\nAJAX queries. In addition to direct PHP programming, the student is\nintroduced to a PHP framework.\n\n\nSTATEMENTS OF COMPETENCE\n\n\n\n\n\n\nUse an object-oriented development approach (016T)\n\n\n\n\n\n\nProduce algorithms (016W)\n\n\n\n\n\n\nOrganize and use data (0170)\n\n\n\n\n\n\nAssure the quality of an application (0177)\n\n\n\n\n\n\nContacting Teachers\n\n\nJaya Nilakantan 3F.22 contact via MIO\n\n\nTeacher's schedule will be posted outside the office by the end of the\nfirst week of classes.\n\n\nCourse Objectives\n\n\nUpon successful completion of the course the student will be able to:\n\n\n\n\n\n\nDescribe the PHP language and environment (016W, 0170)\n\n\n\n\n\n\nUse PHP classes and objects (016T)\n\n\n\n\n\n\nAdd dynamic content to Web pages using PHP script files and embedded\n    \n PHP statements (016T, 016W)\n\n\n\n\n\n\nWrite server-side PHP scripts to generate HTML responses to\n    \n user queries. (016T, 016W)\n\n\n\n\n\n\nWrite PHP programs to perform server-side processing of user input\n    \n from Web pages with forms. (016T, 016W, 0170)\n\n\n\n\n\n\nDevelop Web APIs using PHP and a database (0170)\n\n\n\n\n\n\nDevelop Web applications using PHP, JavaScript, and a\n    \n database (0170)\n\n\n\n\n\n\nUnderstand and prevent web application security risks (0177)\n\n\n\n\n\n\nDevelop and test Web applications using a PHP framework (016T, 0177)\n\n\n\n\n\n\nCourse Methodology\n\n\nThe course will consist of two 1\u00bd-hour lectures and one 3-hour lab\nsession per week. Concepts and techniques will be presented in lectures\nand practical exercises that apply the concepts and techniques will be\ngiven in the lab sessions.\n\n\nRequired readings\n\n\nReadings will be assigned from:\n\n\n\n\n\n\nOfficial PHP documentation at \nwww.php.net\n\n\n\n\n\n\nDocumentation of the PHP framework\n\n\n\n\n\n\nPHP The Right Way \nhttp://www.phptherightway.com\n\n\n\n\n\n\nSurvive the Deep End: PHP Security\n    \nhttp://phpsecurity.readthedocs.io/en/latest\n\n\n\n\n\n\nAssessment of student performance\n\n\nMidterm Examination Duration\n\n\n\n\n1 \n hours Worth: 30% (Week 7 or 8)\n\n\n\n\nFinal Examination Duration\n\n\n\n\n\n\n3 hours Worth: 40% (Exam period)\n\n\n\n\n\n\nAssignments/ProjectsWorth: 30%\n\n\n\n\n\n\nCourse Outline\n\n\n\n\n\n\nConfigure PHP 1\n\n\n\n\n\n\nSet up a development server\n\n\n\n\n\n\nSet up the PHP environment with the php.ini file\n\n\n\n\n\n\n\n\n\n\nDescribe PHP language basics 2\n\n\n\n\n\n\nDescribe the PHP language and programming environment\n\n\n\n\n\n\nDescribe the basic syntax of the PHP language\n\n\n\n\n\n\nUnderstand PHP variable basics (variables, constants, numeric,\n\n\n\n\nstrings), naming rules and conventions\n\n\n\n\n\n\n\n\nUnderstand how PHP and HTML interact\n\n\n\n\n\n\nRecognize PHP control flow constructs: operators, conditionals,\n\n\n\n\nloops\n\n\n\n\n\n\n\n\n\n\n\n\nUse PHP arrays 1\n\n\n\n\n\n\nCreate and use numerically indexed arrays\n\n\n\n\n\n\nCreate and use associative arrays\n\n\n\n\n\n\nCreate and use multidimensional arrays\n\n\n\n\n\n\nUse foreach looping structure\n\n\n\n\n\n\nUse array functions\n\n\n\n\n\n\n\n\n\n\nDevelop PHP programs to receive and process input from HTML forms 3\n\n\n\n\n\n\nReview http protocol\n\n\n\n\n\n\nCreate a one-part form (both HTML and PHP in one file)\n\n\n\n\n\n\nCreate a two-part form (HTML and PHP are separate files)\n\n\n\n\n\n\nRetrieve submitted data from a variety of element types: text boxes,\n\n\n\n\ntext areas, checkboxes, radio buttons, drop-down lists, submit\nbuttons\n\n\n\n\n\n\n\n\nSanitize and validate input at client and server\n\n\n\n\n\n\nPrevent XSS and Cross-site Request Forgery attacks\n\n\n\n\n\n\nRedisplay a form after PHP validation errors (sticky forms)\n\n\n\n\n\n\nUnderstand and implement redirect\n\n\n\n\n\n\n\n\n\n\nCreate reusable code blocks by defining and calling functions 1\n\n\n\n\n\n\nDefine and call user-defined functions with return values\n\n\n\n\n\n\nDescribe the scope of identifiers in PHP\n\n\n\n\n\n\nUse local, global, static and references to variables\n\n\n\n\n\n\nUse call by value and call by reference to pass arguments\n\n\n\n\n\n\nUse the Include and Require statements\n\n\n\n\n\n\n\n\n\n\nUse PHP Classes and Objects 4\n\n\n\n\n\n\nCreate classes with properties, methods, constants\n\n\n\n\n\n\nDefine constructors and destructors\n\n\n\n\n\n\nUnderstand inheritance and polymorphism\n\n\n\n\n\n\nDefine static class members, and describe late static binding\n\n\n\n\n\n\nCompare and contrast PHP with Java and C# in terms of Access\n\n\n\n\nModifiers, Abstract Classes, Interfaces, and Namespaces\n\n\n\n\n\n\n\n\nCompare and clone objects\n\n\n\n\n\n\nPerform exception handling\n\n\n\n\n\n\nUnderstand and use magic methods\n\n\n\n\n\n\n\n\n\n\nAccess and populate a database using PHP 3\n\n\n\n\n\n\nConnect to and query a database with PHP Data Objects (PDO)\n\n\n\n\n\n\nPerform error handling\n\n\n\n\n\n\nPrevent SQL injection\n\n\n\n\n\n\nuse cURL and DOM traversal to scrape web pages and populate a\n\n\n\n\ndatabase\n\n\n\n\n\n\n\n\n\n\n\n\nMidterm Exam 1\n\n\n\n\n\n\nUnderstand and use state maintenance techniques 3\n\n\n\n\n\n\nExplore output buffering and browser caching\n\n\n\n\n\n\nMaintain state using query string\n\n\n\n\n\n\nImplement simple pagination\n\n\n\n\n\n\nManage cookies with PHP: set, access, and destroy a cookie\n\n\n\n\n\n\nUse sessions: start a session, end a session, manage session\n\n\n\n\nsecurity\n\n\n\n\n\n\n\n\nUnderstand and implement best practices in authentication\n\n\n\n\n\n\n\n\n\n\nUsing AJAX 2\n\n\n\n\n\n\nReview Javascript and JQuery client-side implementation of AJAX\n\n\n\n\n\n\nUnderstand the server-side techniques and principles used in AJAX\n\n\n\n\n\n\nCompose XML and JSON documents\n\n\n\n\n\n\nRead and traverse XML and JSON documents\n\n\n\n\n\n\n\n\n\n\nExplore web security considerations 4\n\n\n\n\n\n\nDescribe XSS, CSRF, and Session Fixation attacks\n\n\n\n\n\n\nImplement basic security measures in PHP code\n\n\n\n\n\n\n\n\n\n\nUse a PHP framework for web development 5\n\n\n\n\n\n\nUnderstand the basics of the MVC pattern\n\n\n\n\n\n\nDescribe URL routing in an MVC application\n\n\n\n\n\n\nDescribe the modular directory layout\n\n\n\n\n\n\nUnderstand purpose of a template engine, and implement views\n\n\n\n\n\n\nUnderstand and implement database migrations\n\n\n\n\n\n\nImplement models and controllers\n\n\n\n\n\n\nUnderstand the authentication mechanisms provided by the framework\n\n\n\n\n\n\nUse the framework to implement web pages and web APIs\n\n\n\n\n\n\n\n\n\n\nProgram and course rules and regulations\n\n\n\n\nWarning\n\n\nFor 420 career program courses, students must receive at least 50% on the assignment component and at least 60% on the examination component in order to obtain a passing grade for the course. Failure to do so will result in a maximum grade of 50 (the lower of 50 or the grade earned). For the purpose of this rule, quizzes are considered exams.\n\n\n\n\nAssignments are due at the due date specified by the instructor.\nAssignments received after this time are late. Assignments will not be\naccepted after due date set by instructor. In exceptional circumstances,\nsuch as illness, etc. labs submitted late will be graded provided that\nthe student has received an extension from the instructor in advance.\n\n\nEach student must submit their own individual answers to assignments,\nand shared solutions are not acceptable. Students must protect their\nwork from being easily copied by others by introducing uniqueness into\ntheir work in the choice of images used, the display styles used in the\npresentation of documents, the originality of the written descriptive\npassages, and by placing digital signatures on their original images.\n\n\nStudents are reminded that they are responsible for all material\npresented in the lecture and during the lab, and are expected to obtain\nmaterial they have missed.\n\n\nStudents must follow exactly the instructions in the lab exercises about\nhow and where to store all computer files in order for their work to be\naccepted and properly evaluated.\n\n\nDAWSON COLLEGE COMPUTER SCIENCE DEPARTMENT  POLICIES\n\n\n1. ACADEMIC INTEGRITY\n\n\nThe Computer Science Department adheres to the Dawson College Academic\nConduct policy. Students have an obligation to inform themselves of all\naspects of this policy. According to ISEP, the teacher is required to\nreport to the Sector Dean all cases of cheating and plagiarism affecting\na student\u2019s grade. (ISEP Section V-C) Students may appeal any decision\nof the teacher regarding cheating and plagiarism according to the\nmethods established by the College. The penalty for cheating or\nplagiarism may range from a zero on the work to a failure in the course.\n\n\n2. ATTENDANCE AND LATENESS\n\n\nStudents are responsible for all material covered in classes and labs,\nwhether or not they are present. Students have an obligation to arrive\non time and to remain for the duration of scheduled classes, labs and\nactivities. Students who disregard this obligation may be asked to leave\nthe class, lab or activity. Students should refer to the Institutional\nStudent Evaluation Policy\n\n\n(ISEP section IV-C) regarding attendance.\n\n\n3. RELIGIOUS HOLIDAY OBSERVANCE\n\n\nClass period(s) may be cancelled in order that the teacher can observe\nreligious holidays. Any material missed as a result, will be made up\nduring labs, class periods and alternate tutorial sessions.\n\n\nStudents, who intend to observe religious holidays, must inform their\nteachers in writing as prescribed in the ISEP Policy on Religious\nObservances (ISEP Section IV-D). Students absent from classes because of\nobservance of religious holidays will not be penalized. It must be\nemphasized, however, that this College policy should not be interpreted\nto mean that a student can receive credit for work not performed. It is\nthe student\u2019s responsibility to fulfill the requirements of the\nalternative arrangement.\n\n\n4. SOFTWARE\n\n\nThe Computer Science Department forbids the use of the computer labs it\nuses to make any copies of any software without the explicit\nauthorization of the Department. Apart from any legal action that might\narise from such unauthorized copying, the Computer Science Department\nreserves the right to discipline any student involved in such activity.\n\n\nStudents who borrow software from the College and fail to return it will\nbe placed on the defaulter list and be subject to the appropriate\npenalties.\n\n\nViruses are programs that attach themselves to a computer system without\nthe permission of those to whom the system belongs. They are\ndeliberately written to be, at worst, harmful (e.g. destroying the\ncontents of disks) and, at best, bothersome (e.g. disturbing the image\nshown on the screen). They can cause serious losses of time and effort\nfor students, staff and faculty. Any student involved in the deliberate\nspreading of viruses is subject to the most severe penalties prescribed\nby College regulations, apart from any legal action that might arise\nfrom such acts.\n\n\n5. LITERACY\n\n\nThe Computer Science Department recognizes that literacy in all its\nforms (read, written, spoken) is essential to our students in their\ncareers.\n\n\nTeachers may choose to incorporate a literacy component into the marking\nscheme for any piece of work. Teachers may use their discretion to\ninsist that any piece of work submitted for credit is revised by the\nstudent if it is unsatisfactory with regard to literacy.\n\n\nTeachers will inform all students in their courses of this policy at the\nbeginning of each semester either by including it in the course\ndescription or otherwise.\n\n\n6. CELL PHONES\n\n\nThe use of cell phones in all Computer Science lectures, labs and exams\nis prohibited.\n\n\n7. PORTABLE COMPUTERS\n\n\nThe use of portable computers in all Computer Science lectures for\npurposes other than note-taking is prohibited.\n\n\n8. STUDENT CONDUCT\n\n\nEveryone has the right to a safe and non-violent environment. Students\nare obliged to conduct themselves as stated in the Student Code of\nConduct and in the ISEP section on the roles and responsibilities of\nstudents. (ISEP section II-D)\n\n\n9. PROFESSIONAL CONDUCT POLICY\n\n\nStudents who are enrolled in the Computer Science Technology careers\nprogram must conduct themselves according to the Professional Conduct\nPolicy as described in the Program Handbook\n\n\n10. INTENSIVE COURSE CONFLICTS\n\n\nIf a student is attending an intensive course, the student must inform\nthe teacher, within the first two weeks of class, of the specific dates\nof any anticipated absences.\n\n\n11. ISEP\n\n\nThe Institutional Student Evaluation Policy (ISEP) is designed to\npromote equitable and effective evaluation of student learning and is\ntherefore a crucial policy to read and understand. The policy describes\nthe rights and obligations of students, faculty, departments, programs,\nand the College administration with regard to evaluation in all your\ncourses, including grade reviews and resolution of academic grievance.\nThe ISEP is available on the Dawson website.", 
+            "title": "Outline"
         }, 
         {
-            "location": "/PHP/labs/lab1/#introduction-to-vagrant-and-php-with-text-editor-home-setup", 
+            "location": "/Internet App Dev III (PHP)/outline/#course-outline-internet-application-development-iii", 
+            "text": "Number: 420-524-DW   Ponderation:   Credits: 3", 
+            "title": "COURSE OUTLINE Internet Application Development III"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/outline/#prerequisites", 
+            "text": "Successful completion of all Year 2 420.A0 courses", 
+            "title": "Prerequisites"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/outline/#co-requisites", 
+            "text": "420-517-DW Software Development Project \u2013 Java III    420-518-DW Mobile Software Development - Android    420-544-DW Data Communications   Networking     Note  You must pass this course as well as the three co-requisite courses in order to progress to the sixth semester of the Computer Science Technology Program.", 
+            "title": "Co-requisites"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/outline/#description", 
+            "text": "The student will be introduced to the concepts and techniques of\nserver-side Web programming. The student will use PHP, JavaScript, and a\ndatabase to create dynamic Web applications, and Web APIs to respond to\nAJAX queries. In addition to direct PHP programming, the student is\nintroduced to a PHP framework.", 
+            "title": "Description"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/outline/#statements-of-competence", 
+            "text": "Use an object-oriented development approach (016T)    Produce algorithms (016W)    Organize and use data (0170)    Assure the quality of an application (0177)", 
+            "title": "STATEMENTS OF COMPETENCE"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/outline/#contacting-teachers", 
+            "text": "Jaya Nilakantan 3F.22 contact via MIO  Teacher's schedule will be posted outside the office by the end of the\nfirst week of classes.", 
+            "title": "Contacting Teachers"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/outline/#course-objectives", 
+            "text": "Upon successful completion of the course the student will be able to:    Describe the PHP language and environment (016W, 0170)    Use PHP classes and objects (016T)    Add dynamic content to Web pages using PHP script files and embedded\n      PHP statements (016T, 016W)    Write server-side PHP scripts to generate HTML responses to\n      user queries. (016T, 016W)    Write PHP programs to perform server-side processing of user input\n      from Web pages with forms. (016T, 016W, 0170)    Develop Web APIs using PHP and a database (0170)    Develop Web applications using PHP, JavaScript, and a\n      database (0170)    Understand and prevent web application security risks (0177)    Develop and test Web applications using a PHP framework (016T, 0177)", 
+            "title": "Course Objectives"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/outline/#course-methodology", 
+            "text": "The course will consist of two 1\u00bd-hour lectures and one 3-hour lab\nsession per week. Concepts and techniques will be presented in lectures\nand practical exercises that apply the concepts and techniques will be\ngiven in the lab sessions.", 
+            "title": "Course Methodology"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/outline/#required-readings", 
+            "text": "Readings will be assigned from:    Official PHP documentation at  www.php.net    Documentation of the PHP framework    PHP The Right Way  http://www.phptherightway.com    Survive the Deep End: PHP Security\n     http://phpsecurity.readthedocs.io/en/latest", 
+            "title": "Required readings"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/outline/#assessment-of-student-performance", 
+            "text": "", 
+            "title": "Assessment of student performance"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/outline/#midterm-examination-duration", 
+            "text": "1   hours Worth: 30% (Week 7 or 8)", 
+            "title": "Midterm Examination Duration"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/outline/#final-examination-duration", 
+            "text": "3 hours Worth: 40% (Exam period)    Assignments/ProjectsWorth: 30%", 
+            "title": "Final Examination Duration"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/outline/#course-outline", 
+            "text": "Configure PHP 1    Set up a development server    Set up the PHP environment with the php.ini file      Describe PHP language basics 2    Describe the PHP language and programming environment    Describe the basic syntax of the PHP language    Understand PHP variable basics (variables, constants, numeric,   strings), naming rules and conventions     Understand how PHP and HTML interact    Recognize PHP control flow constructs: operators, conditionals,   loops       Use PHP arrays 1    Create and use numerically indexed arrays    Create and use associative arrays    Create and use multidimensional arrays    Use foreach looping structure    Use array functions      Develop PHP programs to receive and process input from HTML forms 3    Review http protocol    Create a one-part form (both HTML and PHP in one file)    Create a two-part form (HTML and PHP are separate files)    Retrieve submitted data from a variety of element types: text boxes,   text areas, checkboxes, radio buttons, drop-down lists, submit\nbuttons     Sanitize and validate input at client and server    Prevent XSS and Cross-site Request Forgery attacks    Redisplay a form after PHP validation errors (sticky forms)    Understand and implement redirect      Create reusable code blocks by defining and calling functions 1    Define and call user-defined functions with return values    Describe the scope of identifiers in PHP    Use local, global, static and references to variables    Use call by value and call by reference to pass arguments    Use the Include and Require statements      Use PHP Classes and Objects 4    Create classes with properties, methods, constants    Define constructors and destructors    Understand inheritance and polymorphism    Define static class members, and describe late static binding    Compare and contrast PHP with Java and C# in terms of Access   Modifiers, Abstract Classes, Interfaces, and Namespaces     Compare and clone objects    Perform exception handling    Understand and use magic methods      Access and populate a database using PHP 3    Connect to and query a database with PHP Data Objects (PDO)    Perform error handling    Prevent SQL injection    use cURL and DOM traversal to scrape web pages and populate a   database       Midterm Exam 1    Understand and use state maintenance techniques 3    Explore output buffering and browser caching    Maintain state using query string    Implement simple pagination    Manage cookies with PHP: set, access, and destroy a cookie    Use sessions: start a session, end a session, manage session   security     Understand and implement best practices in authentication      Using AJAX 2    Review Javascript and JQuery client-side implementation of AJAX    Understand the server-side techniques and principles used in AJAX    Compose XML and JSON documents    Read and traverse XML and JSON documents      Explore web security considerations 4    Describe XSS, CSRF, and Session Fixation attacks    Implement basic security measures in PHP code      Use a PHP framework for web development 5    Understand the basics of the MVC pattern    Describe URL routing in an MVC application    Describe the modular directory layout    Understand purpose of a template engine, and implement views    Understand and implement database migrations    Implement models and controllers    Understand the authentication mechanisms provided by the framework    Use the framework to implement web pages and web APIs", 
+            "title": "Course Outline"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/outline/#program-and-course-rules-and-regulations", 
+            "text": "Warning  For 420 career program courses, students must receive at least 50% on the assignment component and at least 60% on the examination component in order to obtain a passing grade for the course. Failure to do so will result in a maximum grade of 50 (the lower of 50 or the grade earned). For the purpose of this rule, quizzes are considered exams.   Assignments are due at the due date specified by the instructor.\nAssignments received after this time are late. Assignments will not be\naccepted after due date set by instructor. In exceptional circumstances,\nsuch as illness, etc. labs submitted late will be graded provided that\nthe student has received an extension from the instructor in advance.  Each student must submit their own individual answers to assignments,\nand shared solutions are not acceptable. Students must protect their\nwork from being easily copied by others by introducing uniqueness into\ntheir work in the choice of images used, the display styles used in the\npresentation of documents, the originality of the written descriptive\npassages, and by placing digital signatures on their original images.  Students are reminded that they are responsible for all material\npresented in the lecture and during the lab, and are expected to obtain\nmaterial they have missed.  Students must follow exactly the instructions in the lab exercises about\nhow and where to store all computer files in order for their work to be\naccepted and properly evaluated.", 
+            "title": "Program and course rules and regulations"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/outline/#dawson-college-computer-science-department-policies", 
+            "text": "", 
+            "title": "DAWSON COLLEGE COMPUTER SCIENCE DEPARTMENT  POLICIES"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/outline/#1-academic-integrity", 
+            "text": "The Computer Science Department adheres to the Dawson College Academic\nConduct policy. Students have an obligation to inform themselves of all\naspects of this policy. According to ISEP, the teacher is required to\nreport to the Sector Dean all cases of cheating and plagiarism affecting\na student\u2019s grade. (ISEP Section V-C) Students may appeal any decision\nof the teacher regarding cheating and plagiarism according to the\nmethods established by the College. The penalty for cheating or\nplagiarism may range from a zero on the work to a failure in the course.", 
+            "title": "1. ACADEMIC INTEGRITY"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/outline/#2-attendance-and-lateness", 
+            "text": "Students are responsible for all material covered in classes and labs,\nwhether or not they are present. Students have an obligation to arrive\non time and to remain for the duration of scheduled classes, labs and\nactivities. Students who disregard this obligation may be asked to leave\nthe class, lab or activity. Students should refer to the Institutional\nStudent Evaluation Policy  (ISEP section IV-C) regarding attendance.", 
+            "title": "2. ATTENDANCE AND LATENESS"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/outline/#3-religious-holiday-observance", 
+            "text": "Class period(s) may be cancelled in order that the teacher can observe\nreligious holidays. Any material missed as a result, will be made up\nduring labs, class periods and alternate tutorial sessions.  Students, who intend to observe religious holidays, must inform their\nteachers in writing as prescribed in the ISEP Policy on Religious\nObservances (ISEP Section IV-D). Students absent from classes because of\nobservance of religious holidays will not be penalized. It must be\nemphasized, however, that this College policy should not be interpreted\nto mean that a student can receive credit for work not performed. It is\nthe student\u2019s responsibility to fulfill the requirements of the\nalternative arrangement.", 
+            "title": "3. RELIGIOUS HOLIDAY OBSERVANCE"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/outline/#4-software", 
+            "text": "The Computer Science Department forbids the use of the computer labs it\nuses to make any copies of any software without the explicit\nauthorization of the Department. Apart from any legal action that might\narise from such unauthorized copying, the Computer Science Department\nreserves the right to discipline any student involved in such activity.  Students who borrow software from the College and fail to return it will\nbe placed on the defaulter list and be subject to the appropriate\npenalties.  Viruses are programs that attach themselves to a computer system without\nthe permission of those to whom the system belongs. They are\ndeliberately written to be, at worst, harmful (e.g. destroying the\ncontents of disks) and, at best, bothersome (e.g. disturbing the image\nshown on the screen). They can cause serious losses of time and effort\nfor students, staff and faculty. Any student involved in the deliberate\nspreading of viruses is subject to the most severe penalties prescribed\nby College regulations, apart from any legal action that might arise\nfrom such acts.", 
+            "title": "4. SOFTWARE"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/outline/#5-literacy", 
+            "text": "The Computer Science Department recognizes that literacy in all its\nforms (read, written, spoken) is essential to our students in their\ncareers.  Teachers may choose to incorporate a literacy component into the marking\nscheme for any piece of work. Teachers may use their discretion to\ninsist that any piece of work submitted for credit is revised by the\nstudent if it is unsatisfactory with regard to literacy.  Teachers will inform all students in their courses of this policy at the\nbeginning of each semester either by including it in the course\ndescription or otherwise.", 
+            "title": "5. LITERACY"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/outline/#6-cell-phones", 
+            "text": "The use of cell phones in all Computer Science lectures, labs and exams\nis prohibited.", 
+            "title": "6. CELL PHONES"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/outline/#7-portable-computers", 
+            "text": "The use of portable computers in all Computer Science lectures for\npurposes other than note-taking is prohibited.", 
+            "title": "7. PORTABLE COMPUTERS"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/outline/#8-student-conduct", 
+            "text": "Everyone has the right to a safe and non-violent environment. Students\nare obliged to conduct themselves as stated in the Student Code of\nConduct and in the ISEP section on the roles and responsibilities of\nstudents. (ISEP section II-D)", 
+            "title": "8. STUDENT CONDUCT"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/outline/#9-professional-conduct-policy", 
+            "text": "Students who are enrolled in the Computer Science Technology careers\nprogram must conduct themselves according to the Professional Conduct\nPolicy as described in the Program Handbook", 
+            "title": "9. PROFESSIONAL CONDUCT POLICY"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/outline/#10-intensive-course-conflicts", 
+            "text": "If a student is attending an intensive course, the student must inform\nthe teacher, within the first two weeks of class, of the specific dates\nof any anticipated absences.", 
+            "title": "10. INTENSIVE COURSE CONFLICTS"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/outline/#11-isep", 
+            "text": "The Institutional Student Evaluation Policy (ISEP) is designed to\npromote equitable and effective evaluation of student learning and is\ntherefore a crucial policy to read and understand. The policy describes\nthe rights and obligations of students, faculty, departments, programs,\nand the College administration with regard to evaluation in all your\ncourses, including grade reviews and resolution of academic grievance.\nThe ISEP is available on the Dawson website.", 
+            "title": "11. ISEP"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/labs/getting-started/", 
+            "text": "Note\n\n\nI personally be using my own Ubuntu system and not a VM. You are free to do whichever you wish, but the VM environment below can be quite slow.\n\n\n\n\nIntroduction to Vagrant and PHP with text editor, Home setup\n\n\nPart 1 \u2013 Vagrant virtual machine provisioning\n\n\nWe are using Vagrant in this course to ensure all students have the same\nvirtual machine configured on all lab computers and at home. Vagrant is\na tool that greatly helps sharing Virtual Machines with the exact same\nconfiguration. The vagrant box that we use is Homestead, which is\nrecommended by Laravel (a PHP framework that we will use later in the\nsemester).\n\n\nHomestead has the following development stack preinstalled: Ubuntu\nLinux, NginX web server, PostGres database, PHP.\n\n\nIn the first part of the lab, we will explore our system, make sure that\nwe can boot the virtual machine on the lab workstation and execute a\nbasic PHP script.\n\n\nCreate the Homestead folder\n\n\nCopy the folder \nS:\\\\CompSci\\\\524\\\\Homestead to your H: drive\n. You should\nnow have H:\\Homestead directory with the same contents as\n\nS:\\\\CompSci\\\\524\\\\Homestead\n.\n\n\n**Create the shared folder\n\n\nOne of the really nice features of Vagrant is how easy it is to get both\nthe host system (Windows 10 machine) and the virtual machine (Ubuntu) to\nsee and share the same directory.\n\n\nCreate a folder called PHPCode in your H: drive. You will save all your\nlabs and projects in this folder. Create the following directories\nwithin PHPCode to match the lab setup:\n\n\n\n\n\n\n\n\nlabs\n\n\n\n\n\n\nbadresto\n\n\n\n\n\n\nreader\n\n\n\n\n\n\ndawson\n\n\n\n\n\n\nnews\n\n\n\n\n\n\ntodo\n\n\n\n\n\n\n\n\n(spoiler: these are some of the labs and projects you\u2019ll be working on\nthis semester!)\n\n\nGet your ssh keys\n\n\nCheck if you already have a .ssh folder in your home directory (H: drive\nshould be setup as your $HOME in the labs). If you have an .ssh\ndirectory, you have already generated ssh keys (probably for git). If\nnot:\n\n\nOpen a Git Bash console in your H drive (right-click in Windows\nExplorer, Git Bash Here)\n\n\nMake sure you are in H: \n pwd\n\n\nRun these commands:\n\n$ mkdir -p .ssh \n \ncd\n .ssh\n\n\n\n$ ssh-keygen -t rsa -b \n4096\n -C \nyouremail@address.here\n\n\n\nPress enter to save the key in \n/h/.ssh/id\\_rsa\n\n\nBoot the virtual machine configured for the PHP course\n\n\nYou will be doing this every lab:\n\n\nOpen a Git Bash window in \nH:/Homestead\n (right-click in explorer). This\nopens a Bash shell emulator on your Window system.\n\n\nMake sure you are in \n/h/Homestead\n\n\nRun this command:\n\n$ vagrant up\n\n\n\nWhen this command finishes (a few minutes) your Virtual Machine is up\nand running!!\n\n\nSSH into the virtual machine\n\n\nOur Ubuntu VM is headless \u2013 meaning that we don\u2019t have a GUI interface\nto Linux. Yay Command line only\n\n\nWhenever you want to log into the booted VM (e.g., to check the\nconfiguration or access the database), type in this command from your\nGit Bash window in \nH:\\\\Homestead\n.\n\n\n$ vagrant ssh\n\n\nYou are now in the VM!\n\n\ncd\n to the Code directory \n-\ngt\n; you are now in the PHPCode shared folder\nSo the \nH:/PHPCode\n folder in Windows is the same as the\n\n/home/vagrant/Code\n folder in the VM.\n\n\n\n\nNOTE: there is a known Vagrant bug where you may not see the command\nprompt while \nssh\n-ing with vagrant \nssh\n. If that is that case, exit and\ntry \nssh vagrant@192.168.10.10\n, with password \nvagrant\n\n\n\n\nThis \u201cmagic\u201d of the shared directory is courtesy of the \nHomestead.yaml\n\nfile. If you open it in Notepad++ (or use less or nano or vim from the\nLinux side), you\u2019ll see a section that indicates the folder mapping.\n\n\nRun a simple script\n\n\nOnce the VM is up and running, we can run PHP scripts.\n\n\nCopy \nS:/CompSci/524/lab0\n to your \nH:/PHPCode/labs folder\n.\n\n\nOpen a browser (hint: Firefox is my favourite), and go to\n\nhttp://labs.app/lab0\n\n\nYou should see a page that contains output of the PHP configuration on\nthe VM. Don\u2019t worry too much about the content, if you see it, you know\nyour VM is serving up your PHP files as required.\n\n\nHow does this work?\n\n\nAll the lab computers have been set to associate certain hostnames to\nitself: you can see this in the file\n\n\nC:/Windows/System32/drivers/etc/hosts\n\n\nNotice, for example, that the host labs.app is associated with the IP\naddress \n192.168.10.10\n (in fact all hostnames are associated with this IP\naddress). The hosts file enables you to override the DNS for a domain on\nthat machine. Your machine will look at the IP address provided\n(\n192.168.10.10\n) instead of going through a DNS. This IP address\n(\n192.168\n) is in the private IP address range, so we can map with no\nworries.\n\n\nNow look at \nH:/Homestead/Homestead.yaml\n: you will see that the IP\naddress is the one being used by you Vagrant VM 9and its NginX web\nserver. Further down, you see that the sites are associated with\ndifferent folders in VM; these folders are all in the shared\n\n/home/vagrant/Code\n folder (which is your \nH:/PHPCode\n folder)\n\n\nIf you open the \nlab0/index.php file\n, you will a single line in the php\ntags \n\u2013 phpinfo()\n is the function that outputs the PHP configuration.\n\n\nNginX, the web server, is configured by default to return \nindex.html\n,\n\nindex.html\n directly, or interpret \nindex.php\n through the PHP interpreter.\nThat\u2019s what happened when you browsed to \nlabs.app/lab0\n.\n\n\nCreate and debug your own PHP Script\n\n\nCreate a folder \nH:\\\\PHPCode\\\\labs\\\\lab1\n (or in the Linux VM\n\nCode/labs/lab1\n in the VM), and write a PHP script named index.php that\nwill create the output as shown in the image, using a text editor like\nNotepad++ or Atom.\n\n\n\n\n\n\n use HTML5\n    tags, including doctype and html tag\n\n\n\n\n\n\nthe php code will fill in the contents of a table, with echo\u2019s\n    within a nested loop\n\n\n\n\n\n\nno styling is required\n\n\n\n\n\n\nrecall: PHP variable names start with $; for loops look pretty much\n    the same as java.\n\n\n\n\n\n\nPHP coding\n    conventions\n\n    use the \u201cEgyptian brackets\u201d/\u201dK\nR style braces\u201d in control structures\n    \u2013 which means the opening brace is written on the same line as the\n    conditional clause and the closing brace is always written on its\n    own line.\n\n\n\n\n\n\n\n\nE.g.:\n\n\nif ($a != 2) {\n\n\n$a = 2;\n\n\n}\n\n\n(As an aside, this is also the\n \n*common Java style\n*\n).\n\n\n\n\nTesting the PHP Script\n\n\nBrowse to \nhttp://labs.app/lab1\n. Since we\nnamed the file index.php, NginX will open it by default. If you named it\nsomething else, write it in the address bar.\n\n\n\nThe results of the program should appear!\n\n\nRecall: Firefox (as well as the other major browsers) come with a suite\nof developer tools. Open the menu in Firefox, select Developer and\nToggle Tools (or Ctrl+Shift+I). You will see the http messages and other\ninformation that is \nvery\n useful when debugging web applications.\n\n\nShutting down the VM\n\n\nUse the command vagrant halt to gracefully shutdown your VM. Note that\nthe VM is subject to deep-freeze, so any changes anywhere except the\nshared folder will be lost the next time you log in.\n\n\nSOLVING INTERMITTENT 502 BAD GATEWAY ISSUES\n\n\nIf you are victim, you may have to make sure that nginx and php config\nmatch:\n\n\nGo to \n/etc/php/7.1/fpm/pool.d/\n , edit \nwww.conf\n (use \nsudo nano\n) and edit\nthe line \nlisten = /run/php/php7.1-fpm.sock\n to\n\nlisten = var/run/php/php7.1-fpm.sock\n\n\nExit and save the file, then run \nsudo service php7.1-fpm restart\n\n\nSetting up your laptop/home system\n\n\nThe following instructions are provided for a Windows 7.1+ syste, If you\nare running Linux or IOS, the steps will be simpler. See this\n\nlink\n, and compare to the notes\nbelow.\n\n\n\n\n\n\nmake sure your BIOS/UEFI supports hardware virtualization and it is\n    enabled\n\n\n\n\n\n\nmake sure HyperV is disabled (Control panel - uninstall a program \u2013\n    program and features \u2013 turn Windows features on/off \u2013\n    uncheck HyperV)\n\n\n\n\n\n\ninstall Git for Windows to have gitbash:\n    \nhttps://git-for-windows.github.io\n\n\n\n\nchoose default install options (select Windows\n    Explorer Integration. Select \nUse Git from the Windows Command\n    Prompt\n radio button so that Git can be run from the\n    command line.)\n\n\n\n\n\n\n\n\ninstall VirtualBox 5.1.x (latest version) :\n    \nhttps://www.virtualbox.org/wiki/Downloads\n\n\n\n\n\n\ninstall Vagrant 1.9.x (latest version):\n    \nhttps://www.vagrantup.com/downloads.html\n\n\n\n\n\n\nif desired, setup your hosts to be the same as school\n\n\n\n\n\n\nopen Notepad as admin\n\n\n\n\n\n\nEdit C:/Windows/System32/drivers/etc/hosts (nb: make sure Notepad is\n    looking at all files, not just .txt)\n\n\n\n\n\n\nAdd to the end:\n\n\n\n\n\n\n192.168.10.10 dawson.app\n\n192.168.10.10 news.app\n\n192.168.10.10 todo.app\n\n192.168.10.10 labs.app\n\n192.168.10.10 reader.app\n\n192.168.10.10 badresto.app\n\n\n1.  get your ssh keys, if required. Follow the steps in the lab above to\n    check if they exist in the $HOME directory\n\n\n\n\n\n\ndecide where you want your Homestead and PHPCode directories and\n    make them\n\n\n\n\n\n\nIn the containing directory:\n\n\n\n\n\n\nopen gitbash\n\n\n\n\n\n\nrun the following commands:\n\n$ vagrant box add laravel/homestead\n\n\n\n$ git clone https://github.com/laravel/homestead.git Homestead\n\n\n\n$ \ncd\n Homestead\n\n\n\n$ git checkout v5.4.0\n\n\n\n$ bash init.sh\n\n\n\n\n\nedit the \nHomestead/Homestead.yaml\n file (look at the one you have in\nyour \nH:\n drive)\n\n\n\n\n\n\n\n\nin the folders section, provide to mapping to the PHPCode folder you\n    created in step 8. e.g.,\n\n\n\n\n\n\nfolders:\n\n\n\n\nmap: \nh:/PHPCode\n\n\n\n\nto: \n/home/vagrant/Code\n\n\n\n\nif you added the sites to the \netc/hosts\n files, also add them to\n    the \nHomestead.yaml\n. For example:\n\nsites:\n\n- map: labs.app\n\n\n\n\n\nto: \n/home/vagrant/Code/labs\n\n\n\n\n\n\neach time you want to boot up:\nvagrant up\n\n\n\n\n\n\nto ssh in: either \nvagrant ssh\n or \nssh vagrant@192.168.10.10\n, with\n    password \nvagrant\n\n\n\n\n\n\nto shut down: \nvagrant halt\n\n\n\n\n\n\nDebugging your system\n\n\nWhen you vagrant up, if you get the message that a Virtual Machine with the name Homestead-7 already exists, it indicates that you VM was not shutdown correctly. \n\n\nTo fix this:\n\n\n\n\nfind the Oracle VM VirtualBox application and open it\n\n\nyou will notice a VM called Homestead-7 which is running\n\n\nright-click on it to close it\n\n\nright-click on it to remove it and delete all files\n\n\nclose your bash window, reopen, and retry\n\n\nif you still have issues, you may have to delete folders: in the \nHomestead\\.vagrant\\machines\n folder as well as the \nVirtualBox VMs\\\n folder. Always close and reopen your bash window.\n\n\n\n\nif you need to edit your Homestead.yaml file, make sure that vagrant halt first. Once the file is saved, start vagrant with the command vagrant up --provision. This will ensure that vagrant re-reads the Homestead.yaml file.\n\n\nThe Homestead.yaml file is notoriously sensitive to bad spacing. This may be a cause of issues that you encounter\n\n\nOne really unfortunate side-effect of Dawson\u2019s deep freeze system is that changes that you make to the VM get lost every time you logout (changes to the php config files, or your database, or installation of tools, or \u2026). This can get irritating. If possible, you may prefer to use your laptop in the labs.", 
+            "title": "Getting started"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/labs/getting-started/#introduction-to-vagrant-and-php-with-text-editor-home-setup", 
             "text": "", 
             "title": "Introduction to Vagrant and PHP with text editor, Home setup"
         }, 
         {
-            "location": "/PHP/labs/lab1/#part-1-vagrant-virtual-machine-provisioning", 
+            "location": "/Internet App Dev III (PHP)/labs/getting-started/#part-1-vagrant-virtual-machine-provisioning", 
             "text": "We are using Vagrant in this course to ensure all students have the same\nvirtual machine configured on all lab computers and at home. Vagrant is\na tool that greatly helps sharing Virtual Machines with the exact same\nconfiguration. The vagrant box that we use is Homestead, which is\nrecommended by Laravel (a PHP framework that we will use later in the\nsemester).  Homestead has the following development stack preinstalled: Ubuntu\nLinux, NginX web server, PostGres database, PHP.  In the first part of the lab, we will explore our system, make sure that\nwe can boot the virtual machine on the lab workstation and execute a\nbasic PHP script.", 
             "title": "Part 1 \u2013 Vagrant virtual machine provisioning"
         }, 
         {
-            "location": "/PHP/labs/lab1/#create-the-homestead-folder", 
+            "location": "/Internet App Dev III (PHP)/labs/getting-started/#create-the-homestead-folder", 
             "text": "Copy the folder  S:\\\\CompSci\\\\524\\\\Homestead to your H: drive . You should\nnow have H:\\Homestead directory with the same contents as S:\\\\CompSci\\\\524\\\\Homestead .  **Create the shared folder  One of the really nice features of Vagrant is how easy it is to get both\nthe host system (Windows 10 machine) and the virtual machine (Ubuntu) to\nsee and share the same directory.  Create a folder called PHPCode in your H: drive. You will save all your\nlabs and projects in this folder. Create the following directories\nwithin PHPCode to match the lab setup:     labs    badresto    reader    dawson    news    todo     (spoiler: these are some of the labs and projects you\u2019ll be working on\nthis semester!)", 
             "title": "Create the Homestead folder"
         }, 
         {
-            "location": "/PHP/labs/lab1/#get-your-ssh-keys", 
+            "location": "/Internet App Dev III (PHP)/labs/getting-started/#get-your-ssh-keys", 
             "text": "Check if you already have a .ssh folder in your home directory (H: drive\nshould be setup as your $HOME in the labs). If you have an .ssh\ndirectory, you have already generated ssh keys (probably for git). If\nnot:  Open a Git Bash console in your H drive (right-click in Windows\nExplorer, Git Bash Here)  Make sure you are in H:   pwd  Run these commands: $ mkdir -p .ssh    cd  .ssh  $ ssh-keygen -t rsa -b  4096  -C  youremail@address.here  \nPress enter to save the key in  /h/.ssh/id\\_rsa", 
             "title": "Get your ssh keys"
         }, 
         {
-            "location": "/PHP/labs/lab1/#boot-the-virtual-machine-configured-for-the-php-course", 
+            "location": "/Internet App Dev III (PHP)/labs/getting-started/#boot-the-virtual-machine-configured-for-the-php-course", 
             "text": "You will be doing this every lab:  Open a Git Bash window in  H:/Homestead  (right-click in explorer). This\nopens a Bash shell emulator on your Window system.  Make sure you are in  /h/Homestead  Run this command: $ vagrant up  When this command finishes (a few minutes) your Virtual Machine is up\nand running!!", 
             "title": "Boot the virtual machine configured for the PHP course"
         }, 
         {
-            "location": "/PHP/labs/lab1/#ssh-into-the-virtual-machine", 
+            "location": "/Internet App Dev III (PHP)/labs/getting-started/#ssh-into-the-virtual-machine", 
             "text": "Our Ubuntu VM is headless \u2013 meaning that we don\u2019t have a GUI interface\nto Linux. Yay Command line only  Whenever you want to log into the booted VM (e.g., to check the\nconfiguration or access the database), type in this command from your\nGit Bash window in  H:\\\\Homestead .  $ vagrant ssh \nYou are now in the VM!  cd  to the Code directory  - gt ; you are now in the PHPCode shared folder\nSo the  H:/PHPCode  folder in Windows is the same as the /home/vagrant/Code  folder in the VM.   NOTE: there is a known Vagrant bug where you may not see the command\nprompt while  ssh -ing with vagrant  ssh . If that is that case, exit and\ntry  ssh vagrant@192.168.10.10 , with password  vagrant   This \u201cmagic\u201d of the shared directory is courtesy of the  Homestead.yaml \nfile. If you open it in Notepad++ (or use less or nano or vim from the\nLinux side), you\u2019ll see a section that indicates the folder mapping.", 
             "title": "SSH into the virtual machine"
         }, 
         {
-            "location": "/PHP/labs/lab1/#run-a-simple-script", 
+            "location": "/Internet App Dev III (PHP)/labs/getting-started/#run-a-simple-script", 
             "text": "Once the VM is up and running, we can run PHP scripts.  Copy  S:/CompSci/524/lab0  to your  H:/PHPCode/labs folder .  Open a browser (hint: Firefox is my favourite), and go to http://labs.app/lab0  You should see a page that contains output of the PHP configuration on\nthe VM. Don\u2019t worry too much about the content, if you see it, you know\nyour VM is serving up your PHP files as required.  How does this work?  All the lab computers have been set to associate certain hostnames to\nitself: you can see this in the file  C:/Windows/System32/drivers/etc/hosts  Notice, for example, that the host labs.app is associated with the IP\naddress  192.168.10.10  (in fact all hostnames are associated with this IP\naddress). The hosts file enables you to override the DNS for a domain on\nthat machine. Your machine will look at the IP address provided\n( 192.168.10.10 ) instead of going through a DNS. This IP address\n( 192.168 ) is in the private IP address range, so we can map with no\nworries.  Now look at  H:/Homestead/Homestead.yaml : you will see that the IP\naddress is the one being used by you Vagrant VM 9and its NginX web\nserver. Further down, you see that the sites are associated with\ndifferent folders in VM; these folders are all in the shared /home/vagrant/Code  folder (which is your  H:/PHPCode  folder)  If you open the  lab0/index.php file , you will a single line in the php\ntags  \u2013 phpinfo()  is the function that outputs the PHP configuration.  NginX, the web server, is configured by default to return  index.html , index.html  directly, or interpret  index.php  through the PHP interpreter.\nThat\u2019s what happened when you browsed to  labs.app/lab0 .", 
             "title": "Run a simple script"
         }, 
         {
-            "location": "/PHP/labs/lab1/#create-and-debug-your-own-php-script", 
+            "location": "/Internet App Dev III (PHP)/labs/getting-started/#create-and-debug-your-own-php-script", 
             "text": "Create a folder  H:\\\\PHPCode\\\\labs\\\\lab1  (or in the Linux VM Code/labs/lab1  in the VM), and write a PHP script named index.php that\nwill create the output as shown in the image, using a text editor like\nNotepad++ or Atom.     use HTML5\n    tags, including doctype and html tag    the php code will fill in the contents of a table, with echo\u2019s\n    within a nested loop    no styling is required    recall: PHP variable names start with $; for loops look pretty much\n    the same as java.    PHP coding\n    conventions \n    use the \u201cEgyptian brackets\u201d/\u201dK R style braces\u201d in control structures\n    \u2013 which means the opening brace is written on the same line as the\n    conditional clause and the closing brace is always written on its\n    own line.     E.g.:  if ($a != 2) {  $a = 2;  }  (As an aside, this is also the   *common Java style\n* ).", 
             "title": "Create and debug your own PHP Script"
         }, 
         {
-            "location": "/PHP/labs/lab1/#testing-the-php-script", 
+            "location": "/Internet App Dev III (PHP)/labs/getting-started/#testing-the-php-script", 
             "text": "Browse to  http://labs.app/lab1 . Since we\nnamed the file index.php, NginX will open it by default. If you named it\nsomething else, write it in the address bar.  \nThe results of the program should appear!  Recall: Firefox (as well as the other major browsers) come with a suite\nof developer tools. Open the menu in Firefox, select Developer and\nToggle Tools (or Ctrl+Shift+I). You will see the http messages and other\ninformation that is  very  useful when debugging web applications.", 
             "title": "Testing the PHP Script"
         }, 
         {
-            "location": "/PHP/labs/lab1/#shutting-down-the-vm", 
+            "location": "/Internet App Dev III (PHP)/labs/getting-started/#shutting-down-the-vm", 
             "text": "Use the command vagrant halt to gracefully shutdown your VM. Note that\nthe VM is subject to deep-freeze, so any changes anywhere except the\nshared folder will be lost the next time you log in.", 
             "title": "Shutting down the VM"
         }, 
         {
-            "location": "/PHP/labs/lab1/#solving-intermittent-502-bad-gateway-issues", 
-            "text": "If you are victim, you may have to make sure that nginx and php config\nmatch:  Go to /etc/php/7.1/fpm/pool.d/ , edit www.conf (use sudo nano) and edit\nthe line listen = /run/php/php7.1-fpm.sock to\n/ var /run/php/php7.1-fpm.sock  Exit and save the file, then run sudo service php7.1-fpm restart", 
+            "location": "/Internet App Dev III (PHP)/labs/getting-started/#solving-intermittent-502-bad-gateway-issues", 
+            "text": "If you are victim, you may have to make sure that nginx and php config\nmatch:  Go to  /etc/php/7.1/fpm/pool.d/  , edit  www.conf  (use  sudo nano ) and edit\nthe line  listen = /run/php/php7.1-fpm.sock  to listen = var/run/php/php7.1-fpm.sock  Exit and save the file, then run  sudo service php7.1-fpm restart", 
             "title": "SOLVING INTERMITTENT 502 BAD GATEWAY ISSUES"
         }, 
         {
-            "location": "/PHP/labs/lab1/#setting-up-your-laptophome-system", 
-            "text": "The following instructions are provided for a Windows 7.1+ syste, If you\nare running Linux or IOS, the steps will be simpler. See this link , and compare to the notes\nbelow.    make sure your BIOS/UEFI supports hardware virtualization and it is\n    enabled    make sure HyperV is disabled (Control panel - uninstall a program \u2013\n    program and features \u2013 turn Windows features on/off \u2013\n    uncheck HyperV)    install Git for Windows to have gitbash:\n     https://git-for-windows.github.io   choose default install options (select Windows\n    Explorer Integration. Select  Use Git from the Windows Command\n    Prompt  radio button so that Git can be run from the\n    command line.)     install VirtualBox 5.1.x (latest version) :\n     https://www.virtualbox.org/wiki/Downloads    install Vagrant 1.9.x (latest version):\n     https://www.vagrantup.com/downloads.html    if desired, setup your hosts to be the same as school    open Notepad as admin    Edit C:/Windows/System32/drivers/etc/hosts (nb: make sure Notepad is\n    looking at all files, not just .txt)    Add to the end:    192.168.10.10 dawson.app  192.168.10.10 news.app  192.168.10.10 todo.app  192.168.10.10 labs.app  192.168.10.10 reader.app  192.168.10.10 badresto.app    get your ssh keys, if required. Follow the steps in the lab above to\n    check if they exist in the $HOME directory    decide where you want your Homestead and PHPCode directories and\n    make them    In the containing directory:    open gitbash    run the following commands:      vagrant box add laravel/homestead  git clone  https://github.com/laravel/homestead.git  Homestead  cd Homestead  git checkout v5.4.0  bash init.sh    edit the Homestead/Homestead.yaml file (look at the one you have in\n    your H: drive)    in the folders section, provide to mapping to the PHPCode folder you\n    created in step 8. e.g.,    folders:   map: h:/PHPCode   to: /home/vagrant/Code   if you added the sites to the etc/hosts files, also add them to\n    the Homestead.yaml. For example:   sites:   map: labs.app   to: /home/vagrant/Code/labs    each time you want to boot up:vagrant up    to ssh in: either vagrant ssh or ssh vagrant@192.168.10.10, with\n    password vagrant    to shut down: vagrant halt", 
+            "location": "/Internet App Dev III (PHP)/labs/getting-started/#setting-up-your-laptophome-system", 
+            "text": "The following instructions are provided for a Windows 7.1+ syste, If you\nare running Linux or IOS, the steps will be simpler. See this link , and compare to the notes\nbelow.    make sure your BIOS/UEFI supports hardware virtualization and it is\n    enabled    make sure HyperV is disabled (Control panel - uninstall a program \u2013\n    program and features \u2013 turn Windows features on/off \u2013\n    uncheck HyperV)    install Git for Windows to have gitbash:\n     https://git-for-windows.github.io   choose default install options (select Windows\n    Explorer Integration. Select  Use Git from the Windows Command\n    Prompt  radio button so that Git can be run from the\n    command line.)     install VirtualBox 5.1.x (latest version) :\n     https://www.virtualbox.org/wiki/Downloads    install Vagrant 1.9.x (latest version):\n     https://www.vagrantup.com/downloads.html    if desired, setup your hosts to be the same as school    open Notepad as admin    Edit C:/Windows/System32/drivers/etc/hosts (nb: make sure Notepad is\n    looking at all files, not just .txt)    Add to the end:    192.168.10.10 dawson.app\n\n192.168.10.10 news.app\n\n192.168.10.10 todo.app\n\n192.168.10.10 labs.app\n\n192.168.10.10 reader.app\n\n192.168.10.10 badresto.app \n1.  get your ssh keys, if required. Follow the steps in the lab above to\n    check if they exist in the $HOME directory    decide where you want your Homestead and PHPCode directories and\n    make them    In the containing directory:    open gitbash    run the following commands: $ vagrant box add laravel/homestead  $ git clone https://github.com/laravel/homestead.git Homestead  $  cd  Homestead  $ git checkout v5.4.0  $ bash init.sh   edit the  Homestead/Homestead.yaml  file (look at the one you have in\nyour  H:  drive)     in the folders section, provide to mapping to the PHPCode folder you\n    created in step 8. e.g.,    folders:   map:  h:/PHPCode   to:  /home/vagrant/Code   if you added the sites to the  etc/hosts  files, also add them to\n    the  Homestead.yaml . For example: sites:\n\n- map: labs.app   to:  /home/vagrant/Code/labs    each time you want to boot up: vagrant up    to ssh in: either  vagrant ssh  or  ssh vagrant@192.168.10.10 , with\n    password  vagrant    to shut down:  vagrant halt", 
             "title": "Setting up your laptop/home system"
+        }, 
+        {
+            "location": "/Internet App Dev III (PHP)/labs/getting-started/#debugging-your-system", 
+            "text": "When you vagrant up, if you get the message that a Virtual Machine with the name Homestead-7 already exists, it indicates that you VM was not shutdown correctly.   To fix this:   find the Oracle VM VirtualBox application and open it  you will notice a VM called Homestead-7 which is running  right-click on it to close it  right-click on it to remove it and delete all files  close your bash window, reopen, and retry  if you still have issues, you may have to delete folders: in the  Homestead\\.vagrant\\machines  folder as well as the  VirtualBox VMs\\  folder. Always close and reopen your bash window.   if you need to edit your Homestead.yaml file, make sure that vagrant halt first. Once the file is saved, start vagrant with the command vagrant up --provision. This will ensure that vagrant re-reads the Homestead.yaml file.  The Homestead.yaml file is notoriously sensitive to bad spacing. This may be a cause of issues that you encounter  One really unfortunate side-effect of Dawson\u2019s deep freeze system is that changes that you make to the VM get lost every time you logout (changes to the php config files, or your database, or installation of tools, or \u2026). This can get irritating. If possible, you may prefer to use your laptop in the labs.", 
+            "title": "Debugging your system"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/introduction/", 
+            "text": "Welcome to the Software Development Project. In this first week we will discuss the course in general, the project and the development tools that we will use. You should have all reviewed the project specification I sent out last week.\n\n\nIn the lab you will create the DDL statements for the database. As MySQL is slightly different from Oracle in its syntax I have a file in this week's  download with a set of DDL statements for a different problem. We will discuss how all of this works in the lab.\n\n\nFor homework, you will code a common dice game played in casinos in Java. The instructions for the assignment are in another file in this week's download.\n\n\nTechnologies required\n\n\nYou can use what you see fit in terms of IDE/tools\n\n\n\n\nJava 1.8\n\n\nJavaFX 2.2\n\n\nMySQL 5.7\n\n\nJDBC\n\n\nJUnit 4\n\n\nJavaMail / Jodd\n\n\nMaven\n\n\nGit\n\n\nGitlab    \n\n\n\n\n\n\nDanger\n\n\nKen won't let us use GitHub :c\n\n\n\n\nSteps to a project\n\n\n\n\nRead the Specs\n\n\nCreate the Database and Tables\n\n\nWrite the Java JDBC CRUD code while writing unit tests after every method is coded\n\n\nCreate\n\n\nRead\n\n\nUpdate\n\n\nDelete\n\n\n\n\n\n\n\n\nWeek One Lab\n\n\nWrite the SQL cripts to create the necessaru tables in MySQL and then email the scripts to \n by the end of the lab period\n\n\nImportant\n\n\nYou should have 50 account thingies per month\n\n\nSetting Up MySQL\n\n\n\n\nInstall MySQL Community edition\n\n\n\n\n$ mysql -h", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/introduction/#technologies-required", 
+            "text": "You can use what you see fit in terms of IDE/tools   Java 1.8  JavaFX 2.2  MySQL 5.7  JDBC  JUnit 4  JavaMail / Jodd  Maven  Git  Gitlab        Danger  Ken won't let us use GitHub :c", 
+            "title": "Technologies required"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/introduction/#steps-to-a-project", 
+            "text": "Read the Specs  Create the Database and Tables  Write the Java JDBC CRUD code while writing unit tests after every method is coded  Create  Read  Update  Delete", 
+            "title": "Steps to a project"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/introduction/#week-one-lab", 
+            "text": "Write the SQL cripts to create the necessaru tables in MySQL and then email the scripts to   by the end of the lab period", 
+            "title": "Week One Lab"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/introduction/#important", 
+            "text": "You should have 50 account thingies per month", 
+            "title": "Important"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/introduction/#setting-up-mysql", 
+            "text": "Install MySQL Community edition   $ mysql -h", 
+            "title": "Setting Up MySQL"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/", 
+            "text": "Warning\n\n\n\ud83d\udea7 Under Construction\n\n\n\n\nContents\n\n\n1 Introduction 1\n\n\n1.1 System Overview 1\n\n\n1.2 Design Map 1\n\n\n1.3 Definitions and Acronyms 1\n\n\n1.4 Gmail Requirements 1\n\n\n2 Considerations 2\n\n\n2.1 Assumptions 2\n\n\n2.2 Constraints 2\n\n\n2.3 System Environment 2\n\n\n2.4 Repository and Naming 2\n\n\n2.4.1 GitLab Account Name 2\n\n\n2.4.2 Java Project Name 3\n\n\n2.4.3 GitLab Repository Name 3\n\n\n3 High Level Design 4\n\n\n3.1 Configuration Module 4\n\n\n3.2 Database Module 4\n\n\n3.3 Appointment Module 4\n\n\n3.4 Reminder Module 4\n\n\n3.5 Help Module 4\n\n\n3.6 Master GUI Module 4\n\n\n4 Low Level Design 5\n\n\n4.1 Configuration Module 5\n\n\n4.1.1 Database 5\n\n\n4.1.2 Email 5\n\n\n4.1.3 Appointment Group 5\n\n\n4.2 Database Module 5\n\n\n4.2.1 Email 5\n\n\n4.2.2 Appointment Group 6\n\n\n4.2.3 Appointments 6\n\n\n4.3 Appointment Module 6\n\n\n4.3.1 Monthly View 6\n\n\n4.3.2 Weekly View 6\n\n\n4.3.3 Daily View 6\n\n\n4.3.4 Appointment Dialog 6\n\n\n4.3.5 Search Dialog 6\n\n\n4.4 Reminder Module 7\n\n\n4.4.1 Timers 7\n\n\n4.5 Help Module 7\n\n\n4.6 Master GUI Module 7\n\n\n4.6.1 Menu 7\n\n\nFile 7\n\n\nView 7\n\n\nHelp 7\n\n\n4.6.2 Toolbar 8\n\n\n5 Data Structures 9\n\n\n5.1 DBMS Settings 9\n\n\n5.2 SMTP Settings 9\n\n\n5.3 Appointment Group Record 9\n\n\n5.4 Appointment Record 10\n\n\n5.5 Help Records 10\n\n\nIntroduction\n\n\nThe purpose of this project is to develop your individual skills as a\nJava application developer. The application described in this document\nis designed to have you apply what you have already learned in the\nComputer Science Technology Program and what you are continuing to learn\nthis semester. This is an individual student project in which you will\nwork alone.\n\n\nSystem Overview\n\n\n\n\nThe program that is\ndescribed in this document is called the Java Agenda Manager or JAM for\nshort. Its use case is to provide an interactive application in which\nappointments can be stored and reviewed along with reminders of upcoming\nevents. It will be written in the Java language and it is meant to be\nportable across all platforms that support Java\n\n\nDesign Map\n\n\nWithin this document you will find the features, specifications, and\ndesign of the JAM. The final product that you develop is required\nrespect this document. While you may add additional features, you are\nexpected to deliver the feature set described here. The following\nsections of this document will describe the features, organization and\nGUI design of the system.\n\n\nDefinitions and Acronyms\n\n\n\n\nAppointment\n\n\n\n\nAn event that the user of the program wishes to record and then be\nreminded of prior to its scheduled time.\n\n\n\n\nMonthly Calendar\n\n\n\n\nThe presentation of all the days in each month with an ordered list of\nany appointments presented for the specific day.\n\n\n\n\nWeekly Calendar\n\n\n\n\nThe presentation of the days in each week that shows the time\nintervals for the day and displays appointments at their specific day\nand time.\n\n\n\n\nDaily Calendar\n\n\n\n\nThe presentation of a single day that shows the time intervals for the\nday and displays appointments at their specific time.\n\n\n\n\nReminder\n\n\n\n\nA visual and audible alarm generated by the program to remind the user\nof an upcoming appointment. In addition, an email is sent to the user\nas a further reminder.\n\n\n\n\nAppointment Group\n\n\n\n\nAppointments can be grouped. A group displays a background color in\nthe display.\n\n\n\n\nGmail Requirements\n\n\nYou will need to create one Gmail account. This is the account thru\nwhich you will be sending reminders.\n\n\n\n\n\n\nConsiderations\n    ==============\n\n\n\n\nAssumptions\n    ---------------------------------------------------------------------------------------------------------\n\n\n\n\n\n\n\n\nThe program will be written using the standard features of the Java\nlanguage. Only third party open source libraries approved by your\ninstructor may be used. JUnit testing must be employed for all JDBC code\nyou write.\n\n\nConstraints\n\n\nThe primary constraint is\nthat the system must be completed by the end of week eight. You must\nlook for simplicity rather than complexity. Features not explicitly in\nthis document and not mentioned in class should be avoided unless they\nare recognized as critical to the operation of the program. Such changes\nmust be submitted to your instructor for approval.\n\n\nSystem Environment\n\n\nThe programming language will be Java\nversion 1.8 and the GUI will be JavaFX. You may use NetBeans or Eclipse\nfor your IDE. NetBeans is preferred.\n\n\nThe JAM will depend on an external DBMS for its appointment and contact\nstore. The DBMS will be MySQL.\n\n\nThe JAM is not dependent on any specific operating system. It should be\nable to run on any computer that supports Java. To be able to use the\nWaldo2 database server the computer must be connected to the Internet.\n\n\nRepository and Naming\n\n\nProjects must be stored in a Git repository. You are required to use a\nprivate repository on GitLab (gitlab.com). GitLab provides any developer\nwith a private repository. When you create your repository you must\ngrant the GitLab user \u201comniprof\u201d developer status. You may not use any\nother repository in this course. The naming rules are mandatory.\n\n\nGitLab Account Name\n\n\nYour GitLab account must be named \nJAM_Student Name\n. Use your name\nas it appears on college records. For example, if your name is Betty\nSmith then you must create an account named:\n\n\nJAM_BettySmith\n\n\nYou may leave out any middle names.\n\n\nJava Project Name\n\n\nWhen you create your project in the IDE it must be named \nJAM_Student\nID_Version\n. For example:\n\n\nJAM_9999999_1\n\n\nIf you must create a new project, for whatever reason, then use the same\nname with a different version number:\n\n\nJAM_9999999_2\n\n\nGitLab Repository Name\n\n\nThe repository that you create for your projects must have the same name\nas your Java project in the IDE. This means that when I need to retrieve\nyour code from GitLab the URL will look like:\n\n\nhttps://gitlab.com/JAM\n_BettySmith/JAM_9999999_1\n\n\nHigh Level Design\n\n\n===============================================================================================================\n\n\nThe overall design of the program will consist of modules that manage\nthe different features and functions of the program.\n\n\nConfiguration Module\n\n\nThis module is responsible for recording and storing information that\naffects the operation of the program. There will be GUI components in\nthis module.\n\n\nDatabase Module\n\n\nThis module is responsible for interacting with the DBMS on behalf of\nall other modules. It will provide specific services to meet the needs\nof other modules. There will not be any GUI components in this module.\n\n\nUnit testing of this module is required.\n\n\nAppointment Module\n\n\nThis module is responsible for the user interface for managing and\ndisplaying appointments. There will be GUI components in this module.\n\n\nReminder Module\n\n\nThis module is responsible for generating alarms prior to an\nappointment. There will not be any GUI components in this module.\n\n\nHelp Module\n\n\nThis module is responsible for displaying help screens. There will be\nGUI components in this module.\n\n\nMaster GUI Module\n\n\nThis module is responsible for the main application window, menus, and\ntoolbars. There will be GUI components in this module.\n\n\n\n\n\n\nLow Level Design\n    ================\n\n\n\n\nConfiguration Module\n    --------------------\n\n\n\n\n\n\n\n\nThis module will handle the data that configures the program. There are\nthree categories of configuration data. These are database, email and\nappointment group. Each category will require a GUI interface for input\nand editing.\n\n\nWhen the program is run for the very first time this module executes\nautomatically. This module can be accessed by the user at any time to\nmake changes to the configuration.\n\n\nDatabase\n\n\nThe program must have a MySQL database account ready to use. You can\ncreate a local account on your computer or use an account on a\ndepartment server. This information will be stored in a properties file\nusing the Properties API in Java. Properties files are plain text files.\nSee section 5.1 for the data that must be stored. You will need a popup\ndialog to enter or edit this data.\n\n\nEmail\n\n\nThe program, when running, will send an email to the program\u2019s user at a\npreset interval before an appointment. You will require an email account\non Gmail for this purpose. The necessary information will be stored in a\ntable in the database. You will need a popup dialog to enter or edit\nthis data.\n\n\nAppointment Group\n\n\nAn appointment group supports the concept of grouping appointments such\nas work appointments and personal appointments. The group determines the\nbackground colour of an appointment in the display. You must have five\ndefault groups with colors already assigned to them. You will need a\npopup dialog to enter or edit this data.\n\n\nDatabase Module\n\n\nThis module will manage the records for all modules. There should be a\nclass for each data table. It will create the required tables for the\ndatabase the first time the program is run. Then it will add or retrieve\nrecords based on requests from the other modules. Each of these modules\nmust have unit tests that demonstrate that the code functions as\nrequired.\n\n\nEmail\n\n\nThis module will be responsible for retrieving, inserting, updating or\ndeleting records for the Email configuration.\n\n\nAppointment Group\n\n\nThis module will be responsible for retrieving, inserting, updating or\ndeleting records for the Appointment Group configuration.\n\n\nAppointments\n\n\nThis module will be responsible for retrieving, inserting, updating or\ndeleting appointment records. There will need to be several retrieval\nroutines to match the various views. In addition, several search\nroutines will be required based on various criteria.\n\n\nAppointment Module\n\n\nThis module will be responsible for the user interface for inputting\nappointments and displaying appointments. It will consist of the\nfollowing:\n\n\nMonthly View\n\n\nThis will display a full month in a grid 6 rows by 7 columns. Titles of\nappointment will appear as a list in the day. In this display you will\nbe able to change months. Double clicking on a given day in a month will\nbring up the Daily View.\n\n\nWeekly View\n\n\nThis will display a full week. It should consist of 7 daily views.\nDouble clicking on a given day in a week will bring up the Daily View.\n\n\nDaily View\n\n\nThe daily view consists of a grid 2 x 48. The first column is the time\nand the second column will hold the appointment. There are 48 rows to\nrepresent every half hour in a day. Double clicking on anywhere in this\nview will bring up the Appointment Dialog. If the double click is on an\nexisting appointment then this is what will appear in the dialog.\nOtherwise a dialog without an appointment will appear.\n\n\nAppointment Dialog\n\n\nThis is a popup dialog that supports adding, editing or deleting an\nappointment. It will contain fields from the appointment data structure.\nThere needs to be a button to save an appointment and a button to delete\nan appointment. If the dialog contains an existing appointment, then\nsave will update the record otherwise a new record will be created.\n\n\nSearch Dialog\n\n\nThis is a popup dialog that supports searching for appointments by their\ntitle or description. The results of this search will be a list of\nmatching appointments. Double clicking on an appointment on this list\nwill display the Appointment Dialog with the selected appointment.\n\n\nReminder Module\n\n\nThis module will use timer events to generate alarms and reminders.\nWhenever the program is executed it will retrieve all future events and\nstart timer processes. When a timer process comes due the module will\ngenerate a visual and audible alarm.\n\n\nTimers\n\n\nWhen the program is loaded, this module will retrieve all the current\nday\u2019s appointments and create a timer event or thread for it. The\nthread, when its time is reached, will generate an audible and visual\nreminder as well as sending an email. Appointment records contain the\ninterval between an appointment and when a reminder must be issued.\n\n\nA special event is created to go off at midnight. If the program remains\nrunning continuously then at midnight it will retrieve the next day\u2019s\nappointments.\n\n\nHelp Module\n\n\nThis module will present the user with a list of the different tasks\nthat the program performs. Selecting a task will lead to a description\nof what this task is and how it is used. These descriptions will be\nformatted using HTML and stored in individual files in the project.\n\n\nMaster GUI Module\n\n\nThis module will act as the application manager. It will present all the\nvarious views of the program and receive user commands. The commands may\ncome either from a menu or a toolbar. The menus and toolbars will be\ndynamic. This means that the choices presented to the user may change\ndepending on the current view.\n\n\nMenu\n\n\nThe program main menu must contain the following:\n\n\nFile\n\n\n\n\nConfiguration\n\n\nNew Appointment\n\n\nExit\n\n\n\n\nView\n\n\n\n\nMonthly\n\n\nWeekly\n\n\nDaily\n\n\n\n\nHelp\n\n\n\n\nHelp Contents\n\n\nAbout\n\n\n\n\nAdditional menu items may be added as needed.\n\n\nToolbar\n\n\nThe toolbar must consist of the following items.\n\n\n\n\n\n\n### Configuration\n\n\n\n\n\n\n### New Appointment\n\n\n\n\n\n\n### Monthly\n\n\n\n\n\n\n### Weekly\n\n\n\n\n\n\n### Daily\n\n\n\n\n\n\n### Help Contents\n\n\n\n\n\n\nImages must be used in the toolbar.\n\n\n\n\n\n\nData Structures\n    ===============\n\n\n\n\nDBMS Settings\n    -------------\n\n\n\n\n\n\n\n\nStored in a properties file\n\n\n\n\n\n\nThe URL of the MySQL database\n\n\n\n\n\n\nThe database name\n\n\n\n\n\n\nThe port of the MySQL database (default 3306)\n\n\n\n\n\n\nThe user name for the MySQL database\n\n\n\n\n\n\nThe password for the MySQL database\n\n\n\n\nSMTP Settings\n    -------------\n\n\n\n\n\n\n\n\nStored in the DBMS\n\n\n\n\n\n\nThe user\u2019s name\n\n\n\n\n\n\nThe user\u2019s email address which is also the log in name for Gmail\n\n\n\n\n\n\nThe user\u2019s Gmail password\n\n\n\n\n\n\nThe URL of the SMTP server\n\n\n\n\n\n\nThe SMTP port number (default 465)\n\n\n\n\nAppointment Group Record\n    ------------------------\n\n\n\n\n\n\n\n\nStored in the DBMS\n\n\n\n\n\n\nGroup Number \u2013 int\n\n\n\n\n\n\nGroup Name \u2013 String\n\n\n\n\n\n\nColour - RGB color specified with an HTML or CSS attribute String\n\n\n\n\nAppointment Record\n    ------------------\n\n\n\n\n\n\n\n\nStored in the DBMS\n\n\n\n\n\n\nTitle - String\n\n\n\n\n\n\nLocation - String\n\n\n\n\n\n\nStart Time - Temporal\n\n\n\n\n\n\nEnd Time - Temporal\n\n\n\n\n\n\nDetails - String\n\n\n\n\n\n\nWhole Day \u2013 boolean\n\n\n\n\n\n\nAppointment Group \u2013 int\n\n\n\n\n\n\nReminder Interval - int\n\n\n\n\n\n\nAlarm Reminder Requested \u2013 Boolean\n\n\n\n\nHelp Records\n    ------------\n\n\n\n\n\n\n\n\nHelp information is text formatted with HTML. Each topic in the help\nlist is matched to a specific HTML file.", 
+            "title": "Jam specifications"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#contents", 
+            "text": "1 Introduction 1  1.1 System Overview 1  1.2 Design Map 1  1.3 Definitions and Acronyms 1  1.4 Gmail Requirements 1  2 Considerations 2  2.1 Assumptions 2  2.2 Constraints 2  2.3 System Environment 2  2.4 Repository and Naming 2  2.4.1 GitLab Account Name 2  2.4.2 Java Project Name 3  2.4.3 GitLab Repository Name 3  3 High Level Design 4  3.1 Configuration Module 4  3.2 Database Module 4  3.3 Appointment Module 4  3.4 Reminder Module 4  3.5 Help Module 4  3.6 Master GUI Module 4  4 Low Level Design 5  4.1 Configuration Module 5  4.1.1 Database 5  4.1.2 Email 5  4.1.3 Appointment Group 5  4.2 Database Module 5  4.2.1 Email 5  4.2.2 Appointment Group 6  4.2.3 Appointments 6  4.3 Appointment Module 6  4.3.1 Monthly View 6  4.3.2 Weekly View 6  4.3.3 Daily View 6  4.3.4 Appointment Dialog 6  4.3.5 Search Dialog 6  4.4 Reminder Module 7  4.4.1 Timers 7  4.5 Help Module 7  4.6 Master GUI Module 7  4.6.1 Menu 7  File 7  View 7  Help 7  4.6.2 Toolbar 8  5 Data Structures 9  5.1 DBMS Settings 9  5.2 SMTP Settings 9  5.3 Appointment Group Record 9  5.4 Appointment Record 10  5.5 Help Records 10", 
+            "title": "Contents"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#introduction", 
+            "text": "The purpose of this project is to develop your individual skills as a\nJava application developer. The application described in this document\nis designed to have you apply what you have already learned in the\nComputer Science Technology Program and what you are continuing to learn\nthis semester. This is an individual student project in which you will\nwork alone.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#system-overview", 
+            "text": "The program that is\ndescribed in this document is called the Java Agenda Manager or JAM for\nshort. Its use case is to provide an interactive application in which\nappointments can be stored and reviewed along with reminders of upcoming\nevents. It will be written in the Java language and it is meant to be\nportable across all platforms that support Java", 
+            "title": "System Overview"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#design-map", 
+            "text": "Within this document you will find the features, specifications, and\ndesign of the JAM. The final product that you develop is required\nrespect this document. While you may add additional features, you are\nexpected to deliver the feature set described here. The following\nsections of this document will describe the features, organization and\nGUI design of the system.", 
+            "title": "Design Map"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#definitions-and-acronyms", 
+            "text": "Appointment   An event that the user of the program wishes to record and then be\nreminded of prior to its scheduled time.   Monthly Calendar   The presentation of all the days in each month with an ordered list of\nany appointments presented for the specific day.   Weekly Calendar   The presentation of the days in each week that shows the time\nintervals for the day and displays appointments at their specific day\nand time.   Daily Calendar   The presentation of a single day that shows the time intervals for the\nday and displays appointments at their specific time.   Reminder   A visual and audible alarm generated by the program to remind the user\nof an upcoming appointment. In addition, an email is sent to the user\nas a further reminder.   Appointment Group   Appointments can be grouped. A group displays a background color in\nthe display.", 
+            "title": "Definitions and Acronyms"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#gmail-requirements", 
+            "text": "You will need to create one Gmail account. This is the account thru\nwhich you will be sending reminders.    Considerations\n    ==============   Assumptions\n    ---------------------------------------------------------------------------------------------------------     The program will be written using the standard features of the Java\nlanguage. Only third party open source libraries approved by your\ninstructor may be used. JUnit testing must be employed for all JDBC code\nyou write.", 
+            "title": "Gmail Requirements"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#constraints", 
+            "text": "The primary constraint is\nthat the system must be completed by the end of week eight. You must\nlook for simplicity rather than complexity. Features not explicitly in\nthis document and not mentioned in class should be avoided unless they\nare recognized as critical to the operation of the program. Such changes\nmust be submitted to your instructor for approval.", 
+            "title": "Constraints"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#system-environment", 
+            "text": "The programming language will be Java\nversion 1.8 and the GUI will be JavaFX. You may use NetBeans or Eclipse\nfor your IDE. NetBeans is preferred.  The JAM will depend on an external DBMS for its appointment and contact\nstore. The DBMS will be MySQL.  The JAM is not dependent on any specific operating system. It should be\nable to run on any computer that supports Java. To be able to use the\nWaldo2 database server the computer must be connected to the Internet.", 
+            "title": "System Environment"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#repository-and-naming", 
+            "text": "Projects must be stored in a Git repository. You are required to use a\nprivate repository on GitLab (gitlab.com). GitLab provides any developer\nwith a private repository. When you create your repository you must\ngrant the GitLab user \u201comniprof\u201d developer status. You may not use any\nother repository in this course. The naming rules are mandatory.", 
+            "title": "Repository and Naming"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#gitlab-account-name", 
+            "text": "Your GitLab account must be named  JAM_Student Name . Use your name\nas it appears on college records. For example, if your name is Betty\nSmith then you must create an account named:  JAM_BettySmith  You may leave out any middle names.", 
+            "title": "GitLab Account Name"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#java-project-name", 
+            "text": "When you create your project in the IDE it must be named  JAM_Student\nID_Version . For example:  JAM_9999999_1  If you must create a new project, for whatever reason, then use the same\nname with a different version number:  JAM_9999999_2", 
+            "title": "Java Project Name"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#gitlab-repository-name", 
+            "text": "The repository that you create for your projects must have the same name\nas your Java project in the IDE. This means that when I need to retrieve\nyour code from GitLab the URL will look like:  https://gitlab.com/JAM _BettySmith/JAM_9999999_1", 
+            "title": "GitLab Repository Name"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#high-level-design", 
+            "text": "===============================================================================================================  The overall design of the program will consist of modules that manage\nthe different features and functions of the program.", 
+            "title": "High Level Design"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#configuration-module", 
+            "text": "This module is responsible for recording and storing information that\naffects the operation of the program. There will be GUI components in\nthis module.", 
+            "title": "Configuration Module"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#database-module", 
+            "text": "This module is responsible for interacting with the DBMS on behalf of\nall other modules. It will provide specific services to meet the needs\nof other modules. There will not be any GUI components in this module.  Unit testing of this module is required.", 
+            "title": "Database Module"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#appointment-module", 
+            "text": "This module is responsible for the user interface for managing and\ndisplaying appointments. There will be GUI components in this module.", 
+            "title": "Appointment Module"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#reminder-module", 
+            "text": "This module is responsible for generating alarms prior to an\nappointment. There will not be any GUI components in this module.", 
+            "title": "Reminder Module"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#help-module", 
+            "text": "This module is responsible for displaying help screens. There will be\nGUI components in this module.", 
+            "title": "Help Module"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#master-gui-module", 
+            "text": "This module is responsible for the main application window, menus, and\ntoolbars. There will be GUI components in this module.    Low Level Design\n    ================   Configuration Module\n    --------------------     This module will handle the data that configures the program. There are\nthree categories of configuration data. These are database, email and\nappointment group. Each category will require a GUI interface for input\nand editing.  When the program is run for the very first time this module executes\nautomatically. This module can be accessed by the user at any time to\nmake changes to the configuration.", 
+            "title": "Master GUI Module"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#database", 
+            "text": "The program must have a MySQL database account ready to use. You can\ncreate a local account on your computer or use an account on a\ndepartment server. This information will be stored in a properties file\nusing the Properties API in Java. Properties files are plain text files.\nSee section 5.1 for the data that must be stored. You will need a popup\ndialog to enter or edit this data.", 
+            "title": "Database"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#email", 
+            "text": "The program, when running, will send an email to the program\u2019s user at a\npreset interval before an appointment. You will require an email account\non Gmail for this purpose. The necessary information will be stored in a\ntable in the database. You will need a popup dialog to enter or edit\nthis data.", 
+            "title": "Email"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#appointment-group", 
+            "text": "An appointment group supports the concept of grouping appointments such\nas work appointments and personal appointments. The group determines the\nbackground colour of an appointment in the display. You must have five\ndefault groups with colors already assigned to them. You will need a\npopup dialog to enter or edit this data.", 
+            "title": "Appointment Group"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#database-module_1", 
+            "text": "This module will manage the records for all modules. There should be a\nclass for each data table. It will create the required tables for the\ndatabase the first time the program is run. Then it will add or retrieve\nrecords based on requests from the other modules. Each of these modules\nmust have unit tests that demonstrate that the code functions as\nrequired.", 
+            "title": "Database Module"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#email_1", 
+            "text": "This module will be responsible for retrieving, inserting, updating or\ndeleting records for the Email configuration.", 
+            "title": "Email"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#appointment-group_1", 
+            "text": "This module will be responsible for retrieving, inserting, updating or\ndeleting records for the Appointment Group configuration.", 
+            "title": "Appointment Group"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#appointments", 
+            "text": "This module will be responsible for retrieving, inserting, updating or\ndeleting appointment records. There will need to be several retrieval\nroutines to match the various views. In addition, several search\nroutines will be required based on various criteria.", 
+            "title": "Appointments"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#appointment-module_1", 
+            "text": "This module will be responsible for the user interface for inputting\nappointments and displaying appointments. It will consist of the\nfollowing:", 
+            "title": "Appointment Module"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#monthly-view", 
+            "text": "This will display a full month in a grid 6 rows by 7 columns. Titles of\nappointment will appear as a list in the day. In this display you will\nbe able to change months. Double clicking on a given day in a month will\nbring up the Daily View.", 
+            "title": "Monthly View"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#weekly-view", 
+            "text": "This will display a full week. It should consist of 7 daily views.\nDouble clicking on a given day in a week will bring up the Daily View.", 
+            "title": "Weekly View"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#daily-view", 
+            "text": "The daily view consists of a grid 2 x 48. The first column is the time\nand the second column will hold the appointment. There are 48 rows to\nrepresent every half hour in a day. Double clicking on anywhere in this\nview will bring up the Appointment Dialog. If the double click is on an\nexisting appointment then this is what will appear in the dialog.\nOtherwise a dialog without an appointment will appear.", 
+            "title": "Daily View"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#appointment-dialog", 
+            "text": "This is a popup dialog that supports adding, editing or deleting an\nappointment. It will contain fields from the appointment data structure.\nThere needs to be a button to save an appointment and a button to delete\nan appointment. If the dialog contains an existing appointment, then\nsave will update the record otherwise a new record will be created.", 
+            "title": "Appointment Dialog"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#search-dialog", 
+            "text": "This is a popup dialog that supports searching for appointments by their\ntitle or description. The results of this search will be a list of\nmatching appointments. Double clicking on an appointment on this list\nwill display the Appointment Dialog with the selected appointment.", 
+            "title": "Search Dialog"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#reminder-module_1", 
+            "text": "This module will use timer events to generate alarms and reminders.\nWhenever the program is executed it will retrieve all future events and\nstart timer processes. When a timer process comes due the module will\ngenerate a visual and audible alarm.", 
+            "title": "Reminder Module"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#timers", 
+            "text": "When the program is loaded, this module will retrieve all the current\nday\u2019s appointments and create a timer event or thread for it. The\nthread, when its time is reached, will generate an audible and visual\nreminder as well as sending an email. Appointment records contain the\ninterval between an appointment and when a reminder must be issued.  A special event is created to go off at midnight. If the program remains\nrunning continuously then at midnight it will retrieve the next day\u2019s\nappointments.", 
+            "title": "Timers"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#help-module_1", 
+            "text": "This module will present the user with a list of the different tasks\nthat the program performs. Selecting a task will lead to a description\nof what this task is and how it is used. These descriptions will be\nformatted using HTML and stored in individual files in the project.", 
+            "title": "Help Module"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#master-gui-module_1", 
+            "text": "This module will act as the application manager. It will present all the\nvarious views of the program and receive user commands. The commands may\ncome either from a menu or a toolbar. The menus and toolbars will be\ndynamic. This means that the choices presented to the user may change\ndepending on the current view.", 
+            "title": "Master GUI Module"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#menu", 
+            "text": "The program main menu must contain the following:", 
+            "title": "Menu"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#file", 
+            "text": "Configuration  New Appointment  Exit", 
+            "title": "File"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#view", 
+            "text": "Monthly  Weekly  Daily", 
+            "title": "View"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#help", 
+            "text": "Help Contents  About   Additional menu items may be added as needed.", 
+            "title": "Help"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#toolbar", 
+            "text": "The toolbar must consist of the following items.", 
+            "title": "Toolbar"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#configuration", 
+            "text": "", 
+            "title": "### Configuration"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#new-appointment", 
+            "text": "", 
+            "title": "### New Appointment"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#monthly", 
+            "text": "", 
+            "title": "### Monthly"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#weekly", 
+            "text": "", 
+            "title": "### Weekly"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#daily", 
+            "text": "", 
+            "title": "### Daily"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/jam-specifications/#help-contents", 
+            "text": "Images must be used in the toolbar.    Data Structures\n    ===============   DBMS Settings\n    -------------     Stored in a properties file    The URL of the MySQL database    The database name    The port of the MySQL database (default 3306)    The user name for the MySQL database    The password for the MySQL database   SMTP Settings\n    -------------     Stored in the DBMS    The user\u2019s name    The user\u2019s email address which is also the log in name for Gmail    The user\u2019s Gmail password    The URL of the SMTP server    The SMTP port number (default 465)   Appointment Group Record\n    ------------------------     Stored in the DBMS    Group Number \u2013 int    Group Name \u2013 String    Colour - RGB color specified with an HTML or CSS attribute String   Appointment Record\n    ------------------     Stored in the DBMS    Title - String    Location - String    Start Time - Temporal    End Time - Temporal    Details - String    Whole Day \u2013 boolean    Appointment Group \u2013 int    Reminder Interval - int    Alarm Reminder Requested \u2013 Boolean   Help Records\n    ------------     Help information is text formatted with HTML. Each topic in the help\nlist is matched to a specific HTML file.", 
+            "title": "### Help Contents"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/", 
+            "text": "Warning\n\n\n\ud83d\udea7 Under Construction\n\n\n\n\nCOURSE OUTLINE \nJava III\n\n\nNumber: 420-517-DW\n\n\n\n\nPonderation: 3-3-3\n\n\nCredits:  3\n\n\n\n\nPrerequisites:\n\n\nSuccessful completion of all Year 2 420.A0 courses\n\n\nCo-requisites:\n\n\n\n\n\n\n420-518-DW Mobile Software Development:  Android\n\n\n\n\n\n\n420-524-DW Internet Application Development III:  PHP\n\n\n\n\n\n\n420-544-DW Data Communications and Networking\n\n\n\n\n\n\nDomain:\n\n\nProgramming, Data Structures and Algorithms\n\n\n\n\nNote\n\n\nYou must pass this course as well as the three co-requisite courses in order to progress to the sixth semester of the Computer Science Technology Program.\n\n\n\n\nDescription\n\n\nIn this course you will learn to design, code and test a desktop application. The application will employ a JavaFX graphical user interface. The data for the application will be stored in and retrieved from a relational database using the Java Database Connectivity library. All components of the application will be tested using the JUnit framework. You will learn the purpose of, the application of and how to code common data structures. You will also review the data structures provided in the Java Collections Framework. These data structures will be applied to the development of code that implements algorithms. You will learn to use a build system to manage your code a repository to store your code.\n\n\nSTATEMENTS OF COMPETENCE\n\n\n\n\nUse an object oriented development approach (016T)\n\n\nProduce algorithms (016W)\n\n\nDevelop user interfaces. (016X)\n\n\nOrganize and use data (0170)\n\n\nCorrect programs (0171)\n\n\nMake functional improvements to an application (0176)\n\n\nAssure the quality of an application (0177)\n\n\nDesign and develop applications in a graphics environment (017C)\n\n\n\n\nContacting Teachers\n\n\nKen Fogel 3F.18                       479901,02\n\n\nTeacher\ns schedule will be posted outside the office by the end of the first week of classes.\n\n\nCourse Objectives:\n\n\nUpon completion of this course the student will be able to:\n\n\n1) Develop Java applications that use JavaFX framework (016X)\n\n\n2) Connect a Java application to a database by utilizing Java Data Base Connectivity (JDBC) libraries (0170)\n\n\n3) Explain the concepts for and apply practically in an application data structures such as stacks, lists, queues, linked lists and binary trees (016W)\n\n\n4) Code stacks, lists, queues and linked lists (016W)\n\n\n4) Use the Java Collections Framework to employ data structures in an application (0170)\n\n\n5) Issue SQL commands to a database and display the result set in an appropriate GUI component such as an Update Table (0170)\n\n\n6) Manage application development using a build system\n\n\n7) Test and validate your code using the unit testing framework (0171, 0177)\n\n\n8) Write a desktop application from a given specification (016T, 017C, 0177, 016W)\n\n\nCourse Methodology\n\n\nThe course consists of two 1\u00bd-hour lectures and one 3-hour lab session per week.  Concepts and techniques will be presented in lectures and practical exercises that apply to the concepts and techniques will be carried out in lab sessions.\n\n\nReadings\n\n\nMore readings will be announced in class\n\n\nJavaFX\n\n\nhttp://docs.oracle.com/javase/8/javase-clienttechnologies.htm\n\n\nCollections\n\n\nhttp://docs.oracle.com/javase/tutorial/collections/index.html\n\n\nGenerics\n\n\nhttp://docs.oracle.com/javase/tutorial/extra/generics/index.html\n\n\nJDBC Database Access\n\n\nhttp://docs.oracle.com/javase/tutorial/jdbc/basics/index.html\n\n\nInternationalization\n\n\nhttp://docs.oracle.com/javase/tutorial/i18n/index.html\n\n\nJODD Email\n\n\nhttp://jodd.org/doc/email.html\n\n\nJUnit 4\n\n\n    http://www.vogella.com/tutorials/JUnit/article.html\n\n\n\n\n\nGit\n\n\n    Pro Git Book [http://git-scm.com/book Chapters 1-3](http://git-scm.com/book%20Chapters%201-3)\n\n\n\n\n\nRequired\n\n\n\n\nOne 32 Gig USB 3.0 (not 2.0) flash drive.\n\n\nAn account on GitLab.com (not Github or any other service).\n\n\nFour Gmail accounts for testing of the email application.\n\n\n\n\nAssessment of student performance\n\n\n\n\n\n\nMidterm Examination\n\n\n\n\nDuration: 1 \n hours       \n\n\n20%  (Week 7)\n\n\n\n\n\n\n\n\nFinal Examination\n\n\n\n\nDuration: 3 hours        \n\n\n35% (Exam period)\n\n\n\n\n\n\n\n\nQuizzes\n\n\n\n\nWeeks 2, 5, 8, \n 12\n\n\n10%\n\n\n\n\n\n\n\n\nAssignments\n\n\n\n\n10%\n\n\nProject 25%\n\n\n\n\n\n\n\n\nCourse Topics \n Labs\n\n\n\n\n\n\n\n\nLectures\n\n\nTopic\n\n\nLab Work\n\n\n\n\n\n\n\n\n\n\n1\n\n\nPresentation of the course project\n\n\nThe Daily Planner Project\n\n\n\n\n\n\n2\n\n\nSoftware Versioning and Code Revision Systems\n\n\nSoftware Build System\n\n\n\n\n\n\n\n\nDiscuss how programmers manage code for themselves and as part of a team.\n\n\n\n\n\n\n\n\n\n\nLearn to use the open source Git system.\n\n\nConnect to a Git repository, download code and upload code.\n\n\n\n\n\n\n\n\nLearn to use Maven to manage the building of Java application.\n\n\nCreate projects that use Maven\n\n\n\n\n\n\n4\n\n\nJDBC\n\n\n\n\n\n\n\n\n\n\nSetup and configure the MySQL RDBMS\n\n\n\n\n\n\n\n\n\n\n- Examine the principles of interacting with a DBMS from within a program.\n\n\n\n\n\n\n\n\n\n\n- Examine the JDBC interface and classes that support database access.\n\n\n\n\n\n\n\n\n\n\nImplement the tasks necessary to: Connect to a database Issue an SQL statement Process the result\n\n\nImplement a database for storing appointments and a contact list\n\n\n\n\n\n\n2\n\n\nJUnit Testing\n\n\n\n\n\n\n\n\n\n\nExamine how the Junit Framework supports unit testing\n\n\n\n\n\n\n\n\n\n\nLearn to develop test cases and test suites\n\n\nDevelop a test plan and implement it\n\n\n\n\n\n\n2\n\n\nMail\n\n\n\n\n\n\n\n\n\n\nReview the principles of SMTP, POP, and IMAP systems.\n\n\n\n\n\n\n\n\n\n\nLearn to use the JODD Email API to connects to SMTP and IMAP mail systems to send and retrieve emails\n\n\nImplement the email portion of the project\n\n\n\n\n\n\n6\n\n\nJavaFX\n\n\n\n\n\n\n\n\n---\n\n\n---\n\n\n---\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n- Examine the architecture of JavaFX\n\n\n\n\n\n\n\n\n\n\n- Scene Graph\n\n\n\n\n\n\n\n\n\n\n- Java Public APIs for JavaFX Features\n\n\n\n\n\n\n\n\n\n\n- Graphics System\n\n\n\n\n\n\n\n\n\n\n- Media and Images\n\n\n\n\n\n\n\n\n\n\n- Web Component\n\n\n\n\n\n\n\n\n\n\n- CSS\n\n\n\n\n\n\n\n\n\n\n- UI Controls\n\n\n\n\n\n\n\n\n\n\n- Layout\n\n\n\n\n\n\n\n\n\n\nCreate form based user interfacesDesign the daily planner project\ns user interface\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n- Working with the Scene Builder tool use FXML to code user interfaces and implement MVC\n\n\n\n\n\n\n\n\n\n\n- View created with FXML\n\n\n\n\n\n\n\n\n\n\n- Model implemented as a Properties Bean\n\n\n\n\n\n\n\n\n\n\n- Controller implemented in Java objects that defines the behavior of the GUI\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nApply data validation to user input.\n\n\n.\n\n\n\n\n\n\n2\n\n\nInternationalization and Properties\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n- Discuss how software is designed to work in multiple languages and locales.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n- Examine the approach Java takes to support software that can dynamically change in different locales.\n\n\n\n\n\n\n\n\n\n\nImplement internationalization in the daily planner so that it can work in both English and French\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n- Examine how programs can maintain configuration information\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n- Examine the Java Properties class to store and retrieve configuration data\n\n\n\n\n\n\n\n\n\n\nImplement the daily planner configuration in a Properties file.\n\n\n\n\n\n\n\n\n\n\n5\n\n\nSequential Data Structures\n\n\nThe following lab work will make up the assignments portion of the grading scheme\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n- Review the workings of and interface for static arrays and dynamic arrays.\n\n\n\n\n\n\n\n\n\n\nCode a dynamic array that implements a supplied interface\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n- Examine the interface of a stack data structure and how it is implemented using a sequence data structure\n\n\n\n\n\n\n\n\n\n\nCode a stack that implements a supplied interface such that it could use the dynamic array or linked list created in the previous labs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n- Examine the interface of a queue and deque data structures and how they are implemented using a sequence data structure\n\n\n\n\n\n\n\n\n\n\nCode a deque that implements a supplied interface such that it could use the dynamic array or linked list created in the previous labs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n- Examine the workings of and interface for a linked list data structure\n\n\n\n\n\n\n\n\n\n\nCode a linked list that implements a supplied interface\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n- Examine the Java Collections classes and interfaces for sequential data structures.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nNon-sequential data structures\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n- Examine the Java Collections classes and interfaces for non-sequential or unordered data structures such as sets and maps.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n- Compare the performance of the various collections classes to determine the best choice for an algorithm.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLab Activities\n\n\nProject\n\n\nDuring the first 9 weeks of the term you will work individually on a project that will demonstrate your achievement of the appropriate objectives in this course. The project will be broken into four phases.\n\n\nFor Fall 2017 the project will be an Daily Planner program. The four phases of this project will be:\n\n\n1)        Design, implement, and unit test the database business and data classes\n\n\nDue on September 18 10:00 AM\n\n\n2)        Design and implement the email business and data classes.\n\n\nDue on September 25 10:00 AM\n\n\n3)        Design and implement a graphical user interface\n\n\nDue on October 16 10:00 AM\n\n\n4)        Deliver the finished application.\n\n\nDue on October 30 10:00 AM\n\n\nPhases 1 must include unit tests. These tests will remain a part of the project till the end.\n\n\nThe project will be completed by October 10, 2017 or sooner. \nThere will be no extension.\n Each phase is worth 25% of the total project mark. If one of the first three phases fails to meet the project requirements it may be resubmitted and a new grade not exceeding 80% of that phase\ns grade may be assigned. Failure to successfully complete any phase by October 30, 2017 will result in a maximum final project grade of 7/25 and a failure in the course.\n\n\nIndividual Labs\n\n\nDuring the last 6 weeks of the course you will complete a series of assignments on the topic of data structures that will demonstrate your achievement of the appropriate objectives.\n\n\nProgram rules and regulations\n\n\nFor 420 career program courses, students must receive at least 50% on the assignment component and at least 60% on the examination component in order to obtain a passing grade for the course. Failure to do so will result in a maximum grade of 50 (the lower of 50 or the grade earned). For the purpose of this rule, quizzes are considered exams.**\n\n\nAssignments are due at the due date specified by the instructor. Assignments received after this time are late. Assignments will not be accepted after due date set by instructor. In exceptional circumstances, such as illness, etc. labs submitted late will be graded provided that the student has received an extension from the instructor in advance.\n\n\nEach student must submit their own individual answers to assignments, and shared solutions are not acceptable. Students must protect their work from being easily copied by others by introducing uniqueness into their work in the choice of images used, the display styles used in the presentation of documents, the originality of the written descriptive passages, and by placing digital signatures on their original images.\n\n\nStudents are reminded that they are responsible for all material presented in the lecture and during the lab, and are expected to obtain material they have missed.\n\n\nStudents must follow exactly the instructions in the lab exercises about how and where to store all computer files in order for their work to be accepted and properly evaluated.\n\n\nThis course outline has been prepared in conformity with the\n \nInstitutional Student Evaluation Policy (I.S.E.P.)\n. The \npolicy is designed to promote equitable and effective evaluation of student learning\n and is\n \ntherefore a crucial policy for you to read and understand\n \n. The policy describes the rights and obligations of students, faculty, departments, programs, and the College administration with regard to evaluation in all your courses.\n \nI.S.E.P.\n \nis published in the College Calendar and reference copies are available in the Library and in the offices of program chairs and the Dean of Social Science \n Business Technologies\n.\n\n\nDAWSON COLLEGE**\n\n\nCOMPUTER SCIENCE DEPARTMENT**\n\n\nPOLICIES**\n\n\n1.        ACADEMIC INTEGRITY**\n\n\nThe Computer Science Department adheres to the Dawson College Academic Conduct policy. Students have an obligation to inform themselves of all aspects of this policy. According to ISEP, the teacher is required to report to the Sector Dean all cases of cheating and plagiarism affecting a student\ns grade. (ISEP Section IV-C) Students may appeal any decision of the teacher regarding cheating and plagiarism according to the methods established by the College. The penalty for cheating or plagiarism may range from a zero on the work to a failure in the course.\n\n\n2.        ATTENDANCE AND LATENESS**\n\n\nStudents are responsible for all material covered in classes and labs, whether or not they are present. Students have an obligation to arrive on time and to remain for the duration of scheduled classes, labs and activities. Students who disregard this obligation may be asked to leave the class, lab or activity. Students should refer to the Institutional Student Evaluation Policy (ISEP Section III-C) regarding attendance.\n\n\n3.        RELIGIOUS HOLIDAY OBSERVANCE**\n\n\nClass period(s) may be cancelled in order that the teacher can observe religious holidays. Any material missed as a result, will be made up during labs, class periods and alternate tutorial sessions.\n\n\nStudents, who intend to observe religious holidays, must inform their teachers in writing as prescribed in the ISEP Policy on Religious Observances (ISEP Section III-D) Students absent from classes because of observance of religious holidays will not be penalized. It must be emphasized, however, that this College policy should not be interpreted to mean that a student can receive credit for work not performed. It is the student\ns responsibility to fulfill the requirements of the alternative arrangement.\n\n\n4.        SOFTWARE**\n\n\nThe Computer Science Department forbids the use of the computer labs it uses to make any copies of any software without the explicit authorization of the Department. Apart from any legal action that might arise from such unauthorized copying, the Computer Science Department reserves the right to discipline any student involved in such activity.\n\n\nStudents who borrow software from the College and fail to return it will be placed on the defaulter list and be subject to the appropriate penalties.\n\n\nViruses are programs that attach themselves to a computer system without the permission of those to whom the system belongs. They are deliberately written to be, at worst, harmful (e.g. destroying the contents of disks) and, at best, bothersome (e.g. disturbing the image shown on the screen). They can cause serious losses of time and effort for students, staff and faculty. Any student involved in the deliberate spreading of viruses is subject to the most severe penalties prescribed by College regulations, apart from any legal action that might arise from such acts.\n\n\n5.        LITERACY**\n\n\nThe Computer Science Department recognizes that literacy in all its forms (read, written, spoken) is essential to our students in their careers.\n\n\nTeachers may choose to incorporate a literacy component into the marking scheme for any piece of work. Teachers may use their discretion to insist that any piece of work submitted for credit is revised by the student if it is unsatisfactory with regard to literacy.\n\n\nTeachers will inform all students in their courses of this policy at the beginning of each semester either by including it in the course description or otherwise.\n\n\n6.        CELL PHONES**\n\n\nThe use of cell phones in all Computer Science lectures, labs and exams is prohibited.\n\n\n7.        PORTABLE COMPUTERS**\n\n\nThe use of portable computers in all Computer Science lectures for purposes other than note-taking is prohibited.\n\n\n8.        STUDENT CONDUCT**\n\n\nEveryone has the right to a safe and non-violent environment. Students are obliged to conduct themselves as stated in the Student Code of Conduct and in the ISEP section on the roles and responsibilities of students. (ISEP section II-D)\n\n\n9.        INTENSIVE COURSE CONFLICTS**\n\n\nIf a student is attending an intensive course, the student must inform the teacher, within the first two weeks of class, of the specific dates of any anticipated absences.\n\n\n10.        ISEP**\n\n\nThe Institutional Student Evaluation Policy (ISEP) is designed to promote equitable and effective evaluation of student learning and is therefore a crucial policy to read and understand. The policy describes the rights and obligations of students, faculty, departments, programs, and the College administration with regard to evaluation in all your courses, including grade reviews and resolution of academic grievance. The ISEP is available on the Dawson website.", 
+            "title": "Outline"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#course-outline-java-iii", 
+            "text": "", 
+            "title": "COURSE OUTLINE Java III"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#number-420-517-dw", 
+            "text": "Ponderation: 3-3-3  Credits:  3", 
+            "title": "Number: 420-517-DW"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#prerequisites", 
+            "text": "Successful completion of all Year 2 420.A0 courses", 
+            "title": "Prerequisites:"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#co-requisites", 
+            "text": "420-518-DW Mobile Software Development:  Android    420-524-DW Internet Application Development III:  PHP    420-544-DW Data Communications and Networking", 
+            "title": "Co-requisites:"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#domain", 
+            "text": "Programming, Data Structures and Algorithms   Note  You must pass this course as well as the three co-requisite courses in order to progress to the sixth semester of the Computer Science Technology Program.", 
+            "title": "Domain:"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#description", 
+            "text": "In this course you will learn to design, code and test a desktop application. The application will employ a JavaFX graphical user interface. The data for the application will be stored in and retrieved from a relational database using the Java Database Connectivity library. All components of the application will be tested using the JUnit framework. You will learn the purpose of, the application of and how to code common data structures. You will also review the data structures provided in the Java Collections Framework. These data structures will be applied to the development of code that implements algorithms. You will learn to use a build system to manage your code a repository to store your code.", 
+            "title": "Description"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#statements-of-competence", 
+            "text": "Use an object oriented development approach (016T)  Produce algorithms (016W)  Develop user interfaces. (016X)  Organize and use data (0170)  Correct programs (0171)  Make functional improvements to an application (0176)  Assure the quality of an application (0177)  Design and develop applications in a graphics environment (017C)", 
+            "title": "STATEMENTS OF COMPETENCE"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#contacting-teachers", 
+            "text": "Ken Fogel 3F.18                       479901,02  Teacher s schedule will be posted outside the office by the end of the first week of classes.", 
+            "title": "Contacting Teachers"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#course-objectives", 
+            "text": "Upon completion of this course the student will be able to:  1) Develop Java applications that use JavaFX framework (016X)  2) Connect a Java application to a database by utilizing Java Data Base Connectivity (JDBC) libraries (0170)  3) Explain the concepts for and apply practically in an application data structures such as stacks, lists, queues, linked lists and binary trees (016W)  4) Code stacks, lists, queues and linked lists (016W)  4) Use the Java Collections Framework to employ data structures in an application (0170)  5) Issue SQL commands to a database and display the result set in an appropriate GUI component such as an Update Table (0170)  6) Manage application development using a build system  7) Test and validate your code using the unit testing framework (0171, 0177)  8) Write a desktop application from a given specification (016T, 017C, 0177, 016W)", 
+            "title": "Course Objectives:"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#course-methodology", 
+            "text": "The course consists of two 1\u00bd-hour lectures and one 3-hour lab session per week.  Concepts and techniques will be presented in lectures and practical exercises that apply to the concepts and techniques will be carried out in lab sessions.", 
+            "title": "Course Methodology"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#readings", 
+            "text": "More readings will be announced in class  JavaFX  http://docs.oracle.com/javase/8/javase-clienttechnologies.htm  Collections  http://docs.oracle.com/javase/tutorial/collections/index.html  Generics  http://docs.oracle.com/javase/tutorial/extra/generics/index.html  JDBC Database Access  http://docs.oracle.com/javase/tutorial/jdbc/basics/index.html  Internationalization  http://docs.oracle.com/javase/tutorial/i18n/index.html  JODD Email  http://jodd.org/doc/email.html  JUnit 4      http://www.vogella.com/tutorials/JUnit/article.html  Git      Pro Git Book [http://git-scm.com/book Chapters 1-3](http://git-scm.com/book%20Chapters%201-3)", 
+            "title": "Readings"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#required", 
+            "text": "One 32 Gig USB 3.0 (not 2.0) flash drive.  An account on GitLab.com (not Github or any other service).  Four Gmail accounts for testing of the email application.", 
+            "title": "Required"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#assessment-of-student-performance", 
+            "text": "Midterm Examination   Duration: 1   hours         20%  (Week 7)     Final Examination   Duration: 3 hours          35% (Exam period)     Quizzes   Weeks 2, 5, 8,   12  10%     Assignments   10%  Project 25%", 
+            "title": "Assessment of student performance"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#course-topics-labs", 
+            "text": "Lectures  Topic  Lab Work      1  Presentation of the course project  The Daily Planner Project    2  Software Versioning and Code Revision Systems  Software Build System     Discuss how programmers manage code for themselves and as part of a team.      Learn to use the open source Git system.  Connect to a Git repository, download code and upload code.     Learn to use Maven to manage the building of Java application.  Create projects that use Maven    4  JDBC      Setup and configure the MySQL RDBMS      - Examine the principles of interacting with a DBMS from within a program.      - Examine the JDBC interface and classes that support database access.      Implement the tasks necessary to: Connect to a database Issue an SQL statement Process the result  Implement a database for storing appointments and a contact list    2  JUnit Testing      Examine how the Junit Framework supports unit testing      Learn to develop test cases and test suites  Develop a test plan and implement it    2  Mail      Review the principles of SMTP, POP, and IMAP systems.      Learn to use the JODD Email API to connects to SMTP and IMAP mail systems to send and retrieve emails  Implement the email portion of the project    6  JavaFX     ---  ---  ---         - Examine the architecture of JavaFX      - Scene Graph      - Java Public APIs for JavaFX Features      - Graphics System      - Media and Images      - Web Component      - CSS      - UI Controls      - Layout      Create form based user interfacesDesign the daily planner project s user interface           - Working with the Scene Builder tool use FXML to code user interfaces and implement MVC      - View created with FXML      - Model implemented as a Properties Bean      - Controller implemented in Java objects that defines the behavior of the GUI            Apply data validation to user input.  .    2  Internationalization and Properties          - Discuss how software is designed to work in multiple languages and locales.                - Examine the approach Java takes to support software that can dynamically change in different locales.      Implement internationalization in the daily planner so that it can work in both English and French           - Examine how programs can maintain configuration information                - Examine the Java Properties class to store and retrieve configuration data      Implement the daily planner configuration in a Properties file.      5  Sequential Data Structures  The following lab work will make up the assignments portion of the grading scheme         - Review the workings of and interface for static arrays and dynamic arrays.      Code a dynamic array that implements a supplied interface           - Examine the interface of a stack data structure and how it is implemented using a sequence data structure      Code a stack that implements a supplied interface such that it could use the dynamic array or linked list created in the previous labs           - Examine the interface of a queue and deque data structures and how they are implemented using a sequence data structure      Code a deque that implements a supplied interface such that it could use the dynamic array or linked list created in the previous labs           - Examine the workings of and interface for a linked list data structure      Code a linked list that implements a supplied interface           - Examine the Java Collections classes and interfaces for sequential data structures.           3  Non-sequential data structures          - Examine the Java Collections classes and interfaces for non-sequential or unordered data structures such as sets and maps.                - Compare the performance of the various collections classes to determine the best choice for an algorithm.", 
+            "title": "Course Topics &amp; Labs"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#lab-activities", 
+            "text": "", 
+            "title": "Lab Activities"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#project", 
+            "text": "", 
+            "title": "Project"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#during-the-first-9-weeks-of-the-term-you-will-work-individually-on-a-project-that-will-demonstrate-your-achievement-of-the-appropriate-objectives-in-this-course-the-project-will-be-broken-into-four-phases", 
+            "text": "", 
+            "title": "During the first 9 weeks of the term you will work individually on a project that will demonstrate your achievement of the appropriate objectives in this course. The project will be broken into four phases."
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#for-fall-2017-the-project-will-be-an-daily-planner-program-the-four-phases-of-this-project-will-be", 
+            "text": "", 
+            "title": "For Fall 2017 the project will be an Daily Planner program. The four phases of this project will be:"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#1-design-implement-and-unit-test-the-database-business-and-data-classes", 
+            "text": "", 
+            "title": "1)        Design, implement, and unit test the database business and data classes"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#due-on-september-18-1000-am", 
+            "text": "", 
+            "title": "Due on September 18 10:00 AM"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#2-design-and-implement-the-email-business-and-data-classes", 
+            "text": "", 
+            "title": "2)        Design and implement the email business and data classes."
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#due-on-september-25-1000-am", 
+            "text": "", 
+            "title": "Due on September 25 10:00 AM"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#3-design-and-implement-a-graphical-user-interface", 
+            "text": "", 
+            "title": "3)        Design and implement a graphical user interface"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#due-on-october-16-1000-am", 
+            "text": "", 
+            "title": "Due on October 16 10:00 AM"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#4-deliver-the-finished-application", 
+            "text": "", 
+            "title": "4)        Deliver the finished application."
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#due-on-october-30-1000-am", 
+            "text": "", 
+            "title": "Due on October 30 10:00 AM"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#phases-1-must-include-unit-tests-these-tests-will-remain-a-part-of-the-project-till-the-end", 
+            "text": "", 
+            "title": "Phases 1 must include unit tests. These tests will remain a part of the project till the end."
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#the-project-will-be-completed-by-october-10-2017-or-sooner-there-will-be-no-extension-each-phase-is-worth-25-of-the-total-project-mark-if-one-of-the-first-three-phases-fails-to-meet-the-project-requirements-it-may-be-resubmitted-and-a-new-grade-not-exceeding-80-of-that-phases-grade-may-be-assigned-failure-to-successfully-complete-any-phase-by-october-30-2017-will-result-in-a-maximum-final-project-grade-of-725-and-a-failure-in-the-course", 
+            "text": "", 
+            "title": "The project will be completed by October 10, 2017 or sooner. There will be no extension. Each phase is worth 25% of the total project mark. If one of the first three phases fails to meet the project requirements it may be resubmitted and a new grade not exceeding 80% of that phase&#39;s grade may be assigned. Failure to successfully complete any phase by October 30, 2017 will result in a maximum final project grade of 7/25 and a failure in the course."
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#individual-labs", 
+            "text": "", 
+            "title": "Individual Labs"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#during-the-last-6-weeks-of-the-course-you-will-complete-a-series-of-assignments-on-the-topic-of-data-structures-that-will-demonstrate-your-achievement-of-the-appropriate-objectives", 
+            "text": "", 
+            "title": "During the last 6 weeks of the course you will complete a series of assignments on the topic of data structures that will demonstrate your achievement of the appropriate objectives."
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#program-rules-and-regulations", 
+            "text": "", 
+            "title": "Program rules and regulations"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#for-420-career-program-courses-students-must-receive-at-least-50-on-the-assignment-component-and-at-least-60-on-the-examination-component-in-order-to-obtain-a-passing-grade-for-the-course-failure-to-do-so-will-result-in-a-maximum-grade-of-50-the-lower-of-50-or-the-grade-earned-for-the-purpose-of-this-rule-quizzes-are-considered-exams", 
+            "text": "Assignments are due at the due date specified by the instructor. Assignments received after this time are late. Assignments will not be accepted after due date set by instructor. In exceptional circumstances, such as illness, etc. labs submitted late will be graded provided that the student has received an extension from the instructor in advance.  Each student must submit their own individual answers to assignments, and shared solutions are not acceptable. Students must protect their work from being easily copied by others by introducing uniqueness into their work in the choice of images used, the display styles used in the presentation of documents, the originality of the written descriptive passages, and by placing digital signatures on their original images.  Students are reminded that they are responsible for all material presented in the lecture and during the lab, and are expected to obtain material they have missed.  Students must follow exactly the instructions in the lab exercises about how and where to store all computer files in order for their work to be accepted and properly evaluated.  This course outline has been prepared in conformity with the   Institutional Student Evaluation Policy (I.S.E.P.) . The  policy is designed to promote equitable and effective evaluation of student learning  and is   therefore a crucial policy for you to read and understand   . The policy describes the rights and obligations of students, faculty, departments, programs, and the College administration with regard to evaluation in all your courses.   I.S.E.P.   is published in the College Calendar and reference copies are available in the Library and in the offices of program chairs and the Dean of Social Science   Business Technologies .", 
+            "title": "For 420 career program courses, students must receive at least 50% on the assignment component and at least 60% on the examination component in order to obtain a passing grade for the course. Failure to do so will result in a maximum grade of 50 (the lower of 50 or the grade earned). For the purpose of this rule, quizzes are considered exams.**"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#dawson-college", 
+            "text": "", 
+            "title": "DAWSON COLLEGE**"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#computer-science-department", 
+            "text": "", 
+            "title": "COMPUTER SCIENCE DEPARTMENT**"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#policies", 
+            "text": "", 
+            "title": "POLICIES**"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#1-academic-integrity", 
+            "text": "The Computer Science Department adheres to the Dawson College Academic Conduct policy. Students have an obligation to inform themselves of all aspects of this policy. According to ISEP, the teacher is required to report to the Sector Dean all cases of cheating and plagiarism affecting a student s grade. (ISEP Section IV-C) Students may appeal any decision of the teacher regarding cheating and plagiarism according to the methods established by the College. The penalty for cheating or plagiarism may range from a zero on the work to a failure in the course.", 
+            "title": "1.        ACADEMIC INTEGRITY**"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#2-attendance-and-lateness", 
+            "text": "Students are responsible for all material covered in classes and labs, whether or not they are present. Students have an obligation to arrive on time and to remain for the duration of scheduled classes, labs and activities. Students who disregard this obligation may be asked to leave the class, lab or activity. Students should refer to the Institutional Student Evaluation Policy (ISEP Section III-C) regarding attendance.", 
+            "title": "2.        ATTENDANCE AND LATENESS**"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#3-religious-holiday-observance", 
+            "text": "Class period(s) may be cancelled in order that the teacher can observe religious holidays. Any material missed as a result, will be made up during labs, class periods and alternate tutorial sessions.  Students, who intend to observe religious holidays, must inform their teachers in writing as prescribed in the ISEP Policy on Religious Observances (ISEP Section III-D) Students absent from classes because of observance of religious holidays will not be penalized. It must be emphasized, however, that this College policy should not be interpreted to mean that a student can receive credit for work not performed. It is the student s responsibility to fulfill the requirements of the alternative arrangement.", 
+            "title": "3.        RELIGIOUS HOLIDAY OBSERVANCE**"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#4-software", 
+            "text": "The Computer Science Department forbids the use of the computer labs it uses to make any copies of any software without the explicit authorization of the Department. Apart from any legal action that might arise from such unauthorized copying, the Computer Science Department reserves the right to discipline any student involved in such activity.  Students who borrow software from the College and fail to return it will be placed on the defaulter list and be subject to the appropriate penalties.  Viruses are programs that attach themselves to a computer system without the permission of those to whom the system belongs. They are deliberately written to be, at worst, harmful (e.g. destroying the contents of disks) and, at best, bothersome (e.g. disturbing the image shown on the screen). They can cause serious losses of time and effort for students, staff and faculty. Any student involved in the deliberate spreading of viruses is subject to the most severe penalties prescribed by College regulations, apart from any legal action that might arise from such acts.", 
+            "title": "4.        SOFTWARE**"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#5-literacy", 
+            "text": "The Computer Science Department recognizes that literacy in all its forms (read, written, spoken) is essential to our students in their careers.  Teachers may choose to incorporate a literacy component into the marking scheme for any piece of work. Teachers may use their discretion to insist that any piece of work submitted for credit is revised by the student if it is unsatisfactory with regard to literacy.  Teachers will inform all students in their courses of this policy at the beginning of each semester either by including it in the course description or otherwise.", 
+            "title": "5.        LITERACY**"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#6-cell-phones", 
+            "text": "The use of cell phones in all Computer Science lectures, labs and exams is prohibited.", 
+            "title": "6.        CELL PHONES**"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#7-portable-computers", 
+            "text": "The use of portable computers in all Computer Science lectures for purposes other than note-taking is prohibited.", 
+            "title": "7.        PORTABLE COMPUTERS**"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#8-student-conduct", 
+            "text": "Everyone has the right to a safe and non-violent environment. Students are obliged to conduct themselves as stated in the Student Code of Conduct and in the ISEP section on the roles and responsibilities of students. (ISEP section II-D)", 
+            "title": "8.        STUDENT CONDUCT**"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#9-intensive-course-conflicts", 
+            "text": "If a student is attending an intensive course, the student must inform the teacher, within the first two weeks of class, of the specific dates of any anticipated absences.", 
+            "title": "9.        INTENSIVE COURSE CONFLICTS**"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/outline/#10-isep", 
+            "text": "The Institutional Student Evaluation Policy (ISEP) is designed to promote equitable and effective evaluation of student learning and is therefore a crucial policy to read and understand. The policy describes the rights and obligations of students, faculty, departments, programs, and the College administration with regard to evaluation in all your courses, including grade reviews and resolution of academic grievance. The ISEP is available on the Dawson website.", 
+            "title": "10.        ISEP**"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/Week01/lab/warmup-dice-game/", 
+            "text": "Pass Line Casino Dice Game\n\n\nThe goal of this assignment is to reactivate your Java skills. You may use a console or GUI interface. In next week\u2019s labs I will sit with you and we will do a code review of your work.\n\n\nRules\n\n\nIn this game you roll the dice (called the come-out roll) and look at the total. If this total is equal to 7 or 11, then you win the amount of the bet. If the total is equal to 2, 3 or 12, then you lose the bet. Any other total of the dice becomes the \"point\", and you continue to roll the dice until you either (a) roll the point total again, in which case you win the amount of the bet, or (b) roll a total of 7, in which case you lose the amount of the bet. If the total of the dice is not 7 and not equal to the point, then you roll again, and continue to roll, until either condition (a) or (b) is met. Once the point has been determined, it does not change for subsequent rolls of the dice.\n\n\nThe game will begin by asking the user how much money they have to start with. The game will run until the player exits or the total money drops to zero. Each time the game is played ask the user for the amount they wish to bet. If they win then this amount is added to their total and if they loose it is subtracted from their total. After each game display whether they won or lost, how much total money they have and ask if they want to play again. If they do not want to play again then the program exits.", 
+            "title": "Warmup dice game"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/Week01/lab/warmup-dice-game/#pass-line-casino-dice-game", 
+            "text": "The goal of this assignment is to reactivate your Java skills. You may use a console or GUI interface. In next week\u2019s labs I will sit with you and we will do a code review of your work.", 
+            "title": "Pass Line Casino Dice Game"
+        }, 
+        {
+            "location": "/Software Dev Project (Java)/Week01/lab/warmup-dice-game/#rules", 
+            "text": "In this game you roll the dice (called the come-out roll) and look at the total. If this total is equal to 7 or 11, then you win the amount of the bet. If the total is equal to 2, 3 or 12, then you lose the bet. Any other total of the dice becomes the \"point\", and you continue to roll the dice until you either (a) roll the point total again, in which case you win the amount of the bet, or (b) roll a total of 7, in which case you lose the amount of the bet. If the total of the dice is not 7 and not equal to the point, then you roll again, and continue to roll, until either condition (a) or (b) is met. Once the point has been determined, it does not change for subsequent rolls of the dice.  The game will begin by asking the user how much money they have to start with. The game will run until the player exits or the total money drops to zero. Each time the game is played ask the user for the amount they wish to bet. If they win then this amount is added to their total and if they loose it is subtracted from their total. After each game display whether they won or lost, how much total money they have and ask if they want to play again. If they do not want to play again then the program exits.", 
+            "title": "Rules"
         }
     ]
 }

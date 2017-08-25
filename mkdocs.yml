@@ -9,6 +9,9 @@ theme: 'material'
 
 # Options
 extra:
+  palette:
+    primary: 'blue-grey'
+    accent: 'blue'
   font:
     text: 'Firacode'
     code: 'Firacode'

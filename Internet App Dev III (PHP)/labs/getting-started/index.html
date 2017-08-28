@@ -337,6 +337,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#create-the-shared-folder" title="Create the shared folder" class="md-nav__link">
+    Create the shared folder
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#get-your-ssh-keys" title="Get your ssh keys" class="md-nav__link">
     Get your ssh keys
   </a>
@@ -30496,6 +30503,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#create-the-shared-folder" title="Create the shared folder" class="md-nav__link">
+    Create the shared folder
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#get-your-ssh-keys" title="Get your ssh keys" class="md-nav__link">
     Get your ssh keys
   </a>
@@ -30599,9 +30613,9 @@ we can boot the virtual machine on the lab workstation and execute a
 basic PHP script.</p>
 <h2 id="create-the-homestead-folder">Create the Homestead folder<a class="headerlink" href="#create-the-homestead-folder" title="Permanent link">&para;</a></h2>
 <p>Copy the folder <code>S:\\CompSci\\524\\Homestead to your H: drive</code>. You should
-now have H:\Homestead directory with the same contents as
+now have <code>H:\\Homestead</code> directory with the same contents as
 <code>S:\\CompSci\\524\\Homestead</code>.</p>
-<p>**Create the shared folder</p>
+<h2 id="create-the-shared-folder">Create the shared folder<a class="headerlink" href="#create-the-shared-folder" title="Permanent link">&para;</a></h2>
 <p>One of the really nice features of Vagrant is how easy it is to get both
 the host system (Windows 10 machine) and the virtual machine (Ubuntu) to
 see and share the same directory.</p>
@@ -30633,13 +30647,13 @@ within PHPCode to match the lab setup:</p>
 <p>(spoiler: these are some of the labs and projects you’ll be working on
 this semester!)</p>
 <h2 id="get-your-ssh-keys">Get your ssh keys<a class="headerlink" href="#get-your-ssh-keys" title="Permanent link">&para;</a></h2>
-<p>Check if you already have a .ssh folder in your home directory (H: drive
-should be setup as your $HOME in the labs). If you have an .ssh
+<p>Check if you already have a .ssh folder in your home directory (<code>H:</code> drive
+should be setup as your <code>$HOME</code> in the labs). If you have an <code>.ssh</code>
 directory, you have already generated ssh keys (probably for git). If
 not:</p>
 <p>Open a Git Bash console in your H drive (right-click in Windows
 Explorer, Git Bash Here)</p>
-<p>Make sure you are in H: &gt; pwd</p>
+<p>Make sure you are in <code>H:</code> &gt; <code>pwd</code></p>
 <p>Run these commands:
 <div class="codehilite"><pre><span></span>$ mkdir -p .ssh <span class="o">&amp;&amp;</span> <span class="nb">cd</span> .ssh
 </pre></div>
@@ -30665,7 +30679,7 @@ Git Bash window in <code>H:\\Homestead</code>.</p>
 <p><div class="codehilite"><pre><span></span>$ vagrant ssh
 </pre></div>
 You are now in the VM!</p>
-<p><code>cd</code> to the Code directory <code>-&amp;gt</code>; you are now in the PHPCode shared folder
+<p><code>cd</code> to the <code>Code</code> directory; you are now in the PHPCode shared folder
 So the <code>H:/PHPCode</code> folder in Windows is the same as the
 <code>/home/vagrant/Code</code> folder in the VM.</p>
 <blockquote>
@@ -30700,7 +30714,7 @@ address is the one being used by you Vagrant VM 9and its NginX web
 server. Further down, you see that the sites are associated with
 different folders in VM; these folders are all in the shared
 <code>/home/vagrant/Code</code> folder (which is your <code>H:/PHPCode</code> folder)</p>
-<p>If you open the <code>lab0/index.php file</code>, you will a single line in the php
+<p>If you open tChe <code>lab0/index.php file</code>, you will a single line in the php
 tags <code>– phpinfo()</code> is the function that outputs the PHP configuration.</p>
 <p>NginX, the web server, is configured by default to return <code>index.html</code>,
 <code>index.html</code> directly, or interpret <code>index.php</code> through the PHP interpreter.

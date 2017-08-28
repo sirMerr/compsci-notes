@@ -22,10 +22,10 @@ basic PHP script.
 ## Create the Homestead folder
 
 Copy the folder `S:\\CompSci\\524\\Homestead to your H: drive`. You should
-now have H:\\Homestead directory with the same contents as
+now have `H:\\Homestead` directory with the same contents as
 `S:\\CompSci\\524\\Homestead`.
 
-**Create the shared folder
+## Create the shared folder
 
 One of the really nice features of Vagrant is how easy it is to get both
 the host system (Windows 10 machine) and the virtual machine (Ubuntu) to
@@ -52,15 +52,15 @@ this semester!)
 
 ## Get your ssh keys
 
-Check if you already have a .ssh folder in your home directory (H: drive
-should be setup as your $HOME in the labs). If you have an .ssh
+Check if you already have a .ssh folder in your home directory (`H:` drive
+should be setup as your `$HOME` in the labs). If you have an `.ssh`
 directory, you have already generated ssh keys (probably for git). If
 not:
 
 Open a Git Bash console in your H drive (right-click in Windows
 Explorer, Git Bash Here)
 
-Make sure you are in H: &gt; pwd
+Make sure you are in `H:` > `pwd`
 
 Run these commands:
 ```bash
@@ -102,7 +102,7 @@ $ vagrant ssh
 ```
 You are now in the VM!
 
-`cd` to the Code directory `-&gt`; you are now in the PHPCode shared folder
+`cd` to the `Code` directory; you are now in the PHPCode shared folder
 So the `H:/PHPCode` folder in Windows is the same as the
 `/home/vagrant/Code` folder in the VM.
 
@@ -148,7 +148,7 @@ server. Further down, you see that the sites are associated with
 different folders in VM; these folders are all in the shared
 `/home/vagrant/Code` folder (which is your `H:/PHPCode` folder)
 
-If you open the `lab0/index.php file`, you will a single line in the php
+If you open tChe `lab0/index.php file`, you will a single line in the php
 tags `– phpinfo()` is the function that outputs the PHP configuration.
 
 NginX, the web server, is configured by default to return `index.html`,
@@ -180,16 +180,16 @@ Notepad++ or Atom.
     conditional clause and the closing brace is always written on its
     own line.
 
-> E.g.:
->
-> if ($a != 2) {
->
->     $a = 2;
->
-> }
->
-> *(As an aside, this is also the* [*common Java style
-> *](https://google.github.io/styleguide/javaguide.html)*).*
+E.g.:
+```
+ if ($a != 2) {
+
+     $a = 2;
+
+ }
+```
+ *(As an aside, this is also the* [*common Java style
+ *](https://google.github.io/styleguide/javaguide.html)*).*
 
 ## Testing the PHP Script
 

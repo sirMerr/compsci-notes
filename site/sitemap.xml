@@ -3,7 +3,15 @@
 
     
     <url>
-     <loc>/</loc>
+     <loc>https://sirmerr.github.io/compsci-notes//</loc>
+     <lastmod>2017-08-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>https://sirmerr.github.io/compsci-notes//how-to-document/</loc>
      <lastmod>2017-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -12,7 +20,7 @@
     
         
     <url>
-     <loc>/Data and Communications/introduction/</loc>
+     <loc>https://sirmerr.github.io/compsci-notes//Data and Communications/introduction/</loc>
      <lastmod>2017-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -22,19 +30,19 @@
     
         
     <url>
-     <loc>/Internet App Dev III (PHP)/introduction/</loc>
+     <loc>https://sirmerr.github.io/compsci-notes//Internet App Dev III (PHP)/introduction/</loc>
      <lastmod>2017-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/Internet App Dev III (PHP)/outline/</loc>
+     <loc>https://sirmerr.github.io/compsci-notes//Internet App Dev III (PHP)/outline/</loc>
      <lastmod>2017-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc></loc>
+     <loc>https://sirmerr.github.io/compsci-notes/</loc>
      <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -44,7 +52,7 @@
     
         
     <url>
-     <loc>/Mobile Software Dev/introduction/</loc>
+     <loc>https://sirmerr.github.io/compsci-notes//Mobile Software Dev/introduction/</loc>
      <lastmod>2017-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -54,31 +62,31 @@
     
         
     <url>
-     <loc>/Software Dev Project (Java)/introduction/</loc>
+     <loc>https://sirmerr.github.io/compsci-notes//Software Dev Project (Java)/introduction/</loc>
      <lastmod>2017-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/Software Dev Project (Java)/jam-specifications/</loc>
+     <loc>https://sirmerr.github.io/compsci-notes//Software Dev Project (Java)/jam-specifications/</loc>
      <lastmod>2017-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/Software Dev Project (Java)/maven/</loc>
+     <loc>https://sirmerr.github.io/compsci-notes//Software Dev Project (Java)/maven/</loc>
      <lastmod>2017-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/Software Dev Project (Java)/outline/</loc>
+     <loc>https://sirmerr.github.io/compsci-notes//Software Dev Project (Java)/outline/</loc>
      <lastmod>2017-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc></loc>
+     <loc>https://sirmerr.github.io/compsci-notes/</loc>
      <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>

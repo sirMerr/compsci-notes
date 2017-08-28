@@ -1,7 +1,7 @@
 site_name: CompSci HQ
 site_description: 'Notes for Semester 5 of Computer Science at Dawson'
 site_author: 'Tiffany'
-site_url: ''
+site_url: 'https://sirmerr.github.io/compsci-notes/'
 site_favicon: 'images/favicon.ico'
 
 # Documentation and theme

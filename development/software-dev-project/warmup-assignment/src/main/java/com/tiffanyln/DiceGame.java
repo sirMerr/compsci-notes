@@ -3,9 +3,8 @@ package com.tiffanyln;
 import java.util.Scanner;
 
 public class DiceGame {
-    int bet = 0;
-    int money = 0;
     int points = 0;
+    User player;
 
     /**
      * Set default parameters
@@ -13,8 +12,7 @@ public class DiceGame {
      * @param bet
      */
     DiceGame(int money, int bet) {
-        this.money = money;
-        this.bet = bet;
+        this.player = new User(money, bet);
     }
 
     /**
@@ -23,6 +21,9 @@ public class DiceGame {
      */
     void rollDice() {
         int roll = randomDicesValue();
+
+        int money = this.player.money;
+        int bet = this.player.bet;
 
         System.out.println("\nYou have " + money + "$ and you bet " + bet + "$");
         System.out.println("Roll: " + roll);
@@ -104,12 +105,12 @@ public class DiceGame {
         System.out.println("Excellent! How much will you bet?");
         int bet = scan.nextInt();
 
-        DiceGame user = new DiceGame(money, bet);
+        DiceGame game = new DiceGame(money,bet);
 
         Boolean play = true;
 
         while (play) {
-            user.rollDice();
+            game.rollDice();
             System.out.println("\nAlright, do you want to play again? Enter 'exit' if not.");
             String in = scan.next();
 
@@ -117,7 +118,7 @@ public class DiceGame {
                 play = false;
             } else {
                 System.out.println("\nGreat! How much do you want to bet?");
-                user.bet = scan.nextInt();
+                game.player.bet = scan.nextInt();
             }
         }
     }

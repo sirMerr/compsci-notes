@@ -10,7 +10,7 @@
         <meta name="description" content="Notes for Semester 5 of Computer Science at Dawson">
       
       
-        <link rel="canonical" href="https://sirmerr.github.io/compsci-notes/Internet App Dev III (PHP)/introduction/">
+        <link rel="canonical" href="https://sirmerr.github.io/compsci-notes/Internet App Dev III/introduction/">
       
       
         <meta name="author" content="Tiffany">
@@ -81,7 +81,7 @@
             
               
                 <span class="md-header-nav__parent">
-                  Internet App Dev III (PHP)
+                  Internet App Dev III
                 </span>
               
             
@@ -212,11 +212,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
-      Internet App Dev III (PHP)
+      Internet App Dev III
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-4">
-        Internet App Dev III (PHP)
+        Internet App Dev III
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -551,15 +551,27 @@
           
 
 
+  <li class="md-nav__item">
+    <a href="../recall-variables/" title="Recall variables" class="md-nav__link">
+      Recall variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
     
-    <label class="md-nav__link" for="nav-4-3">
+    <label class="md-nav__link" for="nav-4-4">
       Labs
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-3">
+      <label class="md-nav__title" for="nav-4-4">
         Labs
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -633,11 +645,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
     <label class="md-nav__link" for="nav-6">
-      Software Dev Project (Java)
+      Software Dev Project
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-6">
-        Software Dev Project (Java)
+        Software Dev Project
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -648,7 +660,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Software Dev Project (Java)/introduction/" title="Introduction" class="md-nav__link">
+    <a href="../../Software Dev Project/introduction/" title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -660,7 +672,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Software Dev Project (Java)/jam-specifications/" title="Jam specifications" class="md-nav__link">
+    <a href="../../Software Dev Project/jam-specifications/" title="Jam specifications" class="md-nav__link">
       Jam specifications
     </a>
   </li>
@@ -672,7 +684,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Software Dev Project (Java)/maven/" title="Maven" class="md-nav__link">
+    <a href="../../Software Dev Project/maven/" title="Maven" class="md-nav__link">
       Maven
     </a>
   </li>
@@ -684,7 +696,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Software Dev Project (Java)/outline/" title="Outline" class="md-nav__link">
+    <a href="../../Software Dev Project/outline/" title="Outline" class="md-nav__link">
       Outline
     </a>
   </li>
@@ -715,7 +727,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Software Dev Project (Java)/labs/warmup-dice-game/" title="Warmup dice game" class="md-nav__link">
+    <a href="../../Software Dev Project/labs/warmup-dice-game/" title="Warmup dice game" class="md-nav__link">
       Warmup dice game
     </a>
   </li>
@@ -1099,7 +1111,16 @@
 <p>This will all be completely headless (no GUI).</p>
 <h2 id="hello-php">Hello PHP<a class="headerlink" href="#hello-php" title="Permanent link">&para;</a></h2>
 <h4 id="example-1-html-php-embedded-indexphp">example 1 - <small>HTML &amp; PHP embedded index.php </small><a class="headerlink" href="#example-1-html-php-embedded-indexphp" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><span class="x">&lt;!DOCTYPE html&gt;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="x">&lt;!DOCTYPE html&gt;</span>
 <span class="x">&lt;html&gt;</span>
 <span class="x">    &lt;head&gt;</span>
 <span class="x">    &lt;/head&gt;</span>
@@ -1110,13 +1131,18 @@
 <span class="x">        &lt;/p&gt;</span>
 <span class="x">    &lt;/body&gt;</span>
 </pre></div>
+</td></tr></table>
 
 <h4 id="example-2-only-php">example 2 - <small>Only PHP</small><a class="headerlink" href="#example-2-only-php" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span> 
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span> 
     <span class="k">echo</span> <span class="s2">&quot;&lt;!DOCTYPE html&gt;&quot;</span><span class="p">;</span>
     <span class="k">echo</span> <span class="s2">&quot;&lt;html&gt;&quot;</span><span class="p">;</span>
 <span class="cp">?&gt;</span><span class="x"></span>
 </pre></div>
+</td></tr></table>
 
 <h2 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h2>
 <ul>
@@ -1136,7 +1162,14 @@
 <li>case sensitive (<strong>except functions</strong>)</li>
 </ul>
 <h4 id="example-3-using-variables">example 3 - <small>Using Variables</small><a class="headerlink" href="#example-3-using-variables" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span> 
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span> 
     <span class="nv">$quantity</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
     <span class="nv">$price</span> <span class="o">=</span> <span class="mf">119.50</span><span class="p">;</span>
     <span class="nv">$tax</span> <span class="o">=</span> <span class="mf">0.01</span><span class="p">;</span>
@@ -1145,6 +1178,7 @@
     <span class="k">echo</span> <span class="s2">&quot;&lt;p&gt;The total is &quot;</span><span class="o">.</span><span class="nv">$total</span><span class="o">.</span><span class="s2">&quot;&lt;/p&gt;&quot;</span>
 <span class="cp">?&gt;</span><span class="x"></span>
 </pre></div>
+</td></tr></table>
 
 <h2 id="operators">Operators<a class="headerlink" href="#operators" title="Permanent link">&para;</a></h2>
 <ul>
@@ -1200,9 +1234,11 @@
 </ul>
 <h3 id="numeric-string"><code>numeric</code> &rarr; <code>string</code>:<a class="headerlink" href="#numeric-string" title="Permanent link">&para;</a></h3>
 <h4 id="example-4-substr">example 4: substr()<a class="headerlink" href="#example-4-substr" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><span class="x">$num = 12345 * 100;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="x">$num = 12345 * 100;</span>
 <span class="x">echo substr($num,3,1)</span>
 </pre></div>
+</td></tr></table>
 
 <p><code>substr(var,startIndex,lengthWanted)</code></p>
 <ul>
@@ -1218,7 +1254,13 @@
 - no . or E and fits in <code>PHP_INT_MAX</code> =&gt; converts to <code>int</code>
 - otherwise <code>float</code></p>
 <h4 id="example-5-number-string">example 5: number + string<a class="headerlink" href="#example-5-number-string" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><span class="x">// + is arithmetic operator</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="x">// + is arithmetic operator</span>
 <span class="x">// &quot;10.5&quot; converted</span>
 <span class="x">$num = 1 + &quot;10.5&quot;;      // = 11.5</span>
 <span class="x">$num = 1 + &quot;1.3e3&quot;;     // = 1301 float</span>
@@ -1226,10 +1268,12 @@
 <span class="x">$num = 1 + &quot;10pigs&quot;;    // = 11</span>
 <span class="x">$num = 1 + &quot;10pigs10&quot;;  // = 11</span>
 </pre></div>
+</td></tr></table>
 
 <p>String conersion when treating a variable as a string
-<div class="codehilite"><pre><span></span><span class="x">echo $num, // string parameter</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="x">echo $num, // string parameter</span>
 </pre></div>
+</td></tr></table>
 numeric to string
 * boolean to string
     - true TRUE is converted to "1"
@@ -1257,11 +1301,15 @@ numeric to string
 </li>
 </ol>
 <h4 id="example-6-single-vs-double-quotes">example 6: single vs double quotes<a class="headerlink" href="#example-6-single-vs-double-quotes" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><span class="x">$user = &#39;Jaya&#39;;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="x">$user = &#39;Jaya&#39;;</span>
 <span class="x">echo &#39;Hi $user&#39;; // Hi $user</span>
 <span class="x">echo &quot;Hi $user&quot;; // Hi Jaya</span>
 <span class="x">echo &#39;Hi&#39;, $user;</span>
 </pre></div>
+</td></tr></table>
 
 <h3 id="variable-rules">Variable rules<a class="headerlink" href="#variable-rules" title="Permanent link">&para;</a></h3>
 <ul>
@@ -1272,7 +1320,13 @@ numeric to string
 </li>
 </ul>
 <h4 id="example-7-uninitialialized-variable-behaviour">example 7: uninitialialized variable behaviour<a class="headerlink" href="#example-7-uninitialialized-variable-behaviour" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><span class="x">if ($test); // $test not initialied then FALSE</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="x">if ($test); // $test not initialied then FALSE</span>
 
 <span class="x">$num = 1 + $test // numeric is 0</span>
 
@@ -1280,9 +1334,27 @@ numeric to string
 
 <span class="x">$test[0] // array is empty array</span>
 </pre></div>
+</td></tr></table>
 
 <h4 id="example-8-initialized-variable-behaviour">example 8: initialized variable behaviour<a class="headerlink" href="#example-8-initialized-variable-behaviour" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><span class="x">$juice = &#39;apple&#39;;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="x">$juice = &#39;apple&#39;;</span>
 <span class="x">$beverage = &#39;juice&#39;;</span>
 <span class="x">echo &quot;I drank $juice juice&quot;; // I drank apple juice</span>
 
@@ -1301,6 +1373,7 @@ numeric to string
 <span class="x">echo &quot;I drank ${$beverage}s&quot; // I drank apples</span>
 <span class="x">echo &quot;I drank $$beverage&quot; // I drank apple</span>
 </pre></div>
+</td></tr></table>
 
 <h3 id="doc">DOC<a class="headerlink" href="#doc" title="Permanent link">&para;</a></h3>
 <ul>
@@ -1310,20 +1383,30 @@ numeric to string
 <li>NOWDOC &rarr; long single quoted string</li>
 </ul>
 <h4 id="example-9-doc">example 9: DOC<a class="headerlink" href="#example-9-doc" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><span class="x">$str = &lt;&lt;&lt; DOC // name the string</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="x">$str = &lt;&lt;&lt; DOC // name the string</span>
 <span class="x">    --------\t // string content after</span>
 <span class="x">    --------\n // name of the string</span>
 <span class="x">    --stuff-</span>
 <span class="x">DOC; // has to be separate line alone</span>
 <span class="x">// end with name of Heredoc</span>
 </pre></div>
+</td></tr></table>
 
 <h4 id="example-10-doc-with-single-quotes">example 10: DOC with single quotes<a class="headerlink" href="#example-10-doc-with-single-quotes" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><span class="x">$str = &lt;&lt;&lt;&#39;DOC&#39; // NOWDOC has single quotes</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="x">$str = &lt;&lt;&lt;&#39;DOC&#39; // NOWDOC has single quotes</span>
 <span class="x">    ----</span>
 <span class="x">    ----</span>
 <span class="x">DOC;</span>
 </pre></div>
+</td></tr></table>
 
 <h3 id="manipulating-string">Manipulating string<a class="headerlink" href="#manipulating-string" title="Permanent link">&para;</a></h3>
 <ul>
@@ -1351,7 +1434,17 @@ numeric to string
 <li><code>===</code>, <code>!==</code> &rarr; identical</li>
 </ul>
 <h4 id="example-11">example 11<a class="headerlink" href="#example-11" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><span class="x">&#39;A54321&#39; &gt; &#39;5670X&#39; // TRUE</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="x">&#39;A54321&#39; &gt; &#39;5670X&#39; // TRUE</span>
 <span class="x">// both have non-numeric</span>
 <span class="x">// compare with dictionary order</span>
 
@@ -1363,6 +1456,7 @@ numeric to string
 
 <span class="x">&#39;6cards&#39; &gt; 55 // type juggling =&gt; FALSE</span>
 </pre></div>
+</td></tr></table>
                 
                   
                 

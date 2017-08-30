@@ -22,25 +22,22 @@ public class DiceGame {
     void rollDice() {
         int roll = randomDicesValue();
 
-        int money = this.player.money;
-        int bet = this.player.bet;
-
-        System.out.println("\nYou have " + money + "$ and you bet " + bet + "$");
+        System.out.println("\nYou have " + this.player.money + "$ and you bet " + this.player.bet + "$");
         System.out.println("Roll: " + roll);
         if (points == 0) {
             switch (roll) {
                 case 7:
                 case 11:
                     System.out.println("You win!");
-                    money += bet;
-                    System.out.println("You now have " + money + "$");
+                    this.player.money += this.player.bet;
+                    System.out.println("You now have " + this.player.money + "$");
                     break;
                 case 2:
                 case 3:
                 case 12:
                     System.out.println("You Lose!");
-                    money -= bet;
-                    System.out.println("You now have " + money + "$");
+                    this.player.money -= this.player.bet;
+                    System.out.println("You now have " + this.player.money + "$");
                     break;
                 default:
                     System.out.println("Adding to Points!");
@@ -52,12 +49,12 @@ public class DiceGame {
         } else {
             if (roll == points) {
                 System.out.println("You got your points!");
-                money += bet;
-                System.out.println("You now have " + money + "$");
+                this.player.money += this.player.bet;
+                System.out.println("You now have " + this.player.money + "$");
             } else if (roll == 7) {
                 System.out.println("You got 7! You lose :(");
-                money -= bet;
-                System.out.println("You now have " + money + "$");
+                this.player.money -= this.player.bet;
+                System.out.println("You now have " + this.player.money + "$");
             } else {
                 System.out.println("You didn't get your points nor 7, let's go again!");
                 rollDice();
@@ -114,7 +111,7 @@ public class DiceGame {
             System.out.println("\nAlright, do you want to play again? Enter 'exit' if not.");
             String in = scan.next();
 
-            if (in == "exit") {
+            if (in.matches("exit")) {
                 play = false;
             } else {
                 System.out.println("\nGreat! How much do you want to bet?");

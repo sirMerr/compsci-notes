@@ -7,11 +7,6 @@ public class DiceGame {
     int money = 0;
     int points = 0;
 
-
-    public static void main(String[] args) {
-        startGame();
-    }
-
     /**
      * Set default parameters
      * @param money
@@ -125,5 +120,9 @@ public class DiceGame {
                 user.bet = scan.nextInt();
             }
         }
+    }
+
+    public static void main(String[] args) {
+        startGame();
     }
 }

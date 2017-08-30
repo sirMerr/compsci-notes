@@ -10,7 +10,7 @@
         <meta name="description" content="Notes for Semester 5 of Computer Science at Dawson">
       
       
-        <link rel="canonical" href="https://sirmerr.github.io/compsci-notes/Software Dev Project (Java)/maven/">
+        <link rel="canonical" href="https://sirmerr.github.io/compsci-notes/Software Dev Project/maven/">
       
       
         <meta name="author" content="Tiffany">
@@ -81,7 +81,7 @@
             
               
                 <span class="md-header-nav__parent">
-                  Software Dev Project (Java)
+                  Software Dev Project
                 </span>
               
             
@@ -210,11 +210,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
-      Internet App Dev III (PHP)
+      Internet App Dev III
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-4">
-        Internet App Dev III (PHP)
+        Internet App Dev III
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -225,7 +225,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Internet App Dev III (PHP)/introduction/" title="Introduction" class="md-nav__link">
+    <a href="../../Internet App Dev III/introduction/" title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -237,8 +237,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Internet App Dev III (PHP)/outline/" title="Outline" class="md-nav__link">
+    <a href="../../Internet App Dev III/outline/" title="Outline" class="md-nav__link">
       Outline
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet App Dev III/recall-variables/" title="Recall variables" class="md-nav__link">
+      Recall variables
     </a>
   </li>
 
@@ -250,13 +262,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
     
-    <label class="md-nav__link" for="nav-4-3">
+    <label class="md-nav__link" for="nav-4-4">
       Labs
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-3">
+      <label class="md-nav__title" for="nav-4-4">
         Labs
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -268,7 +280,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Internet App Dev III (PHP)/labs/getting-started/" title="Getting started" class="md-nav__link">
+    <a href="../../Internet App Dev III/labs/getting-started/" title="Getting started" class="md-nav__link">
       Getting started
     </a>
   </li>
@@ -332,11 +344,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
     
     <label class="md-nav__link" for="nav-6">
-      Software Dev Project (Java)
+      Software Dev Project
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-6">
-        Software Dev Project (Java)
+        Software Dev Project
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -750,7 +762,15 @@ Maven is a standalone java application.</p>
 <li>Projects can be used in different IDEs </li>
 </ul>
 <h2 id="standard-project-directory-layout">Standard Project Directory Layout<a class="headerlink" href="#standard-project-directory-layout" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>-src
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>-src
   -main
     -java
     -resources
@@ -760,6 +780,7 @@ Maven is a standalone java application.</p>
     -resources
 -target
 </pre></div>
+</td></tr></table>
 
 <ul>
 <li><code>src</code><ul>
@@ -884,7 +905,181 @@ Phases are made up of goals</p>
 </li>
 </ul>
 <h2 id="example-pom">Example POM<a class="headerlink" href="#example-pom" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
 <span class="nt">&lt;project</span> <span class="na">xmlns=</span><span class="s">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
          <span class="na">xsi:schemaLocation=</span><span class="s">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span><span class="nt">&gt;</span>
 
@@ -1060,6 +1255,7 @@ Phases are made up of goals</p>
     <span class="nt">&lt;/build&gt;</span>
 <span class="nt">&lt;/project&gt;</span>
 </pre></div>
+</td></tr></table>
                 
                   
                 

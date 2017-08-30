@@ -10,7 +10,7 @@
         <meta name="description" content="Notes for Semester 5 of Computer Science at Dawson">
       
       
-        <link rel="canonical" href="https://sirmerr.github.io/compsci-notes/Internet App Dev III (PHP)/labs/getting-started/">
+        <link rel="canonical" href="https://sirmerr.github.io/compsci-notes/Internet App Dev III/labs/getting-started/">
       
       
         <meta name="author" content="Tiffany">
@@ -81,7 +81,7 @@
             
               
                 <span class="md-header-nav__parent">
-                  Internet App Dev III (PHP)
+                  Internet App Dev III
                 </span>
               
                 <span class="md-header-nav__parent">
@@ -216,11 +216,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
-      Internet App Dev III (PHP)
+      Internet App Dev III
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-4">
-        Internet App Dev III (PHP)
+        Internet App Dev III
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -253,18 +253,30 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../../recall-variables/" title="Recall variables" class="md-nav__link">
+      Recall variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4" checked>
     
-    <label class="md-nav__link" for="nav-4-3">
+    <label class="md-nav__link" for="nav-4-4">
       Labs
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-3">
+      <label class="md-nav__title" for="nav-4-4">
         Labs
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -458,11 +470,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
     <label class="md-nav__link" for="nav-6">
-      Software Dev Project (Java)
+      Software Dev Project
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-6">
-        Software Dev Project (Java)
+        Software Dev Project
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -473,7 +485,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Software Dev Project (Java)/introduction/" title="Introduction" class="md-nav__link">
+    <a href="../../../Software Dev Project/introduction/" title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -485,7 +497,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Software Dev Project (Java)/jam-specifications/" title="Jam specifications" class="md-nav__link">
+    <a href="../../../Software Dev Project/jam-specifications/" title="Jam specifications" class="md-nav__link">
       Jam specifications
     </a>
   </li>
@@ -497,7 +509,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Software Dev Project (Java)/maven/" title="Maven" class="md-nav__link">
+    <a href="../../../Software Dev Project/maven/" title="Maven" class="md-nav__link">
       Maven
     </a>
   </li>
@@ -509,7 +521,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Software Dev Project (Java)/outline/" title="Outline" class="md-nav__link">
+    <a href="../../../Software Dev Project/outline/" title="Outline" class="md-nav__link">
       Outline
     </a>
   </li>
@@ -540,7 +552,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Software Dev Project (Java)/labs/warmup-dice-game/" title="Warmup dice game" class="md-nav__link">
+    <a href="../../../Software Dev Project/labs/warmup-dice-game/" title="Warmup dice game" class="md-nav__link">
       Warmup dice game
     </a>
   </li>
@@ -743,10 +755,12 @@ not:</p>
 Explorer, Git Bash Here)</p>
 <p>Make sure you are in <code>H:</code> &gt; <code>pwd</code></p>
 <p>Run these commands:
-<div class="codehilite"><pre><span></span>$ mkdir -p .ssh <span class="o">&amp;&amp;</span> <span class="nb">cd</span> .ssh
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ mkdir -p .ssh <span class="o">&amp;&amp;</span> <span class="nb">cd</span> .ssh
 </pre></div>
-<div class="codehilite"><pre><span></span>$ ssh-keygen -t rsa -b <span class="m">4096</span> -C <span class="s2">&quot;youremail@address.here&quot;</span>
+</td></tr></table>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ ssh-keygen -t rsa -b <span class="m">4096</span> -C <span class="s2">&quot;youremail@address.here&quot;</span>
 </pre></div>
+</td></tr></table>
 Press enter to save the key in <code>/h/.ssh/id\_rsa</code></p>
 <h2 id="boot-the-virtual-machine-configured-for-the-php-course">Boot the virtual machine configured for the PHP course<a class="headerlink" href="#boot-the-virtual-machine-configured-for-the-php-course" title="Permanent link">&para;</a></h2>
 <p>You will be doing this every lab:</p>
@@ -754,8 +768,9 @@ Press enter to save the key in <code>/h/.ssh/id\_rsa</code></p>
 opens a Bash shell emulator on your Window system.</p>
 <p>Make sure you are in <code>/h/Homestead</code></p>
 <p>Run this command:
-<div class="codehilite"><pre><span></span>$ vagrant up
-</pre></div></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ vagrant up
+</pre></div>
+</td></tr></table></p>
 <p>When this command finishes (a few minutes) your Virtual Machine is up
 and running!!</p>
 <h2 id="ssh-into-the-virtual-machine">SSH into the virtual machine<a class="headerlink" href="#ssh-into-the-virtual-machine" title="Permanent link">&para;</a></h2>
@@ -764,8 +779,9 @@ to Linux. Yay Command line only</p>
 <p>Whenever you want to log into the booted VM (e.g., to check the
 configuration or access the database), type in this command from your
 Git Bash window in <code>H:\\Homestead</code>.</p>
-<p><div class="codehilite"><pre><span></span>$ vagrant ssh
+<p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ vagrant ssh
 </pre></div>
+</td></tr></table>
 You are now in the VM!</p>
 <p><code>cd</code> to the <code>Code</code> directory; you are now in the PHPCode shared folder
 So the <code>H:/PHPCode</code> folder in Windows is the same as the
@@ -838,12 +854,17 @@ Notepad++ or Atom.</p>
 </li>
 </ul>
 <p>E.g.:
-<div class="codehilite"><pre><span></span> if ($a != 2) {
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span> if ($a != 2) {
 
      $a = 2;
 
  }
 </pre></div>
+</td></tr></table>
  <em>(As an aside, this is also the</em> <a href="https://google.github.io/styleguide/javaguide.html">*common Java style
  *</a><em>).</em></p>
 <h2 id="testing-the-php-script">Testing the PHP Script<a class="headerlink" href="#testing-the-php-script" title="Permanent link">&para;</a></h2>
@@ -914,7 +935,17 @@ below.</p>
 <p>Add to the end:</p>
 </li>
 </ol>
-<p><div class="codehilite"><pre><span></span>192.168.10.10 dawson.app
+<p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>192.168.10.10 dawson.app
 
 192.168.10.10 news.app
 
@@ -926,6 +957,7 @@ below.</p>
 
 192.168.10.10 badresto.app
 </pre></div>
+</td></tr></table>
 1.  get your ssh keys, if required. Follow the steps in the lab above to
     check if they exist in the $HOME directory</p>
 <ol>
@@ -941,16 +973,21 @@ below.</p>
 </li>
 <li>
 <p>run the following commands:
-<div class="codehilite"><pre><span></span>$ vagrant box add laravel/homestead
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ vagrant box add laravel/homestead
 </pre></div>
-<div class="codehilite"><pre><span></span>$ git clone https://github.com/laravel/homestead.git Homestead
+</td></tr></table>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git clone https://github.com/laravel/homestead.git Homestead
 </pre></div>
-<div class="codehilite"><pre><span></span>$ <span class="nb">cd</span> Homestead
+</td></tr></table>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">cd</span> Homestead
 </pre></div>
-<div class="codehilite"><pre><span></span>$ git checkout v5.4.0
+</td></tr></table>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git checkout v5.4.0
 </pre></div>
-<div class="codehilite"><pre><span></span>$ bash init.sh
-</pre></div></p>
+</td></tr></table>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ bash init.sh
+</pre></div>
+</td></tr></table></p>
 </li>
 <li>edit the <code>Homestead/Homestead.yaml</code> file (look at the one you have in
 your <code>H:</code> drive)</li>
@@ -969,10 +1006,13 @@ your <code>H:</code> drive)</li>
 <ul>
 <li>if you added the sites to the <code>etc/hosts</code> files, also add them to
     the <code>Homestead.yaml</code>. For example:
-<div class="codehilite"><pre><span></span>sites:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>sites:
 
 - map: labs.app
-</pre></div></li>
+</pre></div>
+</td></tr></table></li>
 </ul>
 <p>to: <code>/home/vagrant/Code/labs</code></p>
 <ol>
@@ -1019,7 +1059,7 @@ your <code>H:</code> drive)</li>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../outline/" title="Outline" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../recall-variables/" title="Recall variables" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1028,7 +1068,7 @@ your <code>H:</code> drive)</li>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Outline
+                Recall variables
               </span>
             </div>
           </a>

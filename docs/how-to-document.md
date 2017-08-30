@@ -88,7 +88,7 @@ extra:
 # Extensions
 markdown_extensions:
   - admonition
-  - codehilite(guess_lang=false)
+  - codehilite(guess_lang=false, linenums=true)
   - toc(permalink=true)
   - pymdownx.arithmatex
   - pymdownx.betterem(smart_enable=all)

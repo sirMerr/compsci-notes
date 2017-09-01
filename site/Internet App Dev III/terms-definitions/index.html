@@ -249,6 +249,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../references/" title="References" class="md-nav__link">
+      References
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -394,6 +406,27 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#switch-statement" title="switch statement" class="md-nav__link">
+    switch statement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ternary-operators" title="Ternary operators" class="md-nav__link">
+    Ternary operators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#including-multiple-files" title="Including multiple files" class="md-nav__link">
+    Including multiple files
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -410,13 +443,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
     
-    <label class="md-nav__link" for="nav-4-4">
+    <label class="md-nav__link" for="nav-4-5">
       Labs
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-4">
+      <label class="md-nav__title" for="nav-4-5">
         Labs
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -727,6 +760,27 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#switch-statement" title="switch statement" class="md-nav__link">
+    switch statement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ternary-operators" title="Ternary operators" class="md-nav__link">
+    Ternary operators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#including-multiple-files" title="Including multiple files" class="md-nav__link">
+    Including multiple files
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -769,12 +823,13 @@
 </td></tr></table>
 
 <h3 id="true">TRUE<a class="headerlink" href="#true" title="Permanent link">&para;</a></h3>
-<p><code>TRUE</code>
-* other than 0 (numeric, string <code>0</code>)
-* not ""
-*  not emptyy array
-* not NULL
-* case insensitive =&gt; TRUE, true, TrUe
+<p><code>TRUE</code></p>
+<ul>
+<li>other than 0 (numeric, string <code>0</code>)</li>
+<li>not ""</li>
+<li>not emptyy array</li>
+<li>not NULL</li>
+<li>case insensitive =&gt; TRUE, true, TrUe
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -797,7 +852,8 @@
 <span class="x">    echo &quot;not there&quot;;</span>
 <span class="x">}</span>
 </pre></div>
-</td></tr></table></p>
+</td></tr></table></li>
+</ul>
 <h4 id="strpos">strpos<a class="headerlink" href="#strpos" title="Permanent link">&para;</a></h4>
 <p>Returns index where found of FALSE
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="x">mixed strpos ( string $haystack , mixed $needle [, int $offset = 0 ] )</span>
@@ -953,7 +1009,7 @@ Example:
 <span class="x">    echo $value;</span>
 <span class="x">}</span>
 
-<span class="x">echo $ley.&#39;&#39;.$value;</span>
+<span class="x">echo $car.&#39;&#39;.$value;</span>
 </pre></div>
 </td></tr></table></p>
 <h3 id="arrays-and-strings">Arrays and Strings<a class="headerlink" href="#arrays-and-strings" title="Permanent link">&para;</a></h3>
@@ -982,6 +1038,131 @@ Example:
 </td></tr></table></p>
 <p>Returns an array of strings, each of which is a substring of string formed by splitting it on boundaries formed by the string delimiter.</p>
 <p><a href="http://php.net/manual/en/function.explode.php">http://php.net/manual/en/function.explode.php</a></p>
+<h2 id="switch-statement">switch statement<a class="headerlink" href="#switch-statement" title="Permanent link">&para;</a></h2>
+<ul>
+<li>comparison is loose <code>==</code><ul>
+<li>not <code>===</code></li>
+</ul>
+</li>
+<li>supports fallthrough</li>
+<li>case expression must evaluate to <code>int</code>/<code>float</code>/<code>string</code>/<code>boolean</code></li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="nv">$mixed</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">switch</span><span class="p">(</span><span class="nv">$mixed</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="k">NULL</span><span class="o">:</span> 
+        <span class="k">echo</span> <span class="s1">&#39;NULL&#39;</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mi">0</span><span class="o">:</span>
+        <span class="k">echo</span> <span class="s1">&#39;0&#39;</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">default</span> <span class="k">echo</span> <span class="s1">&#39;other&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+</td></tr></table>
+
+<p>You could match on conditions, replacing if/else/ifelse like this:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="c1">// this is terrible code dont do it</span>
+<span class="k">switch</span><span class="p">(</span><span class="k">TRUE</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="p">(</span><span class="nv">$mixed</span> <span class="o">===</span> <span class="k">NULL</span><span class="p">)</span><span class="o">:</span> 
+        <span class="k">echo</span> <span class="s1">&#39;NULL&#39;</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="p">(</span><span class="nv">$mixed</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span><span class="o">:</span>
+        <span class="k">echo</span> <span class="s1">&#39;0&#39;</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">default</span> <span class="k">echo</span> <span class="s1">&#39;other&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+</td></tr></table></p>
+<h2 id="ternary-operators">Ternary operators<a class="headerlink" href="#ternary-operators" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Don't nest them plox 🙏</p>
+</div>
+<p>left to right associativity not right to left</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="x">echo (true ? &#39;true&#39;: false ? &#39;f&#39;: &#39;t&#39;);</span>
+<span class="x">// f</span>
+</pre></div>
+</td></tr></table>
+
+<p>The first one feeds into the second one</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="nv">$arg</span> <span class="o">=</span> <span class="s1">&#39;T&#39;</span>
+
+<span class="nv">$vehicle</span> <span class="o">=</span> 
+    <span class="p">(</span><span class="nv">$arg</span> <span class="o">==</span> <span class="s1">&#39;B&#39;</span><span class="p">)</span><span class="o">?</span><span class="s1">&#39;bus&#39;</span><span class="o">:</span>
+    <span class="p">(</span><span class="nv">$arg</span> <span class="o">==</span> <span class="s1">&#39;T&#39;</span><span class="p">)</span><span class="o">?</span><span class="s1">&#39;train&#39;</span><span class="o">:</span>
+    <span class="p">(</span><span class="nv">$arg</span> <span class="o">==</span> <span class="s1">&#39;S&#39;</span><span class="p">)</span><span class="o">?</span><span class="s1">&#39;kpop&#39;</span><span class="o">:</span>
+    <span class="s1">&#39;feet&#39;</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+<span class="x">// kpop</span>
+</pre></div>
+</td></tr></table>
+
+<h2 id="including-multiple-files">Including multiple files<a class="headerlink" href="#including-multiple-files" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Break up long scripts</li>
+<li>Separate reusable<ul>
+<li><html> template code</li>
+<li>functions/class</li>
+<li>common variables</li>
+</ul>
+</li>
+</ul>
+<p>4 functions</p>
+<ul>
+<li><code>include ('filename.php')</code><ul>
+<li>Looks for file if doesnt find, no errors</li>
+</ul>
+</li>
+<li><code>include_once</code><ul>
+<li>Ensures the file wasn't already included</li>
+</ul>
+</li>
+<li><code>require</code><ul>
+<li>like include except error</li>
+</ul>
+</li>
+<li><code>require_once</code><ul>
+<li>copy paste file contents in that place</li>
+</ul>
+</li>
+</ul>
                 
                   
                 
@@ -1000,7 +1181,7 @@ Example:
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../outline/" title="Outline" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../references/" title="References" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1009,7 +1190,7 @@ Example:
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Outline
+                References
               </span>
             </div>
           </a>

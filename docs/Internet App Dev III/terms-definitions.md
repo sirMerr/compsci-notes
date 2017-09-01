@@ -1,5 +1,6 @@
 ---
 date: 'Week 2 / August 30, 2017'
+date2: `September 1st, 2017 (since switch)`
 ---
 - case sensitive
     - `$this`
@@ -20,6 +21,7 @@ if (condition) {
 
 ### TRUE
 `TRUE`
+
 * other than 0 (numeric, string `0`)
 * not ""
 *  not emptyy array
@@ -157,7 +159,7 @@ foreach($cars as $value) {
     echo $value;
 }
 
-echo $ley.''.$value;
+echo $car.''.$value;
 ```
 
 ### Arrays and Strings
@@ -181,3 +183,86 @@ array explode ( string $delimiter , string $string [, int $limit = PHP_INT_MAX ]
 Returns an array of strings, each of which is a substring of string formed by splitting it on boundaries formed by the string delimiter.
 
 http://php.net/manual/en/function.explode.php
+
+
+## switch statement
+- comparison is loose `==`
+    - not `===`
+- supports fallthrough
+- case expression must evaluate to `int`/`float`/`string`/`boolean`
+
+```php
+<?php
+$mixed = 0;
+switch($mixed) {
+    case NULL: 
+        echo 'NULL';
+        break;
+    case 0:
+        echo '0';
+        break;
+    default echo 'other';
+}
+?>
+```
+
+You could match on conditions, replacing if/else/ifelse like this:
+```php
+<?php
+// this is terrible code dont do it
+switch(TRUE) {
+    case ($mixed === NULL): 
+        echo 'NULL';
+        break;
+    case ($mixed === 0):
+        echo '0';
+        break;
+    default echo 'other';
+}
+?>
+```
+
+## Ternary operators
+
+!!! warning
+    Don't nest them plox 🙏
+
+left to right associativity not right to left
+
+```php
+echo (true ? 'true': false ? 'f': 't');
+// f
+```
+
+The first one feeds into the second one
+
+```php
+<?php
+$arg = 'T'
+
+$vehicle = 
+    ($arg == 'B')?'bus':
+    ($arg == 'T')?'train':
+    ($arg == 'S')?'kpop':
+    'feet'
+?>
+// kpop
+```
+
+## Including multiple files
+- Break up long scripts
+- Separate reusable
+    - <html> template code
+    - functions/class
+    - common variables
+
+4 functions
+
+* `include ('filename.php')`
+    * Looks for file if doesnt find, no errors
+* `include_once`
+    * Ensures the file wasn't already included
+* `require`
+    * like include except error
+* `require_once`
+    * copy paste file contents in that place

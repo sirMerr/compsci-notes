@@ -10,28 +10,28 @@
         <meta name="description" content="Notes for Semester 5 of Computer Science at Dawson">
       
       
-        <link rel="canonical" href="https://sirmerr.github.io/compsci-notes/">
+        <link rel="canonical" href="https://sirmerr.github.io/compsci-notes/Internet App Dev III/forms/">
       
       
         <meta name="author" content="Tiffany">
       
       
-        <link rel="shortcut icon" href="./images/favicon.ico">
+        <link rel="shortcut icon" href="../../images/favicon.ico">
       
       <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.4">
     
     
       
-        <title>CompSci HQ</title>
+        <title>Forms - CompSci HQ</title>
       
     
     
-      <script src="./assets/javascripts/modernizr-1df76c4e58.js"></script>
+      <script src="../../assets/javascripts/modernizr-1df76c4e58.js"></script>
     
     
-      <link rel="stylesheet" href="./assets/stylesheets/application-769c285a91.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application-769c285a91.css">
       
-        <link rel="stylesheet" href="./assets/stylesheets/application-02c2a4388f.palette.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/application-02c2a4388f.palette.css">
       
     
     
@@ -80,8 +80,12 @@
           
             
               
+                <span class="md-header-nav__parent">
+                  Internet App Dev III
+                </span>
+              
             
-            Home
+            Forms
           
         </span>
       </div>
@@ -140,47 +144,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Home
-      </label>
-    
-    <a href="." title="Home" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
       Home
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" title="Introduction" class="md-nav__link">
-    Introduction
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -190,7 +158,7 @@
 
 
   <li class="md-nav__item">
-    <a href="how-to-document/" title="How to document" class="md-nav__link">
+    <a href="../../how-to-document/" title="How to document" class="md-nav__link">
       How to document
     </a>
   </li>
@@ -221,7 +189,7 @@
 
 
   <li class="md-nav__item">
-    <a href="Data and Communications/introduction/" title="Introduction" class="md-nav__link">
+    <a href="../../Data and Communications/introduction/" title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -236,10 +204,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
       Internet App Dev III
@@ -257,7 +227,7 @@
 
 
   <li class="md-nav__item">
-    <a href="Internet App Dev III/_Introduction/" title=" Introduction" class="md-nav__link">
+    <a href="../_Introduction/" title=" Introduction" class="md-nav__link">
        Introduction
     </a>
   </li>
@@ -269,7 +239,7 @@
 
 
   <li class="md-nav__item">
-    <a href="Internet App Dev III/arrays/" title="Arrays" class="md-nav__link">
+    <a href="../arrays/" title="Arrays" class="md-nav__link">
       Arrays
     </a>
   </li>
@@ -281,7 +251,7 @@
 
 
   <li class="md-nav__item">
-    <a href="Internet App Dev III/constructs/" title="Constructs" class="md-nav__link">
+    <a href="../constructs/" title="Constructs" class="md-nav__link">
       Constructs
     </a>
   </li>
@@ -291,11 +261,70 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="Internet App Dev III/forms/" title="Forms" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Forms
+      </label>
+    
+    <a href="./" title="Forms" class="md-nav__link md-nav__link--active">
       Forms
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#http-methods" title="Http Methods" class="md-nav__link">
+    Http Methods
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sanitizing-user-input" title="Sanitizing user input" class="md-nav__link">
+    Sanitizing user input
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#htmlentities" title="htmlentities()" class="md-nav__link">
+    htmlentities()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#browserdisplays" title="browserdisplays()" class="md-nav__link">
+    browserdisplays()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -305,7 +334,7 @@
 
 
   <li class="md-nav__item">
-    <a href="Internet App Dev III/outline/" title="Outline" class="md-nav__link">
+    <a href="../outline/" title="Outline" class="md-nav__link">
       Outline
     </a>
   </li>
@@ -317,7 +346,7 @@
 
 
   <li class="md-nav__item">
-    <a href="Internet App Dev III/references/" title="References" class="md-nav__link">
+    <a href="../references/" title="References" class="md-nav__link">
       References
     </a>
   </li>
@@ -329,7 +358,7 @@
 
 
   <li class="md-nav__item">
-    <a href="Internet App Dev III/string/" title="String" class="md-nav__link">
+    <a href="../string/" title="String" class="md-nav__link">
       String
     </a>
   </li>
@@ -341,7 +370,7 @@
 
 
   <li class="md-nav__item">
-    <a href="Internet App Dev III/term-definitions/" title="Term definitions" class="md-nav__link">
+    <a href="../term-definitions/" title="Term definitions" class="md-nav__link">
       Term definitions
     </a>
   </li>
@@ -372,7 +401,7 @@
 
 
   <li class="md-nav__item">
-    <a href="Internet App Dev III/labs/getting-started/" title="Getting started" class="md-nav__link">
+    <a href="../labs/getting-started/" title="Getting started" class="md-nav__link">
       Getting started
     </a>
   </li>
@@ -413,7 +442,7 @@
 
 
   <li class="md-nav__item">
-    <a href="Mobile Software Dev/introduction/" title="Introduction" class="md-nav__link">
+    <a href="../../Mobile Software Dev/introduction/" title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -449,7 +478,7 @@
 
 
   <li class="md-nav__item">
-    <a href="Software Dev Project/introduction/" title="Introduction" class="md-nav__link">
+    <a href="../../Software Dev Project/introduction/" title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -461,7 +490,7 @@
 
 
   <li class="md-nav__item">
-    <a href="Software Dev Project/jam-specifications/" title="Jam specifications" class="md-nav__link">
+    <a href="../../Software Dev Project/jam-specifications/" title="Jam specifications" class="md-nav__link">
       Jam specifications
     </a>
   </li>
@@ -473,7 +502,7 @@
 
 
   <li class="md-nav__item">
-    <a href="Software Dev Project/logging/" title="Logging" class="md-nav__link">
+    <a href="../../Software Dev Project/logging/" title="Logging" class="md-nav__link">
       Logging
     </a>
   </li>
@@ -485,7 +514,7 @@
 
 
   <li class="md-nav__item">
-    <a href="Software Dev Project/maven/" title="Maven" class="md-nav__link">
+    <a href="../../Software Dev Project/maven/" title="Maven" class="md-nav__link">
       Maven
     </a>
   </li>
@@ -497,7 +526,7 @@
 
 
   <li class="md-nav__item">
-    <a href="Software Dev Project/outline/" title="Outline" class="md-nav__link">
+    <a href="../../Software Dev Project/outline/" title="Outline" class="md-nav__link">
       Outline
     </a>
   </li>
@@ -528,7 +557,7 @@
 
 
   <li class="md-nav__item">
-    <a href="Software Dev Project/labs/warmup-dice-game/" title="Warmup dice game" class="md-nav__link">
+    <a href="../../Software Dev Project/labs/warmup-dice-game/" title="Warmup dice game" class="md-nav__link">
       Warmup dice game
     </a>
   </li>
@@ -558,16 +587,41 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
-  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction" title="Introduction" class="md-nav__link">
-    Introduction
+  <a href="#http-methods" title="Http Methods" class="md-nav__link">
+    Http Methods
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sanitizing-user-input" title="Sanitizing user input" class="md-nav__link">
+    Sanitizing user input
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#htmlentities" title="htmlentities()" class="md-nav__link">
+    htmlentities()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#browserdisplays" title="browserdisplays()" class="md-nav__link">
+    browserdisplays()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -586,11 +640,93 @@
               
                 
                 
-                <h1 id="compsci-hq-for-all-things-confusing">CompSci HQ <small>for all things confusing</small><a class="headerlink" href="#compsci-hq-for-all-things-confusing" title="Permanent link">&para;</a></h1>
-<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
-<p>Welcome to the wiki! 🎉</p>
-<p>These are my notes for Semester 5 of Dawson's Computer Science program. It consists, among other things, of PHP, Java, Android and Git.</p>
-<p>This is a work in progress! To contribute or any other issues, ask <a href="https://github.com/sirMerr">@sirMerr</a></p>
+                  <h1>Forms</h1>
+                
+                <h2 id="http-methods">Http Methods<a class="headerlink" href="#http-methods" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>GET</code> - <code>url?name=value&amp;name2=value2</code></li>
+<li>query string</li>
+<li>only use for READ operations</li>
+<li>search query</li>
+<li>bookmark</li>
+<li>POST - puts the name=value&amp;name2=value2 in http message body</li>
+<li>use for WRITE operation =&gt; server side state change</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&#39;script.php&#39;</span> <span class="na">method</span><span class="o">=</span><span class="s">&#39;post&#39;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span> Enter name:
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;text&#39;</span>
+           <span class="na">name</span><span class="o">=</span><span class="s">&#39;firstname&#39;</span>
+           <span class="na">value</span><span class="o">=</span><span class="s">&#39;default&#39;</span>
+    <span class="p">/&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;radio&#39;</span>
+         <span class="na">name</span><span class="o">=</span><span class="s">&#39;age&#39;</span>
+         <span class="na">value</span><span class="o">=</span><span class="s">&#39;20&#39;</span>
+  <span class="p">/&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;checkbox&#39;</span>
+         <span class="na">name</span><span class="o">=</span><span class="s">&#39;haircolour[]&#39;</span>
+         <span class="na">value</span><span class="o">=</span><span class="s">&#39;blonde&#39;</span>
+  <span class="p">/&gt;</span>
+  <span class="p">&lt;</span><span class="nt">textarea</span> <span class="na">row</span><span class="o">=</span><span class="s">&#39;5&#39;</span> <span class="na">col</span><span class="o">=</span><span class="s">&#39;20&#39;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;comment&#39;</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">textarea</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="err">$</span><span class="o">.</span><span class="nx">POST</span><span class="p">[</span><span class="s1">&#39;firstname&#39;</span><span class="p">]))</span>
+    <span class="nv">$firstname</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;firstname&#39;</span><span class="p">];</span>
+<span class="k">else</span> <span class="p">{</span>
+  <span class="k">echo</span> <span class="s2">&quot;&lt;p class=&#39;error&#39;&gt;You must provide a name&lt;/p&gt;&quot;</span><span class="p">;</span>
+  <span class="nv">$firstname</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">;</span>
+<span class="p">}</span> <span class="c1">// validate presence of all input</span>
+<span class="k">if</span> <span class="p">(</span><span class="nv">$firstname</span> <span class="o">&amp;&amp;</span> <span class="nv">$email</span> <span class="o">&amp;&amp;</span> <span class="nv">$numPushups</span> <span class="o">!==</span> <span class="k">NULL</span><span class="p">)</span>
+  <span class="k">echo</span> <span class="s2">&quot;&lt;p&gt;Hello </span><span class="si">$firstname</span><span class="s2"> at </span><span class="si">$email</span><span class="s2">&lt;/p&gt;&quot;</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+</td></tr></table>
+
+<h2 id="sanitizing-user-input">Sanitizing user input<a class="headerlink" href="#sanitizing-user-input" title="Permanent link">&para;</a></h2>
+<p>Never trust user input</p>
+<h3 id="htmlentities">htmlentities()<a class="headerlink" href="#htmlentities" title="Permanent link">&para;</a></h3>
+<p>Turns all special characters into HTML entity format</p>
+<ul>
+<li><code>htmlentities($values)</code></li>
+</ul>
+<h3 id="browserdisplays">browserdisplays()<a class="headerlink" href="#browserdisplays" title="Permanent link">&para;</a></h3>
+<p>The characters don't interpret as HTML tags</p>
+<ul>
+<li><code>scripttags($value)</code></li>
+<li>remove all HTML tags</li>
+<li>fits your code:</li>
+<li><code>$firstname = htmlentities($_POST[&quot;firstname&quot;])</code></li>
+</ul>
                 
                   
                 
@@ -609,14 +745,28 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
+          <a href="../constructs/" title="Constructs" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Constructs
+              </span>
+            </div>
+          </a>
         
-          <a href="how-to-document/" title="How to document" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+        
+          <a href="../outline/" title="Outline" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                How to document
+                Outline
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -646,10 +796,10 @@
       
     </div>
     
-      <script src="./assets/javascripts/application-c35428f87f.js"></script>
+      <script src="../../assets/javascripts/application-c35428f87f.js"></script>
       
       
-      <script>app.initialize({url:{base:"."}})</script>
+      <script>app.initialize({url:{base:"../.."}})</script>
       
     
     

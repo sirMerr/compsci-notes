@@ -12,9 +12,6 @@ extra:
   palette:
     primary: 'blue-grey'
     accent: 'blue'
-  font:
-    text: 'Firacode'
-    code: 'Firacode'
 
 # Extensions
 markdown_extensions:

@@ -266,3 +266,13 @@ $vehicle =
     * like include except error
 * `require_once`
     * copy paste file contents in that place
+
+## Reindex an array
+
+`$array = array_values($array)` —> keys start at 0
+
+`$array[] = 7`;
+
+0 => 6
+
+1 => 7

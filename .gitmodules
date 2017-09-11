@@ -1,0 +1,9 @@
+[submodule "development/software-dev-project/BeanExamplesMvn"]
+	path = development/software-dev-project/BeanExamplesMvn
+	url = https://gitlab.com/omniprof/BeanExamplesMvn.git
+[submodule "development/software-dev-project/DBTableExample"]
+	path = development/software-dev-project/DBTableExample
+	url = https://gitlab.com/omniprof/DBTableExample
+[submodule "development/android/LoanCalculator"]
+	path = development/android/LoanCalculator
+	url = git@github.com:Android518-2017/LoanCalculator.git

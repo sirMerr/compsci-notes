@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Loan Calculator</string>
+    <string name="loan_amount">Loan Amount</string>
+    <string name="nb_years">Nb of Years</string>
+    <string name="interest">Yearly Interest</string>
+    <string name="calculate">Calculate</string>
+</resources>

@@ -2,26 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c32f220-1f4d-4623-9f6c-8672e05ad906" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AGENDADB/.lck" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/91ce15ce-c84b-4dca-b7e5-75a95c05be81.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/d8395ad2-96e7-4d14-acac-f217303804dc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AGENDADB/.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AGENDADB/.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AGENDADB/.script" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../android/LoanCalculator" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/01-calculator" afterPath="$PROJECT_DIR$/../../android/01-calculator" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/LoanCalculator" afterPath="$PROJECT_DIR$/../../android/LoanCalculator" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/02-calculator" afterPath="$PROJECT_DIR$/../../android/02-calculator" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BeanExamplesMvn" afterPath="$PROJECT_DIR$/../BeanExamplesMvn" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../DBTableExample" afterPath="$PROJECT_DIR$/../DBTableExample" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.gitmodules" afterPath="$PROJECT_DIR$/../../../.gitmodules" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tiffanyln/entities/Account.java" afterPath="$PROJECT_DIR$/src/main/java/com/tiffanyln/entities/Account.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tiffanyln/entities/Appointment.java" afterPath="$PROJECT_DIR$/src/main/java/com/tiffanyln/entities/Appointment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tiffanyln/entities/Group.java" afterPath="$PROJECT_DIR$/src/main/java/com/tiffanyln/entities/Group.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tiffanyln/persistence/AgendaDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/tiffanyln/persistence/AgendaDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../docs/Software Dev Project/introduction.md" afterPath="$PROJECT_DIR$/../../../docs/Software Dev Project/introduction.md" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -130,8 +117,8 @@
       <file leaf-file-name="AgendaDAOImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tiffanyln/persistence/AgendaDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="205" column="53" lean-forward="true" selection-start-line="205" selection-start-column="53" selection-end-line="205" selection-end-column="53" />
+            <state relative-caret-position="457">
+              <caret line="209" column="0" lean-forward="true" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1505488758000" expanded="true" signature="1184:1236" ph="SELECT accou... account" />
@@ -1033,12 +1020,12 @@
       <option name="presentableId" value="Default" />
       <updated>1505339119626</updated>
       <workItem from="1505339123735" duration="11251000" />
-      <workItem from="1505482535622" duration="3119000" />
+      <workItem from="1505482535622" duration="3729000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14370000" />
+    <option name="totallyTimeSpent" value="14980000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="43" width="1400" height="779" extended-state="0" />
@@ -1363,8 +1350,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tiffanyln/persistence/AgendaDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="205" column="53" lean-forward="true" selection-start-line="205" selection-start-column="53" selection-end-line="205" selection-end-column="53" />
+        <state relative-caret-position="457">
+          <caret line="209" column="0" lean-forward="true" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <marker date="1505488758000" expanded="true" signature="1184:1236" ph="SELECT accou... account" />

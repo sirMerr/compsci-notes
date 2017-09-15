@@ -4,3 +4,6 @@
 [submodule "development/software-dev-project/DBTableExample"]
 	path = development/software-dev-project/DBTableExample
 	url = https://gitlab.com/omniprof/DBTableExample
+[submodule "development/android/LoanCalculator"]
+	path = development/android/LoanCalculator
+	url = git@github.com:sirMerr/LoanCalculator.git

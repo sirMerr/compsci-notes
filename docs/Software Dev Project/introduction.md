@@ -36,9 +36,17 @@ Write the SQL cripts to create the necessaru tables in MySQL and then email the 
 You should have 50 account thingies per month
 
 ## Setting Up MySQL
+
 * Install MySQL Community edition
 
 ```bash
 $ mysql -h
 ```
 
+
+
+## Email Requirements for JAM
+
+1. Search for all appointments that start at the interval from the present time
+2. If any are found, prepare an email for each appointment
+3. Send the email

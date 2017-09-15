@@ -1,5 +1,7 @@
 package com.tiffanyln.entities;
 
+import java.util.List;
+
 /**
  * This class models a user
  *
@@ -13,8 +15,16 @@ public class Account {
     private String email;
     private String password;
     private int port;
+    private List<Group> groups;
 
     // Getters and setters
+    public List<Group> getGroups() {
+        return groups;
+    }
+
+    public void setGroups(List<Group> groups) {
+        this.groups = groups;
+    }
     public String getFirstName() {
         return firstName;
     }
@@ -63,6 +73,10 @@ public class Account {
         this.accountId = accountId;
     }
 
+    public Account() {
+        this(-1, "","", "","", -1 );
+    }
+
     // Constructor
     public Account(int accountId, String firstName, String lastName, String email, String password, int port) {
         super();
@@ -83,6 +97,7 @@ public class Account {
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", port=" + port +
+                ", groups=" + groups +
                 '}';
     }
 
@@ -95,10 +110,13 @@ public class Account {
 
         if (getAccountId() != account.getAccountId()) return false;
         if (getPort() != account.getPort()) return false;
-        if (!getFirstName().equals(account.getFirstName())) return false;
-        if (!getLastName().equals(account.getLastName())) return false;
+        if (getFirstName() != null ? !getFirstName().equals(account.getFirstName()) : account.getFirstName() != null)
+            return false;
+        if (getLastName() != null ? !getLastName().equals(account.getLastName()) : account.getLastName() != null)
+            return false;
         if (!getEmail().equals(account.getEmail())) return false;
-        return getPassword().equals(account.getPassword());
+        if (!getPassword().equals(account.getPassword())) return false;
+        return getGroups() != null ? getGroups().equals(account.getGroups()) : account.getGroups() == null;
     }
 
     @Override

@@ -1,22 +1,39 @@
 package com.tiffanyln.entities;
 
+import java.util.List;
+
 public class Group {
     private int groupId;
-    private String name;
+    private String title;
     private double rgb;
     private int accountId;
+    private List<Appointment> appointmentList;
+
+    public int getAccountId() {
+        return accountId;
+    }
+
+    public void setAccountId(int accountId) {
+        this.accountId = accountId;
+    }
+
+    public List<Appointment> getAppointmentList() {
+        return appointmentList;
+    }
+
+    public void setAppointmentList(List<Appointment> appointmentList) {
+        this.appointmentList = appointmentList;
+    }
 
     // Default constructor
-    public Group(int groupId, String name, int accountId) {
-        this.groupId = groupId;
-        this.name = name;
-        this.accountId = accountId;
+    public Group() {
+        this(-1,"",-1,-1);
     }
 
     // Full constructor
     public Group(int groupId, String name, double rgb, int accountId) {
         this.groupId = groupId;
-        this.name = name;
+        this.title = name;
         this.rgb = rgb;
         this.accountId = accountId;
     }
@@ -30,12 +47,12 @@ public class Group {
         this.groupId = groupId;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String name) {
+        this.title = name;
     }
 
     public double getRgb() {
@@ -55,17 +72,19 @@ public class Group {
 
         if (getGroupId() != group.getGroupId()) return false;
         if (Double.compare(group.getRgb(), getRgb()) != 0) return false;
-        if (accountId != group.accountId) return false;
-        return getName().equals(group.getName());
+        if (getAccountId() != group.getAccountId()) return false;
+        if (getTitle() != null ? !getTitle().equals(group.getTitle()) : group.getTitle() != null) return false;
+        return getAppointmentList() != null ? getAppointmentList().equals(group.getAppointmentList()) : group.getAppointmentList() == null;
     }
 
     @Override
     public String toString() {
         return "Group{" +
                 "groupId=" + groupId +
-                ", name='" + name + '\'' +
+                ", name='" + title + '\'' +
                 ", rgb=" + rgb +
                 ", accountId=" + accountId +
+                ", appointmentList=" + appointmentList +
                 '}';
     }
 }

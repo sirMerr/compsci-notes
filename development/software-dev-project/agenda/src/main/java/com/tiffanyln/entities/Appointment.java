@@ -22,6 +22,10 @@ public class Appointment {
     private Boolean alarmReminder;
     private int reminderInterval;
 
+    public Appointment() {
+        this(-1,-1,"","",  new Timestamp(System.currentTimeMillis()), new Timestamp(System.currentTimeMillis()),"",true,false,15);
+    }
+
     public Appointment(int groupId, int appointmentId, String title, String location, Timestamp startDate, Timestamp endDate, String details, Boolean fullDay, Boolean alarmReminder, int reminderInterval) {
         this.groupId = groupId;
         this.appointmentId = appointmentId;

@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c32f220-1f4d-4623-9f6c-8672e05ad906" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../android/LoanCalculator" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/tiffanyln/config.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/TestDatabase.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/CreateAgendaDB.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/CreateAgendaTables.sql" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/91ce15ce-c84b-4dca-b7e5-75a95c05be81.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/tiffanyln/properties/config.properties" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/01-calculator" afterPath="$PROJECT_DIR$/../../android/01-calculator" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/02-calculator" afterPath="$PROJECT_DIR$/../../android/02-calculator" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/LoanCalculator" afterPath="$PROJECT_DIR$/../../android/LoanCalculator" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BeanExamplesMvn" afterPath="$PROJECT_DIR$/../BeanExamplesMvn" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../DBTableExample" afterPath="$PROJECT_DIR$/../DBTableExample" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.gitmodules" afterPath="$PROJECT_DIR$/../../../.gitmodules" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../php/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../php/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tiffanyln/persistence/AgendaDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/tiffanyln/persistence/AgendaDAOImpl.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,21 +49,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="141" column="47" lean-forward="false" selection-start-line="141" selection-start-column="47" selection-end-line="141" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Account.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tiffanyln/entities/Account.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="81" column="16" lean-forward="true" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
+            <state relative-caret-position="0">
+              <caret line="81" column="16" lean-forward="false" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
               <folding>
                 <element signature="e#422#423#0" expanded="true" />
                 <element signature="e#451#452#0" expanded="true" />
@@ -70,7 +67,7 @@
       <file leaf-file-name="Appointment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tiffanyln/entities/Appointment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="420">
               <caret line="28" column="74" lean-forward="false" selection-start-line="28" selection-start-column="74" selection-end-line="28" selection-end-column="74" />
               <folding />
             </state>
@@ -105,8 +102,8 @@
       <file leaf-file-name="AgendaDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tiffanyln/persistence/AgendaDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="409">
+              <caret line="28" column="50" lean-forward="false" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,20 +111,69 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AgendaDAOImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AgendaDAOImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tiffanyln/persistence/AgendaDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="209" column="0" lean-forward="true" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1505488758000" expanded="true" signature="1184:1236" ph="SELECT accou... account" />
-                <marker date="1505488758000" expanded="true" signature="2053:2118" ph="SELECT id,gr... group_record" />
-                <marker date="1505488758000" expanded="true" signature="2804:2983" ph="SELECT id, t... appointment" />
-                <marker date="1505488758000" expanded="true" signature="5767:5866" ph="INSERT INTO account... " />
-                <marker date="1505488758000" expanded="true" signature="5767:5880" ph="INSERT INTO account... " />
-                <marker date="1505488758000" expanded="true" signature="7100:7218" ph="INSERT INTO group_record... " />
+                <element signature="e#847#848#0" expanded="true" />
+                <element signature="e#870#871#0" expanded="true" />
+                <element signature="docComment;method#findAllAccounts#0;class#AgendaDAOImpl#0" expanded="false" />
+                <element signature="method#findById#0;class#AgendaDAOImpl#0" expanded="false" />
+                <element signature="docComment;method#findAllGroups#0;class#AgendaDAOImpl#0" expanded="false" />
+                <element signature="method#findAllGroups#0;class#AgendaDAOImpl#0" expanded="false" />
+                <element signature="docComment;method#findAllAppointments#0;class#AgendaDAOImpl#0" expanded="false" />
+                <element signature="method#findAllAppointments#0;class#AgendaDAOImpl#0" expanded="false" />
+                <element signature="docComment;method#makeAccount#0;class#AgendaDAOImpl#0" expanded="false" />
+                <element signature="method#makeAccount#0;class#AgendaDAOImpl#0" expanded="false" />
+                <element signature="docComment;method#makeGroup#0;class#AgendaDAOImpl#0" expanded="false" />
+                <element signature="method#makeGroup#0;class#AgendaDAOImpl#0" expanded="false" />
+                <element signature="docComment;method#makeAppointment#0;class#AgendaDAOImpl#0" expanded="false" />
+                <element signature="method#makeAppointment#0;class#AgendaDAOImpl#0" expanded="false" />
+                <element signature="docComment;method#create#0;class#AgendaDAOImpl#0" expanded="false" />
+                <element signature="method#create#0;class#AgendaDAOImpl#0" expanded="false" />
+                <element signature="docComment;method#create#1;class#AgendaDAOImpl#0" expanded="false" />
+                <element signature="method#create#1;class#AgendaDAOImpl#0" expanded="false" />
+                <marker date="1505685730000" expanded="true" signature="1192:1244" ph="SELECT accou... account" />
+                <marker date="1505685730000" expanded="true" signature="1926:2001" ph="SELECT id, l... account" />
+                <marker date="1505685730000" expanded="true" signature="2696:2761" ph="SELECT id,gr... group_record" />
+                <marker date="1505685730000" expanded="true" signature="3447:3626" ph="SELECT id, t... appointment" />
+                <marker date="1505685730000" expanded="true" signature="6410:6509" ph="INSERT INTO account... " />
+                <marker date="1505685730000" expanded="true" signature="6410:6523" ph="INSERT INTO account... " />
+                <marker date="1505685730000" expanded="true" signature="7743:7828" ph="INSERT INTO group_record... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestDatabase.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestDatabase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1890">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateAgendaDB.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/CreateAgendaDB.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateAgendaTables.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/CreateAgendaTables.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -172,7 +218,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tiffanyln/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tiffanyln/entities/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tiffanyln/persistence/AppointmentDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tiffanyln/persistence/AgendaDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tiffanyln/properties/config.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/tiffanyln/entities/Group.java" />
@@ -181,7 +226,13 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d8395ad2-96e7-4d14-acac-f217303804dc/console.sql" />
         <option value="$PROJECT_DIR$/AGENDADB/.log" />
         <option value="$PROJECT_DIR$/src/main/java/com/tiffanyln/entities/Account.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tiffanyln/persistence/AgendaDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tiffanyln/config.properties" />
+        <option value="$PROJECT_DIR$/src/test/resources/CreateGamerDB.sql" />
+        <option value="$PROJECT_DIR$/src/test/resources/CreateGamerTables.sql" />
+        <option value="$PROJECT_DIR$/src/test/resources/CreateAgendaTables.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/tiffanyln/persistence/AgendaDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestDatabase.java" />
       </list>
     </option>
   </component>
@@ -818,7 +869,9 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -834,6 +887,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -885,14 +939,33 @@
               <item name="tiffanyln" type="462c0819:PsiDirectoryNode" />
               <item name="persistence" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="agenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="agenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="agenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -909,6 +982,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test" />
       <recent name="$PROJECT_DIR$/src/main/java/com/tiffanyln/properties" />
     </key>
   </component>
@@ -1021,11 +1095,14 @@
       <updated>1505339119626</updated>
       <workItem from="1505339123735" duration="11251000" />
       <workItem from="1505482535622" duration="3729000" />
+      <workItem from="1505534764521" duration="646000" />
+      <workItem from="1505544153173" duration="232000" />
+      <workItem from="1505604279266" duration="3809000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14980000" />
+    <option name="totallyTimeSpent" value="19667000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="43" width="1400" height="779" extended-state="0" />
@@ -1033,24 +1110,25 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956153" sideWeight="0.43214285" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20214286" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1170,12 +1248,31 @@
           <caret line="165" column="28" lean-forward="false" selection-start-line="165" selection-start-column="28" selection-end-line="165" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1505488758000" expanded="true" signature="1184:1236" ph="SELECT accou... account" />
-            <marker date="1505488758000" expanded="true" signature="2053:2118" ph="SELECT id,gr... group_record" />
-            <marker date="1505488758000" expanded="true" signature="2804:2983" ph="SELECT id, t... appointment" />
-            <marker date="1505488758000" expanded="true" signature="5767:5866" ph="INSERT INTO account... " />
-            <marker date="1505488758000" expanded="true" signature="5767:5880" ph="INSERT INTO account... " />
-            <marker date="1505488758000" expanded="true" signature="7100:7218" ph="INSERT INTO group_record... " />
+            <element signature="e#847#848#0" expanded="true" />
+            <element signature="e#870#871#0" expanded="true" />
+            <element signature="docComment;method#findAllAccounts#0;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="method#findById#0;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="docComment;method#findAllGroups#0;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="method#findAllGroups#0;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="docComment;method#findAllAppointments#0;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="method#findAllAppointments#0;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="docComment;method#makeAccount#0;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="method#makeAccount#0;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="docComment;method#makeGroup#0;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="method#makeGroup#0;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="docComment;method#makeAppointment#0;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="method#makeAppointment#0;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="docComment;method#create#0;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="method#create#0;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="docComment;method#create#1;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="method#create#1;class#AgendaDAOImpl#0" expanded="false" />
+            <marker date="1505685730000" expanded="true" signature="1192:1244" ph="SELECT accou... account" />
+            <marker date="1505685730000" expanded="true" signature="1926:2001" ph="SELECT id, l... account" />
+            <marker date="1505685730000" expanded="true" signature="2696:2761" ph="SELECT id,gr... group_record" />
+            <marker date="1505685730000" expanded="true" signature="3447:3626" ph="SELECT id, t... appointment" />
+            <marker date="1505685730000" expanded="true" signature="6410:6509" ph="INSERT INTO account... " />
+            <marker date="1505685730000" expanded="true" signature="6410:6523" ph="INSERT INTO account... " />
+            <marker date="1505685730000" expanded="true" signature="7743:7828" ph="INSERT INTO group_record... " />
           </folding>
         </state>
       </provider>
@@ -1184,7 +1281,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1192,7 +1288,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1218,6 +1313,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="170" column="19" lean-forward="false" selection-start-line="170" selection-start-column="19" selection-end-line="170" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/sql/ResultSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4861">
+          <caret line="147" column="17" lean-forward="false" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agenda.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/91ce15ce-c84b-4dca-b7e5-75a95c05be81/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="true" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AGENDADB/.log">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AGENDADB/.script">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AGENDADB/.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1226,18 +1376,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/lang/Object.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tiffanyln/entities/Account.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="170" column="19" lean-forward="false" selection-start-line="170" selection-start-column="19" selection-end-line="170" selection-end-column="19" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="81" column="16" lean-forward="false" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
+          <folding>
+            <element signature="e#422#423#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/sql/ResultSet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tiffanyln/entities/Appointment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4861">
-          <caret line="147" column="17" lean-forward="false" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="17" />
+        <state relative-caret-position="420">
+          <caret line="28" column="74" lean-forward="false" selection-start-line="28" selection-start-column="74" selection-end-line="28" selection-end-column="74" />
           <folding />
         </state>
       </provider>
@@ -1265,31 +1420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tiffanyln/persistence/AgendaDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agenda.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/91ce15ce-c84b-4dca-b7e5-75a95c05be81/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" lean-forward="true" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d8395ad2-96e7-4d14-acac-f217303804dc/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1298,20 +1428,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AGENDADB/.log">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AGENDADB/.script">
+    <entry file="file://$PROJECT_DIR$/src/test/resources.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1319,48 +1436,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AGENDADB/.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tiffanyln/persistence/AgendaDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tiffanyln/entities/Appointment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="28" column="74" lean-forward="false" selection-start-line="28" selection-start-column="74" selection-end-line="28" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tiffanyln/entities/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="81" column="16" lean-forward="true" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
+        <state relative-caret-position="409">
+          <caret line="28" column="50" lean-forward="false" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
           <folding>
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tiffanyln/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/CreateAgendaDB.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/CreateAgendaTables.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tiffanyln/persistence/AgendaDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="209" column="0" lean-forward="true" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
+        <state relative-caret-position="289">
+          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1505488758000" expanded="true" signature="1184:1236" ph="SELECT accou... account" />
-            <marker date="1505488758000" expanded="true" signature="2053:2118" ph="SELECT id,gr... group_record" />
-            <marker date="1505488758000" expanded="true" signature="2804:2983" ph="SELECT id, t... appointment" />
-            <marker date="1505488758000" expanded="true" signature="5767:5866" ph="INSERT INTO account... " />
-            <marker date="1505488758000" expanded="true" signature="5767:5880" ph="INSERT INTO account... " />
-            <marker date="1505488758000" expanded="true" signature="7100:7218" ph="INSERT INTO group_record... " />
+            <element signature="e#847#848#0" expanded="true" />
+            <element signature="e#870#871#0" expanded="true" />
+            <element signature="docComment;method#findAllAccounts#0;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="method#findById#0;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="docComment;method#findAllGroups#0;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="method#findAllGroups#0;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="docComment;method#findAllAppointments#0;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="method#findAllAppointments#0;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="docComment;method#makeAccount#0;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="method#makeAccount#0;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="docComment;method#makeGroup#0;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="method#makeGroup#0;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="docComment;method#makeAppointment#0;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="method#makeAppointment#0;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="docComment;method#create#0;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="method#create#0;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="docComment;method#create#1;class#AgendaDAOImpl#0" expanded="false" />
+            <element signature="method#create#1;class#AgendaDAOImpl#0" expanded="false" />
+            <marker date="1505685730000" expanded="true" signature="1192:1244" ph="SELECT accou... account" />
+            <marker date="1505685730000" expanded="true" signature="1926:2001" ph="SELECT id, l... account" />
+            <marker date="1505685730000" expanded="true" signature="2696:2761" ph="SELECT id,gr... group_record" />
+            <marker date="1505685730000" expanded="true" signature="3447:3626" ph="SELECT id, t... appointment" />
+            <marker date="1505685730000" expanded="true" signature="6410:6509" ph="INSERT INTO account... " />
+            <marker date="1505685730000" expanded="true" signature="6410:6523" ph="INSERT INTO account... " />
+            <marker date="1505685730000" expanded="true" signature="7743:7828" ph="INSERT INTO group_record... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/util/function/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="48" column="9" lean-forward="false" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1890">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

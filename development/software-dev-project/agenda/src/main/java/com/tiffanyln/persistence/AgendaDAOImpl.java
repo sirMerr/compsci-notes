@@ -37,7 +37,7 @@ public class AgendaDAOImpl {
      * @return ArrayList of Account objects
      * @throws SQLException
      */
-    public List<Account> findAll() throws SQLException {
+    public List<Account> findAllAccounts() throws SQLException {
         List<Account> rows = new ArrayList<>();
 
         String selectQuery = "SELECT id,lastName,firstName,email,port FROM account";
@@ -52,6 +52,22 @@ public class AgendaDAOImpl {
             }
         }
         return rows;
+    }
+
+    public Account findById(int id) throws SQLException {
+        Account account = new Account();
+
+        String selectQuery= "SELECT id, lastName, firstName, email, port FROM account WHERE account_id=?";
+        try (Connection connection = DriverManager.getConnection(dbUrl,dbUsername, dbPassword);
+             PreparedStatement pStatement = connection.prepareStatement(selectQuery);
+             ResultSet resultSet = pStatement.executeQuery()) {
+            if (resultSet.next()) {
+                account = makeAccount(resultSet);
+                findAllGroups(account);
+            }
+        }
+
+        return account;
     }
 
     /**
@@ -196,17 +212,15 @@ public class AgendaDAOImpl {
     public int create(Group group) throws SQLException {
         int records;
 
-        String sql = "INSERT INTO group_record (lastname, firstname, email, email_password, port)" +
-                "values (?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO group_record (name, account_id, rgb)" +
+                "values (?, ?, ?)";
 
         try (Connection connection = DriverManager.getConnection(dbUrl, dbUsername, dbPassword);
              // You must use PreparedStatements to guard against SQL Injection
              PreparedStatement pStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);) {
             pStatement.setString(1, group.getTitle());
             pStatement.setInt(2, group.getAccountId());
-            pStatement.setString(3, group.getEmail());
-            pStatement.setString(4, group.getPassword());
-            pStatement.setInt(5, group.getPort());
+            pStatement.setDouble(3, group.getRgb());
 
             records = pStatement.executeUpdate();
             ResultSet rs = pStatement.getGeneratedKeys();

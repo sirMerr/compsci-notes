@@ -37,7 +37,7 @@ public class AgendaDAOImpl {
      * @throws SQLException when unsuccessful
      */
     public List<Account> findAllAccounts() throws SQLException {
-        List<Account> rows = new ArrayList<>();
+        List<Account> accounts = new ArrayList<>();
 
         String selectQuery = "SELECT id,lastName,firstName,email, email_password, port FROM account";
         try (Connection connection = DriverManager.getConnection(dbUrl, dbUsername, dbPassword);
@@ -47,10 +47,11 @@ public class AgendaDAOImpl {
             while (resultSet.next()) {
                 Account account = makeAccount(resultSet);
                 findAllGroups(account);
-                rows.add(account);
+                log.debug("Account in all accounts : " + account.toString());
+                accounts.add(account);
             }
         }
-        return rows;
+        return accounts;
     }
 
     public Account findAccountById(int id) throws SQLException {
@@ -65,7 +66,6 @@ public class AgendaDAOImpl {
 
             try(ResultSet resultSet = pStatement.executeQuery()){
                 if (resultSet.next()) {
-                    log.debug("Account resultset: " + resultSet.toString());
                     account = makeAccount(resultSet);
                     findAllGroups(account);
 
@@ -124,21 +124,24 @@ public class AgendaDAOImpl {
      * @param account Account
      * @throws SQLException when unsuccessful
      */
-    public void findAllGroups(Account account) throws SQLException {
+    public List<Group> findAllGroups(Account account) throws SQLException {
         String selectQuery = "SELECT id, account_id, name, rgb_hex FROM GROUP_RECORD WHERE account_id = ?";
-
+        ArrayList<Group> groups = new ArrayList<>();
         try (Connection connection = DriverManager.getConnection(dbUrl, dbUsername, dbPassword);
              PreparedStatement pStatement = connection.prepareStatement(selectQuery)) {
             pStatement.setInt(1, account.getAccountId());
             try (ResultSet resultSet = pStatement.executeQuery()) {
                 while (resultSet.next()) {
+                        log.debug("makeGroup: " + makeGroup(resultSet));
                         account.getGroups().add(makeGroup(resultSet));
+
+                        groups.add(makeGroup(resultSet));
+                        log.debug("Account with groups: " + account.toString());
                 }
-            } catch (NullPointerException err) {
-                err.printStackTrace();
-                log.error("Error finding groups for account (groups/appointments null)" + account.toString());
             }
         }
+        log.debug("Groups: " + groups);
+        return groups;
     }
 
     /**

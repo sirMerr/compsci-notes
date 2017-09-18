@@ -129,7 +129,7 @@ public class DatabaseTest {
         AgendaDAOImpl agendaDAO = new AgendaDAOImpl();
         List<Account> accounts = agendaDAO.findAllAccounts();
         // Nothing to do with the test
-        displayAll(accounts);
+//        displayAll(accounts);
 
         assertEquals("# of accounts", 5, accounts.size());
     }

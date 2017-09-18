@@ -1,5 +1,6 @@
 package com.tiffanyln.entities;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Group {
@@ -28,6 +29,7 @@ public class Group {
     // Default constructor
     public Group() {
         this(-1,"","#FF0364",-1);
+        this.appointmentList = new ArrayList<>();
     }
 
     // Full constructor
@@ -36,6 +38,7 @@ public class Group {
         this.title = name;
         this.rgb = rgb;
         this.accountId = accountId;
+        this.appointmentList = new ArrayList<>();
     }
 
     // Getters and setters (not for accountId)

@@ -76,6 +76,7 @@ public class Account {
 
     public Account() {
         this(-1, "","", "","", -1 );
+        this.groups = new ArrayList<>();
     }
 
     // Constructor
@@ -87,6 +88,7 @@ public class Account {
         this.email = email;
         this.password = password;
         this.port = port;
+        this.groups = new ArrayList<>();
     }
 
     @Override

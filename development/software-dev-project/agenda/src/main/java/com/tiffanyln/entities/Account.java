@@ -18,6 +18,23 @@ public class Account {
     private int port;
     private List<Group> groups;
 
+    public Account() {
+        this(-1, "","", "","", -1 );
+        this.groups = new ArrayList<>();
+    }
+
+    // Constructor
+    public Account(int accountId, String firstName, String lastName, String email, String password, int port) {
+        super();
+        this.accountId = accountId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
+        this.port = port;
+        this.groups = new ArrayList<>();
+    }
+
     // Getters and setters
     public List<Group> getGroups() {
         return groups;
@@ -72,23 +89,6 @@ public class Account {
 
     public void setAccountId(int accountId) {
         this.accountId = accountId;
-    }
-
-    public Account() {
-        this(-1, "","", "","", -1 );
-        this.groups = new ArrayList<>();
-    }
-
-    // Constructor
-    public Account(int accountId, String firstName, String lastName, String email, String password, int port) {
-        super();
-        this.accountId = accountId;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.password = password;
-        this.port = port;
-        this.groups = new ArrayList<>();
     }
 
     @Override

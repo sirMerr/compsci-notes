@@ -770,3 +770,587 @@
 [INFO ] 2017-09-18 12:15:04.382 [main] DatabaseTest - Seeding Database
 [INFO ] 2017-09-18 12:15:04.437 [main] DatabaseTest - Seeding Database
 [INFO ] 2017-09-18 12:15:04.498 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:38:12.023 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:38:12.388 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:38:12.455 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:38:12.534 [main] AgendaDAOImpl - New Group is Group{groupId=5, name='Important', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:12.538 [main] AgendaDAOImpl - Made groupGroup{groupId=5, name='Important', rgb=#FF0364, accountId=2, appointmentList=[]}
+[INFO ] 2017-09-18 12:38:12.542 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:38:12.616 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:12.616 [main] AgendaDAOImpl - makeGroup: Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:12.616 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:12.616 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:12.616 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:38:12.617 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:12.617 [main] AgendaDAOImpl - makeGroup: Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:12.617 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:12.617 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:12.617 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:38:12.617 [main] AgendaDAOImpl - Groups: [Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:38:12.617 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:38:12.621 [main] AgendaDAOImpl - Made groupGroup{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:12.621 [main] AgendaDAOImpl - makeGroup: Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:12.621 [main] AgendaDAOImpl - Made groupGroup{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:12.621 [main] AgendaDAOImpl - Made groupGroup{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:12.621 [main] AgendaDAOImpl - Account with groups: Account{accountId=2, firstName='Sunny', lastName='Tryhorn', email='stryhorn1@china.com.cn', password='93vDZO2CXDof', port=72, groups=[Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:38:12.621 [main] AgendaDAOImpl - Groups: [Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:38:12.622 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=2, firstName='Sunny', lastName='Tryhorn', email='stryhorn1@china.com.cn', password='93vDZO2CXDof', port=72, groups=[Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:38:12.625 [main] AgendaDAOImpl - Made groupGroup{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:12.625 [main] AgendaDAOImpl - makeGroup: Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:12.625 [main] AgendaDAOImpl - Made groupGroup{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:12.626 [main] AgendaDAOImpl - Made groupGroup{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:12.626 [main] AgendaDAOImpl - Account with groups: Account{accountId=3, firstName='Ruy', lastName='Raiment', email='rraiment2@epa.gov', password='RFjKeE7i', port=10, groups=[Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:38:12.626 [main] AgendaDAOImpl - Groups: [Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:38:12.626 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=3, firstName='Ruy', lastName='Raiment', email='rraiment2@epa.gov', password='RFjKeE7i', port=10, groups=[Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:38:12.631 [main] AgendaDAOImpl - Groups: []
+[DEBUG] 2017-09-18 12:38:12.631 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=4, firstName='Curt', lastName='Raymond', email='craymond3@wsj.com', password='elZkPif', port=32, groups=[]}
+[DEBUG] 2017-09-18 12:38:12.635 [main] AgendaDAOImpl - Groups: []
+[DEBUG] 2017-09-18 12:38:12.635 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=5, firstName='Jodi', lastName='Yanyshev', email='jyanyshev4@psu.edu', password='UrBMyOVk9vwc', port=99, groups=[]}
+[INFO ] 2017-09-18 12:38:12.635 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:38:12.695 [main] AgendaDAOImpl - Id: 1
+[DEBUG] 2017-09-18 12:38:12.703 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:12.703 [main] AgendaDAOImpl - makeGroup: Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:12.703 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:12.703 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:12.703 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:38:12.703 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:12.704 [main] AgendaDAOImpl - makeGroup: Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:12.704 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:12.704 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:12.704 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:38:12.704 [main] AgendaDAOImpl - Groups: [Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:38:12.704 [main] AgendaDAOImpl - New Account: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:38:12.704 [main] DatabaseTest - Account Tester: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[INFO ] 2017-09-18 12:38:12.717 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:38:12.789 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:38:12.854 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:38:12.919 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:38:12.990 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:38:13.060 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:38:13.125 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:38:13.195 [main] AgendaDAOImpl - New Account is Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=[]}
+[DEBUG] 2017-09-18 12:38:13.195 [main] AgendaDAOImpl - Id: 6
+[DEBUG] 2017-09-18 12:38:13.201 [main] AgendaDAOImpl - Groups: []
+[DEBUG] 2017-09-18 12:38:13.201 [main] AgendaDAOImpl - New Account: Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=[]}
+[INFO ] 2017-09-18 12:38:13.201 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:38:13.278 [main] AgendaDAOImpl - New Appointment is Appointment{groupId=1, appointmentId=8, title='Doctor's appointment', location='', startDate=2017-09-18 12:38:13.274, endDate=2017-09-18 12:38:13.274, details='', fullDay=true, alarmReminder=true, reminderInterval=16}
+[INFO ] 2017-09-18 12:38:13.288 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:38:13.358 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:38:45.464 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:38:45.890 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:38:45.960 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:38:46.035 [main] AgendaDAOImpl - New Group is Group{groupId=5, name='Important', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:46.040 [main] AgendaDAOImpl - Made groupGroup{groupId=5, name='Important', rgb=#FF0364, accountId=2, appointmentList=[]}
+[INFO ] 2017-09-18 12:38:46.044 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:38:46.117 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:46.117 [main] AgendaDAOImpl - makeGroup: Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:46.117 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:46.118 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:46.118 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:38:46.118 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:46.118 [main] AgendaDAOImpl - makeGroup: Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:46.118 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:46.119 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:46.119 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:38:46.119 [main] AgendaDAOImpl - Groups: [Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:38:46.119 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:38:46.122 [main] AgendaDAOImpl - Made groupGroup{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:46.122 [main] AgendaDAOImpl - makeGroup: Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:46.122 [main] AgendaDAOImpl - Made groupGroup{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:46.122 [main] AgendaDAOImpl - Made groupGroup{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:46.122 [main] AgendaDAOImpl - Account with groups: Account{accountId=2, firstName='Sunny', lastName='Tryhorn', email='stryhorn1@china.com.cn', password='93vDZO2CXDof', port=72, groups=[Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:38:46.123 [main] AgendaDAOImpl - Groups: [Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:38:46.123 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=2, firstName='Sunny', lastName='Tryhorn', email='stryhorn1@china.com.cn', password='93vDZO2CXDof', port=72, groups=[Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:38:46.126 [main] AgendaDAOImpl - Made groupGroup{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:46.126 [main] AgendaDAOImpl - makeGroup: Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:46.126 [main] AgendaDAOImpl - Made groupGroup{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:46.126 [main] AgendaDAOImpl - Made groupGroup{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:46.126 [main] AgendaDAOImpl - Account with groups: Account{accountId=3, firstName='Ruy', lastName='Raiment', email='rraiment2@epa.gov', password='RFjKeE7i', port=10, groups=[Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:38:46.127 [main] AgendaDAOImpl - Groups: [Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:38:46.127 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=3, firstName='Ruy', lastName='Raiment', email='rraiment2@epa.gov', password='RFjKeE7i', port=10, groups=[Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:38:46.130 [main] AgendaDAOImpl - Groups: []
+[DEBUG] 2017-09-18 12:38:46.130 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=4, firstName='Curt', lastName='Raymond', email='craymond3@wsj.com', password='elZkPif', port=32, groups=[]}
+[DEBUG] 2017-09-18 12:38:46.133 [main] AgendaDAOImpl - Groups: []
+[DEBUG] 2017-09-18 12:38:46.133 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=5, firstName='Jodi', lastName='Yanyshev', email='jyanyshev4@psu.edu', password='UrBMyOVk9vwc', port=99, groups=[]}
+[INFO ] 2017-09-18 12:38:46.134 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:38:46.202 [main] AgendaDAOImpl - Id: 1
+[DEBUG] 2017-09-18 12:38:46.210 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:46.210 [main] AgendaDAOImpl - makeGroup: Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:46.210 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:46.210 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:46.210 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:38:46.210 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:46.210 [main] AgendaDAOImpl - makeGroup: Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:46.210 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:46.210 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:38:46.210 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:38:46.211 [main] AgendaDAOImpl - Groups: [Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:38:46.211 [main] AgendaDAOImpl - New Account: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:38:46.211 [main] DatabaseTest - Account Tester: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[INFO ] 2017-09-18 12:38:46.225 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:38:46.293 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:38:46.365 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:38:46.430 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:38:46.500 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:38:46.573 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:38:46.639 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:38:46.700 [main] AgendaDAOImpl - New Account is Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=[]}
+[DEBUG] 2017-09-18 12:38:46.700 [main] AgendaDAOImpl - Id: 6
+[DEBUG] 2017-09-18 12:38:46.706 [main] AgendaDAOImpl - Groups: []
+[DEBUG] 2017-09-18 12:38:46.706 [main] AgendaDAOImpl - New Account: Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=[]}
+[INFO ] 2017-09-18 12:38:46.707 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:38:46.777 [main] AgendaDAOImpl - New Appointment is Appointment{groupId=1, appointmentId=8, title='Doctor's appointment', location='', startDate=2017-09-18 12:38:46.773, endDate=2017-09-18 12:38:46.773, details='', fullDay=true, alarmReminder=true, reminderInterval=16}
+[INFO ] 2017-09-18 12:38:46.787 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:38:46.852 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:39:13.112 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:39:13.533 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:39:13.603 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:39:13.676 [main] AgendaDAOImpl - New Group is Group{groupId=5, name='Important', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:39:13.681 [main] AgendaDAOImpl - Made groupGroup{groupId=5, name='Important', rgb=#FF0364, accountId=2, appointmentList=[]}
+[INFO ] 2017-09-18 12:39:13.685 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:39:13.758 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:39:13.758 [main] AgendaDAOImpl - makeGroup: Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:39:13.758 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:39:13.759 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:39:13.759 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:39:13.759 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:39:13.759 [main] AgendaDAOImpl - makeGroup: Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:39:13.759 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:39:13.759 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:39:13.759 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:39:13.759 [main] AgendaDAOImpl - Groups: [Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:39:13.760 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:39:13.763 [main] AgendaDAOImpl - Made groupGroup{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:39:13.763 [main] AgendaDAOImpl - makeGroup: Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:39:13.763 [main] AgendaDAOImpl - Made groupGroup{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:39:13.763 [main] AgendaDAOImpl - Made groupGroup{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:39:13.763 [main] AgendaDAOImpl - Account with groups: Account{accountId=2, firstName='Sunny', lastName='Tryhorn', email='stryhorn1@china.com.cn', password='93vDZO2CXDof', port=72, groups=[Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:39:13.764 [main] AgendaDAOImpl - Groups: [Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:39:13.764 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=2, firstName='Sunny', lastName='Tryhorn', email='stryhorn1@china.com.cn', password='93vDZO2CXDof', port=72, groups=[Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:39:13.767 [main] AgendaDAOImpl - Made groupGroup{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:39:13.767 [main] AgendaDAOImpl - makeGroup: Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:39:13.767 [main] AgendaDAOImpl - Made groupGroup{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:39:13.767 [main] AgendaDAOImpl - Made groupGroup{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:39:13.767 [main] AgendaDAOImpl - Account with groups: Account{accountId=3, firstName='Ruy', lastName='Raiment', email='rraiment2@epa.gov', password='RFjKeE7i', port=10, groups=[Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:39:13.768 [main] AgendaDAOImpl - Groups: [Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:39:13.768 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=3, firstName='Ruy', lastName='Raiment', email='rraiment2@epa.gov', password='RFjKeE7i', port=10, groups=[Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:39:13.771 [main] AgendaDAOImpl - Groups: []
+[DEBUG] 2017-09-18 12:39:13.771 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=4, firstName='Curt', lastName='Raymond', email='craymond3@wsj.com', password='elZkPif', port=32, groups=[]}
+[DEBUG] 2017-09-18 12:39:13.774 [main] AgendaDAOImpl - Groups: []
+[DEBUG] 2017-09-18 12:39:13.774 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=5, firstName='Jodi', lastName='Yanyshev', email='jyanyshev4@psu.edu', password='UrBMyOVk9vwc', port=99, groups=[]}
+[INFO ] 2017-09-18 12:39:13.774 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:39:13.836 [main] AgendaDAOImpl - Id: 1
+[DEBUG] 2017-09-18 12:39:13.842 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:39:13.843 [main] AgendaDAOImpl - makeGroup: Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:39:13.843 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:39:13.843 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:39:13.843 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:39:13.843 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:39:13.843 [main] AgendaDAOImpl - makeGroup: Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:39:13.843 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:39:13.843 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:39:13.843 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:39:13.844 [main] AgendaDAOImpl - Groups: [Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:39:13.844 [main] AgendaDAOImpl - New Account: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:39:13.844 [main] DatabaseTest - Account Tester: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[INFO ] 2017-09-18 12:39:13.858 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:39:13.920 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:39:13.986 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:39:14.043 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:39:14.103 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:39:14.163 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:39:14.220 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:39:14.284 [main] AgendaDAOImpl - New Account is Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=[]}
+[DEBUG] 2017-09-18 12:39:14.284 [main] AgendaDAOImpl - Id: 6
+[DEBUG] 2017-09-18 12:39:14.290 [main] AgendaDAOImpl - Groups: []
+[DEBUG] 2017-09-18 12:39:14.290 [main] AgendaDAOImpl - New Account: Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=[]}
+[INFO ] 2017-09-18 12:39:14.291 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:39:14.360 [main] AgendaDAOImpl - New Appointment is Appointment{groupId=1, appointmentId=8, title='Doctor's appointment', location='', startDate=2017-09-18 12:39:14.355, endDate=2017-09-18 12:39:14.355, details='', fullDay=true, alarmReminder=true, reminderInterval=16}
+[INFO ] 2017-09-18 12:39:14.370 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:39:14.439 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:40:19.357 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:40:19.747 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:40:19.810 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:40:19.879 [main] AgendaDAOImpl - New Group is Group{groupId=5, name='Important', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:19.883 [main] AgendaDAOImpl - Made groupGroup{groupId=5, name='Important', rgb=#FF0364, accountId=2, appointmentList=[]}
+[INFO ] 2017-09-18 12:40:19.889 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:40:19.951 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:19.951 [main] AgendaDAOImpl - makeGroup: Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:19.951 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:19.951 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:19.952 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:40:19.952 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:19.952 [main] AgendaDAOImpl - makeGroup: Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:19.952 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:19.952 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:19.952 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:40:19.952 [main] AgendaDAOImpl - Groups: [Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:40:19.953 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:40:19.958 [main] AgendaDAOImpl - Made groupGroup{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:19.958 [main] AgendaDAOImpl - makeGroup: Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:19.959 [main] AgendaDAOImpl - Made groupGroup{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:19.959 [main] AgendaDAOImpl - Made groupGroup{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:19.959 [main] AgendaDAOImpl - Account with groups: Account{accountId=2, firstName='Sunny', lastName='Tryhorn', email='stryhorn1@china.com.cn', password='93vDZO2CXDof', port=72, groups=[Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:40:19.959 [main] AgendaDAOImpl - Groups: [Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:40:19.959 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=2, firstName='Sunny', lastName='Tryhorn', email='stryhorn1@china.com.cn', password='93vDZO2CXDof', port=72, groups=[Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:40:19.963 [main] AgendaDAOImpl - Made groupGroup{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:19.963 [main] AgendaDAOImpl - makeGroup: Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:19.964 [main] AgendaDAOImpl - Made groupGroup{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:19.964 [main] AgendaDAOImpl - Made groupGroup{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:19.964 [main] AgendaDAOImpl - Account with groups: Account{accountId=3, firstName='Ruy', lastName='Raiment', email='rraiment2@epa.gov', password='RFjKeE7i', port=10, groups=[Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:40:19.964 [main] AgendaDAOImpl - Groups: [Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:40:19.964 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=3, firstName='Ruy', lastName='Raiment', email='rraiment2@epa.gov', password='RFjKeE7i', port=10, groups=[Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:40:19.968 [main] AgendaDAOImpl - Groups: []
+[DEBUG] 2017-09-18 12:40:19.968 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=4, firstName='Curt', lastName='Raymond', email='craymond3@wsj.com', password='elZkPif', port=32, groups=[]}
+[DEBUG] 2017-09-18 12:40:19.972 [main] AgendaDAOImpl - Groups: []
+[DEBUG] 2017-09-18 12:40:19.972 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=5, firstName='Jodi', lastName='Yanyshev', email='jyanyshev4@psu.edu', password='UrBMyOVk9vwc', port=99, groups=[]}
+[INFO ] 2017-09-18 12:40:19.972 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:40:20.026 [main] AgendaDAOImpl - Id: 1
+[DEBUG] 2017-09-18 12:40:20.033 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:20.033 [main] AgendaDAOImpl - makeGroup: Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:20.033 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:20.033 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:20.033 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:40:20.033 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:20.033 [main] AgendaDAOImpl - makeGroup: Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:20.034 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:20.034 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:20.034 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:40:20.034 [main] AgendaDAOImpl - Groups: [Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:40:20.034 [main] AgendaDAOImpl - New Account: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:40:20.034 [main] DatabaseTest - Account Tester: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[INFO ] 2017-09-18 12:40:20.047 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:40:20.102 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:40:20.157 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:40:20.215 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:40:20.273 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:40:20.332 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:40:20.395 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:40:20.461 [main] AgendaDAOImpl - New Account is Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=[]}
+[DEBUG] 2017-09-18 12:40:20.461 [main] AgendaDAOImpl - Id: 6
+[DEBUG] 2017-09-18 12:40:20.466 [main] AgendaDAOImpl - Groups: []
+[DEBUG] 2017-09-18 12:40:20.466 [main] AgendaDAOImpl - New Account: Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=[]}
+[INFO ] 2017-09-18 12:40:20.467 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:40:20.543 [main] AgendaDAOImpl - New Appointment is Appointment{groupId=1, appointmentId=8, title='Doctor's appointment', location='', startDate=2017-09-18 12:40:20.539, endDate=2017-09-18 12:40:20.539, details='', fullDay=true, alarmReminder=true, reminderInterval=16}
+[INFO ] 2017-09-18 12:40:20.547 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:40:20.618 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:40:38.844 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:40:39.301 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:40:39.372 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:40:39.450 [main] AgendaDAOImpl - New Group is Group{groupId=5, name='Important', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:39.454 [main] AgendaDAOImpl - Made groupGroup{groupId=5, name='Important', rgb=#FF0364, accountId=2, appointmentList=[]}
+[INFO ] 2017-09-18 12:40:39.459 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:40:39.525 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:39.525 [main] AgendaDAOImpl - makeGroup: Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:39.526 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:39.526 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:39.526 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:40:39.526 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:39.526 [main] AgendaDAOImpl - makeGroup: Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:39.526 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:39.526 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:39.527 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:40:39.527 [main] AgendaDAOImpl - Groups: [Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:40:39.527 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:40:39.531 [main] AgendaDAOImpl - Made groupGroup{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:39.531 [main] AgendaDAOImpl - makeGroup: Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:39.531 [main] AgendaDAOImpl - Made groupGroup{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:39.531 [main] AgendaDAOImpl - Made groupGroup{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:39.531 [main] AgendaDAOImpl - Account with groups: Account{accountId=2, firstName='Sunny', lastName='Tryhorn', email='stryhorn1@china.com.cn', password='93vDZO2CXDof', port=72, groups=[Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:40:39.531 [main] AgendaDAOImpl - Groups: [Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:40:39.532 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=2, firstName='Sunny', lastName='Tryhorn', email='stryhorn1@china.com.cn', password='93vDZO2CXDof', port=72, groups=[Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:40:39.535 [main] AgendaDAOImpl - Made groupGroup{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:39.535 [main] AgendaDAOImpl - makeGroup: Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:39.535 [main] AgendaDAOImpl - Made groupGroup{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:39.535 [main] AgendaDAOImpl - Made groupGroup{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:39.536 [main] AgendaDAOImpl - Account with groups: Account{accountId=3, firstName='Ruy', lastName='Raiment', email='rraiment2@epa.gov', password='RFjKeE7i', port=10, groups=[Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:40:39.536 [main] AgendaDAOImpl - Groups: [Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:40:39.536 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=3, firstName='Ruy', lastName='Raiment', email='rraiment2@epa.gov', password='RFjKeE7i', port=10, groups=[Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:40:39.540 [main] AgendaDAOImpl - Groups: []
+[DEBUG] 2017-09-18 12:40:39.540 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=4, firstName='Curt', lastName='Raymond', email='craymond3@wsj.com', password='elZkPif', port=32, groups=[]}
+[DEBUG] 2017-09-18 12:40:39.543 [main] AgendaDAOImpl - Groups: []
+[DEBUG] 2017-09-18 12:40:39.543 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=5, firstName='Jodi', lastName='Yanyshev', email='jyanyshev4@psu.edu', password='UrBMyOVk9vwc', port=99, groups=[]}
+[INFO ] 2017-09-18 12:40:39.544 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:40:39.600 [main] AgendaDAOImpl - Id: 1
+[DEBUG] 2017-09-18 12:40:39.607 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:39.607 [main] AgendaDAOImpl - makeGroup: Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:39.608 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:39.608 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:39.608 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:40:39.608 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:39.608 [main] AgendaDAOImpl - makeGroup: Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:39.608 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:39.608 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:40:39.608 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:40:39.609 [main] AgendaDAOImpl - Groups: [Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:40:39.609 [main] AgendaDAOImpl - New Account: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:40:39.609 [main] DatabaseTest - Account Tester: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[INFO ] 2017-09-18 12:40:39.622 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:40:39.678 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:40:39.733 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:40:39.787 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:40:39.844 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:40:39.896 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:40:39.949 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:40:40.014 [main] AgendaDAOImpl - New Account is Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=[]}
+[DEBUG] 2017-09-18 12:40:40.014 [main] AgendaDAOImpl - Id: 6
+[DEBUG] 2017-09-18 12:40:40.021 [main] AgendaDAOImpl - Groups: []
+[DEBUG] 2017-09-18 12:40:40.021 [main] AgendaDAOImpl - New Account: Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=[]}
+[INFO ] 2017-09-18 12:40:40.021 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:40:40.089 [main] AgendaDAOImpl - New Appointment is Appointment{groupId=1, appointmentId=8, title='Doctor's appointment', location='', startDate=2017-09-18 12:40:40.085, endDate=2017-09-18 12:40:40.085, details='', fullDay=true, alarmReminder=true, reminderInterval=16}
+[INFO ] 2017-09-18 12:40:40.094 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:40:40.156 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:49:37.284 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:49:37.737 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:49:37.816 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:49:37.900 [main] AgendaDAOImpl - New Group is Group{groupId=5, name='Important', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:49:37.905 [main] AgendaDAOImpl - Made groupGroup{groupId=5, name='Important', rgb=#FF0364, accountId=2, appointmentList=[]}
+[INFO ] 2017-09-18 12:49:37.912 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:49:37.986 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:49:37.986 [main] AgendaDAOImpl - makeGroup: Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:49:37.986 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:49:37.986 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:49:37.986 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:49:37.986 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:49:37.986 [main] AgendaDAOImpl - makeGroup: Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:49:37.986 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:49:37.987 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:49:37.987 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:49:37.987 [main] AgendaDAOImpl - Groups: [Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:49:37.987 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:49:37.991 [main] AgendaDAOImpl - Made groupGroup{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:49:37.991 [main] AgendaDAOImpl - makeGroup: Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:49:37.991 [main] AgendaDAOImpl - Made groupGroup{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:49:37.991 [main] AgendaDAOImpl - Made groupGroup{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:49:37.991 [main] AgendaDAOImpl - Account with groups: Account{accountId=2, firstName='Sunny', lastName='Tryhorn', email='stryhorn1@china.com.cn', password='93vDZO2CXDof', port=72, groups=[Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:49:37.992 [main] AgendaDAOImpl - Groups: [Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:49:37.992 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=2, firstName='Sunny', lastName='Tryhorn', email='stryhorn1@china.com.cn', password='93vDZO2CXDof', port=72, groups=[Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:49:37.996 [main] AgendaDAOImpl - Made groupGroup{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:49:37.996 [main] AgendaDAOImpl - makeGroup: Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:49:37.996 [main] AgendaDAOImpl - Made groupGroup{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:49:37.996 [main] AgendaDAOImpl - Made groupGroup{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:49:37.996 [main] AgendaDAOImpl - Account with groups: Account{accountId=3, firstName='Ruy', lastName='Raiment', email='rraiment2@epa.gov', password='RFjKeE7i', port=10, groups=[Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:49:37.997 [main] AgendaDAOImpl - Groups: [Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:49:37.997 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=3, firstName='Ruy', lastName='Raiment', email='rraiment2@epa.gov', password='RFjKeE7i', port=10, groups=[Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:49:38.000 [main] AgendaDAOImpl - Groups: []
+[DEBUG] 2017-09-18 12:49:38.000 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=4, firstName='Curt', lastName='Raymond', email='craymond3@wsj.com', password='elZkPif', port=32, groups=[]}
+[DEBUG] 2017-09-18 12:49:38.003 [main] AgendaDAOImpl - Groups: []
+[DEBUG] 2017-09-18 12:49:38.003 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=5, firstName='Jodi', lastName='Yanyshev', email='jyanyshev4@psu.edu', password='UrBMyOVk9vwc', port=99, groups=[]}
+[INFO ] 2017-09-18 12:49:38.004 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:49:38.076 [main] AgendaDAOImpl - Id: 1
+[DEBUG] 2017-09-18 12:49:38.083 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:49:38.083 [main] AgendaDAOImpl - makeGroup: Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:49:38.083 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:49:38.083 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:49:38.083 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:49:38.083 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:49:38.083 [main] AgendaDAOImpl - makeGroup: Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:49:38.083 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:49:38.084 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:49:38.084 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:49:38.084 [main] AgendaDAOImpl - Groups: [Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:49:38.084 [main] AgendaDAOImpl - New Account: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:49:38.084 [main] DatabaseTest - Account Tester: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[INFO ] 2017-09-18 12:49:38.098 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:49:38.163 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:49:38.218 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:49:38.277 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:49:38.337 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:49:38.398 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:49:38.458 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:49:38.518 [main] AgendaDAOImpl - New Account is Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=[]}
+[DEBUG] 2017-09-18 12:49:38.518 [main] AgendaDAOImpl - Id: 6
+[DEBUG] 2017-09-18 12:49:38.524 [main] AgendaDAOImpl - Groups: []
+[DEBUG] 2017-09-18 12:49:38.524 [main] AgendaDAOImpl - New Account: Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=[]}
+[INFO ] 2017-09-18 12:49:38.525 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:49:38.595 [main] AgendaDAOImpl - New Appointment is Appointment{groupId=1, appointmentId=8, title='Doctor's appointment', location='', startDate=2017-09-18 12:49:38.59, endDate=2017-09-18 12:49:38.59, details='', fullDay=true, alarmReminder=true, reminderInterval=16}
+[INFO ] 2017-09-18 12:49:38.600 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:49:38.667 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:52:59.375 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:52:59.821 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:52:59.899 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:52:59.979 [main] AgendaDAOImpl - New Group is Group{groupId=5, name='Important', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:52:59.983 [main] AgendaDAOImpl - Made groupGroup{groupId=5, name='Important', rgb=#FF0364, accountId=2, appointmentList=[]}
+[INFO ] 2017-09-18 12:52:59.987 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:53:00.060 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.060 [main] AgendaDAOImpl - makeGroup: Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.060 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.060 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.060 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:53:00.060 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.060 [main] AgendaDAOImpl - makeGroup: Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.061 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.061 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.061 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:53:00.061 [main] AgendaDAOImpl - Groups: [Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:53:00.061 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:53:00.065 [main] AgendaDAOImpl - Made groupGroup{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.065 [main] AgendaDAOImpl - makeGroup: Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.065 [main] AgendaDAOImpl - Made groupGroup{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.065 [main] AgendaDAOImpl - Made groupGroup{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.065 [main] AgendaDAOImpl - Account with groups: Account{accountId=2, firstName='Sunny', lastName='Tryhorn', email='stryhorn1@china.com.cn', password='93vDZO2CXDof', port=72, groups=[Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:53:00.066 [main] AgendaDAOImpl - Groups: [Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:53:00.066 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=2, firstName='Sunny', lastName='Tryhorn', email='stryhorn1@china.com.cn', password='93vDZO2CXDof', port=72, groups=[Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:53:00.069 [main] AgendaDAOImpl - Made groupGroup{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.069 [main] AgendaDAOImpl - makeGroup: Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.069 [main] AgendaDAOImpl - Made groupGroup{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.069 [main] AgendaDAOImpl - Made groupGroup{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.069 [main] AgendaDAOImpl - Account with groups: Account{accountId=3, firstName='Ruy', lastName='Raiment', email='rraiment2@epa.gov', password='RFjKeE7i', port=10, groups=[Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:53:00.070 [main] AgendaDAOImpl - Groups: [Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:53:00.070 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=3, firstName='Ruy', lastName='Raiment', email='rraiment2@epa.gov', password='RFjKeE7i', port=10, groups=[Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:53:00.073 [main] AgendaDAOImpl - Groups: []
+[DEBUG] 2017-09-18 12:53:00.073 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=4, firstName='Curt', lastName='Raymond', email='craymond3@wsj.com', password='elZkPif', port=32, groups=[]}
+[DEBUG] 2017-09-18 12:53:00.077 [main] AgendaDAOImpl - Groups: []
+[DEBUG] 2017-09-18 12:53:00.077 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=5, firstName='Jodi', lastName='Yanyshev', email='jyanyshev4@psu.edu', password='UrBMyOVk9vwc', port=99, groups=[]}
+[INFO ] 2017-09-18 12:53:00.078 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:53:00.136 [main] AgendaDAOImpl - Id: 1
+[DEBUG] 2017-09-18 12:53:00.144 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.144 [main] AgendaDAOImpl - makeGroup: Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.144 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.144 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.144 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:53:00.144 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.144 [main] AgendaDAOImpl - makeGroup: Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.144 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.144 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.144 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:53:00.145 [main] AgendaDAOImpl - Groups: [Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:53:00.145 [main] AgendaDAOImpl - New Account: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:53:00.145 [main] DatabaseTest - Account Tester: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[INFO ] 2017-09-18 12:53:00.159 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:53:00.219 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:53:00.286 [main] AgendaDAOImpl - Id: 1
+[DEBUG] 2017-09-18 12:53:00.291 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.292 [main] AgendaDAOImpl - makeGroup: Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.292 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.292 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.292 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:53:00.292 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.292 [main] AgendaDAOImpl - makeGroup: Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.292 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.292 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.292 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:53:00.293 [main] AgendaDAOImpl - Groups: [Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:53:00.293 [main] AgendaDAOImpl - New Account: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:53:00.296 [main] AgendaDAOImpl - Updated account is Account{accountId=1, firstName='New First Name', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:53:00.296 [main] AgendaDAOImpl - Id: 1
+[DEBUG] 2017-09-18 12:53:00.302 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.302 [main] AgendaDAOImpl - makeGroup: Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.302 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.302 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.302 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='New First Name', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:53:00.302 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.302 [main] AgendaDAOImpl - makeGroup: Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.302 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.303 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:53:00.303 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='New First Name', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:53:00.303 [main] AgendaDAOImpl - Groups: [Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:53:00.303 [main] AgendaDAOImpl - New Account: Account{accountId=1, firstName='New First Name', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[INFO ] 2017-09-18 12:53:00.305 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:53:00.374 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:53:00.442 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:53:00.508 [main] AgendaDAOImpl - Deleted appointment with id 1
+[INFO ] 2017-09-18 12:53:00.509 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:53:00.567 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:53:00.634 [main] AgendaDAOImpl - New Account is Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=[]}
+[DEBUG] 2017-09-18 12:53:00.634 [main] AgendaDAOImpl - Id: 6
+[DEBUG] 2017-09-18 12:53:00.638 [main] AgendaDAOImpl - Groups: []
+[DEBUG] 2017-09-18 12:53:00.638 [main] AgendaDAOImpl - New Account: Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=[]}
+[INFO ] 2017-09-18 12:53:00.639 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:53:00.709 [main] AgendaDAOImpl - New Appointment is Appointment{groupId=1, appointmentId=8, title='Doctor's appointment', location='', startDate=2017-09-18 12:53:00.704, endDate=2017-09-18 12:53:00.704, details='', fullDay=true, alarmReminder=true, reminderInterval=16}
+[INFO ] 2017-09-18 12:53:00.712 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:53:00.775 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:54:04.879 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:54:05.388 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:54:05.468 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:54:05.546 [main] AgendaDAOImpl - New Group is Group{groupId=5, name='Important', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.552 [main] AgendaDAOImpl - Made groupGroup{groupId=5, name='Important', rgb=#FF0364, accountId=2, appointmentList=[]}
+[INFO ] 2017-09-18 12:54:05.558 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:54:05.633 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.633 [main] AgendaDAOImpl - makeGroup: Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.634 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.634 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.634 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:54:05.634 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.634 [main] AgendaDAOImpl - makeGroup: Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.634 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.634 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.634 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:54:05.635 [main] AgendaDAOImpl - Groups: [Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:54:05.635 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:54:05.639 [main] AgendaDAOImpl - Made groupGroup{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.639 [main] AgendaDAOImpl - makeGroup: Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.639 [main] AgendaDAOImpl - Made groupGroup{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.639 [main] AgendaDAOImpl - Made groupGroup{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.640 [main] AgendaDAOImpl - Account with groups: Account{accountId=2, firstName='Sunny', lastName='Tryhorn', email='stryhorn1@china.com.cn', password='93vDZO2CXDof', port=72, groups=[Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:54:05.640 [main] AgendaDAOImpl - Groups: [Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:54:05.640 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=2, firstName='Sunny', lastName='Tryhorn', email='stryhorn1@china.com.cn', password='93vDZO2CXDof', port=72, groups=[Group{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:54:05.644 [main] AgendaDAOImpl - Made groupGroup{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.644 [main] AgendaDAOImpl - makeGroup: Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.644 [main] AgendaDAOImpl - Made groupGroup{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.645 [main] AgendaDAOImpl - Made groupGroup{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.645 [main] AgendaDAOImpl - Account with groups: Account{accountId=3, firstName='Ruy', lastName='Raiment', email='rraiment2@epa.gov', password='RFjKeE7i', port=10, groups=[Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:54:05.645 [main] AgendaDAOImpl - Groups: [Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:54:05.645 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=3, firstName='Ruy', lastName='Raiment', email='rraiment2@epa.gov', password='RFjKeE7i', port=10, groups=[Group{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:54:05.649 [main] AgendaDAOImpl - Groups: []
+[DEBUG] 2017-09-18 12:54:05.649 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=4, firstName='Curt', lastName='Raymond', email='craymond3@wsj.com', password='elZkPif', port=32, groups=[]}
+[DEBUG] 2017-09-18 12:54:05.654 [main] AgendaDAOImpl - Groups: []
+[DEBUG] 2017-09-18 12:54:05.655 [main] AgendaDAOImpl - Account in all accounts : Account{accountId=5, firstName='Jodi', lastName='Yanyshev', email='jyanyshev4@psu.edu', password='UrBMyOVk9vwc', port=99, groups=[]}
+[INFO ] 2017-09-18 12:54:05.655 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:54:05.714 [main] AgendaDAOImpl - Id: 1
+[DEBUG] 2017-09-18 12:54:05.721 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.721 [main] AgendaDAOImpl - makeGroup: Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.721 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.721 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.722 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:54:05.722 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.722 [main] AgendaDAOImpl - makeGroup: Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.722 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.722 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.722 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:54:05.722 [main] AgendaDAOImpl - Groups: [Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:54:05.722 [main] AgendaDAOImpl - New Account: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:54:05.723 [main] DatabaseTest - Account Tester: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[INFO ] 2017-09-18 12:54:05.736 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:54:05.794 [main] AgendaDAOImpl - Id: 1
+[DEBUG] 2017-09-18 12:54:05.801 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.801 [main] AgendaDAOImpl - makeGroup: Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.801 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.801 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.802 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:54:05.802 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.802 [main] AgendaDAOImpl - makeGroup: Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.802 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.802 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.802 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:54:05.802 [main] AgendaDAOImpl - Groups: [Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:54:05.803 [main] AgendaDAOImpl - New Account: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:54:05.806 [main] AgendaDAOImpl - Updated account is Account{accountId=1, firstName='New First Name', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:54:05.806 [main] AgendaDAOImpl - Id: 1
+[DEBUG] 2017-09-18 12:54:05.812 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.812 [main] AgendaDAOImpl - makeGroup: Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.812 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.812 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.812 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='New First Name', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:54:05.812 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.813 [main] AgendaDAOImpl - makeGroup: Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.813 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.813 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}
+[DEBUG] 2017-09-18 12:54:05.813 [main] AgendaDAOImpl - Account with groups: Account{accountId=1, firstName='New First Name', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[DEBUG] 2017-09-18 12:54:05.813 [main] AgendaDAOImpl - Groups: [Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]
+[DEBUG] 2017-09-18 12:54:05.813 [main] AgendaDAOImpl - New Account: Account{accountId=1, firstName='New First Name', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=[Group{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=[]}, Group{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=[]}]}
+[INFO ] 2017-09-18 12:54:05.816 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:54:05.873 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:54:05.930 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:54:05.992 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:54:06.053 [main] AgendaDAOImpl - Deleted appointment with id 1
+[INFO ] 2017-09-18 12:54:06.053 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:54:06.112 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:54:06.182 [main] AgendaDAOImpl - New Account is Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=[]}
+[DEBUG] 2017-09-18 12:54:06.182 [main] AgendaDAOImpl - Id: 6
+[DEBUG] 2017-09-18 12:54:06.187 [main] AgendaDAOImpl - Groups: []
+[DEBUG] 2017-09-18 12:54:06.187 [main] AgendaDAOImpl - New Account: Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=[]}
+[INFO ] 2017-09-18 12:54:06.188 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 12:54:06.248 [main] AgendaDAOImpl - New Appointment is Appointment{groupId=1, appointmentId=8, title='Doctor's appointment', location='', startDate=2017-09-18 12:54:06.244, endDate=2017-09-18 12:54:06.244, details='', fullDay=true, alarmReminder=true, reminderInterval=16}
+[INFO ] 2017-09-18 12:54:06.254 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 12:54:06.310 [main] DatabaseTest - Seeding Database

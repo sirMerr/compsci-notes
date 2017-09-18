@@ -10,6 +10,21 @@ public class Group {
     private int accountId;
     private List<Appointment> appointmentList;
 
+    // Default constructor
+    public Group() {
+        this(-1,"","#FF0364",-1);
+        this.appointmentList = new ArrayList<>();
+    }
+
+    // Full constructor
+    public Group(int groupId, String name, String rgb, int accountId) {
+        this.groupId = groupId;
+        this.title = name;
+        this.rgb = rgb;
+        this.accountId = accountId;
+        this.appointmentList = new ArrayList<>();
+    }
+
     public int getAccountId() {
         return accountId;
     }
@@ -24,21 +39,6 @@ public class Group {
 
     public void setAppointmentList(List<Appointment> appointmentList) {
         this.appointmentList = appointmentList;
-    }
-
-    // Default constructor
-    public Group() {
-        this(-1,"","#FF0364",-1);
-        this.appointmentList = new ArrayList<>();
-    }
-
-    // Full constructor
-    public Group(int groupId, String name, String rgb, int accountId) {
-        this.groupId = groupId;
-        this.title = name;
-        this.rgb = rgb;
-        this.accountId = accountId;
-        this.appointmentList = new ArrayList<>();
     }
 
     // Getters and setters (not for accountId)

@@ -12,12 +12,14 @@ import java.io.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
 
 /**
@@ -84,38 +86,120 @@ public class DatabaseTest {
 
     @Test
     public void testCreateAppointment() throws SQLException {
+        AgendaDAOImpl agendaDAO = new AgendaDAOImpl();
 
+        // Instantiate new Appointment
+        Appointment a1 = new Appointment();
+        a1.setTitle("Doctor's appointment");
+        a1.setGroupId(1);
+        a1.setStartDate(new Timestamp(System.currentTimeMillis()));
+        a1.setReminderInterval(16);
+        a1.setAlarmReminder(true);
+
+        // Create Appointment
+        agendaDAO.create(a1);
+
+        // Check if insert worked
+        Appointment a2 = agendaDAO.findAppointmentById(a1.getAppointmentId());
+        assertEquals("A record was not created", a1, a2);
 
     }
 
     @Test
     public void testCreateGroup() throws SQLException {
+        AgendaDAOImpl agendaDAO = new AgendaDAOImpl();
+
+        // Instantiate new Appointment
+        Group g1 = new Group();
+        g1.setTitle("Important");
+        g1.setAccountId(2);
+
+        // Create Account
+        agendaDAO.create(g1);
+
+        // Check if insert worked
+        Group g2 = agendaDAO.findGroupById(g1.getGroupId());
+        assertEquals("A record was not created", g1, g2);
     }
 
     /* Delete Testing */
     @Test
     public void testDeleteAccount() throws SQLException {
+        AgendaDAOImpl agendaDAO = new AgendaDAOImpl();
+
+        // Delete account
+        int deleted = agendaDAO.deleteAccount(1);
+
+        // Check if delete worked
+        assertNotEquals("A record was not deleted", deleted, -1);
     }
 
     @Test
     public void testDeleteGroup() throws SQLException {
+        AgendaDAOImpl agendaDAO = new AgendaDAOImpl();
+
+        // Delete group
+        int deleted = agendaDAO.deleteGroup(1);
+
+        // Check if delete worked
+        assertNotEquals("A record was not deleted", deleted, -1);
     }
 
     @Test
     public void testDeleteAppointment() throws SQLException {
+        AgendaDAOImpl agendaDAO = new AgendaDAOImpl();
+
+        // Delete appointment
+        int deleted = agendaDAO.deleteAppointment(1);
+
+        // Check if delete worked
+        assertNotEquals("A record was not deleted", deleted, -1);
     }
 
     /* Update Testing */
     @Test
-    public void testUpdateAppointment() throws SQLException {
+    public void testUpdateAccount() throws SQLException {
+        AgendaDAOImpl agendaDAO = new AgendaDAOImpl();
+
+        Account account = agendaDAO.findAccountById(1);
+        account.setFirstName("New First Name");
+
+        //Update account
+        int updated = agendaDAO.updateAccount(account);
+
+        // Check if Update worked
+        Account updatedAccount = agendaDAO.findAccountById(1);
+        assertSame("A record was not updated", account, updatedAccount);
     }
 
     @Test
     public void testUpdateGroup() throws SQLException {
+        AgendaDAOImpl agendaDAO = new AgendaDAOImpl();
+
+        Group group = agendaDAO.findGroupById(1);
+        group.setTitle("New Title");
+
+        //Update account
+        int updated = agendaDAO.updateGroup(group);
+
+        // Check if Update worked
+        Group updatedGroup = agendaDAO.findGroupById(1);
+        assertSame("A record was not updated", group, updatedGroup);
     }
 
     @Test
-    public void testUpdateAccount() throws SQLException {
+    public void testUpdateAppointment() throws SQLException {
+        AgendaDAOImpl agendaDAO = new AgendaDAOImpl();
+
+        Appointment appointment = agendaDAO.findAppointmentById(1);
+        appointment.setTitle("New Title");
+
+        //Update account
+        int updated = agendaDAO.updateAppointment(appointment);
+
+        // Check if Update worked
+        Appointment updatedAppointment = agendaDAO.findAppointmentById(1);
+        assertSame("A record was not updated", appointment, updatedAppointment);
     }
 
     /* Find Testing */
@@ -128,7 +212,6 @@ public class DatabaseTest {
     public void testFindAccounts() throws SQLException {
         AgendaDAOImpl agendaDAO = new AgendaDAOImpl();
         List<Account> accounts = agendaDAO.findAllAccounts();
-        // Nothing to do with the test
 //        displayAll(accounts);
 
         assertEquals("# of accounts", 5, accounts.size());
@@ -162,14 +245,36 @@ public class DatabaseTest {
 
     @Test
     public void testFindAppointments() throws SQLException {
+        AgendaDAOImpl agendaDAO = new AgendaDAOImpl();
+
+        Group group = agendaDAO.findGroupById(1);
+        List<Appointment> appointments = group.getAppointmentList();
+
+        assertEquals("# of appointments", 1, appointments.size());
     }
 
     @Test
     public void testFindAccountById() throws SQLException {
+        AgendaDAOImpl agendaDAO = new AgendaDAOImpl();
+        Account account = agendaDAO.findAccountById(1);
+        Account actualAccount = new Account(1, "Jenelle", "Skym", "jskym@aol.com", "wlcTOpmjTa", 97);
+
+        assertSame("# of accounts", account, actualAccount);
     }
 
     @Test
     public void testFindGroupById() throws SQLException {
+        AgendaDAOImpl agendaDAO = new AgendaDAOImpl();
+        Group group = agendaDAO.findGroupById(2);
+
+        Group actualGroup = new Group();
+        actualGroup.setTitle("Bamity");
+        actualGroup.setGroupId(3);
+        actualGroup.setAccountId(2);
+
+        Appointment appointment = new Appointment(2, 'Basic Industries', 'Illinois', 2, '2016-12-16 00:25:52', '2017-02-18 15:00:27', 'Synergized well-modulated core', false, 3, true)
+    
+        assertSame("# of accounts", group, actualGroup);
     }
 
     @Test

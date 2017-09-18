@@ -100,8 +100,7 @@ public class AgendaDAOImpl {
     public Appointment findAppointmentById(int id) throws SQLException {
         Appointment appointment = new Appointment();
 
-        String selectQuery= "SELECT id, title, location, start_time, " +
-                "end_time, details, whole_day, alarm_reminder, reminder_interval " +
+        String selectQuery= "SELECT id, title, location, start_time, group_id, end_time, details, whole_day, alarm_reminder, reminder_interval " +
                 "FROM APPOINTMENT WHERE id=?";
 
         try (Connection connection = DriverManager.getConnection(dbUrl,dbUsername, dbPassword);
@@ -209,11 +208,11 @@ public class AgendaDAOImpl {
      */
     public Appointment makeAppointment(ResultSet rs) throws SQLException {
         Appointment appointment = new Appointment();
-        appointment.setAppointmentId(rs.getInt("appointment_id"));
+        appointment.setAppointmentId(rs.getInt("id"));
         appointment.setAlarmReminder(rs.getBoolean("alarm_reminder"));
         appointment.setDetails(rs.getString("details"));
-        appointment.setEndDate(rs.getTimestamp("end_date"));
-        appointment.setStartDate(rs.getTimestamp("start_date"));
+        appointment.setEndDate(rs.getTimestamp("end_time"));
+        appointment.setStartDate(rs.getTimestamp("start_time"));
         appointment.setFullDay(rs.getBoolean("whole_day"));
         appointment.setGroupId(rs.getInt("group_id"));
         appointment.setTitle(rs.getString("title"));
@@ -292,8 +291,8 @@ public class AgendaDAOImpl {
     public int create(Appointment appointment) throws SQLException {
         int records;
 
-        String sql = "INSERT INTO APPOINTMENT (title, group_id, location, start_time, end_time, details, alarm_reminder, reminder_interval)" +
-                "values (?, ?, ?, ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO APPOINTMENT (title, group_id, location, start_time, end_time, details, alarm_reminder, whole_day, reminder_interval)" +
+                "values (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         try (Connection connection = DriverManager.getConnection(dbUrl, dbUsername, dbPassword);
              // You must use PreparedStatements to guard against SQL Injection
@@ -303,9 +302,10 @@ public class AgendaDAOImpl {
             pStatement.setString(3, appointment.getLocation());
             pStatement.setTimestamp(4, appointment.getStartDate());
             pStatement.setTimestamp(5, appointment.getEndDate());
-            pStatement.setString(6, appointment.getLocation());
-            pStatement.setString(7, appointment.getLocation());
-            pStatement.setString(8, appointment.getLocation());
+            pStatement.setString(6, appointment.getDetails());
+            pStatement.setBoolean(7, appointment.getAlarmReminder());
+            pStatement.setBoolean(8, appointment.getFullDay());
+            pStatement.setInt(9, appointment.getReminderInterval());
 
 
             records = pStatement.executeUpdate();

@@ -1,4 +1,4 @@
-# Lab 4a - Sticky form with template and functions
+## Lab 4a - Sticky form with template and functions
 
 Revisit your form from lab 3, making the following changes:
 
@@ -11,7 +11,7 @@ Revisit your form from lab 3, making the following changes:
 
 ## Lab 4b - Web scraping
 
-**Part 1:**
+### Part 1
 
 Write a php script that will be invoked from the console (i.e., run from command line with command php script.php ) that will GET a web page ([https://www.dawsoncollege.qc.ca](https://www.dawsoncollege.qc.ca/)), retrieve its contents and store in a string, then print the string. This means you must:
 
@@ -28,13 +28,13 @@ NB: if you notice that your string is actually a **301 Moved Permanently** respo
 !!!note
     To invoke the php scrip from command line, you must vagrant ssh into your VM, and cd through the Code folder (mapped to PHPCode) to your file.
 
-**Part 2:**
+### Part 2
 
 Now take the string of the web page html, and programmatically look for the Dawson College twitter link (in an <a> tag with a class dc_twitter – find the href). Don't use a regex – it is not the best tool for parsing an HTML (or XML-type) document; a DOM parser is a better tool. Within PHP, the DOM manipulation is supported by a number [of DOM classes](http://php.net/manual/en/book.dom.php). We are interested in the [DOMDocument](http://php.net/manual/en/class.domdocument.php); you can subsequently use the [DOMNodeList](http://php.net/manual/en/class.domnodelist.php) and [DOMNodes](http://php.net/manual/en/class.domnode.php) to traverse through the tree, or use [DOMXPath](http://php.net/manual/en/class.domxpath.php) to query to get a specific DOMNode in a DOMNodeList.
 
 ==Remember: DOM is a collection of **classes**!==
 
-Steps:
+#### Steps:
 
 1. Load the HTML string into the DOMDocument using the loadHTML method.
 
@@ -45,7 +45,7 @@ Steps:
 
 How do you know if the website you want to scrape will cause many warnings? Run it through validator.w3.org. (so many errors from the Dawson home page, oh the shame…)
 
-### Option 1: traversing the DOM tree
+##### Option 1: traversing the DOM tree
 
 1. query the DOMDocument to find the appropriate node. Some examples :
 
@@ -68,7 +68,7 @@ echo $item->getAttribute('href');
 
 There are many more methods available to help you traverse the DOM! Look through the documentation or give me a shout!
 
-### Option 2: using Xpath to query
+##### Option 2: using Xpath to query
 
 1. use XPath selectors (a little bit like JQuery selectors) to find the appropriate DOMNodeList. Some DOMXPath examples (from PHP documentation)(sorry, not my forte!):
 
@@ -89,7 +89,7 @@ $elements = $xpath->query("*/div[@class='ClassToSearch']");
 
 An easy way to experiment and learn about XPath is by using Google Chrome Developer tools. Open the tools, browse to a page, look at the Elements -> right-click on an element of interest and select Copy – Copy XPath. Paste somewhere and examine!
 
-### Notes
+## Notes
 
 * --DOMNodes/DOMElements are objects. You may be interested in their nodeValue (the string between the `<tag> </tag>`) or in their specific attribute values (using `getAttribute('attributeName')` )
 * --Web scraping is hard-coded to the html document: if the scraped page changes, your scraper won't work. For that reason it is ok to do things like looking for the 1 # st `<td>` in a `<table>` with a given id: the number 1, the html tags and the id are all hard-coded.

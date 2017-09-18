@@ -272,13 +272,27 @@ public class DatabaseTest {
         actualGroup.setGroupId(3);
         actualGroup.setAccountId(2);
 
-        Appointment appointment = new Appointment(2, 'Basic Industries', 'Illinois', 2, '2016-12-16 00:25:52', '2017-02-18 15:00:27', 'Synergized well-modulated core', false, 3, true)
-    
-        assertSame("# of accounts", group, actualGroup);
+        // TODO: Add appointments list
+
+        assertSame("Found group", group, actualGroup);
     }
 
     @Test
     public void testFindAppointmentById() throws SQLException {
+        AgendaDAOImpl agendaDAO = new AgendaDAOImpl();
+        Appointment appointment = agendaDAO.findAppointmentById(1);
+
+        Appointment actualAppointment = new Appointment();
+        actualAppointment.setTitle("Basic Industries");
+        actualAppointment.setGroupId(2);
+        actualAppointment.setLocation("'Illinois'");
+        actualAppointment.setDetails("Synergized well-modulated core'");
+        actualAppointment.setAlarmReminder(true);
+        actualAppointment.setReminderInterval(3);
+        actualAppointment.setFullDay(false);
+        // TODO: timestamps
+
+        assertSame("# of accounts", appointment, actualAppointment);
     }
 
     /* Utility methods (may want to move) */

@@ -150,7 +150,7 @@ public class AgendaDAOImpl {
      */
     public void findAllAppointments(Group group) throws SQLException {
         String selectQuery = "SELECT id, title, location, start_time, " +
-                "end_time, details, whole_day, alarm_reminder, reminder_interval " +
+                "end_time, details, whole_day, alarm_reminder, reminder_interval, group_id " +
                 "FROM appointment WHERE group_id=?";
 
         try (Connection connection = DriverManager.getConnection(dbUrl,dbUsername, dbPassword);
@@ -431,6 +431,7 @@ public class AgendaDAOImpl {
             pStatement.setString(1, group.getTitle());
             pStatement.setInt(2, group.getAccountId());
             pStatement.setString(3, group.getRgb());
+            pStatement.setInt(4, group.getGroupId());
 
             records = pStatement.executeUpdate();
             log.debug("Updated group is " + group.toString());

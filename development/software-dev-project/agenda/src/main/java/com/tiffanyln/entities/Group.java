@@ -5,7 +5,7 @@ import java.util.List;
 public class Group {
     private int groupId;
     private String title;
-    private double rgb;
+    private String rgb;
     private int accountId;
     private List<Appointment> appointmentList;
 
@@ -27,11 +27,11 @@ public class Group {
 
     // Default constructor
     public Group() {
-        this(-1,"",-1,-1);
+        this(-1,"","#FF0364",-1);
     }
 
     // Full constructor
-    public Group(int groupId, String name, double rgb, int accountId) {
+    public Group(int groupId, String name, String rgb, int accountId) {
         this.groupId = groupId;
         this.title = name;
         this.rgb = rgb;
@@ -55,11 +55,11 @@ public class Group {
         this.title = name;
     }
 
-    public double getRgb() {
+    public String getRgb() {
         return rgb;
     }
 
-    public void setRgb(double rgb) {
+    public void setRgb(String rgb) {
         this.rgb = rgb;
     }
 
@@ -71,11 +71,12 @@ public class Group {
         Group group = (Group) o;
 
         if (getGroupId() != group.getGroupId()) return false;
-        if (Double.compare(group.getRgb(), getRgb()) != 0) return false;
         if (getAccountId() != group.getAccountId()) return false;
-        if (getTitle() != null ? !getTitle().equals(group.getTitle()) : group.getTitle() != null) return false;
+        if (!getTitle().equals(group.getTitle())) return false;
+        if (!getRgb().equals(group.getRgb())) return false;
         return getAppointmentList() != null ? getAppointmentList().equals(group.getAppointmentList()) : group.getAppointmentList() == null;
     }
+
 
     @Override
     public String toString() {

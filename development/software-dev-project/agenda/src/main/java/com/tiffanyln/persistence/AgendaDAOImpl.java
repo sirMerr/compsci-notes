@@ -1,6 +1,5 @@
 package com.tiffanyln.persistence;
 
-import com.sun.org.apache.regexp.internal.RE;
 import com.tiffanyln.entities.Account;
 import com.tiffanyln.entities.Appointment;
 import com.tiffanyln.entities.Group;
@@ -35,12 +34,12 @@ public class AgendaDAOImpl {
      * Retrieve all accounts and make a list of accounts
      *
      * @return ArrayList of Account objects
-     * @throws SQLException
+     * @throws SQLException when unsuccessful
      */
     public List<Account> findAllAccounts() throws SQLException {
         List<Account> rows = new ArrayList<>();
 
-        String selectQuery = "SELECT id,lastName,firstName,email,port FROM account";
+        String selectQuery = "SELECT id,lastName,firstName,email, email_password, port FROM account";
         try (Connection connection = DriverManager.getConnection(dbUrl, dbUsername, dbPassword);
              // You must use PreparedStatements to guard against SQL Injection
              PreparedStatement pStatement = connection.prepareStatement(selectQuery);
@@ -54,47 +53,98 @@ public class AgendaDAOImpl {
         return rows;
     }
 
-    public Account findById(int id) throws SQLException {
+    public Account findAccountById(int id) throws SQLException {
         Account account = new Account();
+        log.debug("Id: " + id);
 
-        String selectQuery= "SELECT id, lastName, firstName, email, port FROM account WHERE account_id=?";
+        String selectQuery= "SELECT id, lastName, firstName, email, email_password, port FROM ACCOUNT WHERE id=?";
+
         try (Connection connection = DriverManager.getConnection(dbUrl,dbUsername, dbPassword);
-             PreparedStatement pStatement = connection.prepareStatement(selectQuery);
-             ResultSet resultSet = pStatement.executeQuery()) {
-            if (resultSet.next()) {
-                account = makeAccount(resultSet);
-                findAllGroups(account);
+             PreparedStatement pStatement = connection.prepareStatement(selectQuery)){
+            pStatement.setInt(1,id);
+
+            try(ResultSet resultSet = pStatement.executeQuery()){
+                if (resultSet.next()) {
+                    log.debug("Account resultset: " + resultSet.toString());
+                    account = makeAccount(resultSet);
+                    findAllGroups(account);
+
+                    log.debug("New Account: " + account.toString());
+                }
             }
         }
 
         return account;
     }
 
+    public Group findGroupById(int id) throws SQLException {
+        Group group = new Group();
+
+        String selectQuery= "SELECT id, rgb_hex, name, account_id FROM GROUP_RECORD WHERE id=?";
+
+        try (Connection connection = DriverManager.getConnection(dbUrl,dbUsername, dbPassword);
+             PreparedStatement pStatement = connection.prepareStatement(selectQuery)){
+            pStatement.setInt(1,id);
+
+            try (ResultSet resultSet = pStatement.executeQuery()){
+                if (resultSet.next()) {
+                    group = makeGroup(resultSet);
+                    findAllAppointments(group);
+                }
+            }
+        }
+
+        return group;
+    }
+
+    public Appointment findAppointmentById(int id) throws SQLException {
+        Appointment appointment = new Appointment();
+
+        String selectQuery= "SELECT id, title, location, start_time, " +
+                "end_time, details, whole_day, alarm_reminder, reminder_interval " +
+                "FROM APPOINTMENT WHERE id=?";
+
+        try (Connection connection = DriverManager.getConnection(dbUrl,dbUsername, dbPassword);
+             PreparedStatement pStatement = connection.prepareStatement(selectQuery)){
+            pStatement.setInt(1,id);
+
+            try (ResultSet resultSet = pStatement.executeQuery()){
+                if (resultSet.next()) {
+                    appointment = makeAppointment(resultSet);
+                }
+            }
+        }
+
+        return appointment;
+    }
+
     /**
      * Finds all groups for an account, and all appointments for each group,
      *
-     * @param account
-     * @return
-     * @throws SQLException
+     * @param account Account
+     * @throws SQLException when unsuccessful
      */
     public void findAllGroups(Account account) throws SQLException {
-        String selectQuery = "SELECT id, account_id, rgb FROM group_record WHERE account_id = ?";
+        String selectQuery = "SELECT id, account_id, name, rgb_hex FROM GROUP_RECORD WHERE account_id = ?";
 
         try (Connection connection = DriverManager.getConnection(dbUrl, dbUsername, dbPassword);
              PreparedStatement pStatement = connection.prepareStatement(selectQuery)) {
             pStatement.setInt(1, account.getAccountId());
             try (ResultSet resultSet = pStatement.executeQuery()) {
                 while (resultSet.next()) {
-                    account.getGroups().add(makeGroup(resultSet));
+                        account.getGroups().add(makeGroup(resultSet));
                 }
+            } catch (NullPointerException err) {
+                err.printStackTrace();
+                log.error("Error finding groups for account (groups/appointments null)" + account.toString());
             }
         }
     }
 
     /**
      * Finds all Appointments based on a group
-     * @param group
-     * @throws SQLException
+     * @param group Group
+     * @throws SQLException when unsuccessful
      */
     public void findAllAppointments(Group group) throws SQLException {
         String selectQuery = "SELECT id, title, location, start_time, " +
@@ -116,41 +166,43 @@ public class AgendaDAOImpl {
     /* Make methods */
     /**
      * Initializes an Account object with a result set
-     * @param rs
+     * @param rs Resultset
      * @return Account
-     * @throws SQLException
+     * @throws SQLException when unsuccessful
      */
     public Account makeAccount(ResultSet rs) throws SQLException {
         Account account = new Account();
         account.setLastName(rs.getString("lastname"));
         account.setFirstName(rs.getString("firstname"));
-        account.setAccountId(rs.getInt("account_id"));
+        account.setAccountId(rs.getInt("id"));
         account.setPort(rs.getInt("port"));
         account.setEmail(rs.getString("email"));
-//        account.setPassword(rs.getString("email_password"));
+        account.setPassword(rs.getString("email_password"));
         return account;
     }
 
     /**
      * Initializes a Group object with a result set
-     * @param rs
+     * @param rs Resultset
      * @return Group
-     * @throws SQLException
+     * @throws SQLException when unsuccessful
      */
     public Group makeGroup(ResultSet rs) throws SQLException {
         Group group = new Group();
         group.setAccountId(rs.getInt("account_id"));
-        group.setGroupId(rs.getInt("group_id"));
-        group.setTitle(rs.getString("title"));
-        group.setRgb(rs.getDouble("rgb"));
+        group.setGroupId(rs.getInt("id"));
+        group.setTitle(rs.getString("name"));
+        group.setRgb(rs.getString("rgb_hex"));
+
+        log.debug("Made group" + group.toString());
         return group;
     }
 
     /**
      * Initializes an Appointment object with a result set
-     * @param rs
+     * @param rs Resultset
      * @return Appointment
-     * @throws SQLException
+     * @throws SQLException when unsuccessful
      */
     public Appointment makeAppointment(ResultSet rs) throws SQLException {
         Appointment appointment = new Appointment();
@@ -172,14 +224,14 @@ public class AgendaDAOImpl {
     /**
      * Create a Account record
      *
-     * @param account
+     * @param account Account
      * @return number of records created, should be 0 or 1
      * @throws SQLException
      */
     public int create(Account account) throws SQLException {
         int records;
 
-        String sql = "INSERT INTO account (lastname, firstname, email, email_password, port)" +
+        String sql = "INSERT INTO ACCOUNT (lastname, firstname, email, email_password, port)" +
                 "values (?, ?, ?, ?, ?)";
         try (Connection connection = DriverManager.getConnection(dbUrl, dbUsername, dbPassword);
              // You must use PreparedStatements to guard against SQL Injection
@@ -197,7 +249,7 @@ public class AgendaDAOImpl {
                 recordNum = rs.getInt(1);
             }
             account.setAccountId(recordNum);
-            log.debug("New record is " + account.toString());
+            log.debug("New Account is " + account.toString());
         }
         return records;
     }
@@ -212,7 +264,7 @@ public class AgendaDAOImpl {
     public int create(Group group) throws SQLException {
         int records;
 
-        String sql = "INSERT INTO group_record (name, account_id, rgb)" +
+        String sql = "INSERT INTO GROUP_RECORD (name, account_id, rgb_hex)" +
                 "values (?, ?, ?)";
 
         try (Connection connection = DriverManager.getConnection(dbUrl, dbUsername, dbPassword);
@@ -220,7 +272,7 @@ public class AgendaDAOImpl {
              PreparedStatement pStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);) {
             pStatement.setString(1, group.getTitle());
             pStatement.setInt(2, group.getAccountId());
-            pStatement.setDouble(3, group.getRgb());
+            pStatement.setString(3, group.getRgb());
 
             records = pStatement.executeUpdate();
             ResultSet rs = pStatement.getGeneratedKeys();
@@ -228,8 +280,183 @@ public class AgendaDAOImpl {
             if (rs.next()) {
                 recordNum = rs.getInt(1);
             }
-            group.setAccountId(recordNum);
-            log.debug("New record is " + group.toString());
+            group.setGroupId(recordNum);
+            log.debug("New Group is " + group.toString());
+        }
+        return records;
+    }
+
+    public int create(Appointment appointment) throws SQLException {
+        int records;
+
+        String sql = "INSERT INTO APPOINTMENT (title, group_id, location, start_time, end_time, details, alarm_reminder, reminder_interval)" +
+                "values (?, ?, ?, ?, ?, ?, ?, ?)";
+
+        try (Connection connection = DriverManager.getConnection(dbUrl, dbUsername, dbPassword);
+             // You must use PreparedStatements to guard against SQL Injection
+             PreparedStatement pStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
+            pStatement.setString(1, appointment.getTitle());
+            pStatement.setInt(2, appointment.getGroupId());
+            pStatement.setString(3, appointment.getLocation());
+            pStatement.setTimestamp(4, appointment.getStartDate());
+            pStatement.setTimestamp(5, appointment.getEndDate());
+            pStatement.setString(6, appointment.getLocation());
+            pStatement.setString(7, appointment.getLocation());
+            pStatement.setString(8, appointment.getLocation());
+
+
+            records = pStatement.executeUpdate();
+            ResultSet rs = pStatement.getGeneratedKeys();
+            int recordNum = -1;
+            if (rs.next()) {
+                recordNum = rs.getInt(1);
+            }
+            appointment.setAppointmentId(recordNum);
+            log.debug("New Appointment is " + appointment.toString());
+        }
+        return records;
+    }
+
+    /* Delete methods*/
+
+    /**
+     * Deletes an appointment
+     * @param id appointment id
+     * @return int if successful
+     * @throws SQLException when unsuccessful
+     */
+    public int deleteAppointment(int id) throws SQLException {
+        int records;
+
+        String deleteSql= "DELETE FROM APPOINTMENT WHERE id=?";
+
+        try (Connection connection = DriverManager.getConnection(dbUrl, dbUsername, dbPassword);
+             PreparedStatement pStatement = connection.prepareStatement(deleteSql, Statement.RETURN_GENERATED_KEYS)) {
+            pStatement.setInt(1, id);
+
+            records = pStatement.executeUpdate();
+            log.debug("Deleted appointment with id " + id);
+        }
+
+        return records;
+    }
+
+    /**
+     * This method delete a group and related tables.
+     * This cascades so linked appointments also delete.
+     * @param id group id
+     * @return 1 if it succeeds, -1 if it doesn't
+     * @throws SQLException if it fails
+     */
+    public int deleteGroup(int id) {
+        int records;
+
+        String deleteSql= "DELETE FROM GROUP_RECORD WHERE id=?";
+
+        try (Connection connection = DriverManager.getConnection(dbUrl, dbUsername, dbPassword);
+             PreparedStatement pStatement = connection.prepareStatement(deleteSql, Statement.RETURN_GENERATED_KEYS)) {
+            pStatement.setInt(1, id);
+
+            records = pStatement.executeUpdate();
+        } catch (SQLException err) {
+            log.error("Unable to delete group with id=" + id);
+            return -1;
+        }
+
+        return records;
+    }
+
+    /**
+     * This method deletes an account and linked tables.
+     * This cascades, so linked groups and appointments also delete.
+     * @param id
+     * @return
+     * @throws SQLException
+     */
+    public int deleteAccount(int id) {
+        int records;
+
+        String deleteSql= "DELETE FROM ACCOUNT WHERE id=?";
+
+        try (Connection connection = DriverManager.getConnection(dbUrl, dbUsername, dbPassword);
+             PreparedStatement pStatement = connection.prepareStatement(deleteSql, Statement.RETURN_GENERATED_KEYS)) {
+            pStatement.setInt(1, id);
+
+            records = pStatement.executeUpdate();
+        } catch (SQLException err) {
+            log.error("Unable to delete account with id=" + id);
+            return -1;
+        }
+
+        return records;
+    }
+
+    /* Update methods */
+
+    public int updateAccount(Account account) {
+        int records;
+
+        String updateQuery= "UPDATE ACCOUNT SET firstname=?, lastname=?, email=?, email_password=?, port=? WHERE id=?";
+
+        try (Connection connection = DriverManager.getConnection(dbUrl,dbUsername, dbPassword);
+             PreparedStatement pStatement = connection.prepareStatement(updateQuery, Statement.RETURN_GENERATED_KEYS)){
+            pStatement.setString(1,account.getFirstName());
+            pStatement.setString(2,account.getLastName());
+            pStatement.setString(3,account.getEmail());
+            pStatement.setString(4,account.getPassword());
+            pStatement.setInt(5,account.getPort());
+            pStatement.setInt(6,account.getAccountId());
+
+            records = pStatement.executeUpdate();
+            log.debug("Updated account is " + account.toString());
+        } catch(SQLException err) {
+            log.error("Unable to update account with id=" + account.getAccountId());
+            return -1;
+        }
+
+        return records;
+    }
+
+    public int updateGroup(Group group) throws SQLException {
+        int records;
+
+        String updateQuery = "UPDATE GROUP_RECORD SET name=?, account_id=?, rgb_hex=? WHERE id=?";
+
+        try (Connection connection = DriverManager.getConnection(dbUrl, dbUsername, dbPassword);
+             // You must use PreparedStatements to guard against SQL Injection
+             PreparedStatement pStatement = connection.prepareStatement(updateQuery, Statement.RETURN_GENERATED_KEYS);) {
+            pStatement.setString(1, group.getTitle());
+            pStatement.setInt(2, group.getAccountId());
+            pStatement.setString(3, group.getRgb());
+
+            records = pStatement.executeUpdate();
+            log.debug("Updated group is " + group.toString());
+
+        }
+        return records;
+    }
+
+    public int updateAppointment(Appointment appointment) throws SQLException {
+        int records;
+
+        String sql = "UPDATE APPOINTMENT SET title=?, group_id=?, location=?, start_time=?, end_time=?, details=?, alarm_reminder=?, reminder_interval=?" +
+                "WHERE id=?";
+
+        try (Connection connection = DriverManager.getConnection(dbUrl, dbUsername, dbPassword);
+             // You must use PreparedStatements to guard against SQL Injection
+             PreparedStatement pStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
+            pStatement.setString(1, appointment.getTitle());
+            pStatement.setInt(2, appointment.getGroupId());
+            pStatement.setString(3, appointment.getLocation());
+            pStatement.setTimestamp(4, appointment.getStartDate());
+            pStatement.setTimestamp(5, appointment.getEndDate());
+            pStatement.setString(6, appointment.getLocation());
+            pStatement.setString(7, appointment.getLocation());
+            pStatement.setString(8, appointment.getLocation());
+            pStatement.setInt(9, appointment.getAppointmentId());
+
+            records = pStatement.executeUpdate();
+            log.debug("Updated Appointment is " + appointment.toString());
         }
         return records;
     }

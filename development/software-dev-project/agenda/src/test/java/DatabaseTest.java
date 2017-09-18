@@ -1,4 +1,7 @@
 import com.tiffanyln.entities.Account;
+import com.tiffanyln.entities.Group;
+import com.tiffanyln.entities.Appointment;
+
 import com.tiffanyln.persistence.AgendaDAOImpl;
 import org.junit.Before;
 import org.junit.Test;
@@ -9,18 +12,20 @@ import java.io.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertSame;
 
 /**
  * Testing database
  * @author Tiffany Le-Nguyen
  * @version 0.1
  */
-public class TestDatabase {
+public class DatabaseTest {
     private final String dbUrl= "jdbc:mysql://localhost:3306/AGENDADB?autoReconnect=true&useSSL=false";
     private final String dbUsername= "root";
     private final String dbPassword= "cookiedough";
@@ -29,20 +34,28 @@ public class TestDatabase {
             this.getClass().getName());
 
     /**
-     * This will test if the expected number of records are in the database
+     * This routine recreates the database before every test. This makes sure
+     * that a destructive test will not interfere with any other test. Does not
+     * support stored procedures.
      *
-     * @throws SQLException
+     * This routine is courtesy of Bartosz Majsak, the lead Arquillian developer
+     * at JBoss
      */
-    @Test
-    public void testFindAllAccounts() throws SQLException {
-        AgendaDAOImpl agendaDAO = new AgendaDAOImpl();
-        List<Account> accounts = agendaDAO.findAllAccounts();
-        // Nothing to do with the test
-        displayAll(accounts);
-
-        assertEquals("# of accounts", 5, accounts.size());
+    @Before
+    public void seedDatabase() {
+        log.info("Seeding Database");
+        final String seedDataScript = loadAsString("CreateAgendaTables.sql");
+        try (Connection connection = DriverManager.getConnection(dbUrl, dbUsername, dbPassword)) {
+            for (String statement : splitStatements(new StringReader(
+                    seedDataScript), ";")) {
+                connection.prepareStatement(statement).execute();
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException("Failed seeding database", e);
+        }
     }
 
+    /* Create Testing */
     /**
      * This will insert aan account, retrieve the just inserted account and compare
      * the inserted and retrieved objects
@@ -65,9 +78,105 @@ public class TestDatabase {
         accountDAO.create(a1);
 
         // Check if insert worked
-        Account a2 = accountDAO.findById(a1.getAccountId());
+        Account a2 = accountDAO.findAccountById(a1.getAccountId());
         assertEquals("A record was not created", a1, a2);
     }
+
+    @Test
+    public void testCreateAppointment() throws SQLException {
+
+
+    }
+
+    @Test
+    public void testCreateGroup() throws SQLException {
+    }
+
+    /* Delete Testing */
+    @Test
+    public void testDeleteAccount() throws SQLException {
+    }
+
+    @Test
+    public void testDeleteGroup() throws SQLException {
+    }
+
+    @Test
+    public void testDeleteAppointment() throws SQLException {
+    }
+
+    /* Update Testing */
+    @Test
+    public void testUpdateAppointment() throws SQLException {
+    }
+
+    @Test
+    public void testUpdateGroup() throws SQLException {
+    }
+
+    @Test
+    public void testUpdateAccount() throws SQLException {
+    }
+
+    /* Find Testing */
+    /**
+     * This will test if the expected number of records are in the database
+     *
+     * @throws SQLException
+     */
+    @Test
+    public void testFindAccounts() throws SQLException {
+        AgendaDAOImpl agendaDAO = new AgendaDAOImpl();
+        List<Account> accounts = agendaDAO.findAllAccounts();
+        // Nothing to do with the test
+        displayAll(accounts);
+
+        assertEquals("# of accounts", 5, accounts.size());
+    }
+
+    /**
+     * This will insert aan account, retrieve the just inserted account and compare
+     * the inserted and retrieved objects
+     *
+     * @throws SQLException
+     */
+    @Test
+    public void testFindGroups() throws SQLException {
+        AgendaDAOImpl accountDAO = new AgendaDAOImpl();
+
+        Account account = accountDAO.findAccountById(1);
+
+        log.debug("Account Tester: " + account);
+
+        List<Group> groups1 = account.getGroups();
+
+        Group g1 = new Group(1, "Bytecard", "#0285B4", 1);
+        Group g2 = new Group(1, "", "#0285B4", 1);
+
+        List<Group> groups2 = new ArrayList<>();
+        groups2.add(g1);
+        groups2.add(g2);
+
+        assertSame("Groups were found for account_id = 1", groups1, groups2);
+    }
+
+    @Test
+    public void testFindAppointments() throws SQLException {
+    }
+
+    @Test
+    public void testFindAccountById() throws SQLException {
+    }
+
+    @Test
+    public void testFindGroupById() throws SQLException {
+    }
+
+    @Test
+    public void testFindAppointmentById() throws SQLException {
+    }
+
+    /* Utility methods (may want to move) */
 
     /**
      * A utility method for displaying all the records
@@ -92,29 +201,6 @@ public class TestDatabase {
             });
         });
     }
-
-    /**
-     * This routine recreates the database before every test. This makes sure
-     * that a destructive test will not interfere with any other test. Does not
-     * support stored procedures.
-     *
-     * This routine is courtesy of Bartosz Majsak, the lead Arquillian developer
-     * at JBoss
-     */
-    @Before
-    public void seedDatabase() {
-        log.info("Seeding Database");
-        final String seedDataScript = loadAsString("CreateAgendaTables.sql");
-        try (Connection connection = DriverManager.getConnection(dbUrl, dbUsername, dbPassword)) {
-            for (String statement : splitStatements(new StringReader(
-                    seedDataScript), ";")) {
-                connection.prepareStatement(statement).execute();
-            }
-        } catch (SQLException e) {
-            throw new RuntimeException("Failed seeding database", e);
-        }
-    }
-
 
     /**
      * The following methods support the seedDatabase method

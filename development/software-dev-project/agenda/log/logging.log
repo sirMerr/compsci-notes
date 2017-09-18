@@ -1,0 +1,399 @@
+[INFO ] 2017-09-18 01:00:04.708 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:00:05.158 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:00:05.223 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:00:05.288 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:00:05.372 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:00:05.448 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:00:05.514 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:00:05.576 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:00:05.651 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:00:05.714 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:00:05.773 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:00:05.836 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:00:05.900 [main] AgendaDAOImpl - New Account is Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=null}
+[INFO ] 2017-09-18 01:00:05.906 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:00:05.969 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:00:06.028 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:05:53.137 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:05:53.602 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:05:53.672 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:05:53.741 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:05:53.823 [main] AgendaDAOImpl - Made group
+[INFO ] 2017-09-18 01:05:53.827 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:05:53.893 [main] AgendaDAOImpl - Made group
+[ERROR] 2017-09-18 01:05:53.894 [main] AgendaDAOImpl - Error finding account
+[INFO ] 2017-09-18 01:05:53.895 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:05:53.958 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:05:54.027 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:05:54.089 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:05:54.146 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:05:54.204 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:05:54.263 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:05:54.326 [main] AgendaDAOImpl - New Account is Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=null}
+[INFO ] 2017-09-18 01:05:54.333 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:05:54.390 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:05:54.454 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:07:33.017 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:07:33.391 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:07:33.459 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:07:33.520 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:07:33.594 [main] AgendaDAOImpl - Made group
+[ERROR] 2017-09-18 01:07:33.595 [main] AgendaDAOImpl - Error finding groups for account (groups/appointments null)
+[DEBUG] 2017-09-18 01:07:33.598 [main] AgendaDAOImpl - Made group
+[ERROR] 2017-09-18 01:07:33.599 [main] AgendaDAOImpl - Error finding groups for account (groups/appointments null)
+[DEBUG] 2017-09-18 01:07:33.603 [main] AgendaDAOImpl - Made group
+[ERROR] 2017-09-18 01:07:33.603 [main] AgendaDAOImpl - Error finding groups for account (groups/appointments null)
+[INFO ] 2017-09-18 01:07:33.673 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:07:33.746 [main] AgendaDAOImpl - Made group
+[ERROR] 2017-09-18 01:07:33.746 [main] AgendaDAOImpl - Error finding groups for account (groups/appointments null)
+[INFO ] 2017-09-18 01:07:33.748 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:07:33.808 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:07:33.873 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:07:33.933 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:07:33.994 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:07:34.057 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:07:34.124 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:07:34.185 [main] AgendaDAOImpl - New Account is Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=null}
+[INFO ] 2017-09-18 01:07:34.190 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:07:34.256 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:07:34.322 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:09:20.393 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:09:20.818 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:09:20.895 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:09:20.974 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:09:21.053 [main] AgendaDAOImpl - Made group
+[ERROR] 2017-09-18 01:09:21.054 [main] AgendaDAOImpl - Error finding groups for account (groups/appointments null)
+[DEBUG] 2017-09-18 01:09:21.057 [main] AgendaDAOImpl - Made group
+[ERROR] 2017-09-18 01:09:21.058 [main] AgendaDAOImpl - Error finding groups for account (groups/appointments null)
+[DEBUG] 2017-09-18 01:09:21.063 [main] AgendaDAOImpl - Made group
+[ERROR] 2017-09-18 01:09:21.063 [main] AgendaDAOImpl - Error finding groups for account (groups/appointments null)
+[INFO ] 2017-09-18 01:09:21.127 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:09:21.195 [main] AgendaDAOImpl - Made group
+[ERROR] 2017-09-18 01:09:21.196 [main] AgendaDAOImpl - Error finding groups for account (groups/appointments null)
+[INFO ] 2017-09-18 01:09:21.197 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:09:21.255 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:09:21.313 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:09:21.370 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:09:21.426 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:09:21.492 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:09:21.554 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:09:21.615 [main] AgendaDAOImpl - New Account is Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=null}
+[INFO ] 2017-09-18 01:09:21.621 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:09:21.684 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:09:21.747 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:09:30.551 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:09:30.909 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:09:30.978 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:09:31.040 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:09:31.113 [main] AgendaDAOImpl - Made group
+[ERROR] 2017-09-18 01:09:31.113 [main] AgendaDAOImpl - Error finding groups for account (groups/appointments null)
+[DEBUG] 2017-09-18 01:09:31.117 [main] AgendaDAOImpl - Made group
+[ERROR] 2017-09-18 01:09:31.118 [main] AgendaDAOImpl - Error finding groups for account (groups/appointments null)
+[DEBUG] 2017-09-18 01:09:31.122 [main] AgendaDAOImpl - Made group
+[ERROR] 2017-09-18 01:09:31.123 [main] AgendaDAOImpl - Error finding groups for account (groups/appointments null)
+[INFO ] 2017-09-18 01:09:31.190 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:09:31.258 [main] AgendaDAOImpl - Made group
+[ERROR] 2017-09-18 01:09:31.258 [main] AgendaDAOImpl - Error finding groups for account (groups/appointments null)
+[INFO ] 2017-09-18 01:09:31.261 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:09:31.318 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:09:31.379 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:09:31.441 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:09:31.502 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:09:31.558 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:09:31.619 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:09:31.678 [main] AgendaDAOImpl - New Account is Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=null}
+[INFO ] 2017-09-18 01:09:31.684 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:09:31.739 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:09:31.799 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:11:10.182 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:11:10.643 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:11:10.717 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:11:10.787 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:11:10.862 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:11:10.862 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:11:10.866 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:11:10.870 [main] AgendaDAOImpl - Made group
+[INFO ] 2017-09-18 01:11:10.932 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:11:11.003 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:11:11.003 [main] AgendaDAOImpl - Made group
+[INFO ] 2017-09-18 01:11:11.007 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:11:11.069 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:11:11.123 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:11:11.181 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:11:11.241 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:11:11.300 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:11:11.357 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:11:11.425 [main] AgendaDAOImpl - New Account is Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=null}
+[INFO ] 2017-09-18 01:11:11.432 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:11:11.490 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:11:11.549 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:14:04.592 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:14:04.974 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:14:05.041 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:14:05.100 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:14:05.175 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:14:05.176 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:14:05.179 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:14:05.182 [main] AgendaDAOImpl - Made group
+[INFO ] 2017-09-18 01:14:05.247 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:14:05.314 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:14:05.315 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:14:05.315 [main] DatabaseTest - Account: 
+[INFO ] 2017-09-18 01:14:05.321 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:14:05.389 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:14:05.445 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:14:05.506 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:14:05.566 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:14:05.634 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:14:05.703 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:14:05.774 [main] AgendaDAOImpl - New Account is Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=null}
+[INFO ] 2017-09-18 01:14:05.780 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:14:05.835 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:14:05.902 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:16:50.003 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:16:50.435 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:16:50.506 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:16:50.574 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:16:50.657 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:16:50.657 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:16:50.660 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:16:50.664 [main] AgendaDAOImpl - Made group
+[INFO ] 2017-09-18 01:16:50.729 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:16:50.799 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:16:50.800 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:16:50.800 [main] DatabaseTest - Account Tester: 
+[INFO ] 2017-09-18 01:16:50.804 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:16:50.863 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:16:50.920 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:16:50.983 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:16:51.041 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:16:51.107 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:16:51.171 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:16:51.231 [main] AgendaDAOImpl - New Account is Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=null}
+[INFO ] 2017-09-18 01:16:51.238 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:16:51.301 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:16:51.362 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:17:55.523 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:17:55.991 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:17:56.063 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:17:56.134 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:17:56.209 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:17:56.209 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:17:56.213 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:17:56.216 [main] AgendaDAOImpl - Made group
+[INFO ] 2017-09-18 01:17:56.281 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:17:56.353 [main] AgendaDAOImpl - Account resultset: com.mysql.jdbc.JDBC42ResultSet@6d763516
+[DEBUG] 2017-09-18 01:17:56.356 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:17:56.357 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:17:56.357 [main] DatabaseTest - Account Tester: 
+[INFO ] 2017-09-18 01:17:56.362 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:17:56.420 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:17:56.484 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:17:56.543 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:17:56.598 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:17:56.656 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:17:56.708 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:17:56.772 [main] AgendaDAOImpl - New Account is Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=null}
+[DEBUG] 2017-09-18 01:17:56.775 [main] AgendaDAOImpl - Account resultset: com.mysql.jdbc.JDBC42ResultSet@49e5f737
+[INFO ] 2017-09-18 01:17:56.778 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:17:56.838 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:17:56.912 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:18:18.696 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:18:19.118 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:18:19.199 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:18:19.272 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:18:19.341 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:18:19.342 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:18:19.345 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:18:19.350 [main] AgendaDAOImpl - Made group
+[INFO ] 2017-09-18 01:18:19.417 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:18:19.488 [main] AgendaDAOImpl - Account resultset: 
+[DEBUG] 2017-09-18 01:18:19.492 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:18:19.492 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:18:19.492 [main] DatabaseTest - Account Tester: 
+[INFO ] 2017-09-18 01:18:19.497 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:18:19.559 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:18:19.621 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:18:19.677 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:18:19.737 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:18:19.793 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:18:19.848 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:18:19.913 [main] AgendaDAOImpl - New Account is Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=null}
+[DEBUG] 2017-09-18 01:18:19.916 [main] AgendaDAOImpl - Account resultset: 
+[INFO ] 2017-09-18 01:18:19.920 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:18:19.977 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:18:20.032 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:19:17.732 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:19:18.199 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:19:18.267 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:19:18.338 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:19:18.415 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:19:18.416 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:19:18.419 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:19:18.423 [main] AgendaDAOImpl - Made group
+[INFO ] 2017-09-18 01:19:18.487 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:19:18.555 [main] AgendaDAOImpl - Account resultset: 
+[DEBUG] 2017-09-18 01:19:18.558 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:19:18.558 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:19:18.558 [main] AgendaDAOImpl - New Account: 
+[DEBUG] 2017-09-18 01:19:18.559 [main] DatabaseTest - Account Tester: 
+[INFO ] 2017-09-18 01:19:18.563 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:19:18.624 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:19:18.688 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:19:18.746 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:19:18.809 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:19:18.872 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:19:18.929 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:19:18.988 [main] AgendaDAOImpl - New Account is Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=null}
+[DEBUG] 2017-09-18 01:19:18.991 [main] AgendaDAOImpl - Account resultset: 
+[DEBUG] 2017-09-18 01:19:18.994 [main] AgendaDAOImpl - New Account: 
+[INFO ] 2017-09-18 01:19:18.995 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:19:19.052 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:19:19.113 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:20:24.990 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:20:25.438 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:20:25.508 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:20:25.583 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:20:25.670 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:20:25.670 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:20:25.674 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:20:25.677 [main] AgendaDAOImpl - Made group
+[INFO ] 2017-09-18 01:20:25.742 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:20:25.800 [main] AgendaDAOImpl - Id: 
+[DEBUG] 2017-09-18 01:20:25.804 [main] AgendaDAOImpl - Account resultset: 
+[DEBUG] 2017-09-18 01:20:25.808 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:20:25.808 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:20:25.808 [main] AgendaDAOImpl - New Account: 
+[DEBUG] 2017-09-18 01:20:25.808 [main] DatabaseTest - Account Tester: 
+[INFO ] 2017-09-18 01:20:25.814 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:20:25.872 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:20:25.933 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:20:25.997 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:20:26.090 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:20:26.153 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:20:26.205 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:20:26.258 [main] AgendaDAOImpl - New Account is Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=null}
+[DEBUG] 2017-09-18 01:20:26.258 [main] AgendaDAOImpl - Id: 
+[DEBUG] 2017-09-18 01:20:26.261 [main] AgendaDAOImpl - Account resultset: 
+[DEBUG] 2017-09-18 01:20:26.264 [main] AgendaDAOImpl - New Account: 
+[INFO ] 2017-09-18 01:20:26.265 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:20:26.325 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:20:26.489 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:22:22.073 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:22:22.500 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:22:22.568 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:22:22.633 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:22:22.705 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:22:22.705 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:22:22.710 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:22:22.714 [main] AgendaDAOImpl - Made group
+[INFO ] 2017-09-18 01:22:22.776 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:22:22.849 [main] AgendaDAOImpl - Id: 1
+[DEBUG] 2017-09-18 01:22:22.852 [main] AgendaDAOImpl - Account resultset: com.mysql.jdbc.JDBC42ResultSet@37afeb11
+[DEBUG] 2017-09-18 01:22:22.856 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:22:22.856 [main] AgendaDAOImpl - Made group
+[DEBUG] 2017-09-18 01:22:22.856 [main] AgendaDAOImpl - New Account: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=null}
+[DEBUG] 2017-09-18 01:22:22.856 [main] DatabaseTest - Account Tester: 
+[INFO ] 2017-09-18 01:22:22.861 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:22:22.922 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:22:22.986 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:22:23.051 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:22:23.108 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:22:23.172 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:22:23.226 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:22:23.291 [main] AgendaDAOImpl - New Account is Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=null}
+[DEBUG] 2017-09-18 01:22:23.291 [main] AgendaDAOImpl - Id: 6
+[DEBUG] 2017-09-18 01:22:23.296 [main] AgendaDAOImpl - Account resultset: com.mysql.jdbc.JDBC42ResultSet@757277dc
+[DEBUG] 2017-09-18 01:22:23.303 [main] AgendaDAOImpl - New Account: Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=null}
+[INFO ] 2017-09-18 01:22:23.305 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:22:23.370 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:22:23.427 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:23:29.197 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:23:29.637 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:23:29.714 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:23:29.785 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:23:29.859 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=null}
+[DEBUG] 2017-09-18 01:23:29.859 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=null}
+[DEBUG] 2017-09-18 01:23:29.863 [main] AgendaDAOImpl - Made groupGroup{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=null}
+[DEBUG] 2017-09-18 01:23:29.866 [main] AgendaDAOImpl - Made groupGroup{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=null}
+[INFO ] 2017-09-18 01:23:29.926 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:23:29.990 [main] AgendaDAOImpl - Id: 1
+[DEBUG] 2017-09-18 01:23:29.993 [main] AgendaDAOImpl - Account resultset: com.mysql.jdbc.JDBC42ResultSet@6d763516
+[DEBUG] 2017-09-18 01:23:29.997 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=null}
+[DEBUG] 2017-09-18 01:23:29.997 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=null}
+[DEBUG] 2017-09-18 01:23:29.998 [main] AgendaDAOImpl - New Account: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=null}
+[DEBUG] 2017-09-18 01:23:29.998 [main] DatabaseTest - Account Tester: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=null}
+[INFO ] 2017-09-18 01:23:30.003 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:23:30.066 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:23:30.124 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:23:30.188 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:23:30.247 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:23:30.304 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:23:30.362 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:23:30.422 [main] AgendaDAOImpl - New Account is Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=null}
+[DEBUG] 2017-09-18 01:23:30.423 [main] AgendaDAOImpl - Id: 6
+[DEBUG] 2017-09-18 01:23:30.425 [main] AgendaDAOImpl - Account resultset: com.mysql.jdbc.JDBC42ResultSet@49e5f737
+[DEBUG] 2017-09-18 01:23:30.428 [main] AgendaDAOImpl - New Account: Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=null}
+[INFO ] 2017-09-18 01:23:30.429 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:23:30.493 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:23:30.565 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:28:20.143 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:28:20.532 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:28:20.607 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:28:20.680 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:28:20.753 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=null}
+[DEBUG] 2017-09-18 01:28:20.753 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=null}
+[DEBUG] 2017-09-18 01:28:20.756 [main] AgendaDAOImpl - Made groupGroup{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=null}
+[DEBUG] 2017-09-18 01:28:20.760 [main] AgendaDAOImpl - Made groupGroup{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=null}
+[INFO ] 2017-09-18 01:28:20.823 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:28:20.889 [main] AgendaDAOImpl - Id: 1
+[DEBUG] 2017-09-18 01:28:20.892 [main] AgendaDAOImpl - Account resultset: com.mysql.jdbc.JDBC42ResultSet@6d763516
+[DEBUG] 2017-09-18 01:28:20.896 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=null}
+[DEBUG] 2017-09-18 01:28:20.896 [main] AgendaDAOImpl - Made groupGroup{groupId=2, name='Alpha', rgb=#0285B4, accountId=1, appointmentList=null}
+[DEBUG] 2017-09-18 01:28:20.896 [main] AgendaDAOImpl - New Account: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=null}
+[DEBUG] 2017-09-18 01:28:20.897 [main] DatabaseTest - Account Tester: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=null}
+[INFO ] 2017-09-18 01:28:20.902 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:28:20.965 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:28:21.030 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:28:21.099 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:28:21.159 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:28:21.220 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:28:21.276 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:28:21.337 [main] AgendaDAOImpl - New Account is Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=null}
+[DEBUG] 2017-09-18 01:28:21.337 [main] AgendaDAOImpl - Id: 6
+[DEBUG] 2017-09-18 01:28:21.340 [main] AgendaDAOImpl - Account resultset: com.mysql.jdbc.JDBC42ResultSet@49e5f737
+[DEBUG] 2017-09-18 01:28:21.343 [main] AgendaDAOImpl - New Account: Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=null}
+[INFO ] 2017-09-18 01:28:21.344 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:28:21.410 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:28:21.473 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:29:58.629 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:29:59.073 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:29:59.146 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:29:59.223 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:29:59.302 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=null}
+[ERROR] 2017-09-18 01:29:59.303 [main] AgendaDAOImpl - Error finding groups for account (groups/appointments null)Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=null}
+[DEBUG] 2017-09-18 01:29:59.309 [main] AgendaDAOImpl - Made groupGroup{groupId=3, name='Bamity', rgb=#FF0364, accountId=2, appointmentList=null}
+[ERROR] 2017-09-18 01:29:59.309 [main] AgendaDAOImpl - Error finding groups for account (groups/appointments null)Account{accountId=2, firstName='Sunny', lastName='Tryhorn', email='stryhorn1@china.com.cn', password='93vDZO2CXDof', port=72, groups=null}
+[DEBUG] 2017-09-18 01:29:59.313 [main] AgendaDAOImpl - Made groupGroup{groupId=4, name='Toughjoyfax', rgb=#FF0364, accountId=3, appointmentList=null}
+[ERROR] 2017-09-18 01:29:59.314 [main] AgendaDAOImpl - Error finding groups for account (groups/appointments null)Account{accountId=3, firstName='Ruy', lastName='Raiment', email='rraiment2@epa.gov', password='RFjKeE7i', port=10, groups=null}
+[INFO ] 2017-09-18 01:29:59.382 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:29:59.443 [main] AgendaDAOImpl - Id: 1
+[DEBUG] 2017-09-18 01:29:59.446 [main] AgendaDAOImpl - Account resultset: com.mysql.jdbc.JDBC42ResultSet@595b007d
+[DEBUG] 2017-09-18 01:29:59.450 [main] AgendaDAOImpl - Made groupGroup{groupId=1, name='Bytecard', rgb=#0285B4, accountId=1, appointmentList=null}
+[ERROR] 2017-09-18 01:29:59.451 [main] AgendaDAOImpl - Error finding groups for account (groups/appointments null)Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=null}
+[DEBUG] 2017-09-18 01:29:59.451 [main] AgendaDAOImpl - New Account: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=null}
+[DEBUG] 2017-09-18 01:29:59.451 [main] DatabaseTest - Account Tester: Account{accountId=1, firstName='Jenelle', lastName='Skym', email='jskym0@aol.com', password='wlcTOpmjTa', port=97, groups=null}
+[INFO ] 2017-09-18 01:29:59.453 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:29:59.521 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:29:59.579 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:29:59.645 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:29:59.700 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:29:59.761 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:29:59.813 [main] DatabaseTest - Seeding Database
+[DEBUG] 2017-09-18 01:29:59.877 [main] AgendaDAOImpl - New Account is Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=null}
+[DEBUG] 2017-09-18 01:29:59.877 [main] AgendaDAOImpl - Id: 6
+[DEBUG] 2017-09-18 01:29:59.880 [main] AgendaDAOImpl - Account resultset: com.mysql.jdbc.JDBC42ResultSet@757277dc
+[DEBUG] 2017-09-18 01:29:59.883 [main] AgendaDAOImpl - New Account: Account{accountId=6, firstName='Bob', lastName='Smith', email='bob.smith@gmail.com', password='123', port=15, groups=null}
+[INFO ] 2017-09-18 01:29:59.883 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:29:59.948 [main] DatabaseTest - Seeding Database
+[INFO ] 2017-09-18 01:30:00.011 [main] DatabaseTest - Seeding Database

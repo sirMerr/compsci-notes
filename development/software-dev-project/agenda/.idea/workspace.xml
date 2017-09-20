@@ -2,56 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c32f220-1f4d-4623-9f6c-8672e05ad906" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/d8395ad2-96e7-4d14-acac-f217303804dc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_43.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_8_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_8_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_slf4j_impl_2_8_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AGENDADB/.lck" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AGENDADB/.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AGENDADB/.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AGENDADB/.script" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/agenda.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/logging.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/tiffanyln/config.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/tiffanyln/entities/Account.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/tiffanyln/entities/Appointment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/tiffanyln/entities/Group.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/tiffanyln/persistence/AgendaDAOImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/DatabaseTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/resources/CreateAgendaDB.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/resources/CreateAgendaTables.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tiffanyln/entities/Account.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tiffanyln/entities/Appointment.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tiffanyln/entities/Group.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tiffanyln/persistence/AgendaDAOImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/log4j2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/CreateAgendaDB.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/CreateAgendaTables.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/DatabaseTest.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/01-calculator" afterPath="$PROJECT_DIR$/../../android/01-calculator" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/02-calculator" afterPath="$PROJECT_DIR$/../../android/02-calculator" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/03-calculator" afterPath="$PROJECT_DIR$/../../android/03-calculator" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/LoanCalculator" afterPath="$PROJECT_DIR$/../../android/LoanCalculator" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BeanExamplesMvn" afterPath="$PROJECT_DIR$/../BeanExamplesMvn" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../DBTableExample" afterPath="$PROJECT_DIR$/../DBTableExample" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../php/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../php/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../docs/Internet App Dev III/labs/lab4.md" afterPath="$PROJECT_DIR$/../../../docs/Internet App Dev III/labs/lab4.md" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1118,7 +1074,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39144000" />
+    <option name="totallyTimeSpent" value="39401000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="43" width="1400" height="779" extended-state="0" />

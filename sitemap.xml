@@ -4,7 +4,7 @@
     
     <url>
      <loc>https://sirmerr.github.io/compsci-notes//</loc>
-     <lastmod>2017-09-18</lastmod>
+     <lastmod>2017-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
      <loc>https://sirmerr.github.io/compsci-notes//how-to-document/</loc>
-     <lastmod>2017-09-18</lastmod>
+     <lastmod>2017-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -21,7 +21,7 @@
         
     <url>
      <loc>https://sirmerr.github.io/compsci-notes//Data and Communications/introduction/</loc>
-     <lastmod>2017-09-18</lastmod>
+     <lastmod>2017-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -30,50 +30,68 @@
     
         
     <url>
-     <loc>https://sirmerr.github.io/compsci-notes//Internet App Dev III/_Introduction/</loc>
-     <lastmod>2017-09-18</lastmod>
+     <loc>https://sirmerr.github.io/compsci-notes//Internet App Dev III/_References/</loc>
+     <lastmod>2017-09-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://sirmerr.github.io/compsci-notes//Internet App Dev III/_String/</loc>
+     <lastmod>2017-09-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://sirmerr.github.io/compsci-notes//Internet App Dev III/_Term-definitions/</loc>
+     <lastmod>2017-09-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://sirmerr.github.io/compsci-notes//Internet App Dev III/__Introduction/</loc>
+     <lastmod>2017-09-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://sirmerr.github.io/compsci-notes//Internet App Dev III/__Outline/</loc>
+     <lastmod>2017-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://sirmerr.github.io/compsci-notes//Internet App Dev III/arrays/</loc>
-     <lastmod>2017-09-18</lastmod>
+     <lastmod>2017-09-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://sirmerr.github.io/compsci-notes//Internet App Dev III/cURL_DOMDocumentation/</loc>
+     <lastmod>2017-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://sirmerr.github.io/compsci-notes//Internet App Dev III/constructs/</loc>
-     <lastmod>2017-09-18</lastmod>
+     <lastmod>2017-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://sirmerr.github.io/compsci-notes//Internet App Dev III/forms/</loc>
-     <lastmod>2017-09-18</lastmod>
+     <lastmod>2017-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>https://sirmerr.github.io/compsci-notes//Internet App Dev III/outline/</loc>
-     <lastmod>2017-09-18</lastmod>
+     <loc>https://sirmerr.github.io/compsci-notes//Internet App Dev III/midterm_prep/</loc>
+     <lastmod>2017-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>https://sirmerr.github.io/compsci-notes//Internet App Dev III/references/</loc>
-     <lastmod>2017-09-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>https://sirmerr.github.io/compsci-notes//Internet App Dev III/string/</loc>
-     <lastmod>2017-09-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>https://sirmerr.github.io/compsci-notes//Internet App Dev III/term-definitions/</loc>
-     <lastmod>2017-09-18</lastmod>
+     <loc>https://sirmerr.github.io/compsci-notes//Internet App Dev III/using_postgres/</loc>
+     <lastmod>2017-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -88,8 +106,18 @@
     
         
     <url>
+     <loc>https://sirmerr.github.io/compsci-notes//Internship Prep/dawson/</loc>
+     <lastmod>2017-09-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
      <loc>https://sirmerr.github.io/compsci-notes//Mobile Software Dev/introduction/</loc>
-     <lastmod>2017-09-18</lastmod>
+     <lastmod>2017-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -99,31 +127,31 @@
         
     <url>
      <loc>https://sirmerr.github.io/compsci-notes//Software Dev Project/introduction/</loc>
-     <lastmod>2017-09-18</lastmod>
+     <lastmod>2017-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://sirmerr.github.io/compsci-notes//Software Dev Project/jam-specifications/</loc>
-     <lastmod>2017-09-18</lastmod>
+     <lastmod>2017-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://sirmerr.github.io/compsci-notes//Software Dev Project/logging/</loc>
-     <lastmod>2017-09-18</lastmod>
+     <lastmod>2017-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://sirmerr.github.io/compsci-notes//Software Dev Project/maven/</loc>
-     <lastmod>2017-09-18</lastmod>
+     <lastmod>2017-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://sirmerr.github.io/compsci-notes//Software Dev Project/outline/</loc>
-     <lastmod>2017-09-18</lastmod>
+     <lastmod>2017-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

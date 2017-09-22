@@ -1,0 +1,2032 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Notes for Semester 5 of Computer Science at Dawson">
+      
+      
+        <link rel="canonical" href="https://sirmerr.github.io/compsci-notes/Software-Project/jam-specifications/">
+      
+      
+        <meta name="author" content="Tiffany">
+      
+      
+        <link rel="shortcut icon" href="../../images/favicon.ico">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.4">
+    
+    
+      
+        <title>Jam specifications - CompSci HQ</title>
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr-1df76c4e58.js"></script>
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application-769c285a91.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-02c2a4388f.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="blue-grey" data-md-color-accent="blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="https://sirmerr.github.io/compsci-notes/" title="CompSci HQ" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  Software Project
+                </span>
+              
+            
+            Jam specifications
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    CompSci HQ
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../how-to-document/" title="How to document" class="md-nav__link">
+      How to document
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Data Communications
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Data Communications
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Data-Communications/introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Assignments
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Assignments
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Data-Communications/assignments/stones/" title="Stones" class="md-nav__link">
+      Stones
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Internet App Dev III
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Internet App Dev III
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/_References/" title=" References" class="md-nav__link">
+       References
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/_String/" title=" String" class="md-nav__link">
+       String
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/_Term-definitions/" title=" Term definitions" class="md-nav__link">
+       Term definitions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/__Introduction/" title="  Introduction" class="md-nav__link">
+        Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/__Outline/" title="  Outline" class="md-nav__link">
+        Outline
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/arrays/" title="Arrays" class="md-nav__link">
+      Arrays
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/cURL_DOMDocumentation/" title="cURL DOMDocumentation" class="md-nav__link">
+      cURL DOMDocumentation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/constructs/" title="Constructs" class="md-nav__link">
+      Constructs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/forms/" title="Forms" class="md-nav__link">
+      Forms
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/midterm_prep/" title="Midterm prep" class="md-nav__link">
+      Midterm prep
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/using_postgres/" title="Using postgres" class="md-nav__link">
+      Using postgres
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-12" type="checkbox" id="nav-4-12">
+    
+    <label class="md-nav__link" for="nav-4-12">
+      Assignments
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-12">
+        Assignments
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/assignments/dont-eat-that/" title="Dont eat that" class="md-nav__link">
+      Dont eat that
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-13" type="checkbox" id="nav-4-13">
+    
+    <label class="md-nav__link" for="nav-4-13">
+      Labs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-13">
+        Labs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/labs/getting-started/" title="Getting started" class="md-nav__link">
+      Getting started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/labs/lab2/" title="Lab2" class="md-nav__link">
+      Lab2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/labs/lab3/" title="Lab3" class="md-nav__link">
+      Lab3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/labs/lab4/" title="Lab4" class="md-nav__link">
+      Lab4
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Internship Prep
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Internship Prep
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internship-Prep/dawson/" title="Dawson" class="md-nav__link">
+      Dawson
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Mobile Development
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Mobile Development
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mobile-Development/introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+    
+    <label class="md-nav__link" for="nav-7">
+      Software Project
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Software Project
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Jam specifications
+      </label>
+    
+    <a href="./" title="Jam specifications" class="md-nav__link md-nav__link--active">
+      Jam specifications
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-overview" title="System Overview" class="md-nav__link">
+    System Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-map" title="Design Map" class="md-nav__link">
+    Design Map
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definitions-and-acronyms" title="Definitions and Acronyms" class="md-nav__link">
+    Definitions and Acronyms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gmail-requirements" title="Gmail Requirements" class="md-nav__link">
+    Gmail Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constraints" title="Constraints" class="md-nav__link">
+    Constraints
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-environment" title="System Environment" class="md-nav__link">
+    System Environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repository-and-naming" title="Repository and Naming" class="md-nav__link">
+    Repository and Naming
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gitlab-account-name" title="GitLab Account Name" class="md-nav__link">
+    GitLab Account Name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#java-project-name" title="Java Project Name" class="md-nav__link">
+    Java Project Name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gitlab-repository-name" title="GitLab Repository Name" class="md-nav__link">
+    GitLab Repository Name
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#high-level-design" title="High Level Design" class="md-nav__link">
+    High Level Design
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-module" title="Configuration Module" class="md-nav__link">
+    Configuration Module
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database-module" title="Database Module" class="md-nav__link">
+    Database Module
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appointment-module" title="Appointment Module" class="md-nav__link">
+    Appointment Module
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reminder-module" title="Reminder Module" class="md-nav__link">
+    Reminder Module
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#help-module" title="Help Module" class="md-nav__link">
+    Help Module
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#master-gui-module" title="Master GUI Module" class="md-nav__link">
+    Master GUI Module
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#database" title="Database" class="md-nav__link">
+    Database
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#email" title="Email" class="md-nav__link">
+    Email
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appointment-group" title="Appointment Group" class="md-nav__link">
+    Appointment Group
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database-module_1" title="Database Module" class="md-nav__link">
+    Database Module
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#email_1" title="Email" class="md-nav__link">
+    Email
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appointment-group_1" title="Appointment Group" class="md-nav__link">
+    Appointment Group
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appointments" title="Appointments" class="md-nav__link">
+    Appointments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appointment-module_1" title="Appointment Module" class="md-nav__link">
+    Appointment Module
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#monthly-view" title="Monthly View" class="md-nav__link">
+    Monthly View
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weekly-view" title="Weekly View" class="md-nav__link">
+    Weekly View
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#daily-view" title="Daily View" class="md-nav__link">
+    Daily View
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appointment-dialog" title="Appointment Dialog" class="md-nav__link">
+    Appointment Dialog
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-dialog" title="Search Dialog" class="md-nav__link">
+    Search Dialog
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reminder-module_1" title="Reminder Module" class="md-nav__link">
+    Reminder Module
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#timers" title="Timers" class="md-nav__link">
+    Timers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#help-module_1" title="Help Module" class="md-nav__link">
+    Help Module
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#master-gui-module_1" title="Master GUI Module" class="md-nav__link">
+    Master GUI Module
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#menu" title="Menu" class="md-nav__link">
+    Menu
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file" title="File" class="md-nav__link">
+    File
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#view" title="View" class="md-nav__link">
+    View
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#help" title="Help" class="md-nav__link">
+    Help
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toolbar" title="Toolbar" class="md-nav__link">
+    Toolbar
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration" title="### Configuration" class="md-nav__link">
+    ### Configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new-appointment" title="### New Appointment" class="md-nav__link">
+    ### New Appointment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monthly" title="### Monthly" class="md-nav__link">
+    ### Monthly
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weekly" title="### Weekly" class="md-nav__link">
+    ### Weekly
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#daily" title="### Daily" class="md-nav__link">
+    ### Daily
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#help-contents" title="### Help Contents" class="md-nav__link">
+    ### Help Contents
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../logging/" title="Logging" class="md-nav__link">
+      Logging
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../maven/" title="Maven" class="md-nav__link">
+      Maven
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../outline/" title="Outline" class="md-nav__link">
+      Outline
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-6" type="checkbox" id="nav-7-6">
+    
+    <label class="md-nav__link" for="nav-7-6">
+      Labs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-6">
+        Labs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../labs/warmup-dice-game/" title="Warmup dice game" class="md-nav__link">
+      Warmup dice game
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-overview" title="System Overview" class="md-nav__link">
+    System Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-map" title="Design Map" class="md-nav__link">
+    Design Map
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definitions-and-acronyms" title="Definitions and Acronyms" class="md-nav__link">
+    Definitions and Acronyms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gmail-requirements" title="Gmail Requirements" class="md-nav__link">
+    Gmail Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constraints" title="Constraints" class="md-nav__link">
+    Constraints
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-environment" title="System Environment" class="md-nav__link">
+    System Environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repository-and-naming" title="Repository and Naming" class="md-nav__link">
+    Repository and Naming
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gitlab-account-name" title="GitLab Account Name" class="md-nav__link">
+    GitLab Account Name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#java-project-name" title="Java Project Name" class="md-nav__link">
+    Java Project Name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gitlab-repository-name" title="GitLab Repository Name" class="md-nav__link">
+    GitLab Repository Name
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#high-level-design" title="High Level Design" class="md-nav__link">
+    High Level Design
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-module" title="Configuration Module" class="md-nav__link">
+    Configuration Module
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database-module" title="Database Module" class="md-nav__link">
+    Database Module
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appointment-module" title="Appointment Module" class="md-nav__link">
+    Appointment Module
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reminder-module" title="Reminder Module" class="md-nav__link">
+    Reminder Module
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#help-module" title="Help Module" class="md-nav__link">
+    Help Module
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#master-gui-module" title="Master GUI Module" class="md-nav__link">
+    Master GUI Module
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#database" title="Database" class="md-nav__link">
+    Database
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#email" title="Email" class="md-nav__link">
+    Email
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appointment-group" title="Appointment Group" class="md-nav__link">
+    Appointment Group
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database-module_1" title="Database Module" class="md-nav__link">
+    Database Module
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#email_1" title="Email" class="md-nav__link">
+    Email
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appointment-group_1" title="Appointment Group" class="md-nav__link">
+    Appointment Group
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appointments" title="Appointments" class="md-nav__link">
+    Appointments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appointment-module_1" title="Appointment Module" class="md-nav__link">
+    Appointment Module
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#monthly-view" title="Monthly View" class="md-nav__link">
+    Monthly View
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weekly-view" title="Weekly View" class="md-nav__link">
+    Weekly View
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#daily-view" title="Daily View" class="md-nav__link">
+    Daily View
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appointment-dialog" title="Appointment Dialog" class="md-nav__link">
+    Appointment Dialog
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-dialog" title="Search Dialog" class="md-nav__link">
+    Search Dialog
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reminder-module_1" title="Reminder Module" class="md-nav__link">
+    Reminder Module
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#timers" title="Timers" class="md-nav__link">
+    Timers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#help-module_1" title="Help Module" class="md-nav__link">
+    Help Module
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#master-gui-module_1" title="Master GUI Module" class="md-nav__link">
+    Master GUI Module
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#menu" title="Menu" class="md-nav__link">
+    Menu
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file" title="File" class="md-nav__link">
+    File
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#view" title="View" class="md-nav__link">
+    View
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#help" title="Help" class="md-nav__link">
+    Help
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toolbar" title="Toolbar" class="md-nav__link">
+    Toolbar
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration" title="### Configuration" class="md-nav__link">
+    ### Configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new-appointment" title="### New Appointment" class="md-nav__link">
+    ### New Appointment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monthly" title="### Monthly" class="md-nav__link">
+    ### Monthly
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weekly" title="### Weekly" class="md-nav__link">
+    ### Weekly
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#daily" title="### Daily" class="md-nav__link">
+    ### Daily
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#help-contents" title="### Help Contents" class="md-nav__link">
+    ### Help Contents
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>🚧 Under Construction</p>
+</div>
+<h1 id="contents">Contents<a class="headerlink" href="#contents" title="Permanent link">&para;</a></h1>
+<p><a href="#_Toc490142353">1 Introduction 1</a></p>
+<p><a href="#_Toc490142354">1.1 System Overview 1</a></p>
+<p><a href="#design-map">1.2 Design Map 1</a></p>
+<p><a href="#_Toc490142356">1.3 Definitions and Acronyms 1</a></p>
+<p><a href="#gmail-requirements">1.4 Gmail Requirements 1</a></p>
+<p><a href="#considerations">2 Considerations 2</a></p>
+<p><a href="#_Toc490142359">2.1 Assumptions 2</a></p>
+<p><a href="#_Toc490142360">2.2 Constraints 2</a></p>
+<p><a href="#system-environment">2.3 System Environment 2</a></p>
+<p><a href="#repository-and-naming">2.4 Repository and Naming 2</a></p>
+<p><a href="#gitlab-account-name">2.4.1 GitLab Account Name 2</a></p>
+<p><a href="#java-project-name">2.4.2 Java Project Name 3</a></p>
+<p><a href="#gitlab-repository-name">2.4.3 GitLab Repository Name 3</a></p>
+<p><a href="#_Toc490142366">3 High Level Design 4</a></p>
+<p><a href="#configuration-module">3.1 Configuration Module 4</a></p>
+<p><a href="#database-module">3.2 Database Module 4</a></p>
+<p><a href="#appointment-module">3.3 Appointment Module 4</a></p>
+<p><a href="#reminder-module">3.4 Reminder Module 4</a></p>
+<p><a href="#help-module">3.5 Help Module 4</a></p>
+<p><a href="#master-gui-module">3.6 Master GUI Module 4</a></p>
+<p><a href="#low-level-design">4 Low Level Design 5</a></p>
+<p><a href="#configuration-module-1">4.1 Configuration Module 5</a></p>
+<p><a href="#database">4.1.1 Database 5</a></p>
+<p><a href="#email">4.1.2 Email 5</a></p>
+<p><a href="#appointment-group">4.1.3 Appointment Group 5</a></p>
+<p><a href="#database-module-1">4.2 Database Module 5</a></p>
+<p><a href="#email-1">4.2.1 Email 5</a></p>
+<p><a href="#appointment-group-1">4.2.2 Appointment Group 6</a></p>
+<p><a href="#appointments">4.2.3 Appointments 6</a></p>
+<p><a href="#appointment-module-1">4.3 Appointment Module 6</a></p>
+<p><a href="#monthly-view">4.3.1 Monthly View 6</a></p>
+<p><a href="#weekly-view">4.3.2 Weekly View 6</a></p>
+<p><a href="#daily-view">4.3.3 Daily View 6</a></p>
+<p><a href="#appointment-dialog">4.3.4 Appointment Dialog 6</a></p>
+<p><a href="#search-dialog">4.3.5 Search Dialog 6</a></p>
+<p><a href="#reminder-module-1">4.4 Reminder Module 7</a></p>
+<p><a href="#timers">4.4.1 Timers 7</a></p>
+<p><a href="#help-module-1">4.5 Help Module 7</a></p>
+<p><a href="#master-gui-module-1">4.6 Master GUI Module 7</a></p>
+<p><a href="#menu">4.6.1 Menu 7</a></p>
+<p><a href="#file">File 7</a></p>
+<p><a href="#view">View 7</a></p>
+<p><a href="#help">Help 7</a></p>
+<p><a href="#toolbar">4.6.2 Toolbar 8</a></p>
+<p><a href="#data-structures">5 Data Structures 9</a></p>
+<p><a href="#dbms-settings">5.1 DBMS Settings 9</a></p>
+<p><a href="#smtp-settings">5.2 SMTP Settings 9</a></p>
+<p><a href="#appointment-group-record">5.3 Appointment Group Record 9</a></p>
+<p><a href="#appointment-record">5.4 Appointment Record 10</a></p>
+<p><a href="#help-records">5.5 Help Records 10</a></p>
+<h2 id="introduction"><span id="_Toc517668538" class="anchor"><span id="_Toc490142353" class="anchor"></span></span>Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>The purpose of this project is to develop your individual skills as a
+Java application developer. The application described in this document
+is designed to have you apply what you have already learned in the
+Computer Science Technology Program and what you are continuing to learn
+this semester. This is an individual student project in which you will
+work alone.</p>
+<h2 id="system-overview"><span id="_Toc517668539" class="anchor"><span id="_Toc490142354" class="anchor"></span></span>System Overview<a class="headerlink" href="#system-overview" title="Permanent link">&para;</a></h2>
+<hr />
+<p><span id="_Toc517251108" class="anchor"></span>The program that is
+described in this document is called the Java Agenda Manager or JAM for
+short. Its use case is to provide an interactive application in which
+appointments can be stored and reviewed along with reminders of upcoming
+events. It will be written in the Java language and it is meant to be
+portable across all platforms that support Java</p>
+<h2 id="design-map">Design Map<a class="headerlink" href="#design-map" title="Permanent link">&para;</a></h2>
+<p>Within this document you will find the features, specifications, and
+design of the JAM. The final product that you develop is required
+respect this document. While you may add additional features, you are
+expected to deliver the feature set described here. The following
+sections of this document will describe the features, organization and
+GUI design of the system.</p>
+<h2 id="definitions-and-acronyms"><span id="_Toc517251109" class="anchor"><span id="_Toc517668543" class="anchor"><span id="_Toc490142356" class="anchor"></span></span></span>Definitions and Acronyms<a class="headerlink" href="#definitions-and-acronyms" title="Permanent link">&para;</a></h2>
+<hr />
+<p><span id="_Toc517668545" class="anchor"></span><strong>Appointment</strong></p>
+<blockquote>
+<p>An event that the user of the program wishes to record and then be
+reminded of prior to its scheduled time.</p>
+</blockquote>
+<p><strong>Monthly Calendar</strong></p>
+<blockquote>
+<p>The presentation of all the days in each month with an ordered list of
+any appointments presented for the specific day.</p>
+</blockquote>
+<p><strong>Weekly Calendar</strong></p>
+<blockquote>
+<p>The presentation of the days in each week that shows the time
+intervals for the day and displays appointments at their specific day
+and time.</p>
+</blockquote>
+<p><strong>Daily Calendar</strong></p>
+<blockquote>
+<p>The presentation of a single day that shows the time intervals for the
+day and displays appointments at their specific time.</p>
+</blockquote>
+<p><strong>Reminder</strong></p>
+<blockquote>
+<p>A visual and audible alarm generated by the program to remind the user
+of an upcoming appointment. In addition, an email is sent to the user
+as a further reminder.</p>
+</blockquote>
+<p><span id="_Toc459373803" class="anchor"></span><strong>Appointment Group</strong></p>
+<blockquote>
+<p>Appointments can be grouped. A group displays a background color in
+the display.</p>
+</blockquote>
+<h2 id="gmail-requirements">Gmail Requirements<a class="headerlink" href="#gmail-requirements" title="Permanent link">&para;</a></h2>
+<p>You will need to create one Gmail account. This is the account thru
+which you will be sending reminders.</p>
+<ol>
+<li>
+<p>Considerations
+    ==============</p>
+<ol>
+<li><span id="_Toc517668546" class="anchor"><span id="_Toc490142359" class="anchor"></span></span>Assumptions
+    ---------------------------------------------------------------------------------------------------------</li>
+</ol>
+</li>
+</ol>
+<p>The program will be written using the standard features of the Java
+language. Only third party open source libraries approved by your
+instructor may be used. JUnit testing must be employed for all JDBC code
+you write.</p>
+<h2 id="constraints"><span id="_Toc517668547" class="anchor"><span id="_Toc490142360" class="anchor"></span></span>Constraints<a class="headerlink" href="#constraints" title="Permanent link">&para;</a></h2>
+<p><span id="_Toc517668550" class="anchor"></span>The primary constraint is
+that the system must be completed by the end of week eight. You must
+look for simplicity rather than complexity. Features not explicitly in
+this document and not mentioned in class should be avoided unless they
+are recognized as critical to the operation of the program. Such changes
+must be submitted to your instructor for approval.</p>
+<h2 id="system-environment">System Environment<a class="headerlink" href="#system-environment" title="Permanent link">&para;</a></h2>
+<p><span id="_Toc517668552" class="anchor"><span id="_Toc517668549"
+class="anchor"></span></span>The programming language will be Java
+version 1.8 and the GUI will be JavaFX. You may use NetBeans or Eclipse
+for your IDE. NetBeans is preferred.</p>
+<p>The JAM will depend on an external DBMS for its appointment and contact
+store. The DBMS will be MySQL.</p>
+<p>The JAM is not dependent on any specific operating system. It should be
+able to run on any computer that supports Java. To be able to use the
+Waldo2 database server the computer must be connected to the Internet.</p>
+<h2 id="repository-and-naming">Repository and Naming<a class="headerlink" href="#repository-and-naming" title="Permanent link">&para;</a></h2>
+<p>Projects must be stored in a Git repository. You are required to use a
+private repository on GitLab (gitlab.com). GitLab provides any developer
+with a private repository. When you create your repository you must
+grant the GitLab user “omniprof” developer status. You may not use any
+other repository in this course. The naming rules are mandatory.</p>
+<h3 id="gitlab-account-name">GitLab Account Name<a class="headerlink" href="#gitlab-account-name" title="Permanent link">&para;</a></h3>
+<p>Your GitLab account must be named <strong>JAM_Student Name</strong>. Use your name
+as it appears on college records. For example, if your name is Betty
+Smith then you must create an account named:</p>
+<p><strong>JAM_BettySmith</strong></p>
+<p>You may leave out any middle names.</p>
+<h3 id="java-project-name">Java Project Name<a class="headerlink" href="#java-project-name" title="Permanent link">&para;</a></h3>
+<p>When you create your project in the IDE it must be named <strong>JAM_Student
+ID_Version</strong>. For example:</p>
+<p><strong>JAM_9999999_1</strong></p>
+<p>If you must create a new project, for whatever reason, then use the same
+name with a different version number:</p>
+<p><strong>JAM_9999999_2</strong></p>
+<h3 id="gitlab-repository-name">GitLab Repository Name<a class="headerlink" href="#gitlab-repository-name" title="Permanent link">&para;</a></h3>
+<p>The repository that you create for your projects must have the same name
+as your Java project in the IDE. This means that when I need to retrieve
+your code from GitLab the URL will look like:</p>
+<p><strong><a href="https://gitlab.com/JAM">https://gitlab.com/JAM</a>_BettySmith/JAM_9999999_1</strong></p>
+<h2 id="high-level-design"><span id="_Toc517668560" class="anchor"><span id="_Toc490142366" class="anchor"></span></span>High Level Design<a class="headerlink" href="#high-level-design" title="Permanent link">&para;</a></h2>
+<p>===============================================================================================================</p>
+<p>The overall design of the program will consist of modules that manage
+the different features and functions of the program.</p>
+<h2 id="configuration-module">Configuration Module<a class="headerlink" href="#configuration-module" title="Permanent link">&para;</a></h2>
+<p>This module is responsible for recording and storing information that
+affects the operation of the program. There will be GUI components in
+this module.</p>
+<h2 id="database-module">Database Module<a class="headerlink" href="#database-module" title="Permanent link">&para;</a></h2>
+<p>This module is responsible for interacting with the DBMS on behalf of
+all other modules. It will provide specific services to meet the needs
+of other modules. There will not be any GUI components in this module.</p>
+<p>Unit testing of this module is required.</p>
+<h2 id="appointment-module">Appointment Module<a class="headerlink" href="#appointment-module" title="Permanent link">&para;</a></h2>
+<p>This module is responsible for the user interface for managing and
+displaying appointments. There will be GUI components in this module.</p>
+<h2 id="reminder-module">Reminder Module<a class="headerlink" href="#reminder-module" title="Permanent link">&para;</a></h2>
+<p>This module is responsible for generating alarms prior to an
+appointment. There will not be any GUI components in this module.</p>
+<h2 id="help-module">Help Module<a class="headerlink" href="#help-module" title="Permanent link">&para;</a></h2>
+<p>This module is responsible for displaying help screens. There will be
+GUI components in this module.</p>
+<h2 id="master-gui-module">Master GUI Module<a class="headerlink" href="#master-gui-module" title="Permanent link">&para;</a></h2>
+<p>This module is responsible for the main application window, menus, and
+toolbars. There will be GUI components in this module.</p>
+<ol>
+<li>
+<p>Low Level Design
+    ================</p>
+<ol>
+<li>Configuration Module
+    --------------------</li>
+</ol>
+</li>
+</ol>
+<p>This module will handle the data that configures the program. There are
+three categories of configuration data. These are database, email and
+appointment group. Each category will require a GUI interface for input
+and editing.</p>
+<p>When the program is run for the very first time this module executes
+automatically. This module can be accessed by the user at any time to
+make changes to the configuration.</p>
+<h3 id="database">Database<a class="headerlink" href="#database" title="Permanent link">&para;</a></h3>
+<p>The program must have a MySQL database account ready to use. You can
+create a local account on your computer or use an account on a
+department server. This information will be stored in a properties file
+using the Properties API in Java. Properties files are plain text files.
+See section 5.1 for the data that must be stored. You will need a popup
+dialog to enter or edit this data.</p>
+<h3 id="email">Email<a class="headerlink" href="#email" title="Permanent link">&para;</a></h3>
+<p>The program, when running, will send an email to the program’s user at a
+preset interval before an appointment. You will require an email account
+on Gmail for this purpose. The necessary information will be stored in a
+table in the database. You will need a popup dialog to enter or edit
+this data.</p>
+<h3 id="appointment-group">Appointment Group<a class="headerlink" href="#appointment-group" title="Permanent link">&para;</a></h3>
+<p>An appointment group supports the concept of grouping appointments such
+as work appointments and personal appointments. The group determines the
+background colour of an appointment in the display. You must have five
+default groups with colors already assigned to them. You will need a
+popup dialog to enter or edit this data.</p>
+<h2 id="database-module_1">Database Module<a class="headerlink" href="#database-module_1" title="Permanent link">&para;</a></h2>
+<p>This module will manage the records for all modules. There should be a
+class for each data table. It will create the required tables for the
+database the first time the program is run. Then it will add or retrieve
+records based on requests from the other modules. Each of these modules
+must have unit tests that demonstrate that the code functions as
+required.</p>
+<h3 id="email_1">Email<a class="headerlink" href="#email_1" title="Permanent link">&para;</a></h3>
+<p>This module will be responsible for retrieving, inserting, updating or
+deleting records for the Email configuration.</p>
+<h3 id="appointment-group_1">Appointment Group<a class="headerlink" href="#appointment-group_1" title="Permanent link">&para;</a></h3>
+<p>This module will be responsible for retrieving, inserting, updating or
+deleting records for the Appointment Group configuration.</p>
+<h3 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permanent link">&para;</a></h3>
+<p>This module will be responsible for retrieving, inserting, updating or
+deleting appointment records. There will need to be several retrieval
+routines to match the various views. In addition, several search
+routines will be required based on various criteria.</p>
+<h2 id="appointment-module_1">Appointment Module<a class="headerlink" href="#appointment-module_1" title="Permanent link">&para;</a></h2>
+<p>This module will be responsible for the user interface for inputting
+appointments and displaying appointments. It will consist of the
+following:</p>
+<h3 id="monthly-view">Monthly View<a class="headerlink" href="#monthly-view" title="Permanent link">&para;</a></h3>
+<p>This will display a full month in a grid 6 rows by 7 columns. Titles of
+appointment will appear as a list in the day. In this display you will
+be able to change months. Double clicking on a given day in a month will
+bring up the Daily View.</p>
+<h3 id="weekly-view">Weekly View<a class="headerlink" href="#weekly-view" title="Permanent link">&para;</a></h3>
+<p>This will display a full week. It should consist of 7 daily views.
+Double clicking on a given day in a week will bring up the Daily View.</p>
+<h3 id="daily-view">Daily View<a class="headerlink" href="#daily-view" title="Permanent link">&para;</a></h3>
+<p>The daily view consists of a grid 2 x 48. The first column is the time
+and the second column will hold the appointment. There are 48 rows to
+represent every half hour in a day. Double clicking on anywhere in this
+view will bring up the Appointment Dialog. If the double click is on an
+existing appointment then this is what will appear in the dialog.
+Otherwise a dialog without an appointment will appear.</p>
+<h3 id="appointment-dialog">Appointment Dialog<a class="headerlink" href="#appointment-dialog" title="Permanent link">&para;</a></h3>
+<p>This is a popup dialog that supports adding, editing or deleting an
+appointment. It will contain fields from the appointment data structure.
+There needs to be a button to save an appointment and a button to delete
+an appointment. If the dialog contains an existing appointment, then
+save will update the record otherwise a new record will be created.</p>
+<h3 id="search-dialog">Search Dialog<a class="headerlink" href="#search-dialog" title="Permanent link">&para;</a></h3>
+<p>This is a popup dialog that supports searching for appointments by their
+title or description. The results of this search will be a list of
+matching appointments. Double clicking on an appointment on this list
+will display the Appointment Dialog with the selected appointment.</p>
+<h2 id="reminder-module_1">Reminder Module<a class="headerlink" href="#reminder-module_1" title="Permanent link">&para;</a></h2>
+<p>This module will use timer events to generate alarms and reminders.
+Whenever the program is executed it will retrieve all future events and
+start timer processes. When a timer process comes due the module will
+generate a visual and audible alarm.</p>
+<h3 id="timers">Timers<a class="headerlink" href="#timers" title="Permanent link">&para;</a></h3>
+<p>When the program is loaded, this module will retrieve all the current
+day’s appointments and create a timer event or thread for it. The
+thread, when its time is reached, will generate an audible and visual
+reminder as well as sending an email. Appointment records contain the
+interval between an appointment and when a reminder must be issued.</p>
+<p>A special event is created to go off at midnight. If the program remains
+running continuously then at midnight it will retrieve the next day’s
+appointments.</p>
+<h2 id="help-module_1">Help Module<a class="headerlink" href="#help-module_1" title="Permanent link">&para;</a></h2>
+<p>This module will present the user with a list of the different tasks
+that the program performs. Selecting a task will lead to a description
+of what this task is and how it is used. These descriptions will be
+formatted using HTML and stored in individual files in the project.</p>
+<h2 id="master-gui-module_1">Master GUI Module<a class="headerlink" href="#master-gui-module_1" title="Permanent link">&para;</a></h2>
+<p>This module will act as the application manager. It will present all the
+various views of the program and receive user commands. The commands may
+come either from a menu or a toolbar. The menus and toolbars will be
+dynamic. This means that the choices presented to the user may change
+depending on the current view.</p>
+<h3 id="menu">Menu<a class="headerlink" href="#menu" title="Permanent link">&para;</a></h3>
+<p>The program main menu must contain the following:</p>
+<h4 id="file">File<a class="headerlink" href="#file" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>Configuration</p>
+<p>New Appointment</p>
+<p>Exit</p>
+</blockquote>
+<h4 id="view">View<a class="headerlink" href="#view" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>Monthly</p>
+<p>Weekly</p>
+<p>Daily</p>
+</blockquote>
+<h4 id="help">Help<a class="headerlink" href="#help" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>Help Contents</p>
+<p>About</p>
+</blockquote>
+<p>Additional menu items may be added as needed.</p>
+<h3 id="toolbar">Toolbar<a class="headerlink" href="#toolbar" title="Permanent link">&para;</a></h3>
+<p>The toolbar must consist of the following items.</p>
+<ul>
+<li>
+<h6 id="configuration">### Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h6>
+</li>
+<li>
+<h6 id="new-appointment">### New Appointment<a class="headerlink" href="#new-appointment" title="Permanent link">&para;</a></h6>
+</li>
+<li>
+<h6 id="monthly">### Monthly<a class="headerlink" href="#monthly" title="Permanent link">&para;</a></h6>
+</li>
+<li>
+<h6 id="weekly">### Weekly<a class="headerlink" href="#weekly" title="Permanent link">&para;</a></h6>
+</li>
+<li>
+<h6 id="daily">### Daily<a class="headerlink" href="#daily" title="Permanent link">&para;</a></h6>
+</li>
+<li>
+<h6 id="help-contents">### Help Contents<a class="headerlink" href="#help-contents" title="Permanent link">&para;</a></h6>
+</li>
+</ul>
+<p>Images must be used in the toolbar.</p>
+<ol>
+<li>
+<p>Data Structures
+    ===============</p>
+<ol>
+<li>DBMS Settings
+    -------------</li>
+</ol>
+</li>
+</ol>
+<p>Stored in a properties file</p>
+<ul>
+<li>
+<p>The URL of the MySQL database</p>
+</li>
+<li>
+<p>The database name</p>
+</li>
+<li>
+<p>The port of the MySQL database (default 3306)</p>
+</li>
+<li>
+<p>The user name for the MySQL database</p>
+</li>
+<li>
+<p>The password for the MySQL database</p>
+<ol>
+<li>SMTP Settings
+    -------------</li>
+</ol>
+</li>
+</ul>
+<p>Stored in the DBMS</p>
+<ul>
+<li>
+<p>The user’s name</p>
+</li>
+<li>
+<p>The user’s email address which is also the log in name for Gmail</p>
+</li>
+<li>
+<p>The user’s Gmail password</p>
+</li>
+<li>
+<p>The URL of the SMTP server</p>
+</li>
+<li>
+<p>The SMTP port number (default 465)</p>
+<ol>
+<li>Appointment Group Record
+    ------------------------</li>
+</ol>
+</li>
+</ul>
+<p>Stored in the DBMS</p>
+<ul>
+<li>
+<p>Group Number – int</p>
+</li>
+<li>
+<p>Group Name – String</p>
+</li>
+<li>
+<p>Colour - RGB color specified with an HTML or CSS attribute String</p>
+<ol>
+<li>Appointment Record
+    ------------------</li>
+</ol>
+</li>
+</ul>
+<p>Stored in the DBMS</p>
+<ul>
+<li>
+<p>Title - String</p>
+</li>
+<li>
+<p>Location - String</p>
+</li>
+<li>
+<p>Start Time - Temporal</p>
+</li>
+<li>
+<p>End Time - Temporal</p>
+</li>
+<li>
+<p>Details - String</p>
+</li>
+<li>
+<p>Whole Day – boolean</p>
+</li>
+<li>
+<p>Appointment Group – int</p>
+</li>
+<li>
+<p>Reminder Interval - int</p>
+</li>
+<li>
+<p>Alarm Reminder Requested – Boolean</p>
+<ol>
+<li>Help Records
+    ------------</li>
+</ol>
+</li>
+</ul>
+<p>Help information is text formatted with HTML. Each topic in the help
+list is matched to a specific HTML file.</p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../introduction/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Introduction
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../logging/" title="Logging" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Logging
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application-c35428f87f.js"></script>
+      
+      
+      <script>app.initialize({url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

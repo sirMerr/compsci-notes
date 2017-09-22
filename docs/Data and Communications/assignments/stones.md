@@ -50,10 +50,16 @@ When programming 3 Stones, use data structures and algorithms that are as simple
 You must follow the principles of object oriented design, and have an up-to-date UML class association diagram available for inspection by your instructor whenever you are working on the project.
 
 Final documentation (per team) will consist of:
+
 1. a program narrative
 2. the class association diagram
 3. source listings of the client program and the server program, both of which are to include good explanatory comments; on the day that you submit your documentation, you must also email your source code to your instructor
-4-all of the above in an appropriate binder.
+4. all of the above in an appropriate binder.
+
+## 3 Stones Game Description
+he object of the game is to score points by getting stones of your color into three pockets in a row, be it across, up and down, or diagonally. There are black and white stones for the players and clear stones that count for both players.
+
+The game can be played with an element of luck, drawing stones from a bag, or as pure skill with each player taking equal amounts of the colored stones. Timed tournament play and handicapping is also an option.
 
 
 

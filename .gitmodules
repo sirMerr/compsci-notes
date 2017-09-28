@@ -7,3 +7,6 @@
 [submodule "development/android/LoanCalculator"]
 	path = development/android/LoanCalculator
 	url = git@github.com:sirMerr/LoanCalculator.git
+[submodule "development/php-compsci"]
+	path = development/php-compsci
+	url = git@github.com:sirMerr/php-compsci.git

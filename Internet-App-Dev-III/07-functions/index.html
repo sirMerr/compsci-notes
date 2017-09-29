@@ -1,0 +1,1694 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Notes for Semester 5 of Computer Science at Dawson">
+      
+      
+        <link rel="canonical" href="https://sirmerr.github.io/compsci-notes/Internet-App-Dev-III/07-functions/">
+      
+      
+        <meta name="author" content="Tiffany">
+      
+      
+        <link rel="shortcut icon" href="../../images/favicon.ico">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.4">
+    
+    
+      
+        <title>07 functions - CompSci HQ</title>
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr-1df76c4e58.js"></script>
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application-769c285a91.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-02c2a4388f.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="blue-grey" data-md-color-accent="blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="https://sirmerr.github.io/compsci-notes/" title="CompSci HQ" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  Internet App Dev III
+                </span>
+              
+            
+            07 functions
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    CompSci HQ
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../how-to-document/" title="How to document" class="md-nav__link">
+      How to document
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Data Communications
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Data Communications
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Data-Communications/introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Assignments
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Assignments
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Data-Communications/assignments/stones/" title="Stones" class="md-nav__link">
+      Stones
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Internet App Dev III
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Internet App Dev III
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../06-forms/" title="06 forms" class="md-nav__link">
+      06 forms
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        07 functions
+      </label>
+    
+    <a href="./" title="07 functions" class="md-nav__link md-nav__link--active">
+      07 functions
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#syntax" title="Syntax" class="md-nav__link">
+    Syntax
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optional-type-declaration" title="Optional: Type declaration" class="md-nav__link">
+    Optional: Type declaration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scope-of-functions" title="Scope of functions" class="md-nav__link">
+    Scope of functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions-within-functions" title="Functions within functions" class="md-nav__link">
+    Functions within functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-overloading" title="Function overloading" class="md-nav__link">
+    Function overloading
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#default-argument-values" title="Default argument values" class="md-nav__link">
+    Default argument values
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" title="Example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#default-values-non-scalar-arrays" title="Default values – non-scalar (arrays)" class="md-nav__link">
+    Default values – non-scalar (arrays)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variable-length-arg-list" title="Variable length arg list" class="md-nav__link">
+    Variable length arg list
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passing-by-reference" title="Passing by reference" class="md-nav__link">
+    Passing by reference
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#return-values" title="Return values" class="md-nav__link">
+    Return values
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-variable-function-names-for-textbox-validation" title="Using variable function names for textbox validation" class="md-nav__link">
+    Using variable function names for textbox validation
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-it" title="Using it" class="md-nav__link">
+    Using it
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variable-scope-page" title="Variable scope - Page" class="md-nav__link">
+    Variable scope - Page
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variable-scope-function" title="Variable scope - function" class="md-nav__link">
+    Variable scope - function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#global-keyword" title="global keyword" class="md-nav__link">
+    global keyword
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#another-option-for-globals" title="Another option for globals:" class="md-nav__link">
+    Another option for globals:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-variable-scope" title="Summary – Variable scope" class="md-nav__link">
+    Summary – Variable scope
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#static-variables-within-functions" title="Static variables within functions" class="md-nav__link">
+    Static variables within functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constants" title="Constants" class="md-nav__link">
+    Constants
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../08-cURL_DOMDocumentation/" title="08 cURL DOMDocumentation" class="md-nav__link">
+      08 cURL DOMDocumentation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../09-using_postgres/" title="09 using postgres" class="md-nav__link">
+      09 using postgres
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../10-pagination/" title="10 pagination" class="md-nav__link">
+      10 pagination
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../11-classes/" title="11 classes" class="md-nav__link">
+      11 classes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_References/" title=" References" class="md-nav__link">
+       References
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_String/" title=" String" class="md-nav__link">
+       String
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_Term-definitions/" title=" Term definitions" class="md-nav__link">
+       Term definitions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../__Introduction/" title="  Introduction" class="md-nav__link">
+        Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../__Outline/" title="  Outline" class="md-nav__link">
+        Outline
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arrays/" title="Arrays" class="md-nav__link">
+      Arrays
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../constructs/" title="Constructs" class="md-nav__link">
+      Constructs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../midterm_prep/" title="Midterm prep" class="md-nav__link">
+      Midterm prep
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-15" type="checkbox" id="nav-4-15">
+    
+    <label class="md-nav__link" for="nav-4-15">
+      Assignments
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-15">
+        Assignments
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../assignments/dont-eat-that/" title="Dont eat that" class="md-nav__link">
+      Dont eat that
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-16" type="checkbox" id="nav-4-16">
+    
+    <label class="md-nav__link" for="nav-4-16">
+      Labs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-16">
+        Labs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../labs/getting-started/" title="Getting started" class="md-nav__link">
+      Getting started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../labs/lab2/" title="Lab2" class="md-nav__link">
+      Lab2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../labs/lab3/" title="Lab3" class="md-nav__link">
+      Lab3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../labs/lab4/" title="Lab4" class="md-nav__link">
+      Lab4
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Internship Prep
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Internship Prep
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internship-Prep/dawson/" title="Dawson" class="md-nav__link">
+      Dawson
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Mobile Development
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Mobile Development
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mobile-Development/introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Software Project
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Software Project
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Software-Project/introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Software-Project/jam-specifications/" title="Jam specifications" class="md-nav__link">
+      Jam specifications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Software-Project/logging/" title="Logging" class="md-nav__link">
+      Logging
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Software-Project/maven/" title="Maven" class="md-nav__link">
+      Maven
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Software-Project/outline/" title="Outline" class="md-nav__link">
+      Outline
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-6" type="checkbox" id="nav-7-6">
+    
+    <label class="md-nav__link" for="nav-7-6">
+      Labs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-6">
+        Labs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Software-Project/labs/warmup-dice-game/" title="Warmup dice game" class="md-nav__link">
+      Warmup dice game
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#syntax" title="Syntax" class="md-nav__link">
+    Syntax
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optional-type-declaration" title="Optional: Type declaration" class="md-nav__link">
+    Optional: Type declaration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scope-of-functions" title="Scope of functions" class="md-nav__link">
+    Scope of functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions-within-functions" title="Functions within functions" class="md-nav__link">
+    Functions within functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-overloading" title="Function overloading" class="md-nav__link">
+    Function overloading
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#default-argument-values" title="Default argument values" class="md-nav__link">
+    Default argument values
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" title="Example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#default-values-non-scalar-arrays" title="Default values – non-scalar (arrays)" class="md-nav__link">
+    Default values – non-scalar (arrays)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variable-length-arg-list" title="Variable length arg list" class="md-nav__link">
+    Variable length arg list
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passing-by-reference" title="Passing by reference" class="md-nav__link">
+    Passing by reference
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#return-values" title="Return values" class="md-nav__link">
+    Return values
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-variable-function-names-for-textbox-validation" title="Using variable function names for textbox validation" class="md-nav__link">
+    Using variable function names for textbox validation
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-it" title="Using it" class="md-nav__link">
+    Using it
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variable-scope-page" title="Variable scope - Page" class="md-nav__link">
+    Variable scope - Page
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variable-scope-function" title="Variable scope - function" class="md-nav__link">
+    Variable scope - function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#global-keyword" title="global keyword" class="md-nav__link">
+    global keyword
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#another-option-for-globals" title="Another option for globals:" class="md-nav__link">
+    Another option for globals:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-variable-scope" title="Summary – Variable scope" class="md-nav__link">
+    Summary – Variable scope
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#static-variables-within-functions" title="Static variables within functions" class="md-nav__link">
+    Static variables within functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constants" title="Constants" class="md-nav__link">
+    Constants
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h1>
+<h2 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permanent link">&para;</a></h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">function</span> <span class="nx">function_name</span><span class="p">(</span> <span class="p">[</span><span class="nx">argument_list</span> <span class="err">…</span><span class="p">]</span> <span class="p">)</span>
+<span class="p">{</span>
+    <span class="p">[</span><span class="nx">statements</span><span class="p">;]</span>
+    <span class="p">[</span><span class="k">return</span> <span class="nx">return_values</span><span class="p">;]</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table>
+
+<h2 id="optional-type-declaration">Optional: Type declaration<a class="headerlink" href="#optional-type-declaration" title="Permanent link">&para;</a></h2>
+<p>Type declarations allow functions to require that parameters are of a certain type at call time
+valid types:
+* array
+* callable (i.e., a function)
+* bool
+* float
+* int
+* string
+* class/interface
+* self (i.e., parameter is an instanceof the same class as where the method is)
+* callback functions -&gt; a lot like delegates – first class function (function is assigned to a variable)
+php 7 -&gt; exception thrown if type is not as expected</p>
+<h2 id="scope-of-functions">Scope of functions<a class="headerlink" href="#scope-of-functions" title="Permanent link">&para;</a></h2>
+<p>All functions in PHP have the global scope
+they can be called from anywhere once they exist
+functions do not need to be defined before they are referenced <strong>EXCEPT</strong> when
+they are defined in a conditional block
+or they are defined within another a function
+in this case, available only after program execution has reached them</p>
+<h2 id="functions-within-functions">Functions within functions<a class="headerlink" href="#functions-within-functions" title="Permanent link">&para;</a></h2>
+<p>Any valid PHP code may appear inside a function, even other functions and class definitions
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">function</span> <span class="nx">buyBeer</span><span class="p">()</span> <span class="p">{</span>  
+    <span class="kd">function</span> <span class="nx">drinkBeer</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">echo</span> <span class="s2">&quot;I don&#39;t exist until buyBeer() is called.\n&quot;</span><span class="p">;</span>  
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="cm">/* We can&#39;t call drinkBeer() yet since it doesn&#39;t exist. */</span>
+<span class="nx">buyBeer</span><span class="p">();</span>
+
+<span class="cm">/* Now we can call drinkBeer(), buyBeer()&#39;s processing has  made it accessible. */</span>
+<span class="nx">drinkBeer</span><span class="p">();</span>
+</pre></div>
+</td></tr></table></p>
+<p>Why useful? <code>drinkBeer</code> function is only available after <code>buyBeer</code> function is called to initialize everything!</p>
+<p>Conditionally defined functions
+function definition within a another construct, which may not yet be interpreted
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nx">$adult</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<span class="cm">/* We can&#39;t call drinkbeer() from here  since it doesn&#39;t exist yet, but we can call buybeer() */</span>
+
+<span class="nx">buybeer</span><span class="p">();</span> <span class="c1">//visible since it is in global scope</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">$adult</span><span class="p">)</span> <span class="p">{</span>  
+    <span class="kd">function</span> <span class="nx">drinkbeer</span><span class="p">(){</span>
+        <span class="c1">//this is defining drinkbeer ONLY if $adult was true when these lines were executed    </span>
+        <span class="nx">echo</span> <span class="s2">&quot;I don&#39;t exist until program execution, NOT compilation, reaches me.&quot;</span><span class="p">;</span>  
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="cm">/* Now we can safely call drinkbeer()   since $adult was true */</span>
+<span class="nx">$adult</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span> 
+
+<span class="c1">//no impact since $adult was true when the code above was executeddrinkbeer();</span>
+<span class="kd">function</span> <span class="nx">buybeer</span><span class="p">()</span> <span class="p">{</span>  
+    <span class="nx">echo</span> <span class="s2">&quot;I exist immediately upon program start since compiler found me.\n&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></p>
+<h2 id="function-overloading">Function overloading<a class="headerlink" href="#function-overloading" title="Permanent link">&para;</a></h2>
+<p>PHP does not support function overloading
+function name only is used to determine signature
+cannot redefine previously-declared functions
+to work around lack of overloading -&gt; variable number of arguments and default arguments</p>
+<h2 id="default-argument-values">Default argument values<a class="headerlink" href="#default-argument-values" title="Permanent link">&para;</a></h2>
+<p>default values for scalar arguments
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">function</span> <span class="nx">makecoffee</span><span class="p">(</span><span class="nx">$type</span> <span class="o">=</span> <span class="s2">&quot;cappuccino&quot;</span><span class="p">){</span>    
+    <span class="k">return</span> <span class="s2">&quot;Making a cup of $type.\n&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">echo</span> <span class="nx">makecoffee</span><span class="p">();</span>  
+<span class="c1">// Making a cup of cappuccino.echo makecoffee(null); </span>
+<span class="c1">// Making a cup of .echo makecoffee(&quot;espresso&quot;); </span>
+<span class="c1">// Making a cup of espresso. </span>
+</pre></div>
+</td></tr></table>
+- default value must be a constant expression
+- defaults after non-default arguments, otherwise warning </p>
+<h3 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="nx">function makeyogurt</span><span class="p">(</span><span class="nv">$type </span><span class="o">=</span><span class="nx"> </span><span class="s2">&quot;greek&quot;</span><span class="p">,</span><span class="nx"> </span><span class="nv">$flavour</span><span class="p">){</span><span class="nx">    </span>
+    <span class="k">return</span><span class="nx"> </span><span class="s2">&quot;Making a bowl of </span><span class="si">$type $flavour</span><span class="s2">.</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+<span class="p">}</span><span class="nx"> </span>
+<span class="k">echo</span><span class="nx"> makeyogurt</span><span class="p">(</span><span class="s2">&quot;raspberry&quot;</span><span class="p">);</span><span class="nx">  </span>
+<span class="c1">//Warning: Missing argument 2 in call to makeyogurt() in /usr/local/etc/httpd/htdocs/phptest/functest.html on line 41 Making a bowl of raspberry . </span>
+<span class="cp">?&gt;</span><span class="x"> </span>
+</pre></div>
+</td></tr></table>
+
+<h2 id="default-values-non-scalar-arrays">Default values – non-scalar (arrays)<a class="headerlink" href="#default-values-non-scalar-arrays" title="Permanent link">&para;</a></h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="nx">function makecoffee</span><span class="p">(</span><span class="nv">$types </span><span class="o">=</span><span class="nx"> </span><span class="p">[</span><span class="s2">&quot;cappuccino&quot;</span><span class="p">],</span><span class="nx"> </span><span class="nv">$coffeeMaker </span><span class="o">=</span><span class="k">NULL</span><span class="p">){</span><span class="nx">    </span><span class="nv">$device </span><span class="o">=</span><span class="nx"> is_null</span><span class="p">(</span><span class="nv">$coffeeMaker</span><span class="p">)</span><span class="nx"> </span><span class="o">?</span><span class="nx"> </span><span class="s2">&quot;hands&quot;</span><span class="nx"> </span><span class="o">:</span><span class="nx"> </span><span class="nv">$coffeeMaker</span><span class="p">;</span><span class="nx">    return </span><span class="s2">&quot;Making a cup of &quot;</span><span class="o">.</span><span class="nb">implode</span><span class="p">(</span><span class="s2">&quot;, &quot;</span><span class="p">,</span><span class="nx"> </span><span class="nv">$types</span><span class="p">)</span><span class="o">.</span><span class="s2">&quot; with </span><span class="si">$device</span><span class="s2">.</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;}</span><span class="k">echo</span><span class="nx"> makecoffee</span><span class="p">();</span><span class="k">echo</span><span class="nx"> makecoffee</span><span class="p">([</span><span class="s2">&quot;cappuccino&quot;</span><span class="p">,</span><span class="nx"> </span><span class="s2">&quot;lavazza&quot;</span><span class="p">],</span><span class="nx"> </span><span class="s2">&quot;teapot&quot;</span><span class="p">);</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+</td></tr></table>
+
+<h2 id="variable-length-arg-list">Variable length arg list<a class="headerlink" href="#variable-length-arg-list" title="Permanent link">&para;</a></h2>
+<p>… since PHP 5.6 </p>
+<p><code>function sum(…$numbers)   //will be passed in as an array</code></p>
+<h2 id="passing-by-reference">Passing by reference<a class="headerlink" href="#passing-by-reference" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>Default = pass by value, even for arrays (arrays are treated like scalars)</p>
+</li>
+<li>
+<p>To pass by reference: &amp; prefix on the argument name in function definition
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="nx">function add_some_extra</span><span class="p">(</span><span class="o">&amp;</span><span class="nv">$string</span><span class="p">){</span><span class="nx">    </span><span class="nv">$string </span><span class="o">.=</span><span class="nx"> </span><span class="s1">&#39;and something extra.&#39;</span><span class="p">;}</span><span class="nv">$str </span><span class="o">=</span><span class="nx"> </span><span class="s1">&#39;This is a string, &#39;</span><span class="p">;</span><span class="nx">add_some_extra</span><span class="p">(</span><span class="nv">$str</span><span class="p">);</span><span class="k">echo</span><span class="nx"> </span><span class="nv">$str</span><span class="p">;</span><span class="nx">    </span><span class="c1">// outputs This is a string, and something extra.</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+</td></tr></table></p>
+</li>
+</ul>
+<h2 id="return-values">Return values<a class="headerlink" href="#return-values" title="Permanent link">&para;</a></h2>
+<p>Optional return statement</p>
+<ul>
+<li>If no return, <code>NULL</code> is returned</li>
+<li>To return a reference from a function: reference operator &amp; in both the function header and when assigning the return value</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="c1">// You have to force pass by reference and return by reference on scalarsfunction &amp;incx($x)</span>
+<span class="p">{</span>
+    <span class="nv">$y</span> <span class="o">=</span> <span class="nv">$x</span><span class="o">++</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nv">$y</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nv">$x1</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="nv">$x2</span> <span class="o">=</span> <span class="o">&amp;</span><span class="nx">incx</span><span class="p">(</span><span class="nv">$x1</span><span class="p">);</span>
+<span class="k">echo</span> <span class="nv">$x1</span><span class="p">,</span> <span class="nv">$x2</span><span class="p">;</span> <span class="c1">// both are 1</span>
+<span class="nx">Variable</span> <span class="k">function</span> <span class="nf">names</span>
+<span class="nv">$func</span><span class="o">=</span> <span class="err">&#39;</span><span class="nx">test’</span><span class="p">;</span>
+
+<span class="nv">$func</span><span class="p">();</span> <span class="c1">// invokes test()</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+</td></tr></table>
+
+<h2 id="using-variable-function-names-for-textbox-validation">Using variable function names for textbox validation<a class="headerlink" href="#using-variable-function-names-for-textbox-validation" title="Permanent link">&para;</a></h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="sd">/** </span>
+<span class="sd">* This function can be used to check the sanity </span>
+<span class="sd">* of variables    </span>
+<span class="sd">* @param string $name The input name you would like to check    </span>
+<span class="sd">* @param string $type The type expected (numeric, int, float, string    </span>
+<span class="sd">* @param int $maxlength The maximum length of the variable    </span>
+<span class="sd">* @return bool if invalid, null if error, else the value    </span>
+<span class="sd">*/</span>
+<span class="k">function</span> <span class="nf">validateTextbox</span><span class="p">(</span><span class="nv">$name</span><span class="p">,</span> <span class="nv">$type</span><span class="p">,</span> <span class="nv">$maxlength</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="nv">$name</span><span class="p">]))</span>
+        <span class="k">return</span> <span class="k">FALSE</span><span class="p">;</span>
+    <span class="nv">$value</span> <span class="o">=</span> <span class="nb">trim</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="nv">$name</span><span class="p">]);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="k">empty</span><span class="p">(</span><span class="nv">$value</span><span class="p">))</span>
+        <span class="k">return</span> <span class="k">FALSE</span><span class="p">;</span>
+    <span class="nv">$datatype</span> <span class="o">=</span> <span class="s1">&#39;is_’.$type; //variable function name</span>
+<span class="s1">       //make sure it is indeed a function</span>
+<span class="s1">    if (is_callable($datatype)) {</span>
+<span class="s1">        //can now invoke $datatype</span>
+<span class="s1">        if(!$datatype($value))</span>
+<span class="s1">            return FALSE;</span>
+<span class="s1">        switch ($type) {</span>
+<span class="s1">            case &#39;</span><span class="nx">string</span><span class="s1">&#39;: $value = htmlentities($_POST[$name]);</span>
+<span class="s1">                        if (strlen($value) &gt; $maxlength)</span>
+<span class="s1">                            return FALSE;</span>
+<span class="s1">                        return $value;</span>
+<span class="s1">            case &#39;</span><span class="nx">int</span><span class="s1">&#39;:</span>
+<span class="s1">            case &#39;</span><span class="nx">numeric</span><span class="s1">&#39;:</span>
+<span class="s1">            case &#39;</span><span class="nx">float</span><span class="err">&#39;</span><span class="o">:</span>   <span class="k">if</span> <span class="p">(</span><span class="nv">$value</span> <span class="o">&gt;</span> <span class="nv">$maxlength</span><span class="p">)</span>
+                                <span class="k">return</span> <span class="k">FALSE</span><span class="p">;</span>
+                            <span class="k">return</span> <span class="nv">$value</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="k">FALSE</span><span class="p">;</span>      
+    <span class="p">}</span>
+<span class="p">}</span> <span class="c1">//will return NULL if $datatype was not callable</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+</td></tr></table>
+
+<h3 id="using-it">Using it<a class="headerlink" href="#using-it" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="nv">$fname</span> <span class="o">=</span> <span class="nx">validateTextbox</span><span class="p">(</span><span class="s1">&#39;fname&#39;</span><span class="p">,</span> <span class="s1">&#39;string&#39;</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="nv">$fname</span> <span class="o">===</span> <span class="k">NULL</span><span class="p">)</span>
+    <span class="k">exit</span><span class="p">;</span> <span class="c1">//program error</span>
+<span class="k">if</span> <span class="p">(</span><span class="nv">$fname</span> <span class="o">===</span> <span class="k">FALSE</span><span class="p">)</span>
+    <span class="k">echo</span> <span class="s1">&#39;&lt;p class=&quot;error&quot;&gt;You forgot to enter your first name!&lt;/p&gt;&#39;</span><span class="p">;</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+</td></tr></table>
+
+<h2 id="variable-scope-page">Variable scope - Page<a class="headerlink" href="#variable-scope-page" title="Permanent link">&para;</a></h2>
+<p>If you define a variable, the rest of the page can access it</p>
+<p>Included files act as if they were part of the original (including) script, variables defined before an include( ) line are available to the included file
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="nv">$a </span><span class="o">=</span><span class="nx"> 1</span><span class="p">;</span>
+<span class="k">include</span><span class="nx"> </span><span class="s1">&#39;b.inc&#39;</span><span class="p">;</span> 
+<span class="c1">//$a is available inside b.inc script</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+</td></tr></table>
+Variables defined within the included file are available to the parent (including) script after the <code>include()</code> line.</p>
+<p>A php script is all the code sent to the PHP interpreter, irregardless of php blocks within the script</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span> 
+<span class="nv">$page_title</span> <span class="o">=</span> <span class="s1">&#39;Welcome to this Site!&#39;</span><span class="p">;</span>
+<span class="k">include</span> <span class="s1">&#39;includes/header.html.inc&#39;</span><span class="p">;</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+</td></tr></table>
+
+<p>In <code>header.html.inc</code>:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Lorem Ipsum <span class="cp">&lt;?php echo $page_title; ?&gt;</span> <span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+thus variables defined in an included file are available throughout the script
+</pre></div>
+</td></tr></table></p>
+<h2 id="variable-scope-function">Variable scope - function<a class="headerlink" href="#variable-scope-function" title="Permanent link">&para;</a></h2>
+<p>User-defined functions have their own scope: 
+* Variables defined within a function are not available outside of it
+* Variables defined outside of a function are not available within it.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="nv">$a </span><span class="o">=</span><span class="nx"> 1</span><span class="p">;</span><span class="nx"> </span>
+<span class="cm">/* page scope */</span><span class="nx"> </span>
+<span class="nx">function test</span><span class="p">(){</span><span class="nx">     </span>
+    <span class="k">echo</span><span class="nx"> </span><span class="nv">$a</span><span class="p">;</span><span class="nx"> </span><span class="cm">/* reference to local scope variable */</span><span class="nx"> </span>  
+    <span class="c1">//$a will initialized to &quot;” since it is used in an echo statement </span>
+<span class="p">}</span><span class="nx"> </span>
+<span class="nx">test</span><span class="p">();</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+</td></tr></table>
+
+<h2 id="global-keyword">global keyword<a class="headerlink" href="#global-keyword" title="Permanent link">&para;</a></h2>
+<p>To alter the variable scope within a function, you can use the global statement.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">function</span> <span class="nf">function_name</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">global</span> <span class="nv">$var</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="nv">$var</span><span class="p">;</span>
+    <span class="nv">$var</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nv">$var</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+<span class="nx">function_name</span><span class="p">();</span> <span class="c1">// Function call.</span>
+<span class="k">echo</span> <span class="nv">$var</span><span class="p">;</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+</td></tr></table>
+In this example, <code>$var</code> inside of the function is now the same as <code>$var</code> outside of it. 
+if <code>$var</code> changes inside of the function, the external <code>$var</code>’s value will also change.</p>
+<div class="admonition note">
+<p class="admonition-title">Same as passing by reference</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="nv">$a</span><span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="nv">$b</span><span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="k">function</span> <span class="nf">myFunction</span><span class="p">(){</span>
+    <span class="k">global</span> <span class="nv">$a</span><span class="p">,</span> <span class="nv">$b</span><span class="p">;</span>
+    <span class="nv">$a</span><span class="o">=</span> <span class="nv">$a</span><span class="o">+</span> <span class="nv">$b</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">myFunction</span><span class="p">();</span>
+<span class="nv">$a</span><span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="nv">$b</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="k">function</span> <span class="nf">myFunction</span><span class="p">(</span><span class="o">&amp;</span><span class="nv">$var1</span><span class="p">,</span> <span class="o">&amp;</span><span class="nv">$var2</span><span class="p">){</span>
+    <span class="nv">$var1</span> <span class="o">=</span> <span class="nv">$var1</span> <span class="o">+</span> <span class="nv">$var2</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">myFunction</span><span class="p">(</span><span class="nv">$a</span><span class="p">,</span> <span class="nv">$b</span><span class="p">);</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+</td></tr></table>
+
+</div>
+<h2 id="another-option-for-globals">Another option for globals:<a class="headerlink" href="#another-option-for-globals" title="Permanent link">&para;</a></h2>
+<p><code>$GLOBALS</code> array references all variables available in global scope</p>
+<p>The <code>$GLOBALS</code> array is an associative array with the name of the global variable name being the key and the contents of that variable being the value of the array element.</p>
+<p><code>$GLOBALS</code> is a superglobal. It exists in any scope (page and function)
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="nv">$a </span><span class="o">=</span><span class="nx"> 1</span><span class="p">;</span>
+<span class="nv">$b </span><span class="o">=</span><span class="nx"> 2</span><span class="p">;</span>
+<span class="nx">function myFunction</span><span class="p">(){</span><span class="nx">    </span>
+    <span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span><span class="nx"> </span><span class="o">=</span><span class="nx"> </span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span><span class="nx"> </span><span class="o">+</span><span class="nx"> </span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">];</span>
+<span class="p">}</span><span class="nx"> </span>
+<span class="nx">sum</span><span class="p">();</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+</td></tr></table></p>
+<h2 id="summary-variable-scope">Summary – Variable scope<a class="headerlink" href="#summary-variable-scope" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>Superglobal – arrays that are available anywhere</p>
+</li>
+<li>
+<p>Global or Page - variables defined at the page level (ie, not within a function) – accessible throughout page after they are set</p>
+<ul>
+<li>Includes any included files</li>
+</ul>
+</li>
+<li>Local - Function have their own scope<ul>
+<li>Variables here are locally scoped</li>
+<li>To access the globally scoped variables, need the global keyword<ul>
+<li><code>global $var;</code></li>
+</ul>
+</li>
+<li>Or pass as a reference argument to function</li>
+<li>Or access the <code>$GLOBALS</code> super global array<ul>
+<li>Keys are all variables at global scope</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="static-variables-within-functions">Static variables within functions<a class="headerlink" href="#static-variables-within-functions" title="Permanent link">&para;</a></h2>
+<p>A static variable exists only in a local function scope, but it does not lose its value when program execution leaves this scope
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="nx">function test</span><span class="p">(){</span><span class="nx">    </span>
+    <span class="k">static</span><span class="nx"> </span><span class="nv">$a </span><span class="o">=</span><span class="nx"> 0</span><span class="p">;</span>  
+    <span class="c1">//only runs on first function invocation</span>
+    <span class="c1">//cannot initially assign to an expression – must be resolved at compile-time    </span>
+    <span class="k">echo</span><span class="nx"> </span><span class="nv">$a</span><span class="p">;</span><span class="nx">    </span>
+    <span class="nv">$a</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+</td></tr></table>
+- very useful for recursion</p>
+<div class="admonition note">
+<p class="admonition-title">PHP makes two passes over a script</p>
+<p>Pass 1: Compile – parsing of the script</p>
+<ul>
+<li>done only once when the script is loaded into memory (through use of an opcode cache)</li>
+</ul>
+<p>Pass 2: Interpret / execute</p>
+</div>
+<h2 id="constants">Constants<a class="headerlink" href="#constants" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Once you have defined a constant, its value is set for the remainder of the program and cannot be altered.</li>
+<li>Constant must NOT be prefaced with a $ sign (as with regular variables)</li>
+<li>Can only be defined using the define function </li>
+<li>Case sensitive</li>
+<li>Convention: Use only uppercase for constant variable names (convention)</li>
+<li>Superglobal scope
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="nb">define</span> <span class="p">(</span><span class="s1">&#39;NAME&#39;</span><span class="p">,</span> <span class="nx">value</span><span class="p">);</span>
+
+<span class="nb">define</span> <span class="p">(</span><span class="s1">&#39;USERNAME&#39;</span><span class="p">,</span> <span class="s1">&#39;jaya&#39;</span><span class="p">);</span>
+<span class="nb">define</span> <span class="p">(</span><span class="s1">&#39;PI&#39;</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">);</span>
+
+<span class="k">echo</span> <span class="s2">&quot;Hello, USERNAME&quot;</span><span class="p">;</span> <span class="c1">// no expansion of constants!</span>
+<span class="k">echo</span> <span class="s1">&#39;Hello, &#39;</span> <span class="o">.</span> <span class="nx">USERNAME</span><span class="p">;</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+</td></tr></table></li>
+</ul>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../06-forms/" title="06 forms" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                06 forms
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../08-cURL_DOMDocumentation/" title="08 cURL DOMDocumentation" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                08 cURL DOMDocumentation
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application-c35428f87f.js"></script>
+      
+      
+      <script>app.initialize({url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

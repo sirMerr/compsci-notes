@@ -1,0 +1,1623 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Notes for Semester 5 of Computer Science at Dawson">
+      
+      
+        <link rel="canonical" href="https://sirmerr.github.io/compsci-notes/Internet-App-Dev-III/11-classes/">
+      
+      
+        <meta name="author" content="Tiffany">
+      
+      
+        <link rel="shortcut icon" href="../../images/favicon.ico">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.4">
+    
+    
+      
+        <title>11 classes - CompSci HQ</title>
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr-1df76c4e58.js"></script>
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application-769c285a91.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-02c2a4388f.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="blue-grey" data-md-color-accent="blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="https://sirmerr.github.io/compsci-notes/" title="CompSci HQ" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  Internet App Dev III
+                </span>
+              
+            
+            11 classes
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    CompSci HQ
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../how-to-document/" title="How to document" class="md-nav__link">
+      How to document
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Data Communications
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Data Communications
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Data-Communications/introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Assignments
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Assignments
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Data-Communications/assignments/stones/" title="Stones" class="md-nav__link">
+      Stones
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Internet App Dev III
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Internet App Dev III
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../06-forms/" title="06 forms" class="md-nav__link">
+      06 forms
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../07-functions/" title="07 functions" class="md-nav__link">
+      07 functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../08-cURL_DOMDocumentation/" title="08 cURL DOMDocumentation" class="md-nav__link">
+      08 cURL DOMDocumentation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../09-using_postgres/" title="09 using postgres" class="md-nav__link">
+      09 using postgres
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../10-pagination/" title="10 pagination" class="md-nav__link">
+      10 pagination
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        11 classes
+      </label>
+    
+    <a href="./" title="11 classes" class="md-nav__link md-nav__link--active">
+      11 classes
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#php-documentation-standards" title="PHP documentation standards" class="md-nav__link">
+    PHP documentation standards
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_References/" title=" References" class="md-nav__link">
+       References
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_String/" title=" String" class="md-nav__link">
+       String
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_Term-definitions/" title=" Term definitions" class="md-nav__link">
+       Term definitions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../__Introduction/" title="  Introduction" class="md-nav__link">
+        Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../__Outline/" title="  Outline" class="md-nav__link">
+        Outline
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arrays/" title="Arrays" class="md-nav__link">
+      Arrays
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../constructs/" title="Constructs" class="md-nav__link">
+      Constructs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../midterm_prep/" title="Midterm prep" class="md-nav__link">
+      Midterm prep
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-15" type="checkbox" id="nav-4-15">
+    
+    <label class="md-nav__link" for="nav-4-15">
+      Assignments
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-15">
+        Assignments
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../assignments/dont-eat-that/" title="Dont eat that" class="md-nav__link">
+      Dont eat that
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-16" type="checkbox" id="nav-4-16">
+    
+    <label class="md-nav__link" for="nav-4-16">
+      Labs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-16">
+        Labs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../labs/getting-started/" title="Getting started" class="md-nav__link">
+      Getting started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../labs/lab2/" title="Lab2" class="md-nav__link">
+      Lab2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../labs/lab3/" title="Lab3" class="md-nav__link">
+      Lab3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../labs/lab4/" title="Lab4" class="md-nav__link">
+      Lab4
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Internship Prep
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Internship Prep
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internship-Prep/dawson/" title="Dawson" class="md-nav__link">
+      Dawson
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Mobile Development
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Mobile Development
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mobile-Development/introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Software Project
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Software Project
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Software-Project/introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Software-Project/jam-specifications/" title="Jam specifications" class="md-nav__link">
+      Jam specifications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Software-Project/logging/" title="Logging" class="md-nav__link">
+      Logging
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Software-Project/maven/" title="Maven" class="md-nav__link">
+      Maven
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Software-Project/outline/" title="Outline" class="md-nav__link">
+      Outline
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-6" type="checkbox" id="nav-7-6">
+    
+    <label class="md-nav__link" for="nav-7-6">
+      Labs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-6">
+        Labs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Software-Project/labs/warmup-dice-game/" title="Warmup dice game" class="md-nav__link">
+      Warmup dice game
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#php-documentation-standards" title="PHP documentation standards" class="md-nav__link">
+    PHP documentation standards
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="classes-and-objects">Classes and objects<a class="headerlink" href="#classes-and-objects" title="Permanent link">&para;</a></h1>
+<ul>
+<li>one class per file by convention
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>/** Documentation block in PHPDocumentor standard
+*/
+</pre></div>
+</td></tr></table>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="c1">//convention uppercase Camel (Pascal), **not** case sensitive!!</span>
+<span class="k">class</span> <span class="nc">ClassName</span> <span class="k">extends</span> <span class="nx">NameAbstract</span> <span class="k">implements</span> <span class="nx">NameInterface</span> <span class="p">{</span>
+    <span class="k">private</span> <span class="nv">$var1</span><span class="p">;</span>
+    <span class="k">private</span> <span class="nv">$var2</span><span class="p">;</span>  <span class="c1">//initialize only to constant, no default visibility</span>
+
+    <span class="sd">/**</span>
+<span class="sd">    * Documentation block </span>
+<span class="sd">    */</span>
+    <span class="c1">//lowercase Camel but not case sensitive, default visibility is public</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">blah</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">//stuff</span>
+        <span class="k">return</span> <span class="nv">$this</span> <span class="o">-&gt;</span> <span class="na">var</span><span class="p">;</span> <span class="c1">//$this required to access any instance members</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+</td></tr></table></li>
+</ul>
+<h2 id="php-documentation-standards">PHP documentation standards<a class="headerlink" href="#php-documentation-standards" title="Permanent link">&para;</a></h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* Short description for class</span>
+<span class="cm">*</span>
+<span class="cm">* @copyright</span>
+<span class="cm">* @version</span>
+<span class="cm">* @since</span>
+<span class="cm">* @deprecated</span>
+<span class="cm">*/</span>
+
+<span class="cm">/**</span>
+<span class="cm">* Short description of method</span>
+<span class="cm">* @param</span>
+<span class="cm">* @return</span>
+<span class="cm">* @throws</span>
+<span class="cm">*/</span>
+</pre></div>
+</td></tr></table>
+
+<h1 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h1>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">class</span> <span class="nc">Rectangle</span> <span class="p">{</span>
+    <span class="c1">// Declare the attributes</span>
+    <span class="c1">// must have a visibility modifier: public, protected, private</span>
+    <span class="c1">//initialize to constant value only</span>
+    <span class="k">private</span> <span class="nv">$width</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">private</span> <span class="nv">$height</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+    <span class="c1">//methods and constructor are public by default</span>
+    <span class="c1">// can specify public, protected, private</span>
+    <span class="c1">// Constructor</span>
+    <span class="k">function</span> <span class="fm">__construct</span><span class="p">(</span><span class="nv">$w</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">$h</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">width</span> <span class="o">=</span> <span class="nv">$w</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">height</span> <span class="o">=</span> <span class="nv">$h</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">// No overloads so use default values:</span>
+    <span class="k">function</span> <span class="nf">setSize</span><span class="p">(</span><span class="nv">$w</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">$h</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">width</span> <span class="o">=</span> <span class="nv">$w</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">height</span> <span class="o">=</span> <span class="nv">$h</span><span class="p">;</span>
+      <span class="p">}</span>
+
+    <span class="k">function</span> <span class="nf">getArea</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">width</span> <span class="nx">\</span><span class="o">*</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">height</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">function</span> <span class="nf">getPerimeter</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="p">(</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">width</span> <span class="o">+</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">height</span><span class="p">)</span> <span class="nx">\</span><span class="o">*</span> <span class="mi">2</span> <span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">function</span> <span class="nf">isSquare</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">width</span> <span class="o">==</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">height</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="k">true</span><span class="p">;</span> <span class="c1">// Square</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="k">false</span><span class="p">;</span> <span class="c1">// Not a square</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span> <span class="c1">// End of Rectangle class.</span>
+
+<span class="c1">//NOTE: no closing php tag needed. Why? This class will be included in another script, so it is not necessary</span>
+</pre></div>
+</td></tr></table>
+
+<h2 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Class names and method names (like <strong>any</strong> other PHP function) <mark>are <strong>not</strong> case sensitive (??!!)</mark></li>
+<li>Visibility <strong>must</strong> be declared for <strong>properties</strong></li>
+<li><strong>oo</strong>: <strong>public <strong>,</strong> private <strong>, or</strong> protected</strong></li>
+<li>Any initialization of attribute outside the constructor has to be to a <strong>literal or constant</strong></li>
+<li>Method visibility: default is public</li>
+<li>Class can contain constants ( <strong>const</strong> keyword), properties, methods</li>
+</ul>
+<h2 id="using-a-class">Using a class<a class="headerlink" href="#using-a-class" title="Permanent link">&para;</a></h2>
+<p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="nv">$object</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ClassName</span><span class="p">();</span>
+
+<span class="nv">$object</span><span class="o">-&gt;</span><span class="na">methodName</span><span class="p">();</span> <span class="c1">// -&gt; is the object member operator</span>
+<span class="nv">$object</span><span class="o">-&gt;</span><span class="na">propertyName</span><span class="p">;</span> <span class="c1">// NOT $object-&gt;$propertyName;</span>
+<span class="nb">unset</span><span class="p">(</span><span class="nv">$object</span><span class="p">);</span> <span class="c1">//when done, if required (alternatively = null)</span>
+</pre></div>
+</td></tr></table>
+- object names (like any other PHP variable) are case sensitive</p>
+<h2 id="attributes-also-called-properties-in-phpjava">Attributes (also called properties in PHP/Java)<a class="headerlink" href="#attributes-also-called-properties-in-phpjava" title="Permanent link">&para;</a></h2>
+<ul>
+<li>defined as <code>public</code>, <code>protected</code>, or <code>private</code> followed by a normal variable declaration</li>
+<li>This declaration may include an initialization, but this initialization must be a constant value</li>
+<li>
+<p>within same class methods and non-static properties <strong>must</strong> be accessed by using</p>
+<ul>
+<li><code>$this_-&gt;_ property;</code></li>
+</ul>
+</li>
+<li>
+<p>Outside, if visible:</p>
+<ul>
+<li><code>$obj-&gt;property;</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Constructor is always called <code>function __construct()</code> (2 underscores)</li>
+<li><strong>Magic</strong> function – it is automatically called when an object is instantiated, no return</li>
+<li>Can take arguments – but since php has no overloading, use default values</li>
+<li>You can directly call a constructor (although you will rarely need to):</li>
+</ul>
+<p><code>$o = new SomeClass();</code>  allocates and initializes</p>
+<p><code>$o-&gt;_ _construct();</code>   initializes only, use it to reinitialize properties?</p>
+<h1 id="more-on-constructors">More on constructors<a class="headerlink" href="#more-on-constructors" title="Permanent link">&para;</a></h1>
+<ul>
+<li>Parent constructors are <strong>not</strong> called implicitly <strong>if</strong> the child class defines a constructor</li>
+<li><strong>oo</strong> In order to run a parent constructor, call <strong>parent::__construct()</strong> within the child constructor</li>
+<li>If the child does not define a constructor then it may be <strong>inherited</strong> from the parent class just like a normal class method</li>
+<li><strong>oo</strong> i.e., if it doesn't define <code>__construct</code>, the parent's one is used</li>
+</ul>
+<h1 id="destructors">Destructors<a class="headerlink" href="#destructors" title="Permanent link">&para;</a></h1>
+<ul>
+<li>the destructor is called when the object is destroyed. This happens when there are no more references to the object, or when a script finishes</li>
+<li>Destructor is a place to release any resources (long living)</li>
+<li>No arguments to <code>__destruct()</code>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">class</span> <span class="nc">ClassName</span> <span class="p">{</span>
+    <span class="c1">// Attributes and methods.</span>
+    <span class="k">function</span> <span class="nf">_</span> <span class="nx">_destruct</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// destroy your resources</span>
+        <span class="k">parent</span><span class="o">::</span><span class="na">__destruct</span><span class="p">();</span> <span class="c1">//must explicitly call parent&#39;s destruct</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></li>
+</ul>
+<h1 id="recall-database-result-set-in-objects">Recall: Database result set in objects<a class="headerlink" href="#recall-database-result-set-in-objects" title="Permanent link">&para;</a></h1>
+<p>The returned records be turned into specific types of objects:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">class</span> <span class="nc">User</span> <span class="p">{</span>
+
+    <span class="k">private</span> <span class="nv">$id</span><span class="p">;</span>
+    <span class="k">private</span> <span class="nv">$name</span><span class="p">;</span>
+
+    <span class="k">function</span> <span class="fm">__construct</span><span class="p">(</span><span class="nv">$id</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nv">$name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">id</span> <span class="o">=</span> <span class="nv">$id</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">=</span> <span class="nv">$name</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">function</span> <span class="nf">getName</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table>
+Fetch database records into new User objects:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="nv">$stmt</span> <span class="o">=</span> <span class="nv">$pdo</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="s2">&quot;SELECT id, name FROM users&quot;</span><span class="p">);</span>
+
+<span class="nv">$stmt</span><span class="o">-&gt;</span><span class="na">setFetchMode</span><span class="p">(</span><span class="nx">PDO</span><span class="o">::</span> <span class="na">FETCH_CLASS</span><span class="o">|</span><span class="nx">PDO</span><span class="o">::</span><span class="na">FETCH_PROPS_LATE</span><span class="p">,</span> <span class="s1">&#39;User&#39;</span><span class="p">);</span>
+<span class="nv">$stmt</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
+
+<span class="k">while</span> <span class="p">(</span><span class="nv">$row</span> <span class="o">=</span><span class="nv">$stmt</span><span class="o">-&gt;</span><span class="na">fetch</span><span class="p">()))</span> <span class="p">{</span>
+
+ <span class="k">echo</span> <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">getUsername</span><span class="p">();</span>
+
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></p>
+<p><code>$row</code> will be a <code>User</code> object, and it can invoke the <code>User</code> methods.</p>
+<h2 id="notes_1">Notes<a class="headerlink" href="#notes_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li>PHP directly maps the returned column names to matching object attributes even if they are private</li>
+<li>If no comparable class attribute exists, PHP will create the column name as a new public attribute!!!</li>
+<li>DANGER: the constructor is called <strong>after</strong> the attributes are set ?!! So either don't code a constructor in your data transfer class, or use
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$q-&gt;setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, &#39;User&#39;));
+</pre></div>
+</td></tr></table>
+-&gt; constructor is executed before PDO assigns the object attributes</li>
+</ul>
+<h2 id="recall-column-name-to-attribute-name-mapping">Recall: Column name to Attribute name mapping<a class="headerlink" href="#recall-column-name-to-attribute-name-mapping" title="Permanent link">&para;</a></h2>
+<ul>
+<li>sql aliases are used to map the sql query result to the appropriate object attribute</li>
+<li>you can force column names (and aliases) to a specific case pattern</li>
+<li><strong>--</strong> default will be <strong>all lower case</strong>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$pdo-&gt;setAttribute(PDO::ATTR_CASE, PDO::CASE_NATURAL );
+</pre></div>
+</td></tr></table>
+<code>PDO::ATTR_CASE</code> – forces columns to a case pattern</li>
+</ul>
+<p><code>PDO::CASE_NATURAL</code> leaves them as they are returned</p>
+<h3 id="example_1">Example<a class="headerlink" href="#example_1" title="Permanent link">&para;</a></h3>
+<p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">class</span> <span class="nc">Category</span> <span class="p">{</span>
+  <span class="k">public</span> <span class="nv">$id</span><span class="p">;</span>
+  <span class="k">public</span> <span class="nv">$fkId</span><span class="p">;</span>
+  <span class="k">public</span> <span class="nv">$shortName</span><span class="p">;</span>
+  <span class="k">public</span> <span class="nv">$longName</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nv">$pdo</span><span class="o">-&gt;</span><span class="na">setAttribute</span><span class="p">(</span><span class="nx">PDO</span><span class="o">::</span><span class="na">ATTR_CASE</span><span class="p">,</span> <span class="nx">PDO</span><span class="o">::</span><span class="na">CASE_NATURAL</span> <span class="p">);</span>
+<span class="nv">$stmt</span> <span class="o">=</span> <span class="nv">$pdo</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="s1">&#39;SELECT </span>
+<span class="s1">    id, fk_id AS `fkId`,</span>
+<span class="s1">    short_name AS `shortName`,</span>
+<span class="s1">    long_name As `longName`      </span>
+<span class="s1">    FROM `Category`&#39;</span>
+<span class="p">);</span>
+
+<span class="nv">$stmt</span><span class="o">-&gt;</span> <span class="na">setFetchMode</span><span class="p">(</span><span class="nx">PDO</span><span class="o">::</span><span class="na">FETCH_CLASS</span><span class="o">|</span><span class="nx">PDO</span><span class="o">::</span><span class="na">FETCH_PROPS_LATE</span><span class="p">,</span> <span class="s1">&#39;User&#39;</span><span class="p">));</span>
+
+<span class="nv">$stmt</span> <span class="o">-&gt;</span> <span class="na">execute</span><span class="p">();</span>
+</pre></div>
+</td></tr></table>
+- since we use an alias, the alias is used as is</p>
+<h2 id="class-constants">Class constants<a class="headerlink" href="#class-constants" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Class constants are like public static properties whose value can never change.</li>
+<li>Class constants are created using the <strong>const</strong> keyword, followed by the name of the constant (without a dollar sign), followed by the assignment operator and the constant's value:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">class</span> <span class="nc">SomeClass</span> <span class="p">{</span>
+    <span class="k">const</span> <span class="no">PI</span> <span class="o">=</span> <span class="mf">3.14</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></li>
+<li>only accessible through <code>ClassName::CONSTANT</code> or <code>self::CONSTANT</code> (within the class)</li>
+</ul>
+<h2 id="scope-resolution-operator">:: Scope Resolution operator<a class="headerlink" href="#scope-resolution-operator" title="Permanent link">&para;</a></h2>
+<ul>
+<li>allows access to <strong>static</strong> , <strong>constant</strong> , and <strong>overridden</strong> properties or methods of a class (can't use -&gt;)
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">class</span> <span class="nc">MyClass</span> <span class="p">{</span>
+    <span class="k">const</span> <span class="no">CONSTANT</span> <span class="o">=</span> <span class="mi">42</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">echo</span> <span class="nx">MyClass</span><span class="o">::</span><span class="na">CONSTANT</span><span class="p">;</span>
+</pre></div>
+</td></tr></table></li>
+</ul>
+<h2 id="self-parent-static">self, parent, static<a class="headerlink" href="#self-parent-static" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Three special keywords <code>self</code> , <code>parent</code> and <code>static</code> are used to access properties or methods from inside a class definition.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">class</span> <span class="nc">MyClass</span>
+<span class="p">{</span>
+    <span class="k">protected</span> <span class="k">function</span> <span class="nf">myFunc</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">&quot;MyClass&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">class</span> <span class="nc">OtherClass</span> <span class="k">extends</span> <span class="nx">MyClass</span>
+<span class="p">{</span>
+    <span class="c1">// Override parent&#39;s definition</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">myFunc</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// call the parent function</span>
+        <span class="k">parent</span><span class="o">::</span><span class="na">myFunc</span><span class="p">();</span>
+        <span class="k">echo</span> <span class="s2">&quot;OtherClass&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></li>
+</ul>
+<h2 id="static-members">Static members<a class="headerlink" href="#static-members" title="Permanent link">&para;</a></h2>
+<ul>
+<li>a static variable is shared across all instances of that class</li>
+<li>To declare a static attribute, use the static keyword after the visibility indicator
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>public static $count;
+</pre></div>
+</td></tr></table></li>
+<li>within same class, are accessed by using
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>self::$count
+</pre></div>
+</td></tr></table></li>
+<li>Outside, if visible:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>ClassName :: $count
+</pre></div>
+</td></tr></table></li>
+</ul>
+<h2 id="inheritance">Inheritance<a class="headerlink" href="#inheritance" title="Permanent link">&para;</a></h2>
+<ul>
+<li>only 1 base class (no multiple inheritance)</li>
+<li>The inherited methods and properties can be overridden by redeclaring them with the same name defined in the parent class.</li>
+<li>PHP signature looks only at name, not parameters or return</li>
+<li>if the parent class has defined a method as final, that method may not be overridden</li>
+<li>if the class is declared as final, it cannot be extended</li>
+<li>access the overridden methods or static properties by referencing them with <code>parent::</code>  (instead of super)</li>
+</ul>
+<h2 id="instanceof-keyword-not-a-function">instanceof keyword (not a function)<a class="headerlink" href="#instanceof-keyword-not-a-function" title="Permanent link">&para;</a></h2>
+<p><code>if ($obj instanceof SomeClass) {…</code></p>
+<h2 id="polymorphism">Polymorphism<a class="headerlink" href="#polymorphism" title="Permanent link">&para;</a></h2>
+<ul>
+<li>When related classes have overridden methods, the method called depends on the type of the object calling it.</li>
+<li>Since PHP is weakly typed, it is ALWAYS the runtime type that is used
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">class</span> <span class="nc">E</span><span class="p">{</span>
+ <span class="k">function</span> <span class="nf">scream</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="s1">&#39;eee&#39;</span><span class="p">;</span>
+ <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">class</span> <span class="nc">A</span> <span class="k">extends</span>  <span class="nx">E</span> <span class="p">{</span>
+ <span class="k">function</span> <span class="nf">scream</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="s1">&#39;aaa&#39;</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nv">$obj1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">A</span><span class="p">();</span>
+<span class="nv">$obj1</span><span class="o">-&gt;</span><span class="na">scream</span><span class="p">();</span>  <span class="c1">//aaa</span>
+
+<span class="nv">$obj2</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">E</span><span class="p">();</span>
+<span class="nv">$obj2</span><span class="o">-&gt;</span><span class="na">scream</span><span class="p">();</span>  <span class="c1">//eee</span>
+</pre></div>
+</td></tr></table></li>
+</ul>
+<h2 id="this-vs-self">$this vs self::<a class="headerlink" href="#this-vs-self" title="Permanent link">&para;</a></h2>
+<p>Usually:</p>
+<ul>
+<li>Use <code>$this</code> to refer to the current object: <code>$this-&gt;member</code> for non-static members</li>
+<li>Use self to refer to the current class: <code>self::$member</code> for static members.</li>
+</ul>
+<p><strong>BUT…</strong></p>
+<ul>
+<li><code>-&gt;</code> is an object operator, but can access static <strong>methods</strong> (not static attributes)</li>
+<li><code>::</code> is a scope resolution operator – it can access static, constants and accessible overridden member in parent</li>
+<li><code>self::</code> can refer to both static and non-static members</li>
+<li><code>--</code> non-static member will be based on the current class where the method is ∴ not polymorphic!</li>
+<li><code>--</code> references to the current class  <code>self::</code>  are resolved using the class in which the function was defined</li>
+<li>accessing parent member parent::
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">class</span> <span class="nc">A</span> <span class="p">{</span>
+    <span class="k">function</span> <span class="nf">screamloudly</span><span class="p">(){</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">scream</span><span class="p">();</span>
+        <span class="nx">self</span><span class="o">::</span><span class="na">scream</span><span class="p">();</span>
+    <span class="p">}</span>
+    <span class="k">function</span> <span class="nf">scream</span><span class="p">(){</span>
+        <span class="k">echo</span> <span class="s2">&quot;eee&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">class</span> <span class="nc">B</span> <span class="k">extends</span> <span class="nx">A</span> <span class="p">{</span>
+    <span class="k">function</span> <span class="nf">scream</span><span class="p">(){</span>
+        <span class="k">echo</span> <span class="s2">&quot;aaa&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nv">$obj</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">B</span><span class="p">();</span>
+<span class="nv">$obj</span><span class="o">-&gt;</span><span class="na">screamloudly</span><span class="p">();</span>   <span class="c1">//output: aaaeee</span>
+</pre></div>
+</td></tr></table></li>
+</ul>
+<h2 id="late-static-binding">Late static binding<a class="headerlink" href="#late-static-binding" title="Permanent link">&para;</a></h2>
+<ul>
+<li>late binding on static methods invoked with <strong>static::</strong>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">class</span> <span class="nc">A</span> <span class="p">{</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="k">function</span> <span class="nf">findwho</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">self</span><span class="o">::</span><span class="na">who</span><span class="p">();</span> <span class="c1">// PHP binds this to A::who() right away</span>
+        <span class="o">**</span><span class="k">static</span><span class="o">::**</span> <span class="nx">who</span><span class="p">();</span>  <span class="c1">// PHP waits to resolve this (hence, late)!</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">static</span> <span class="k">function</span> <span class="nf">who</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="no">__CLASS__</span><span class="o">.</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">class</span> <span class="nc">B</span> <span class="k">extends</span> <span class="nx">A</span> <span class="p">{</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="k">function</span> <span class="nf">test</span><span class="p">()</span> <span class="p">{</span>
+       <span class="nx">self</span><span class="o">::</span><span class="na">findwho</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">static</span> <span class="k">function</span> <span class="nf">who</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="no">__CLASS__</span><span class="o">.</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+
+<span class="p">}</span>
+
+<span class="nx">B</span><span class="o">::</span><span class="na">test</span><span class="p">();</span>   <span class="c1">//A  B</span>
+</pre></div>
+</td></tr></table></li>
+</ul>
+<h2 id="type-hinting">Type hinting<a class="headerlink" href="#type-hinting" title="Permanent link">&para;</a></h2>
+<ul>
+<li>"types" in a method and function parameter list</li>
+<li>works for class names, interfaces, callable (which is a callback - function name string - delegate) and array only</li>
+<li><code>--</code> callback functions -&gt; a lot like delegates – first class function (function is assigned to a variable)</li>
+<li>no types allowed for scalars such as <code>string</code> / <code>int</code> / <code>float</code>/ etc...</li>
+</ul>
+<h2 id="objects-type-hinting">Objects – type hinting<a class="headerlink" href="#objects-type-hinting" title="Permanent link">&para;</a></h2>
+<p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">class</span> <span class="nc">MyClass</span> <span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">test</span><span class="p">(</span><span class="nx">OtherClass</span> <span class="nv">$otherclass</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="nv">$otherclass</span><span class="o">-&gt;</span><span class="na">getVar</span><span class="p">();</span>
+    <span class="p">}</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">test_array</span><span class="p">(</span><span class="k">array</span> <span class="nv">$input_array</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nb">print_r</span><span class="p">(</span><span class="nv">$input_array</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">test_interface</span><span class="p">(</span><span class="nx">Countable</span> <span class="nv">$count</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="nb">get_class</span><span class="p">(</span><span class="nv">$count</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">test_callable</span><span class="p">(</span><span class="nx">callable</span> <span class="nv">$callback</span><span class="p">,</span> <span class="nv">$data</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$callback</span><span class="p">(</span><span class="nv">$data</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table>
+- removes needs for constant type checking for objects
+- throws a catchable exception
+- won't give you overloaded functions
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="c1">// An instance of each class</span>
+<span class="nv">$myclass</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MyClass</span><span class="p">();</span>  <span class="c1">//() optional is no params</span>
+<span class="nv">$otherclass</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">OtherClass</span><span class="p">();</span>
+
+<span class="c1">// Fatal Error: Argument 1 must be an object of class OtherClass</span>
+<span class="nv">$myclass</span><span class="o">-&gt;</span><span class="na">test</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">);</span>
+
+<span class="c1">// Fatal Error: Argument 1 must be an instance of OtherClass</span>
+<span class="nv">$foo</span> <span class="o">=</span> <span class="k">new</span> <span class="k">stdClass</span><span class="p">;</span>
+<span class="nv">$myclass</span><span class="o">-&gt;</span><span class="na">test</span><span class="p">(</span><span class="nv">$foo</span><span class="p">);</span>
+
+<span class="c1">// Fatal Error: Argument 1  must be an instance of OtherClass</span>
+<span class="nv">$myclass</span><span class="o">-&gt;</span><span class="na">test</span><span class="p">(</span><span class="k">null</span><span class="p">);</span>
+
+<span class="c1">// Works</span>
+<span class="nv">$myclass</span><span class="o">-&gt;</span><span class="na">test</span><span class="p">(</span><span class="nv">$otherclass</span><span class="p">);</span>
+
+<span class="c1">// Fatal Error: Argument 1 must be an array</span>
+<span class="nv">$myclass</span><span class="o">-&gt;</span><span class="na">test_array</span><span class="p">(</span><span class="s1">&#39;a string&#39;</span><span class="p">);</span>
+
+<span class="c1">// Works: Prints the array</span>
+<span class="nv">$myclass</span><span class="o">-&gt;</span><span class="na">test_array</span><span class="p">(</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">]</span> <span class="p">);</span>
+
+<span class="c1">// Works: Prints ArrayObject</span>
+<span class="nv">$myclass</span><span class="o">-&gt;</span><span class="na">test_interface</span><span class="p">(</span><span class="k">new</span> <span class="nx">ArrayObject</span><span class="p">(</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span> <span class="p">));</span>
+
+<span class="c1">// Works: Prints int(1)</span>
+<span class="nv">$myclass</span><span class="o">-&gt;</span><span class="na">test_callable</span><span class="p">(</span><span class="s1">&#39;var_dump&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</pre></div>
+</td></tr></table></p>
+<h2 id="type-hinting-not-compatible-with-null">Type hinting – not compatible with null<a class="headerlink" href="#type-hinting-not-compatible-with-null" title="Permanent link">&para;</a></h2>
+<p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">class</span> <span class="nc">Type</span> <span class="p">{</span>
+<span class="p">}</span>
+
+<span class="k">function</span> <span class="nf">foo</span><span class="p">(</span><span class="nx">Type</span> <span class="nv">$t</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}</span>
+
+<span class="nx">foo</span><span class="p">(</span><span class="k">null</span><span class="p">);</span>
+</pre></div>
+</td></tr></table>
+- Results in fatal error
+- Why? <code>Null</code> is <strong>not</strong> an object, interface, array or callable
+- Can't use type hinting for anything else (i.e., not for strings, numeric, or null)!
+- Solution: allow null as the default value
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">function</span> <span class="nf">foo</span><span class="p">(</span><span class="nx">Type</span> <span class="nv">$t</span><span class="o">=</span><span class="k">null</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../10-pagination/" title="10 pagination" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                10 pagination
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../_References/" title=" References" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                 References
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application-c35428f87f.js"></script>
+      
+      
+      <script>app.initialize({url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

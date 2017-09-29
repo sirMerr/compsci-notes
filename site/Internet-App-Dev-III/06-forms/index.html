@@ -10,7 +10,7 @@
         <meta name="description" content="Notes for Semester 5 of Computer Science at Dawson">
       
       
-        <link rel="canonical" href="https://sirmerr.github.io/compsci-notes/Internet-App-Dev-III/forms/">
+        <link rel="canonical" href="https://sirmerr.github.io/compsci-notes/Internet-App-Dev-III/06-forms/">
       
       
         <meta name="author" content="Tiffany">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Forms - CompSci HQ</title>
+        <title>06 forms - CompSci HQ</title>
       
     
     
@@ -85,7 +85,7 @@
                 </span>
               
             
-            Forms
+            06 forms
           
         </span>
       </div>
@@ -261,6 +261,137 @@
           
           
 
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        06 forms
+      </label>
+    
+    <a href="./" title="06 forms" class="md-nav__link md-nav__link--active">
+      06 forms
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#http-methods" title="Http Methods" class="md-nav__link">
+    Http Methods
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sanitizing-user-input" title="Sanitizing user input" class="md-nav__link">
+    Sanitizing user input
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#htmlentities" title="htmlentities()" class="md-nav__link">
+    htmlentities()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#browserdisplays" title="browserdisplays()" class="md-nav__link">
+    browserdisplays()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../07-functions/" title="07 functions" class="md-nav__link">
+      07 functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../08-cURL_DOMDocumentation/" title="08 cURL DOMDocumentation" class="md-nav__link">
+      08 cURL DOMDocumentation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../09-using_postgres/" title="09 using postgres" class="md-nav__link">
+      09 using postgres
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../10-pagination/" title="10 pagination" class="md-nav__link">
+      10 pagination
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../11-classes/" title="11 classes" class="md-nav__link">
+      11 classes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
 
   <li class="md-nav__item">
     <a href="../_References/" title=" References" class="md-nav__link">
@@ -335,92 +466,9 @@
 
 
   <li class="md-nav__item">
-    <a href="../cURL_DOMDocumentation/" title="cURL DOMDocumentation" class="md-nav__link">
-      cURL DOMDocumentation
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../constructs/" title="Constructs" class="md-nav__link">
       Constructs
     </a>
-  </li>
-
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Forms
-      </label>
-    
-    <a href="./" title="Forms" class="md-nav__link md-nav__link--active">
-      Forms
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#http-methods" title="Http Methods" class="md-nav__link">
-    Http Methods
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sanitizing-user-input" title="Sanitizing user input" class="md-nav__link">
-    Sanitizing user input
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#htmlentities" title="htmlentities()" class="md-nav__link">
-    htmlentities()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#browserdisplays" title="browserdisplays()" class="md-nav__link">
-    browserdisplays()
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -441,27 +489,15 @@
           
 
 
-  <li class="md-nav__item">
-    <a href="../using_postgres/" title="Using postgres" class="md-nav__link">
-      Using postgres
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-12" type="checkbox" id="nav-4-12">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-15" type="checkbox" id="nav-4-15">
     
-    <label class="md-nav__link" for="nav-4-12">
+    <label class="md-nav__link" for="nav-4-15">
       Assignments
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-12">
+      <label class="md-nav__title" for="nav-4-15">
         Assignments
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -491,13 +527,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-13" type="checkbox" id="nav-4-13">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-16" type="checkbox" id="nav-4-16">
     
-    <label class="md-nav__link" for="nav-4-13">
+    <label class="md-nav__link" for="nav-4-16">
       Labs
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-13">
+      <label class="md-nav__title" for="nav-4-16">
         Labs
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -820,7 +856,7 @@
               
                 
                 
-                  <h1>Forms</h1>
+                  <h1>06 forms</h1>
                 
                 <h2 id="http-methods">Http Methods<a class="headerlink" href="#http-methods" title="Permanent link">&para;</a></h2>
 <ul>
@@ -925,7 +961,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../constructs/" title="Constructs" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../Data-Communications/assignments/stones/" title="Stones" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -934,19 +970,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Constructs
+                Stones
               </span>
             </div>
           </a>
         
         
-          <a href="../midterm_prep/" title="Midterm prep" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../07-functions/" title="07 functions" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Midterm prep
+                07 functions
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

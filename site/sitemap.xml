@@ -36,6 +36,42 @@
     
         
     <url>
+     <loc>https://sirmerr.github.io/compsci-notes//Internet-App-Dev-III/01-Introduction/</loc>
+     <lastmod>2017-09-29</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://sirmerr.github.io/compsci-notes//Internet-App-Dev-III/02-String/</loc>
+     <lastmod>2017-09-29</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://sirmerr.github.io/compsci-notes//Internet-App-Dev-III/02-Term-definitions/</loc>
+     <lastmod>2017-09-29</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://sirmerr.github.io/compsci-notes//Internet-App-Dev-III/03-References/</loc>
+     <lastmod>2017-09-29</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://sirmerr.github.io/compsci-notes//Internet-App-Dev-III/03-arrays/</loc>
+     <lastmod>2017-09-29</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://sirmerr.github.io/compsci-notes//Internet-App-Dev-III/03-constructs/</loc>
+     <lastmod>2017-09-29</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>https://sirmerr.github.io/compsci-notes//Internet-App-Dev-III/06-forms/</loc>
      <lastmod>2017-09-29</lastmod>
      <changefreq>daily</changefreq>
@@ -72,43 +108,7 @@
     </url>
         
     <url>
-     <loc>https://sirmerr.github.io/compsci-notes//Internet-App-Dev-III/_References/</loc>
-     <lastmod>2017-09-29</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>https://sirmerr.github.io/compsci-notes//Internet-App-Dev-III/_String/</loc>
-     <lastmod>2017-09-29</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>https://sirmerr.github.io/compsci-notes//Internet-App-Dev-III/_Term-definitions/</loc>
-     <lastmod>2017-09-29</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>https://sirmerr.github.io/compsci-notes//Internet-App-Dev-III/__Introduction/</loc>
-     <lastmod>2017-09-29</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
      <loc>https://sirmerr.github.io/compsci-notes//Internet-App-Dev-III/__Outline/</loc>
-     <lastmod>2017-09-29</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>https://sirmerr.github.io/compsci-notes//Internet-App-Dev-III/arrays/</loc>
-     <lastmod>2017-09-29</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>https://sirmerr.github.io/compsci-notes//Internet-App-Dev-III/constructs/</loc>
      <lastmod>2017-09-29</lastmod>
      <changefreq>daily</changefreq>
     </url>

@@ -10,3 +10,6 @@
 [submodule "development/php-compsci"]
 	path = development/php-compsci
 	url = git@github.com:sirMerr/php-compsci.git
+[submodule "development/android/assignments/assign1-team06"]
+	path = development/android/assignments/assign1-team06
+	url = git@github.com:Android518-2017/assign1-team06.git

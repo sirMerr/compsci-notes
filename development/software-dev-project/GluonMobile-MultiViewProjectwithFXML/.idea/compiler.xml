@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="GluonMobile-MultiViewProjectwithFXML_android" target="1.8" />
+      <module name="GluonMobile-MultiViewProjectwithFXML_desktop" target="1.8" />
+      <module name="GluonMobile-MultiViewProjectwithFXML_embedded" target="1.8" />
+      <module name="GluonMobile-MultiViewProjectwithFXML_ios" target="1.8" />
+      <module name="GluonMobile-MultiViewProjectwithFXML_main" target="1.8" />
+      <module name="GluonMobile-MultiViewProjectwithFXML_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

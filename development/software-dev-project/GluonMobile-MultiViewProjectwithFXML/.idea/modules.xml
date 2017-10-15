@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../../../GluonMobile-MultiViewProjectwithFXML/GluonMobile-MultiViewProjectwithFXML.iml" filepath="$PROJECT_DIR$/../../../../GluonMobile-MultiViewProjectwithFXML/GluonMobile-MultiViewProjectwithFXML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GluonMobile-MultiViewProjectwithFXML_android.iml" filepath="$PROJECT_DIR$/.idea/modules/GluonMobile-MultiViewProjectwithFXML_android.iml" group="GluonMobile-MultiViewProjectwithFXML" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GluonMobile-MultiViewProjectwithFXML_desktop.iml" filepath="$PROJECT_DIR$/.idea/modules/GluonMobile-MultiViewProjectwithFXML_desktop.iml" group="GluonMobile-MultiViewProjectwithFXML" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GluonMobile-MultiViewProjectwithFXML_embedded.iml" filepath="$PROJECT_DIR$/.idea/modules/GluonMobile-MultiViewProjectwithFXML_embedded.iml" group="GluonMobile-MultiViewProjectwithFXML" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GluonMobile-MultiViewProjectwithFXML_ios.iml" filepath="$PROJECT_DIR$/.idea/modules/GluonMobile-MultiViewProjectwithFXML_ios.iml" group="GluonMobile-MultiViewProjectwithFXML" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GluonMobile-MultiViewProjectwithFXML_main.iml" filepath="$PROJECT_DIR$/.idea/modules/GluonMobile-MultiViewProjectwithFXML_main.iml" group="GluonMobile-MultiViewProjectwithFXML" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GluonMobile-MultiViewProjectwithFXML_test.iml" filepath="$PROJECT_DIR$/.idea/modules/GluonMobile-MultiViewProjectwithFXML_test.iml" group="GluonMobile-MultiViewProjectwithFXML" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/software-dev-project-GluonMobile-MultiViewProjectwithFXML.iml" filepath="$PROJECT_DIR$/.idea/modules/software-dev-project-GluonMobile-MultiViewProjectwithFXML.iml" />
+    </modules>
+  </component>
+</project>

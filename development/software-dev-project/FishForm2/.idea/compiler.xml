@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="fishform" />
+        <module name="fishform (1)" />
+        <module name="fishform (2)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="fishform" target="1.8" />
-      <module name="fishform (1)" target="1.8" />
-      <module name="fishform (2)" target="1.5" />
+      <module name="fishform (1)" target="1.5" />
+      <module name="fishform (2)" target="1.8" />
       <module name="fishform (3)" target="1.8" />
     </bytecodeTargetLevel>
   </component>

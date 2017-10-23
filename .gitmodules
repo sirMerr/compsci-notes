@@ -13,3 +13,6 @@
 [submodule "development/android/assignments/assign1-team06"]
 	path = development/android/assignments/assign1-team06
 	url = git@github.com:Android518-2017/assign1-team06.git
+[submodule "development/android/assignments/assign2-team10"]
+	path = development/android/assignments/assign2-team10
+	url = git@github.com:Android518-2017/assign2-team10.git

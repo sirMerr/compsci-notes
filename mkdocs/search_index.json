@@ -1691,6 +1691,71 @@
             "title": "Websites"
         }, 
         {
+            "location": "/Mobile-Development/07-03-multiple-screens/", 
+            "text": "Android Supporting Multiple Screens\n\n\nOverview\n\n\n\n\nThe target platform for Android Uis are many and varied in sizes and densities.\n\n\nAs of Android 1.6 multiple screen sizes and densities were supported\n\n\nThe idea is to optimise your UI for any device\ns screen without having to design for ALL possibilities\n\n\nTo simplify Android gives us ways to map to various screen densities and sizes\n\n\n\n\nScreen densities\n\n\nTo simplify design Android divided the range of screen densities into a set of generalized densities\n\n\n\n\n\n\n\n\nGeneral size\n\n\nName\n\n\ndpi(ppi)\n\n\nfactor\n\n\n\n\n\n\n\n\n\n\nldpi\n\n\nLow\n\n\n120\n\n\n.75\n\n\n\n\n\n\nmdpi\n\n\nMedium (baseline)\n\n\n160\n\n\n1\n\n\n\n\n\n\nhdpi\n\n\nHigh\n\n\n240\n\n\n1.5\n\n\n\n\n\n\nxhdpi\n\n\nExtra high\n\n\n320\n\n\n2\n\n\n\n\n\n\nxxhdpi\n\n\nExtra extra high\n\n\n480\n\n\n3\n\n\n\n\n\n\nxxxhdpi\n\n\nExtra extra extra high\n\n\n640\n\n\n4\n\n\n\n\n\n\n\n\nGeneral densities\n\n\n\n\nEach generalized density spans a range of real device densities\n\n\n\n\n\n\n\n\n\n\nGeneral size\n\n\nName\n\n\ndpi(ppi)\n\n\nfactor\n\n\n\n\n\n\n\n\n\n\nldpi\n\n\nLow\n\n\n120\n\n\n.75\n\n\n\n\n\n\nmdpi\n\n\nMedium (baseline)\n\n\n160\n\n\n1\n\n\n\n\n\n\nhdp\n\n\nHigh\n\n\n240\n\n\n1.5\n\n\n\n\n\n\nxhdpi\n\n\nExtra high\n\n\n320\n\n\n2\n\n\n\n\n\n\nxxhdpi\n\n\nExtra extra high\n\n\n480\n\n\n3\n\n\n\n\n\n\nxxxhdpi\n\n\nExtra extra extra high\n\n\n640\n\n\n4\n\n\n\n\n\n\n\n\n311dpi screen\n442dpi screen\n\n\nAlternate drawables\n\n\n\n\n\n\nHave alternates for different screen densities for at least the launcher icon.\n\n\nYou want the icon to look good on any density.\n\n\nIf you include other bitmap drawables (.png, .gif, or .jpg and .9.png) you should provide alternates for different densities\n\n\nWhen you create alternates follow a scaling ratio of: 3:4:6:8:12:16\n\n\n\n\n\n\nNote\n\n\nNot only launcher icons (res/mipmap)but any drawable (res/drawable) is to be put in theresource directory appropriate to its density.\n\n\n\n\nShould you have only one image meant for all densities use the default res/drawable directory\n\n\n\n\n\n\n\n\nIcon size in pixels\n\n\nDensity\n\n\nScale\n\n\nResource directory\n\n\n\n\n\n\n\n\n\n\n36x36\n\n\nLow\n\n\n.75\n\n\nres/mipmap-ldpi\n\n\n\n\n\n\n48x48\n\n\nMedium\n\n\n1 (baseline)\n\n\nres/mipmap-mdpi\n\n\n\n\n\n\n72x72\n\n\nHigh\n\n\n1.5\n\n\nres/mipmap-hdpi\n\n\n\n\n\n\n96x96\n\n\nExtra high\n\n\n2\n\n\nres/mipmap-xhdpi\n\n\n\n\n\n\n144x144\n\n\nExtra extra high\n\n\n3\n\n\nres/mipmap-xxhdpi\n\n\n\n\n\n\n192x192\n\n\nExtra extra extrahigh        [\n\n\n\n\n\n\n\n\n\n\n\n\nExercise\n\n\n\n\nUsing any app let\u2019s give it a custom icon\n\n\nRun the \ngenerator\n to create your own icon\n\n\nDownload the icons and copy them into your app mipmap folder(s)\n\n\nInstall your app, the icon will be your custom icon\n\n\n\n\nScreen sizes\n\n\nSince Android 3.2 size qualifiers are used.  These sizes correspond not to actual screen sizes but to the width and height in dp (density independent pixels) that are available to your activity\u2019s window.\n\n\n\n\n\n\n\n\nScreen configuration\n\n\nQualifier values\n\n\nExamples\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nsmallestWidth\n\n\nsw\nN\ndp\n\n\nsw600dp sw720dp\n\n\nSmallest possible width.Regardless of orientation N dps ofwidth are availablefor this UI .MOST USED OPTION\n\n\n\n\n\n\nAvailable screen width\n\n\nw\nN\ndp\n\n\nw720dp w1024dp\n\n\nMinimum available width required.\n\n\n\n\n\n\nAvailable screen height\n\n\nh\nN\ndp\n\n\nH720dp H1024dp\n\n\nMinimum available height required. RARELY USED as mostdevices will scroll vertically only width isrestricted.\n\n\n\n\n\n\n\n\nTypical screen widths\n\n\n\n\n320dp: a typical phone screen (240x320 ldpi, 320x480 mdpi, 480x800 hdpi, etc\n\n\n480dp: a tweener tablet like the Streak (480x800 mdpi\n\n\n600dp: a 7\n tablet (600x1024 mdpi).\n\n\n720dp: a 10\n tablet (720x1280 mdpi, 800x1280 mdpi, etc).\n\n\n\n\nExample configurations\n\n\nShould I need different layouts for small and large displays I would use the following:\n * res/layout/main_activity.xml For handsets (smaller than 600dp available width\n * res/layout-sw600dp/main_activity.xml # For 7\n tablets (600dp wide and bigger)\n * res/layout-sw720dp/main_activity.xml # For 10\n tablets (720dp wide and bigger)\n\n\nFor more examples and information see\n\n\nhttps://developer.android.com/guide/practices/screens_support.html#DeclaringTabletLayouts\n\n\nDeclaringTabletLayouts\n\n\n\nResource Mapping\n\n\n\n\nBuild the application layout through XML configuration files\n\n\nDefine two different XML layouts for two different devices\n\n\nAt runtime, Android detects the current device configuration and loads the appropriate resources for the application\n\n\nNo need to recompile!\n\n\nJust add a new XML file if you need to support a new device\n\n\n\n\n\n\nReferences\n\n\n\n\nhttp://www.vogella.com/tutorials/AndroidDrawables/article.html#xml-drawables\n\n\nhttps://developer.android.com/guide/practices/screens_support.html\n\n\nhttps://developer.android.com/guide/practices/screens_support.html#DeclaringTabletLayouts", 
+            "title": "07 03 multiple screens"
+        }, 
+        {
+            "location": "/Mobile-Development/07-03-multiple-screens/#android-supporting-multiple-screens", 
+            "text": "", 
+            "title": "Android Supporting Multiple Screens"
+        }, 
+        {
+            "location": "/Mobile-Development/07-03-multiple-screens/#overview", 
+            "text": "The target platform for Android Uis are many and varied in sizes and densities.  As of Android 1.6 multiple screen sizes and densities were supported  The idea is to optimise your UI for any device s screen without having to design for ALL possibilities  To simplify Android gives us ways to map to various screen densities and sizes", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/Mobile-Development/07-03-multiple-screens/#screen-densities", 
+            "text": "To simplify design Android divided the range of screen densities into a set of generalized densities     General size  Name  dpi(ppi)  factor      ldpi  Low  120  .75    mdpi  Medium (baseline)  160  1    hdpi  High  240  1.5    xhdpi  Extra high  320  2    xxhdpi  Extra extra high  480  3    xxxhdpi  Extra extra extra high  640  4", 
+            "title": "Screen densities"
+        }, 
+        {
+            "location": "/Mobile-Development/07-03-multiple-screens/#general-densities", 
+            "text": "Each generalized density spans a range of real device densities      General size  Name  dpi(ppi)  factor      ldpi  Low  120  .75    mdpi  Medium (baseline)  160  1    hdp  High  240  1.5    xhdpi  Extra high  320  2    xxhdpi  Extra extra high  480  3    xxxhdpi  Extra extra extra high  640  4     311dpi screen\n442dpi screen", 
+            "title": "General densities"
+        }, 
+        {
+            "location": "/Mobile-Development/07-03-multiple-screens/#alternate-drawables", 
+            "text": "Have alternates for different screen densities for at least the launcher icon.  You want the icon to look good on any density.  If you include other bitmap drawables (.png, .gif, or .jpg and .9.png) you should provide alternates for different densities  When you create alternates follow a scaling ratio of: 3:4:6:8:12:16    Note  Not only launcher icons (res/mipmap)but any drawable (res/drawable) is to be put in theresource directory appropriate to its density.   Should you have only one image meant for all densities use the default res/drawable directory     Icon size in pixels  Density  Scale  Resource directory      36x36  Low  .75  res/mipmap-ldpi    48x48  Medium  1 (baseline)  res/mipmap-mdpi    72x72  High  1.5  res/mipmap-hdpi    96x96  Extra high  2  res/mipmap-xhdpi    144x144  Extra extra high  3  res/mipmap-xxhdpi    192x192  Extra extra extrahigh        [", 
+            "title": "Alternate drawables"
+        }, 
+        {
+            "location": "/Mobile-Development/07-03-multiple-screens/#exercise", 
+            "text": "Using any app let\u2019s give it a custom icon  Run the  generator  to create your own icon  Download the icons and copy them into your app mipmap folder(s)  Install your app, the icon will be your custom icon", 
+            "title": "Exercise"
+        }, 
+        {
+            "location": "/Mobile-Development/07-03-multiple-screens/#screen-sizes", 
+            "text": "Since Android 3.2 size qualifiers are used.  These sizes correspond not to actual screen sizes but to the width and height in dp (density independent pixels) that are available to your activity\u2019s window.     Screen configuration  Qualifier values  Examples  Description      smallestWidth  sw N dp  sw600dp sw720dp  Smallest possible width.Regardless of orientation N dps ofwidth are availablefor this UI .MOST USED OPTION    Available screen width  w N dp  w720dp w1024dp  Minimum available width required.    Available screen height  h N dp  H720dp H1024dp  Minimum available height required. RARELY USED as mostdevices will scroll vertically only width isrestricted.", 
+            "title": "Screen sizes"
+        }, 
+        {
+            "location": "/Mobile-Development/07-03-multiple-screens/#typical-screen-widths", 
+            "text": "320dp: a typical phone screen (240x320 ldpi, 320x480 mdpi, 480x800 hdpi, etc  480dp: a tweener tablet like the Streak (480x800 mdpi  600dp: a 7  tablet (600x1024 mdpi).  720dp: a 10  tablet (720x1280 mdpi, 800x1280 mdpi, etc).", 
+            "title": "Typical screen widths"
+        }, 
+        {
+            "location": "/Mobile-Development/07-03-multiple-screens/#example-configurations", 
+            "text": "Should I need different layouts for small and large displays I would use the following:\n * res/layout/main_activity.xml For handsets (smaller than 600dp available width\n * res/layout-sw600dp/main_activity.xml # For 7  tablets (600dp wide and bigger)\n * res/layout-sw720dp/main_activity.xml # For 10  tablets (720dp wide and bigger)", 
+            "title": "Example configurations"
+        }, 
+        {
+            "location": "/Mobile-Development/07-03-multiple-screens/#for-more-examples-and-information-see", 
+            "text": "https://developer.android.com/guide/practices/screens_support.html#DeclaringTabletLayouts  DeclaringTabletLayouts", 
+            "title": "For more examples and information see"
+        }, 
+        {
+            "location": "/Mobile-Development/07-03-multiple-screens/#resource-mapping", 
+            "text": "Build the application layout through XML configuration files  Define two different XML layouts for two different devices  At runtime, Android detects the current device configuration and loads the appropriate resources for the application  No need to recompile!  Just add a new XML file if you need to support a new device", 
+            "title": "Resource Mapping"
+        }, 
+        {
+            "location": "/Mobile-Development/07-03-multiple-screens/#references", 
+            "text": "http://www.vogella.com/tutorials/AndroidDrawables/article.html#xml-drawables  https://developer.android.com/guide/practices/screens_support.html  https://developer.android.com/guide/practices/screens_support.html#DeclaringTabletLayouts", 
+            "title": "References"
+        }, 
+        {
             "location": "/Mobile-Development/introduction/", 
             "text": "", 
             "title": "Introduction"

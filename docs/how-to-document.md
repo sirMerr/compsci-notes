@@ -1,4 +1,4 @@
-You have a few options. **Make sure you have permissions** with the Wiki repo here: https://github.com/Jogogoplay/hq if using that one.
+You have a few options. **Make sure you have permissions** with the Wiki repo here: https://github.com/sirMerr/compsci-notes if using that one.
 
 ## Make a pull request
 1. Add `.md` files to `./docs` (on Github or locally)

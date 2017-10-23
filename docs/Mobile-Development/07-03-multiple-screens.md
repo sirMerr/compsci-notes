@@ -35,7 +35,7 @@ To simplify design Android divided the range of screen densities into a set of g
 311dpi screen
 442dpi screen
 
-# Alternate drawables
+## Alternate drawables
 <img src="https://cdn.discordapp.com/attachments/307959450805862400/372075493853233153/unknown.png">
 
 * Have alternates for different screen densities for at least the launcher icon.

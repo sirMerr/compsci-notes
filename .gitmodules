@@ -16,3 +16,12 @@
 [submodule "development/android/assignments/assign2-team10"]
 	path = development/android/assignments/assign2-team10
 	url = git@github.com:Android518-2017/assign2-team10.git
+[submodule "development/software-dev-project/PopUpDemo"]
+	path = development/software-dev-project/PopUpDemo
+	url = git@gitlab.com:omniprof/PopUpDemo.git
+[submodule "development/software-dev-project/ExecutorDemo"]
+	path = development/software-dev-project/ExecutorDemo
+	url = git@gitlab.com:omniprof/ExecutorDemo.git
+[submodule "development/software-dev-project/kf_desktop_standard_project"]
+	path = development/software-dev-project/kf_desktop_standard_project
+	url = git@gitlab.com:omniprof/kf_desktop_standard_project.git

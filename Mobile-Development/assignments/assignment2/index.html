@@ -602,6 +602,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Internet-App-Dev-III/labs/lab7/" title="Lab7" class="md-nav__link">
+      Lab7
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1077,21 +1089,21 @@
 <p>You will define the firebase JSON / database as having:</p>
 <ul>
 <li>
-<p>Category (for example: sci fi, romance, computer science, science, celebrities, politicians, fictional characters, etc)</p>
+<p>[] Category (for example: sci fi, romance, computer science, science, celebrities, politicians, fictional characters, etc)</p>
 </li>
 <li>
-<p>Small Image for each category (smaller than 10MB due to firebase spec)</p>
+<p>[] Small Image for each category (smaller than 10MB due to firebase spec)</p>
 </li>
 <li>
-<p>Multiple quotes per category, for each quote have:</p>
+<p>[] Multiple quotes per category, for each quote have:</p>
 <ul>
-<li>Attributed (name of the person the quote is attributed to)</li>
-<li>Date of birth (of person who said the quote)</li>
-<li>Blurb  (one sentence of information about the person who said the quote)</li>
-<li>Quote short (30 char)</li>
-<li>Quote full ( the quote text itself )</li>
-<li>Reference (url of the site where you found the quote)</li>
-<li>Date (date added)  YYYY-MM-DD</li>
+<li>[] Attributed (name of the person the quote is attributed to)</li>
+<li>[] Date of birth (of person who said the quote)</li>
+<li>[] Blurb  (one sentence of information about the person who said the quote)</li>
+<li>[] Quote short (30 char)</li>
+<li>[] Quote full ( the quote text itself )</li>
+<li>[] Reference (url of the site where you found the quote)</li>
+<li>[] Date (date added)  YYYY-MM-DD</li>
 </ul>
 </li>
 </ul>
@@ -1101,25 +1113,25 @@
 <h2 id="behaviour">Behaviour<a class="headerlink" href="#behaviour" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p><code>MainActivity</code> on launch will show  ListView or RecyclerView populated with the categories from firebase.  When a user clicks on the category launch QuoteListActivity</p>
+<p>[] <code>MainActivity</code> on launch will show  ListView or RecyclerView populated with the categories from firebase.  When a user clicks on the category launch QuoteListActivity</p>
 </li>
 <li>
-<p><code>QuoteListActivity</code> will show a ListView or RecyclerView and display the short quote for all quotes in that category.  When a user clicks on the short quote launch QuoteActivity</p>
+<p>[] <code>QuoteListActivity</code> will show a ListView or RecyclerView and display the short quote for all quotes in that category.  When a user clicks on the short quote launch QuoteActivity</p>
 </li>
 <li>
-<p><code>QuoteActivity</code> display all of the information associated with the quote, except the blurb.  Include the image for the category. Design it nicely, the URI must be clickable, name it refernce    Format the Views nicely.  The name attributed is clickable and will show a dialogue containing the blurb information with one button to dismiss.</p>
+<p>[] <code>QuoteActivity</code> display all of the information associated with the quote, except the blurb.  Include the image for the category. Design it nicely, the URI must be clickable, name it refernce    Format the Views nicely.  The name attributed is clickable and will show a dialogue containing the blurb information with one button to dismiss.</p>
 </li>
 </ul>
 <p><a href="https://developer.android.com/guide/topics/ui/dialogs.html">Dialog</a></p>
 <p>All activites are to have the same options menu with the following (do not duplicate code, see the Menus ppts, use the name MenuActivity)</p>
 <ul>
 <li>
-<p>About: it will launch a single AboutActivity.</p>
+<p>[] About: it will launch a single AboutActivity.</p>
 </li>
 <li>
-<p>Random: it will choose a random category &amp; random quote and display it.</p>
+<p>[] Random: it will choose a random category &amp; random quote and display it.</p>
 </li>
-<li>Last: it will show the last quote from the previous runtime</li>
+<li>[] Last: it will show the last quote from the previous runtime</li>
 </ul>
 <p>You will have to save the last quote for the next runtime.</p>
 <p>AboutActivity must contain information about the app, your names and an image (your photo(s))</p>

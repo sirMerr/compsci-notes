@@ -1040,9 +1040,11 @@ image to see the animation)</p>
 </ul>
 <p>There are three aspects to this assignment. The breakdown is conceptual: you may have multiple files, and files with a mix of both server and client-side logic:</p>
 <h2 id="preparation-written-in-php">Preparation (written in PHP)<a class="headerlink" href="#preparation-written-in-php" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>user is a reserved word in Postgres SQL syntax, so use a different column name.</p>
+</div>
 <ul>
-<li>prepare the database table(s). This application has authentication, so use best practices. </li>
-<li>Warning: user is a reserved word in Postgres SQL syntax, so use a different column name.</li>
 <li>seed a line table with lines from a book. This <a href="http://www.textfiles.com/etext/">etext</a> site has ascii version of texts from <a href="https://www.gutenberg.org/">Project Gutenberg</a>. I chose <a href="http://www.textfiles.com/etext/FICTION/aesop11.txt">Aesop's Fables Translated by George Fyler Townsend</a>. In this book, a paragraph is delimited by an empty line.</li>
 <li>In a console application, read the file, break it up into lines, and populate your database. Keep the empty lines between lines in order to be able to potentially code the optional improvement below. But don’t not keep more than 1 consecutive empty line (i.e., ignore any subsequent empty line until reach a line with characters), and ignore any leading empty lines (remember to trim first).</li>
 <li>Recall that <code>file_get_contents($url)</code> returns a string with the entire contents. You can then explode the string based on end-of-line character (use the constant <code>PHP_EOL</code>). Alternatively, <code>fopen($url, ‘r’)</code> gets a handle to the file, which you can then use to get lines <code>(fgets($handle))</code>, and <code>feof($handle)</code> indicates if you reach the end of the file.</li>
@@ -1069,12 +1071,19 @@ image to see the animation)</p>
 <li>
 <p>using Ajax, request a line when the page loads. Request a line every time it finishes displaying the last token. </p>
 </li>
-<li>
-<p>get the AJAX response, and break the line into tokens: a token is a single word separate by whitespace (which includes both spaces and line breaks). Hint: look into the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split">split</a> or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match">match</a> methods </p>
-</li>
-<li>
-<p>get the speed in the AJAX response. Display each token in succession with a delay between tokens. HINT: the <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval">setInterval</a> will help achieve the words-per-minute rate. This <a href="https://stackoverflow.com/questions/4548034/create-a-pause-inside-a-while-loop-in-javascript">link</a> and this <a href="https://stackoverflow.com/questions/8421998/setinterval-with-loop-time">link</a> </p>
-</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Look into the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split">split</a> or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match">match</a> methods </p>
+</div>
+<ul>
+<li>get the speed in the AJAX response. Display each token in succession with a delay between tokens. </li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval">setInterval</a> will help achieve the words-per-minute rate. This <a href="https://stackoverflow.com/questions/4548034/create-a-pause-inside-a-while-loop-in-javascript">link</a> and this <a href="https://stackoverflow.com/questions/8421998/setinterval-with-loop-time">link</a> </p>
+</div>
+<ul>
 <li>
 <p>show you how to invoke methods with a delay and how to clearInterval once you finish with displaying a line. You can ask for the next line in an AJAX request when you clear the interval.</p>
 </li>

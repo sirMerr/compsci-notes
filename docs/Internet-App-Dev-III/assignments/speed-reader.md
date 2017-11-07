@@ -87,11 +87,11 @@ Make sure that you indicate clearly that the source of the text from http://www.
 Recall that we set up the url reader.app in Homestead.yaml and etc/hosts. This means you can work on your project in `H:/PHPCode/reader`.
 
 !!!note
-​	All major browser vendors now recommend Mozilla’s MDN Web Docs as the primary source for Web API documentation (HTML, CSS, JS, browser compatibility). 
+    All major browser vendors now recommend Mozilla’s MDN Web Docs as the primary source for Web API documentation (HTML, CSS, JS, browser compatibility). 
 
 ## Submission
 
 This is an **individual** project! You must submit a softcopy of the entire project, including the interface documentation. ==You will also push to Heroku==! Please add me as a collaborator, and indicate the Heroku URL in your Lea submission.
 
 !!!warning
-​	If you require PHP 7 features (e.g., null coalescing operator, spaceship operator), you must create a composer.json file indicating the minimum PHP version; Heroku defaults to PHP 5.6.x, which is ok for the vast majority of our code. See me for help! 
+    If you require PHP 7 features (e.g., null coalescing operator, spaceship operator), you must create a composer.json file indicating the minimum PHP version; Heroku defaults to PHP 5.6.x, which is ok for the vast majority of our code. See me for help! 

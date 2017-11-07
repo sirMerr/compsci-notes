@@ -36,7 +36,10 @@ There are three aspects to this assignment. The breakdown is conceptual: you may
 
 - implement a start page with authentication (registration and login per best practices). Once authenticated, you can redirect to the ajax-enabled page, or use the same script.
 - Javascript will send Ajax requests for the next line. If the user just registered, start with the first lines of the text at the first speed (100 wpm). Only send back lines with words, unless you decide to implement the ==optional improvement==.
-- if the user has used the service before, send the next line to read at the speed they last used (i.e., last speed is persisted). NOTE: in order to keep a speed integer encoded as an integer, use the `JSON_NUMERIC_CHECK | JSON_PRETTY_PRINT` options with `json_encode`.
+- if the user has used the service before, send the next line to read at the speed they last used (i.e., last speed is persisted). 
+
+!!!note
+    In order to keep a speed integer encoded as an integer, use the `JSON_NUMERIC_CHECK | JSON_PRETTY_PRINT` options with `json_encode`.
 - PHP updates the line number saved in the database to the last line sent.
 - every time the user changes the speed, PHP must respond to an AJAX request, and save the new speed. The response is unimportant, but send one anyways!
 
@@ -84,7 +87,6 @@ Make sure that you indicate clearly that the source of the text from http://www.
 Recall that we set up the url reader.app in Homestead.yaml and etc/hosts. This means you can work on your project in `H:/PHPCode/reader`.
 
 !!!note
-
 ​	All major browser vendors now recommend Mozilla’s MDN Web Docs as the primary source for Web API documentation (HTML, CSS, JS, browser compatibility). 
 
 ## Submission
@@ -92,5 +94,4 @@ Recall that we set up the url reader.app in Homestead.yaml and etc/hosts. This m
 This is an **individual** project! You must submit a softcopy of the entire project, including the interface documentation. ==You will also push to Heroku==! Please add me as a collaborator, and indicate the Heroku URL in your Lea submission.
 
 !!!warning
-
 ​	If you require PHP 7 features (e.g., null coalescing operator, spaceship operator), you must create a composer.json file indicating the minimum PHP version; Heroku defaults to PHP 5.6.x, which is ok for the vast majority of our code. See me for help! 

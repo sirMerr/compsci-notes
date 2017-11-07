@@ -27,7 +27,8 @@ There are three aspects to this assignment. The breakdown is conceptual: you may
 ## Preparation (written in PHP)
 
 - prepare the database table(s). This application has authentication, so use best practices. 
-- Warning: user is a reserved word in Postgres SQL syntax, so use a different column name.
+!!!warning
+    user is a reserved word in Postgres SQL syntax, so use a different column name.
 - seed a line table with lines from a book. This [etext](http://www.textfiles.com/etext/) site has ascii version of texts from [Project Gutenberg](https://www.gutenberg.org/). I chose [Aesop's Fables Translated by George Fyler Townsend](http://www.textfiles.com/etext/FICTION/aesop11.txt). In this book, a paragraph is delimited by an empty line.
 - In a console application, read the file, break it up into lines, and populate your database. Keep the empty lines between lines in order to be able to potentially code the optional improvement below. But don’t not keep more than 1 consecutive empty line (i.e., ignore any subsequent empty line until reach a line with characters), and ignore any leading empty lines (remember to trim first).
 - Recall that `file_get_contents($url)` returns a string with the entire contents. You can then explode the string based on end-of-line character (use the constant `PHP_EOL`). Alternatively, ` fopen($url, ‘r’)` gets a handle to the file, which you can then use to get lines `(fgets($handle))`, and `feof($handle)` indicates if you reach the end of the file.
@@ -49,9 +50,14 @@ There are three aspects to this assignment. The breakdown is conceptual: you may
 
 - using Ajax, request a line when the page loads. Request a line every time it finishes displaying the last token. 
 
-- get the AJAX response, and break the line into tokens: a token is a single word separate by whitespace (which includes both spaces and line breaks). Hint: look into the [split](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split) or [match](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match) methods 
+- get the AJAX response, and break the line into tokens: a token is a single word separate by whitespace (which includes both spaces and line breaks). 
+!!!tip
+    Look into the [split](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split) or [match](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match) methods 
 
-- get the speed in the AJAX response. Display each token in succession with a delay between tokens. HINT: the [setInterval](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval) will help achieve the words-per-minute rate. This [link](https://stackoverflow.com/questions/4548034/create-a-pause-inside-a-while-loop-in-javascript) and this [link](https://stackoverflow.com/questions/8421998/setinterval-with-loop-time) 
+- get the speed in the AJAX response. Display each token in succession with a delay between tokens. 
+
+!!!tip
+    The [setInterval](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval) will help achieve the words-per-minute rate. This [link](https://stackoverflow.com/questions/4548034/create-a-pause-inside-a-while-loop-in-javascript) and this [link](https://stackoverflow.com/questions/8421998/setinterval-with-loop-time) 
 
 - show you how to invoke methods with a delay and how to clearInterval once you finish with displaying a line. You can ask for the next line in an AJAX request when you clear the interval.
 

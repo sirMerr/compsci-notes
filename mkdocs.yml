@@ -2,7 +2,7 @@ site_name: CompSci HQ
 site_description: 'Notes for Semester 5 of Computer Science at Dawson'
 site_author: 'sirMerr'
 site_url: 'https://sirmerr.github.io/compsci-notes/'
-site_favicon: 'images/favicon.ico'
+site_favicon: 'assets/images/favicon.ico'
 repo_url: https://github.com/sirMerr/compsci-notes
 repo_name: sirmerr/compsci-notes
 

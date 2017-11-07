@@ -1051,7 +1051,13 @@ image to see the animation)</p>
 <ul>
 <li>implement a start page with authentication (registration and login per best practices). Once authenticated, you can redirect to the ajax-enabled page, or use the same script.</li>
 <li>Javascript will send Ajax requests for the next line. If the user just registered, start with the first lines of the text at the first speed (100 wpm). Only send back lines with words, unless you decide to implement the <mark>optional improvement</mark>.</li>
-<li>if the user has used the service before, send the next line to read at the speed they last used (i.e., last speed is persisted). NOTE: in order to keep a speed integer encoded as an integer, use the <code>JSON_NUMERIC_CHECK | JSON_PRETTY_PRINT</code> options with <code>json_encode</code>.</li>
+<li>if the user has used the service before, send the next line to read at the speed they last used (i.e., last speed is persisted). </li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In order to keep a speed integer encoded as an integer, use the <code>JSON_NUMERIC_CHECK | JSON_PRETTY_PRINT</code> options with <code>json_encode</code>.</p>
+</div>
+<ul>
 <li>PHP updates the line number saved in the database to the last line sent.</li>
 <li>every time the user changes the speed, PHP must respond to an AJAX request, and save the new speed. The response is unimportant, but send one anyways!</li>
 </ul>

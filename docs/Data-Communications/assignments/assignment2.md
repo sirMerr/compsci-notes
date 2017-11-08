@@ -13,6 +13,7 @@ This project normally has specs as shown on the following pages. In order to sav
 - [ ] Answer the following question in one sentence: in the `byteArrayToDouble` method, why is it necessary to zero out the most significant seven bytes of the long into which each array byte is cast, before shifting and ORing it with the others to produce the final long result? 
 
 Final documentation (per team) will consist of:
+
 1. a title page
 2. your answer to the byte reversal question
 3. your answer to the second question
@@ -24,7 +25,9 @@ You will work in assigned groups. All members of a group are expected to contrib
 Each team will write a client-server TCP-based system in Java that implements the Add 1 (A1) protocol. It will allow a person using the client to send a block consisting of one double item and one int item to the server, have the server process the items by adding 1.0 to the double and 1 to the int, and then have the server send the modified block back to the client.
 
 The client will allow the user to input the IP address of the server. The machines will then connect to begin the session, after which:
+
 - [ ] the client program will allow the user to enter the double value and the int value, or to quit the client; the client will allow the user the same two choices after the server sends back the modified block
+
 - [ ] the server will continue servicing the client that began the session until the client terminates the session by closing the socket, at which point the server will resume listening for new clients (i.e. the server will be an iterative server, servicing one client at a time).
 
 - [ ] Both the client and the server are to display appropriate messages while running and the information sent and received while a session is in progress.

@@ -27,6 +27,7 @@ There are three aspects to this assignment. The breakdown is conceptual: you may
 ## Preparation (written in PHP)
 
 - prepare the database table(s). This application has authentication, so use best practices. 
+
 !!!warning
     user is a reserved word in Postgres SQL syntax, so use a different column name.
 - seed a line table with lines from a book. This [etext](http://www.textfiles.com/etext/) site has ascii version of texts from [Project Gutenberg](https://www.gutenberg.org/). I chose [Aesop's Fables Translated by George Fyler Townsend](http://www.textfiles.com/etext/FICTION/aesop11.txt). In this book, a paragraph is delimited by an empty line.

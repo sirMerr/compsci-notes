@@ -1856,6 +1856,126 @@
             "title": "References"
         }, 
         {
+            "location": "/Mobile-Development/19-android-content-providers/", 
+            "text": "Android Content Providers using built in\n\n\nREST\n\n\n\n\nREpresentational State Transfer (REST)\n\n\nTyping a URL and getting a web page\n\n\nChanging the state of a web server by filling a form and submitting it\n\n\nConsists of clients and servers\n\n\nClients initiate requests\n\n\nServers process requests and return appropriate responses\n\n\nRequests and responses are built around the transfer of representations of resources\n\n\n\n\nREST principles\n\n\nClients are separated from servers by a uniform interface\n\n\n\n\n\n\nClients need not worry about how data is stored on servers\n\n\n\n\nportable client code\n\n\n\n\n\n\n\n\nServers need not worry about the user interface\n \n\n\n\n\nimproves server scalability and makes servers simpler\n\n\n\n\n\n\nStateless\n\n\n\n\nLayered system\n\n\n\n\nA client cannot ordinarily tell whether it is connected directly to the end server, or to an intermediary along the way\n\n\nHence allows for load balancing and shared caches\n\n\n\n\n\n\n\n\nUniform Interface\n\n\n\n\nSimplifies and decouples the architecture\n\n\nEnables the client and the server sides to evolve independently\n\n\n\n\n\n\n\n\nAndroid Processes\n\n\nEach of the .db's are sandboxed in their own application. These dbs can NOT be accessed outside their application context. \n\n\n\n\nTo access or to expose the data in the db, you must use a Content Provider\n\n\n\n\nAndroid Content Providers\n\n\n\n\nA way of sharing data across apps\n  Abstracting data into service\n\n\nThis idea of content providers makes data sources look like REST-enabled data providers such as web sites\n\n\nA content provider is a wrapper around data\n\n\nContent providers supply CRUD methods as needed via URIs\n\n\nA SQLite database on an Android device is an example of a data source that you can encapsulate into a content provider\n\n\nAndroid also has several built-in content providers that encapsulate databases\n\n\nContent providers play a significant role in sharing data between applications\n\n\nThe content providers\u2019 responsibility is to provide an encapsulation mechanism not a data-access mechanism\n\n\nYou\u2019ll need an actual data access mechanism such as SQLite to get to the underlying data sources\n\n\n\n\nAndroid's Built-in Providers\n\n\nThe top-level items are SQLite databases encapsulated as providers\n* Contacts\n* Mediastore\n* Calendar\n* etc.\n\n\nThese SQLite databases typically have an extension of \n.db\n\n\nContent Providers\n\n\n\n\n\n\nA system to access shared data\n\n\nSimilar to a REST web service\n\n\nTo each Content Provider, one or more URIs are assigned in the form:\n\n\n\n\n1\ncontent:\n//\nauthority\n/path\n\n\n\n\n\n\n\n\n\nContacts \n\n\nPeople\n\n\nPhones\n\n\nPhotos\n  \n\n\n\n\n\n\n\n\nhttp://developer.android.com/guide/topics/providers/contacts-provider.html\n\n\n\n\nContacts Content Provider Permissions\n\n\nRequired to use the Contacts content provider. In the manifest\n\n\nRead\n\n\n1\nuses-permission\n \nandroid:name=\nandroid.permission.READ_CONTACTS\n\n\n\n\n\n\n\nWrite\n\n\n1\nuses-permission\n \nandroid:name=\nandroid.permission.WRITE_CONTACTS\n\n\n\n\n\n\n\n\n\nCalendars \n\n\nEvent\n\n\nAttendees\n\n\nReminders\n\n\n\n\nhttps://developer.android.com/guide/topics/providers/calendar-provider.html\n\n\n\n\nCalendar Content Provider Permissions\n\n\nRequired to use the Calendar content provider. In the manifest\n\n\nRead\n\n\nuses-permission android:name=\nandroid.permission.READ_CALENDAR\n\n\nWrite\n\n\nuses-permission android:name=\nandroid.permission.WRITE_CALENDAR\n\n\nMediaStore\n\n\n\n\nAudio\n\n\nAlbums\n\n\nArtists\n\n\nGenres\n\n\nPlaylists\n\n\n\n\n\n\nImages\n\n\nThumbnails\n\n\n\n\n\n\nVideo\n\n\n\n\nNew in API 19 Storage Access Framework \n\n\nhttp://developer.android.com/guide/topics/providers/document-provider.html\n\n\nTo build your own Content Provider\n\n\n\n\nDefine the DB\n\n\nCreate a class that extends android.content.\nContentProvider\n\n\nImplement \nquery()\n, \ninsert()\n, \nupdate()\n, \ndelete()\n\n\nRegister the \nContentProvider\n authority in the manifest\n\n\nExpose the URIs and schema\n\n\nWe will not do this, see the slide deck: diy\n\n\n\n\nTo use a Content Provider (built-in or provided by others)\n\n\n\n\nDiscover the exposed data (schema, URIs)\n\n\nSet the appropriate permission(s) in the manifest, for built content providers in see \nhere\n\n\nGet the URI(s)\n\n\nUsually these are declared as a public constant  inside the content provider class \n\n\nMake a query(or other CRUD), maybe adding some where clauses\n\n\nThe query returns a Cursor \n\n\nNavigate the Cursor\n\n\n\n\nExample: use Contacts, built-in Content Provider\n\n\n\n\nDiscover the exposed \ndata\n\n\nRequest  permission via the manifest\n\n\nQuery the contacts content provider  using the URI\n\n\nContacts information is in the Cursor\n\n\n\n\nContacts: manifest\n\n\nRequest permission:\n\n\n1\nuses-permission\n \nandroid:name=\nandroid.permission.READ_CONTACTS\n\n\n\n\n\n\n\nContacts: Code\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\npublic\n \nvoid\n \nonCreate\n(\nBundle\n \nsavedInstanceState\n)\n \n{\n\n  \nsuper\n.\nonCreate\n(\nsavedInstanceState\n);\n\n  \nsetContentView\n(\nR\n.\nlayout\n.\nmain\n);\n\n  \n// get a cursor all contacts  \n\n  \nCursor\n \ncursor\n \n=\n \ngetContentResolver\n()\n\n     \n.\nquery\n(\nContactsContract\n.\nContacts\n.\nCONTENT_URI\n,\n \n              \nnull\n,\n \nnull\n,\n \nnull\n,\n \nnull\n);\n \n  \n// we could use the cursor with an AdapterView \n adapter\n\n  \n// but here we\nre logging only the Display Name \n\n  \nwhile\n \n(\ncursor\n.\nmoveToNext\n())\n \n{\n \n      \nString\n \ncontactName\n \n=\n \ncursor\n.\ngetString\n(\n\n        \ncursor\n.\ngetColumnIndex\n(\n\n          \nContactsContract\n.\nContacts\n.\nDISPLAY_NAME\n\n        \n)\n\n      \n);\n\n      \nLog\n.\nd\n(\nTAG\n,\n \ncontactName\n);\n\n  \n}\n   \n// while cursor not at end\n\n  \ncursor\n.\nclose\n();\n\n\n}\n \n// onCreate()\n\n\n\n\n\n\n\nContent Providers CRUD methods\n\n\nSee the pdf on moodle for the query method\n\n\nSome details\n here see operations\n\n\nan example app in android training\n\n\nReferences\n\n\nGeneral Content Providers\n\n\nhttp://developer.android.com/guide/topics/providers/content-providers.html\n\n\nContacts Content Provider\n\n\nhttps://developer.android.com/guide/topics/providers/contacts-provider.html\n\n\nhttps://developer.android.com/reference/android/provider/ContactsContract.Contacts.html\n\n\nhttp://www.ibm.com/developerworks/webservices/library/ws-RESTservices/", 
+            "title": "19 android content providers"
+        }, 
+        {
+            "location": "/Mobile-Development/19-android-content-providers/#android-content-providers-using-built-in", 
+            "text": "", 
+            "title": "Android Content Providers using built in"
+        }, 
+        {
+            "location": "/Mobile-Development/19-android-content-providers/#rest", 
+            "text": "REpresentational State Transfer (REST)  Typing a URL and getting a web page  Changing the state of a web server by filling a form and submitting it  Consists of clients and servers  Clients initiate requests  Servers process requests and return appropriate responses  Requests and responses are built around the transfer of representations of resources", 
+            "title": "REST"
+        }, 
+        {
+            "location": "/Mobile-Development/19-android-content-providers/#rest-principles", 
+            "text": "Clients are separated from servers by a uniform interface    Clients need not worry about how data is stored on servers   portable client code     Servers need not worry about the user interface     improves server scalability and makes servers simpler    Stateless   Layered system   A client cannot ordinarily tell whether it is connected directly to the end server, or to an intermediary along the way  Hence allows for load balancing and shared caches     Uniform Interface   Simplifies and decouples the architecture  Enables the client and the server sides to evolve independently", 
+            "title": "REST principles"
+        }, 
+        {
+            "location": "/Mobile-Development/19-android-content-providers/#android-processes", 
+            "text": "Each of the .db's are sandboxed in their own application. These dbs can NOT be accessed outside their application context.    To access or to expose the data in the db, you must use a Content Provider", 
+            "title": "Android Processes"
+        }, 
+        {
+            "location": "/Mobile-Development/19-android-content-providers/#android-content-providers", 
+            "text": "A way of sharing data across apps\n  Abstracting data into service  This idea of content providers makes data sources look like REST-enabled data providers such as web sites  A content provider is a wrapper around data  Content providers supply CRUD methods as needed via URIs  A SQLite database on an Android device is an example of a data source that you can encapsulate into a content provider  Android also has several built-in content providers that encapsulate databases  Content providers play a significant role in sharing data between applications  The content providers\u2019 responsibility is to provide an encapsulation mechanism not a data-access mechanism  You\u2019ll need an actual data access mechanism such as SQLite to get to the underlying data sources", 
+            "title": "Android Content Providers"
+        }, 
+        {
+            "location": "/Mobile-Development/19-android-content-providers/#androids-built-in-providers", 
+            "text": "The top-level items are SQLite databases encapsulated as providers\n* Contacts\n* Mediastore\n* Calendar\n* etc.  These SQLite databases typically have an extension of  .db", 
+            "title": "Android's Built-in Providers"
+        }, 
+        {
+            "location": "/Mobile-Development/19-android-content-providers/#content-providers", 
+            "text": "A system to access shared data  Similar to a REST web service  To each Content Provider, one or more URIs are assigned in the form:   1 content: // authority /path     Contacts   People  Phones  Photos\n       http://developer.android.com/guide/topics/providers/contacts-provider.html", 
+            "title": "Content Providers"
+        }, 
+        {
+            "location": "/Mobile-Development/19-android-content-providers/#contacts-content-provider-permissions", 
+            "text": "Required to use the Contacts content provider. In the manifest", 
+            "title": "Contacts Content Provider Permissions"
+        }, 
+        {
+            "location": "/Mobile-Development/19-android-content-providers/#read", 
+            "text": "1 uses-permission   android:name= android.permission.READ_CONTACTS", 
+            "title": "Read"
+        }, 
+        {
+            "location": "/Mobile-Development/19-android-content-providers/#write", 
+            "text": "1 uses-permission   android:name= android.permission.WRITE_CONTACTS     Calendars   Event  Attendees  Reminders   https://developer.android.com/guide/topics/providers/calendar-provider.html", 
+            "title": "Write"
+        }, 
+        {
+            "location": "/Mobile-Development/19-android-content-providers/#calendar-content-provider-permissions", 
+            "text": "Required to use the Calendar content provider. In the manifest", 
+            "title": "Calendar Content Provider Permissions"
+        }, 
+        {
+            "location": "/Mobile-Development/19-android-content-providers/#read_1", 
+            "text": "uses-permission android:name= android.permission.READ_CALENDAR", 
+            "title": "Read"
+        }, 
+        {
+            "location": "/Mobile-Development/19-android-content-providers/#write_1", 
+            "text": "uses-permission android:name= android.permission.WRITE_CALENDAR", 
+            "title": "Write"
+        }, 
+        {
+            "location": "/Mobile-Development/19-android-content-providers/#mediastore", 
+            "text": "Audio  Albums  Artists  Genres  Playlists    Images  Thumbnails    Video   New in API 19 Storage Access Framework   http://developer.android.com/guide/topics/providers/document-provider.html", 
+            "title": "MediaStore"
+        }, 
+        {
+            "location": "/Mobile-Development/19-android-content-providers/#to-build-your-own-content-provider", 
+            "text": "Define the DB  Create a class that extends android.content. ContentProvider  Implement  query() ,  insert() ,  update() ,  delete()  Register the  ContentProvider  authority in the manifest  Expose the URIs and schema  We will not do this, see the slide deck: diy", 
+            "title": "To build your own Content Provider"
+        }, 
+        {
+            "location": "/Mobile-Development/19-android-content-providers/#to-use-a-content-provider-built-in-or-provided-by-others", 
+            "text": "Discover the exposed data (schema, URIs)  Set the appropriate permission(s) in the manifest, for built content providers in see  here  Get the URI(s)  Usually these are declared as a public constant  inside the content provider class   Make a query(or other CRUD), maybe adding some where clauses  The query returns a Cursor   Navigate the Cursor", 
+            "title": "To use a Content Provider (built-in or provided by others)"
+        }, 
+        {
+            "location": "/Mobile-Development/19-android-content-providers/#example-use-contacts-built-in-content-provider", 
+            "text": "Discover the exposed  data  Request  permission via the manifest  Query the contacts content provider  using the URI  Contacts information is in the Cursor", 
+            "title": "Example: use Contacts, built-in Content Provider"
+        }, 
+        {
+            "location": "/Mobile-Development/19-android-content-providers/#contacts-manifest", 
+            "text": "Request permission:  1 uses-permission   android:name= android.permission.READ_CONTACTS", 
+            "title": "Contacts: manifest"
+        }, 
+        {
+            "location": "/Mobile-Development/19-android-content-providers/#contacts-code", 
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19 public   void   onCreate ( Bundle   savedInstanceState )   { \n   super . onCreate ( savedInstanceState ); \n   setContentView ( R . layout . main ); \n   // get a cursor all contacts   \n   Cursor   cursor   =   getContentResolver () \n      . query ( ContactsContract . Contacts . CONTENT_URI ,  \n               null ,   null ,   null ,   null );  \n   // we could use the cursor with an AdapterView   adapter \n   // but here we re logging only the Display Name  \n   while   ( cursor . moveToNext ())   {  \n       String   contactName   =   cursor . getString ( \n         cursor . getColumnIndex ( \n           ContactsContract . Contacts . DISPLAY_NAME \n         ) \n       ); \n       Log . d ( TAG ,   contactName ); \n   }     // while cursor not at end \n   cursor . close ();  }   // onCreate()", 
+            "title": "Contacts: Code"
+        }, 
+        {
+            "location": "/Mobile-Development/19-android-content-providers/#content-providers-crud-methods", 
+            "text": "See the pdf on moodle for the query method  Some details  here see operations  an example app in android training", 
+            "title": "Content Providers CRUD methods"
+        }, 
+        {
+            "location": "/Mobile-Development/19-android-content-providers/#references", 
+            "text": "", 
+            "title": "References"
+        }, 
+        {
+            "location": "/Mobile-Development/19-android-content-providers/#general-content-providers", 
+            "text": "http://developer.android.com/guide/topics/providers/content-providers.html", 
+            "title": "General Content Providers"
+        }, 
+        {
+            "location": "/Mobile-Development/19-android-content-providers/#contacts-content-provider", 
+            "text": "https://developer.android.com/guide/topics/providers/contacts-provider.html  https://developer.android.com/reference/android/provider/ContactsContract.Contacts.html  http://www.ibm.com/developerworks/webservices/library/ws-RESTservices/", 
+            "title": "Contacts Content Provider"
+        }, 
+        {
             "location": "/Mobile-Development/introduction/", 
             "text": "", 
             "title": "Introduction"

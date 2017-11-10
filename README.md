@@ -1,4 +1,4 @@
-# compsci-notes
-Computer Science Notes for Dawson, 5th semester
+# compsci-notes :construction: (WIP)
+Computer Science Notes for Dawson, 5th semester, written in markdown and prettified using mkdocs material.
 
-:construction: Work In Progress
+This was made public after making sure there were no public assignments. Feel free to contribute (https://sirmerr.github.io/compsci-notes/how-to-document/)!

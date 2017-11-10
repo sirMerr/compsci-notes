@@ -10,7 +10,7 @@
         <meta name="description" content="Notes for Semester 5 of Computer Science at Dawson">
       
       
-        <link rel="canonical" href="https://sirmerr.github.io/compsci-notes/Mobile-Development/07-03-multiple-screens/">
+        <link rel="canonical" href="https://sirmerr.github.io/compsci-notes/Mobile-Development/19-android-content-providers/">
       
       
         <meta name="author" content="sirMerr">
@@ -22,7 +22,7 @@
     
     
       
-        <title>07 03 multiple screens - CompSci HQ</title>
+        <title>19 android content providers - CompSci HQ</title>
       
     
     
@@ -87,7 +87,7 @@
                 </span>
               
             
-            07 03 multiple screens
+            19 android content providers
           
         </span>
       </div>
@@ -717,6 +717,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../07-03-multiple-screens/" title="07 03 multiple screens" class="md-nav__link">
+      07 03 multiple screens
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -728,11 +740,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        07 03 multiple screens
+        19 android content providers
       </label>
     
-    <a href="./" title="07 03 multiple screens" class="md-nav__link md-nav__link--active">
-      07 03 multiple screens
+    <a href="./" title="19 android content providers" class="md-nav__link md-nav__link--active">
+      19 android content providers
     </a>
     
       
@@ -746,37 +758,105 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" title="Overview" class="md-nav__link">
-    Overview
+  <a href="#rest" title="REST" class="md-nav__link">
+    REST
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#screen-densities" title="Screen densities" class="md-nav__link">
-    Screen densities
+  <a href="#rest-principles" title="REST principles" class="md-nav__link">
+    REST principles
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#general-densities" title="General densities" class="md-nav__link">
-    General densities
+  <a href="#android-processes" title="Android Processes" class="md-nav__link">
+    Android Processes
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#alternate-drawables" title="Alternate drawables" class="md-nav__link">
-    Alternate drawables
+  <a href="#android-content-providers" title="Android Content Providers" class="md-nav__link">
+    Android Content Providers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#androids-built-in-providers" title="Android's Built-in Providers" class="md-nav__link">
+    Android's Built-in Providers
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#exercise" title="Exercise" class="md-nav__link">
-    Exercise
+  <a href="#content-providers" title="Content Providers" class="md-nav__link">
+    Content Providers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contacts-content-provider-permissions" title="Contacts Content Provider Permissions" class="md-nav__link">
+    Contacts Content Provider Permissions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#read" title="Read" class="md-nav__link">
+    Read
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#write" title="Write" class="md-nav__link">
+    Write
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calendar-content-provider-permissions" title="Calendar Content Provider Permissions" class="md-nav__link">
+    Calendar Content Provider Permissions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#read_1" title="Read" class="md-nav__link">
+    Read
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#write_1" title="Write" class="md-nav__link">
+    Write
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mediastore" title="MediaStore" class="md-nav__link">
+    MediaStore
   </a>
   
 </li>
@@ -787,30 +867,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#screen-sizes" title="Screen sizes" class="md-nav__link">
-    Screen sizes
+  <a href="#to-build-your-own-content-provider" title="To build your own Content Provider" class="md-nav__link">
+    To build your own Content Provider
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#typical-screen-widths" title="Typical screen widths" class="md-nav__link">
-    Typical screen widths
+  <a href="#to-use-a-content-provider-built-in-or-provided-by-others" title="To use a Content Provider (built-in or provided by others)" class="md-nav__link">
+    To use a Content Provider (built-in or provided by others)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-configurations" title="Example configurations" class="md-nav__link">
-    Example configurations
+  <a href="#example-use-contacts-built-in-content-provider" title="Example: use Contacts, built-in Content Provider" class="md-nav__link">
+    Example: use Contacts, built-in Content Provider
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#for-more-examples-and-information-see" title="For more examples and information see" class="md-nav__link">
-    For more examples and information see
+  <a href="#contacts-manifest" title="Contacts: manifest" class="md-nav__link">
+    Contacts: manifest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contacts-code" title="Contacts: Code" class="md-nav__link">
+    Contacts: Code
   </a>
   
 </li>
@@ -821,8 +908,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#resource-mapping" title="Resource Mapping" class="md-nav__link">
-    Resource Mapping
+  <a href="#content-providers-crud-methods" title="Content Providers CRUD methods" class="md-nav__link">
+    Content Providers CRUD methods
   </a>
   
 </li>
@@ -832,6 +919,26 @@
     References
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-content-providers" title="General Content Providers" class="md-nav__link">
+    General Content Providers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contacts-content-provider" title="Contacts Content Provider" class="md-nav__link">
+    Contacts Content Provider
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
       
@@ -840,18 +947,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../19-android-content-providers/" title="19 android content providers" class="md-nav__link">
-      19 android content providers
-    </a>
   </li>
 
         
@@ -1061,37 +1156,105 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" title="Overview" class="md-nav__link">
-    Overview
+  <a href="#rest" title="REST" class="md-nav__link">
+    REST
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#screen-densities" title="Screen densities" class="md-nav__link">
-    Screen densities
+  <a href="#rest-principles" title="REST principles" class="md-nav__link">
+    REST principles
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#general-densities" title="General densities" class="md-nav__link">
-    General densities
+  <a href="#android-processes" title="Android Processes" class="md-nav__link">
+    Android Processes
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#alternate-drawables" title="Alternate drawables" class="md-nav__link">
-    Alternate drawables
+  <a href="#android-content-providers" title="Android Content Providers" class="md-nav__link">
+    Android Content Providers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#androids-built-in-providers" title="Android's Built-in Providers" class="md-nav__link">
+    Android's Built-in Providers
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#exercise" title="Exercise" class="md-nav__link">
-    Exercise
+  <a href="#content-providers" title="Content Providers" class="md-nav__link">
+    Content Providers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contacts-content-provider-permissions" title="Contacts Content Provider Permissions" class="md-nav__link">
+    Contacts Content Provider Permissions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#read" title="Read" class="md-nav__link">
+    Read
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#write" title="Write" class="md-nav__link">
+    Write
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calendar-content-provider-permissions" title="Calendar Content Provider Permissions" class="md-nav__link">
+    Calendar Content Provider Permissions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#read_1" title="Read" class="md-nav__link">
+    Read
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#write_1" title="Write" class="md-nav__link">
+    Write
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mediastore" title="MediaStore" class="md-nav__link">
+    MediaStore
   </a>
   
 </li>
@@ -1102,30 +1265,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#screen-sizes" title="Screen sizes" class="md-nav__link">
-    Screen sizes
+  <a href="#to-build-your-own-content-provider" title="To build your own Content Provider" class="md-nav__link">
+    To build your own Content Provider
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#typical-screen-widths" title="Typical screen widths" class="md-nav__link">
-    Typical screen widths
+  <a href="#to-use-a-content-provider-built-in-or-provided-by-others" title="To use a Content Provider (built-in or provided by others)" class="md-nav__link">
+    To use a Content Provider (built-in or provided by others)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-configurations" title="Example configurations" class="md-nav__link">
-    Example configurations
+  <a href="#example-use-contacts-built-in-content-provider" title="Example: use Contacts, built-in Content Provider" class="md-nav__link">
+    Example: use Contacts, built-in Content Provider
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#for-more-examples-and-information-see" title="For more examples and information see" class="md-nav__link">
-    For more examples and information see
+  <a href="#contacts-manifest" title="Contacts: manifest" class="md-nav__link">
+    Contacts: manifest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contacts-code" title="Contacts: Code" class="md-nav__link">
+    Contacts: Code
   </a>
   
 </li>
@@ -1136,8 +1306,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#resource-mapping" title="Resource Mapping" class="md-nav__link">
-    Resource Mapping
+  <a href="#content-providers-crud-methods" title="Content Providers CRUD methods" class="md-nav__link">
+    Content Providers CRUD methods
   </a>
   
 </li>
@@ -1146,6 +1316,26 @@
   <a href="#references" title="References" class="md-nav__link">
     References
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-content-providers" title="General Content Providers" class="md-nav__link">
+    General Content Providers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contacts-content-provider" title="Contacts Content Provider" class="md-nav__link">
+    Contacts Content Provider
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1164,249 +1354,222 @@
               
                 
                 
-                <h1 id="android-supporting-multiple-screens">Android Supporting Multiple Screens<a class="headerlink" href="#android-supporting-multiple-screens" title="Permanent link">&para;</a></h1>
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+                <h1 id="android-content-providers-using-built-in">Android Content Providers using built in<a class="headerlink" href="#android-content-providers-using-built-in" title="Permanent link">&para;</a></h1>
+<h2 id="rest">REST<a class="headerlink" href="#rest" title="Permanent link">&para;</a></h2>
 <ul>
-<li>The target platform for Android Uis are many and varied in sizes and densities.</li>
-<li>As of Android 1.6 multiple screen sizes and densities were supported</li>
-<li>The idea is to optimise your UI for any device&#39;s screen without having to design for ALL possibilities</li>
-<li>To simplify Android gives us ways to map to various screen densities and sizes</li>
+<li>REpresentational State Transfer (REST)</li>
+<li>Typing a URL and getting a web page</li>
+<li>Changing the state of a web server by filling a form and submitting it</li>
+<li>Consists of clients and servers</li>
+<li>Clients initiate requests</li>
+<li>Servers process requests and return appropriate responses</li>
+<li>Requests and responses are built around the transfer of representations of resources</li>
 </ul>
-<h2 id="screen-densities">Screen densities<a class="headerlink" href="#screen-densities" title="Permanent link">&para;</a></h2>
-<p>To simplify design Android divided the range of screen densities into a set of generalized densities</p>
-<table>
-<thead>
-<tr>
-<th>General size</th>
-<th>Name</th>
-<th>dpi(ppi)</th>
-<th>factor</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ldpi</td>
-<td>Low</td>
-<td>120</td>
-<td>.75</td>
-</tr>
-<tr>
-<td>mdpi</td>
-<td>Medium (baseline)</td>
-<td>160</td>
-<td>1</td>
-</tr>
-<tr>
-<td>hdpi</td>
-<td>High</td>
-<td>240</td>
-<td>1.5</td>
-</tr>
-<tr>
-<td>xhdpi</td>
-<td>Extra high</td>
-<td>320</td>
-<td>2</td>
-</tr>
-<tr>
-<td>xxhdpi</td>
-<td>Extra extra high</td>
-<td>480</td>
-<td>3</td>
-</tr>
-<tr>
-<td>xxxhdpi</td>
-<td>Extra extra extra high</td>
-<td>640</td>
-<td>4</td>
-</tr>
-</tbody>
-</table>
-<h2 id="general-densities">General densities<a class="headerlink" href="#general-densities" title="Permanent link">&para;</a></h2>
+<h2 id="rest-principles">REST principles<a class="headerlink" href="#rest-principles" title="Permanent link">&para;</a></h2>
+<p>Clients are separated from servers by a uniform interface</p>
 <ul>
-<li>Each generalized density spans a range of real device densities</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th><strong>General size</strong></th>
-<th><strong>Name</strong></th>
-<th><strong>dpi(ppi)</strong></th>
-<th><strong>factor</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ldpi</td>
-<td>Low</td>
-<td>120</td>
-<td>.75</td>
-</tr>
-<tr>
-<td>mdpi</td>
-<td>Medium (baseline)</td>
-<td>160</td>
-<td>1</td>
-</tr>
-<tr>
-<td>hdp</td>
-<td>High</td>
-<td>240</td>
-<td>1.5</td>
-</tr>
-<tr>
-<td>xhdpi</td>
-<td>Extra high</td>
-<td>320</td>
-<td>2</td>
-</tr>
-<tr>
-<td>xxhdpi</td>
-<td>Extra extra high</td>
-<td>480</td>
-<td>3</td>
-</tr>
-<tr>
-<td>xxxhdpi</td>
-<td>Extra extra extra high</td>
-<td>640</td>
-<td>4</td>
-</tr>
-</tbody>
-</table>
-<p>311dpi screen
-442dpi screen</p>
-<h2 id="alternate-drawables">Alternate drawables<a class="headerlink" href="#alternate-drawables" title="Permanent link">&para;</a></h2>
-<p><img src="https://cdn.discordapp.com/attachments/307959450805862400/372075493853233153/unknown.png"></p>
+<li>
+<p><strong>Clients need not worry about how data is stored on servers</strong></p>
 <ul>
-<li>Have alternates for different screen densities for at least the launcher icon.</li>
-<li>You want the icon to look good on any density.</li>
-<li>If you include other bitmap drawables (.png, .gif, or .jpg and .9.png) you should provide alternates for different densities</li>
-<li>When you create alternates follow a scaling ratio of: 3:4:6:8:12:16</li>
+<li>portable client code</li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Not only launcher icons (res/mipmap)but any drawable (res/drawable) is to be put in theresource directory appropriate to its density.</p>
-</div>
-<p>Should you have only one image meant for all densities use the default res/drawable directory</p>
-<table>
-<thead>
-<tr>
-<th>Icon size in pixels</th>
-<th>Density</th>
-<th>Scale</th>
-<th>Resource directory</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>36x36</td>
-<td>Low</td>
-<td>.75</td>
-<td>res/mipmap-ldpi</td>
-</tr>
-<tr>
-<td>48x48</td>
-<td>Medium</td>
-<td>1 (baseline)</td>
-<td>res/mipmap-mdpi</td>
-</tr>
-<tr>
-<td>72x72</td>
-<td>High</td>
-<td>1.5</td>
-<td>res/mipmap-hdpi</td>
-</tr>
-<tr>
-<td>96x96</td>
-<td>Extra high</td>
-<td>2</td>
-<td>res/mipmap-xhdpi</td>
-</tr>
-<tr>
-<td>144x144</td>
-<td>Extra extra high</td>
-<td>3</td>
-<td>res/mipmap-xxhdpi</td>
-</tr>
-<tr>
-<td>192x192</td>
-<td>Extra extra extrahigh        [</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h3 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h3>
+</li>
+<li>
+<p><strong>Servers need not worry about the user interface</strong> </p>
 <ul>
-<li>Using any app let’s give it a custom icon</li>
-<li>Run the <a href="../romannurik.github.io/AndroidAssetStudio/icons-launcher.html">generator</a> to create your own icon</li>
-<li>Download the icons and copy them into your app mipmap folder(s)</li>
-<li>Install your app, the icon will be your custom icon</li>
+<li>improves server scalability and makes servers simpler</li>
 </ul>
-<h2 id="screen-sizes">Screen sizes<a class="headerlink" href="#screen-sizes" title="Permanent link">&para;</a></h2>
-<p>Since Android 3.2 size qualifiers are used.  These sizes correspond not to actual screen sizes but to the width and height in dp (density independent pixels) that are available to your activity’s window.</p>
-<table>
-<thead>
-<tr>
-<th>Screen configuration</th>
-<th>Qualifier values</th>
-<th>Examples</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>smallestWidth</td>
-<td>sw&lt;N&gt;dp</td>
-<td>sw600dp sw720dp</td>
-<td>Smallest possible width.Regardless of orientation N dps ofwidth are availablefor this UI .MOST USED OPTION</td>
-</tr>
-<tr>
-<td>Available screen width</td>
-<td>w&lt;N&gt;dp</td>
-<td>w720dp w1024dp</td>
-<td>Minimum available width required.</td>
-</tr>
-<tr>
-<td>Available screen height</td>
-<td>h&lt;N&gt;dp</td>
-<td>H720dp H1024dp</td>
-<td>Minimum available height required. RARELY USED as mostdevices will scroll vertically only width isrestricted.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="typical-screen-widths">Typical screen widths<a class="headerlink" href="#typical-screen-widths" title="Permanent link">&para;</a></h2>
+</li>
+<li><strong>Stateless</strong></li>
+<li>
+<p><strong>Layered system</strong></p>
 <ul>
-<li>320dp: a typical phone screen (240x320 ldpi, 320x480 mdpi, 480x800 hdpi, etc</li>
-<li>480dp: a tweener tablet like the Streak (480x800 mdpi</li>
-<li>600dp: a 7&quot; tablet (600x1024 mdpi).</li>
-<li>720dp: a 10&quot; tablet (720x1280 mdpi, 800x1280 mdpi, etc).</li>
+<li>A client cannot ordinarily tell whether it is connected directly to the end server, or to an intermediary along the way</li>
+<li>Hence allows for load balancing and shared caches</li>
 </ul>
-<h2 id="example-configurations">Example configurations<a class="headerlink" href="#example-configurations" title="Permanent link">&para;</a></h2>
-<p>Should I need different layouts for small and large displays I would use the following:
- * res/layout/main_activity.xml For handsets (smaller than 600dp available width
- * res/layout-sw600dp/main_activity.xml # For 7&quot; tablets (600dp wide and bigger)
- * res/layout-sw720dp/main_activity.xml # For 10&quot; tablets (720dp wide and bigger)</p>
-<h3 id="for-more-examples-and-information-see">For more examples and information see<a class="headerlink" href="#for-more-examples-and-information-see" title="Permanent link">&para;</a></h3>
-<p><a href="https://developer.android.com/guide/practices/screens_support.html#DeclaringTabletLayouts">https://developer.android.com/guide/practices/screens_support.html#DeclaringTabletLayouts</a></p>
-<p><a href="https://developer.android.com/guide/practices/screens_support.html#DeclaringTabletLayouts">DeclaringTabletLayouts
-</a></p>
-<h2 id="resource-mapping">Resource Mapping<a class="headerlink" href="#resource-mapping" title="Permanent link">&para;</a></h2>
+</li>
+<li>
+<p><strong>Uniform Interface</strong></p>
 <ul>
-<li>Build the application layout through XML configuration files</li>
-<li>Define two different XML layouts for two different devices</li>
-<li>At runtime, Android detects the current device configuration and loads the appropriate resources for the application</li>
-<li>No need to recompile!</li>
-<li>Just add a new XML file if you need to support a new device</li>
+<li>Simplifies and decouples the architecture</li>
+<li>Enables the client and the server sides to evolve independently</li>
 </ul>
-<p><img src="https://cdn.discordapp.com/attachments/307959450805862400/372076518693797888/unknown.png"></p>
+</li>
+</ul>
+<h2 id="android-processes">Android Processes<a class="headerlink" href="#android-processes" title="Permanent link">&para;</a></h2>
+<p>Each of the .db's are sandboxed in their own application. These dbs can NOT be accessed outside their application context. </p>
+<p><img src="https://lh6.googleusercontent.com/dG_qzpbXrB7Hu3meJIgmQP8r1a_W8da4JpcFpR6WKWYRKQDBHj353ZnQ3vEUWod3MuDZxH9dR4AuLerjSBlM=w1462-h1472-rw"></p>
+<p>To access or to expose the data in the db, you must use a Content Provider</p>
+<p><img src="https://lh6.googleusercontent.com/4jaT9Zyqo0O8OusINgMWEBuoEsrubAQQZArWm2suIagpXR8UbNJ-0D41sTmJHFhQ75ErTBkNq3HzajfG7Ha8=w1462-h1472"></p>
+<h2 id="android-content-providers">Android Content Providers<a class="headerlink" href="#android-content-providers" title="Permanent link">&para;</a></h2>
+<ul>
+<li>A way of sharing data across apps
+  Abstracting data into service</li>
+<li>This idea of content providers makes data sources look like REST-enabled data providers such as web sites</li>
+<li>A content provider is a wrapper around data</li>
+<li>Content providers supply CRUD methods as needed via URIs</li>
+<li>A SQLite database on an Android device is an example of a data source that you can encapsulate into a content provider</li>
+<li>Android also has several built-in content providers that encapsulate databases</li>
+<li>Content providers play a significant role in sharing data between applications</li>
+<li>The content providers’ responsibility is to provide an encapsulation mechanism not a data-access mechanism</li>
+<li>You’ll need an actual data access mechanism such as SQLite to get to the underlying data sources</li>
+</ul>
+<h2 id="androids-built-in-providers">Android's Built-in Providers<a class="headerlink" href="#androids-built-in-providers" title="Permanent link">&para;</a></h2>
+<p>The top-level items are SQLite databases encapsulated as providers
+* Contacts
+* Mediastore
+* Calendar
+* etc.</p>
+<p>These SQLite databases typically have an extension of <code>.db</code></p>
+<h3 id="content-providers">Content Providers<a class="headerlink" href="#content-providers" title="Permanent link">&para;</a></h3>
+<p><img src="https://lh6.googleusercontent.com/8XRi07rGwcF92EnmvLAPARxR2MOZBC1j6ZmhEZzrdnfYXv4Zxi46ntM01AIh49l1XbSjrkPgjMReSBSSlwrN=w1462-h1472-rw" style="max-height:300px"></p>
+<ul>
+<li>A system to access shared data</li>
+<li>Similar to a REST web service</li>
+<li>To each Content Provider, one or more URIs are assigned in the form:</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nl">content:</span><span class="c1">//&lt;authority&gt;/path</span>
+</pre></div>
+</td></tr></table>
+
+<ul>
+<li>Contacts <img src="https://lh6.googleusercontent.com/tvv1ggb6la6whFAb7Yd3r_hXJokwYVeoEHBM_BuX3ORv5_6JHv323KFpb5-mRw0JjWXtiQH60zGoCFdvcgEs=w1462-h1472" style="max-height:300px; float:right"><ul>
+<li>People</li>
+<li>Phones</li>
+<li>Photos
+  <br></li>
+</ul>
+</li>
+</ul>
+<p><a href="http://developer.android.com/guide/topics/providers/contacts-provider.html">http://developer.android.com/guide/topics/providers/contacts-provider.html</a>
+<br><br></p>
+<h3 id="contacts-content-provider-permissions">Contacts Content Provider Permissions<a class="headerlink" href="#contacts-content-provider-permissions" title="Permanent link">&para;</a></h3>
+<p>Required to use the Contacts content provider. In the manifest</p>
+<h4 id="read">Read<a class="headerlink" href="#read" title="Permanent link">&para;</a></h4>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nt">&lt;uses-permission</span> <span class="na">android:name=</span><span class="s">&quot;android.permission.READ_CONTACTS&quot;</span><span class="nt">&gt;</span>
+</pre></div>
+</td></tr></table>
+
+<h4 id="write">Write<a class="headerlink" href="#write" title="Permanent link">&para;</a></h4>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nt">&lt;uses-permission</span> <span class="na">android:name=</span><span class="s">&quot;android.permission.WRITE_CONTACTS&quot;</span><span class="nt">&gt;</span>
+</pre></div>
+</td></tr></table>
+
+<ul>
+<li>Calendars <img src="https://lh5.googleusercontent.com/0L9CZZ3a0_G_zFDKpeiBV9JgFSMwUpVdsfdeUALaSKiYH8DIq3t7VWPWP_2ANYGm9JBUyMm5287ZOw9f7N2X=w1425-h1472" style="max-height:300px; float:right"></li>
+<li>Event</li>
+<li>Attendees</li>
+<li>Reminders</li>
+</ul>
+<p><a href="https://developer.android.com/guide/topics/providers/calendar-provider.html">https://developer.android.com/guide/topics/providers/calendar-provider.html</a></p>
+<p><br><br></p>
+<h3 id="calendar-content-provider-permissions">Calendar Content Provider Permissions<a class="headerlink" href="#calendar-content-provider-permissions" title="Permanent link">&para;</a></h3>
+<p>Required to use the Calendar content provider. In the manifest</p>
+<h4 id="read_1">Read<a class="headerlink" href="#read_1" title="Permanent link">&para;</a></h4>
+<p><code>&lt;uses-permission android:name=&quot;android.permission.READ_CALENDAR&quot;&gt;</code></p>
+<h4 id="write_1">Write<a class="headerlink" href="#write_1" title="Permanent link">&para;</a></h4>
+<p><code>&lt;uses-permission android:name=&quot;android.permission.WRITE_CALENDAR&quot;&gt;</code></p>
+<h3 id="mediastore">MediaStore<a class="headerlink" href="#mediastore" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Audio<ul>
+<li>Albums</li>
+<li>Artists</li>
+<li>Genres</li>
+<li>Playlists</li>
+</ul>
+</li>
+<li>Images<ul>
+<li>Thumbnails</li>
+</ul>
+</li>
+<li>Video</li>
+</ul>
+<p>New in API 19 Storage Access Framework </p>
+<p><a href="http://developer.android.com/guide/topics/providers/document-provider.html">http://developer.android.com/guide/topics/providers/document-provider.html</a></p>
+<h2 id="to-build-your-own-content-provider">To build your own Content Provider<a class="headerlink" href="#to-build-your-own-content-provider" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Define the DB</li>
+<li>Create a class that extends android.content.<code>ContentProvider</code></li>
+<li>Implement <code>query()</code>, <code>insert()</code>, <code>update()</code>, <code>delete()</code></li>
+<li>Register the <code>ContentProvider</code> authority in the manifest</li>
+<li>Expose the URIs and schema</li>
+<li>We will not do this, see the slide deck: diy</li>
+</ul>
+<h2 id="to-use-a-content-provider-built-in-or-provided-by-others">To use a Content Provider (built-in or provided by others)<a class="headerlink" href="#to-use-a-content-provider-built-in-or-provided-by-others" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Discover the exposed data (schema, URIs)</li>
+<li>Set the appropriate permission(s) in the manifest, for built content providers in see <a href="http://developer.android.com/reference/android/Manifest.permission.html">here</a></li>
+<li>Get the URI(s)</li>
+<li>Usually these are declared as a public constant  inside the content provider class </li>
+<li>Make a query(or other CRUD), maybe adding some where clauses</li>
+<li>The query returns a Cursor </li>
+<li>Navigate the Cursor</li>
+</ul>
+<h2 id="example-use-contacts-built-in-content-provider">Example: use Contacts, built-in Content Provider<a class="headerlink" href="#example-use-contacts-built-in-content-provider" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Discover the exposed <a href="https://developer.android.com/reference/android/provider/ContactsContract.Contacts.html">data</a></li>
+<li>Request  permission via the manifest</li>
+<li>Query the contacts content provider  using the URI</li>
+<li>Contacts information is in the Cursor</li>
+</ul>
+<h4 id="contacts-manifest">Contacts: manifest<a class="headerlink" href="#contacts-manifest" title="Permanent link">&para;</a></h4>
+<p>Request permission:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nt">&lt;uses-permission</span> <span class="na">android:name=</span><span class="s">&quot;android.permission.READ_CONTACTS&quot;</span><span class="nt">&gt;</span>
+</pre></div>
+</td></tr></table>
+
+<h4 id="contacts-code">Contacts: Code<a class="headerlink" href="#contacts-code" title="Permanent link">&para;</a></h4>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+  <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
+  <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">main</span><span class="o">);</span>
+  <span class="c1">// get a cursor all contacts  </span>
+  <span class="n">Cursor</span> <span class="n">cursor</span> <span class="o">=</span> <span class="n">getContentResolver</span><span class="o">()</span>
+     <span class="o">.</span><span class="na">query</span><span class="o">(</span><span class="n">ContactsContract</span><span class="o">.</span><span class="na">Contacts</span><span class="o">.</span><span class="na">CONTENT_URI</span><span class="o">,</span> 
+              <span class="kc">null</span><span class="o">,</span> <span class="kc">null</span><span class="o">,</span> <span class="kc">null</span><span class="o">,</span> <span class="kc">null</span><span class="o">);</span> 
+  <span class="c1">// we could use the cursor with an AdapterView &amp; adapter</span>
+  <span class="c1">// but here we&#39;re logging only the Display Name </span>
+  <span class="k">while</span> <span class="o">(</span><span class="n">cursor</span><span class="o">.</span><span class="na">moveToNext</span><span class="o">())</span> <span class="o">{</span> 
+      <span class="n">String</span> <span class="n">contactName</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="na">getColumnIndex</span><span class="o">(</span>
+          <span class="n">ContactsContract</span><span class="o">.</span><span class="na">Contacts</span><span class="o">.</span><span class="na">DISPLAY_NAME</span>
+        <span class="o">)</span>
+      <span class="o">);</span>
+      <span class="n">Log</span><span class="o">.</span><span class="na">d</span><span class="o">(</span><span class="n">TAG</span><span class="o">,</span> <span class="n">contactName</span><span class="o">);</span>
+  <span class="o">}</span>   <span class="c1">// while cursor not at end</span>
+  <span class="n">cursor</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+<span class="o">}</span> <span class="c1">// onCreate()</span>
+</pre></div>
+</td></tr></table>
+
+<h2 id="content-providers-crud-methods">Content Providers CRUD methods<a class="headerlink" href="#content-providers-crud-methods" title="Permanent link">&para;</a></h2>
+<p>See the pdf on moodle for the query method</p>
+<p><a href="https://developer.android.com/reference/android/provider/ContactsContract.Contacts.html">Some details</a> here see operations</p>
+<p><a href="https://developer.android.com/guide/topics/providers/contacts-provider.html">an example app in android training</a></p>
 <h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="http://www.vogella.com/tutorials/AndroidDrawables/article.html#xml-drawables">http://www.vogella.com/tutorials/AndroidDrawables/article.html#xml-drawables</a></li>
-<li><a href="https://developer.android.com/guide/practices/screens_support.html">https://developer.android.com/guide/practices/screens_support.html</a></li>
-<li><a href="https://developer.android.com/guide/practices/screens_support.html#DeclaringTabletLayouts">https://developer.android.com/guide/practices/screens_support.html#DeclaringTabletLayouts</a></li>
-</ul>
+<h3 id="general-content-providers">General Content Providers<a class="headerlink" href="#general-content-providers" title="Permanent link">&para;</a></h3>
+<p><a href="http://developer.android.com/guide/topics/providers/content-providers.html">http://developer.android.com/guide/topics/providers/content-providers.html</a></p>
+<h3 id="contacts-content-provider">Contacts Content Provider<a class="headerlink" href="#contacts-content-provider" title="Permanent link">&para;</a></h3>
+<p><a href="https://developer.android.com/guide/topics/providers/contacts-provider.html">https://developer.android.com/guide/topics/providers/contacts-provider.html</a>
+<a href="https://developer.android.com/reference/android/provider/ContactsContract.Contacts.html">https://developer.android.com/reference/android/provider/ContactsContract.Contacts.html</a></p>
+<p><a href="http://www.ibm.com/developerworks/webservices/library/ws-RESTservices/">http://www.ibm.com/developerworks/webservices/library/ws-RESTservices/</a></p>
                 
                   
                 
@@ -1425,7 +1588,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../Internship-Prep/dawson/" title="Dawson" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../07-03-multiple-screens/" title="07 03 multiple screens" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1434,19 +1597,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Dawson
+                07 03 multiple screens
               </span>
             </div>
           </a>
         
         
-          <a href="../19-android-content-providers/" title="19 android content providers" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../introduction/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                19 android content providers
+                Introduction
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

@@ -17,12 +17,12 @@
         }, 
         {
             "location": "/how-to-document/", 
-            "text": "You have a few options. \nMake sure you have permissions\n with the Wiki repo here: \nhttps://github.com/sirMerr/compsci-notes\n if using that one.\n\n\nMake a pull request\n\n\n\n\nAdd \n.md\n files to \n./docs\n (on Github or locally)\n\n\nAdd the path to \npages\n in \n./mkdocs.yml\n\n\nMake a pull request\n\n\nSempai \n@sirmerr\n or others will deploy it\n\n\n\n\nDeploy it yourself\n\n\nInstall MkDocs\n\n\nBefore installing \nMkDocs\n, you need to make sure you have Python and \npip\n\n\u2013 the Python package manager \u2013 up and running. You can verify if you're already\ngood to go with the following commands:\n\n\n1\n2\n3\n4\npython --version\n\n# Python 2.7.13\n\npip --version\n\n# pip 9.0.1\n\n\n\n\n\n\n\nInstalling and verifying MkDocs is as simple as:\n\n\n1\n2\npip install mkdocs \n mkdocs --version\n\n# mkdocs, version 0.16.0\n\n\n\n\n\n\n\nInstalling Material\n\n\nusing pip\n\n\nMaterial can be installed with \npip\n:\n\n\n1\npip install mkdocs-material\n\n\n\n\n\n\nAdd Docs Locally\n\n\nclone repo\n\n\n1\ngit clone git@github.com:Jogogoplay/hq.git`\n\n\n\n\n\n\nadd docs\n\n\n\n\nAdd \n.md\n files to \n./docs\n    \n\n\nAdd the path to \npages\n in \n./mkdocs.yml\n\n\n\n\nserve locally\n\n\n1\nmkdocs serve\n\n\n\n\nYou can verify at \nhttp://127.0.0.1:8000/\n (default) if you're scurred\n\n\ndeploy to gh-pages\n\n\n1\nmkdocs gh-deploy\n\n\n\n\nVoila! You're the best writer ever! Check your work at \nhttps://jogogoplay.github.io/\n\n\nMaking your own docs\n\n\nCheck out \nhttp://squidfunk.github.io/mkdocs-material/\n to start your own Mkdocs-material project! Otherwise, look above to contribute to mine or to clone it.\n\n\nBelow is my \nmkdocs.yml\n configuration file. Replace \nFiracode\n with your own font or remove if not needed, but otherwise this has all you need to have all the extensions and setup (you still need to install mkdocs, instructions above or at the \nmkdocs-material site\n)\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\nsite_name: CompSci HQ\nsite_description: \nNotes for Semester 5 of Computer Science at Dawson\n\nsite_author: \nTiffany\n\nsite_url: \nhttps://sirmerr.github.io/compsci-notes/\n\nsite_favicon: \nimages/favicon.ico\n\n\n# Documentation and theme\ntheme: \nmaterial\n\n\n# Options\nextra:\n  palette:\n    primary: \nblue-grey\n\n    accent: \nblue\n\n  font:\n    text: \nFiracode\n\n    code: \nFiracode\n\n\n# Extensions\nmarkdown_extensions:\n  - admonition\n  - codehilite(guess_lang=false, linenums=true)\n  - toc(permalink=true)\n  - pymdownx.arithmatex\n  - pymdownx.betterem(smart_enable=all)\n  - pymdownx.caret\n  - pymdownx.critic\n  - pymdownx.emoji:\n      emoji_generator: !!python/name:pymdownx.emoji.to_svg\n  - pymdownx.inlinehilite\n  - pymdownx.magiclink\n  - pymdownx.mark\n  - pymdownx.smartsymbols\n  - pymdownx.superfences\n  - pymdownx.tasklist(custom_checkbox=true)\n  - pymdownx.tilde", 
+            "text": "You have a few options. \nMake sure you have permissions\n with the Wiki repo here: \nhttps://github.com/sirMerr/compsci-notes\n if using that one.\n\n\nMake a pull request\n\n\n\n\nAdd \n.md\n files to \n./docs\n (on Github or locally)\n\n\nAdd the path to \npages\n in \n./mkdocs.yml\n\n\nMake a pull request\n\n\nSenpai \n@sirmerr\n or others will deploy it\n\n\n\n\nDeploy it yourself\n\n\nInstall MkDocs\n\n\nBefore installing \nMkDocs\n, you need to make sure you have Python and \npip\n\n\u2013 the Python package manager \u2013 up and running. You can verify if you're already\ngood to go with the following commands:\n\n\n1\n2\n3\n4\npython --version\n\n# Python 2.7.13\n\npip --version\n\n# pip 9.0.1\n\n\n\n\n\n\n\nInstalling and verifying MkDocs is as simple as:\n\n\n1\n2\npip install mkdocs \n mkdocs --version\n\n# mkdocs, version 0.16.0\n\n\n\n\n\n\n\nInstalling Material\n\n\nusing pip\n\n\nMaterial can be installed with \npip\n:\n\n\n1\npip install mkdocs-material\n\n\n\n\n\n\nAdd Docs Locally\n\n\nclone repo\n\n\n1\ngit clone git@github.com:Jogogoplay/hq.git`\n\n\n\n\n\n\nadd docs\n\n\n\n\nAdd \n.md\n files to \n./docs\n    \n\n\nAdd the path to \npages\n in \n./mkdocs.yml\n\n\n\n\nserve locally\n\n\n1\nmkdocs serve\n\n\n\n\nYou can verify at \nhttp://127.0.0.1:8000/\n (default) if you're scurred\n\n\ndeploy to gh-pages\n\n\n1\nmkdocs gh-deploy\n\n\n\n\nVoila! You're the best writer ever! Check your work at \nhttps://jogogoplay.github.io/\n\n\nMaking your own docs\n\n\nCheck out \nhttp://squidfunk.github.io/mkdocs-material/\n to start your own Mkdocs-material project! Otherwise, look above to contribute to mine or to clone it.\n\n\nBelow is my \nmkdocs.yml\n configuration file. Replace \nFiracode\n with your own font or remove if not needed, but otherwise this has all you need to have all the extensions and setup (you still need to install mkdocs, instructions above or at the \nmkdocs-material site\n)\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\nsite_name: CompSci HQ\nsite_description: \nNotes for Semester 5 of Computer Science at Dawson\n\nsite_author: \nTiffany\n\nsite_url: \nhttps://sirmerr.github.io/compsci-notes/\n\nsite_favicon: \nimages/favicon.ico\n\n\n# Documentation and theme\ntheme: \nmaterial\n\n\n# Options\nextra:\n  palette:\n    primary: \nblue-grey\n\n    accent: \nblue\n\n  font:\n    text: \nFiracode\n\n    code: \nFiracode\n\n\n# Extensions\nmarkdown_extensions:\n  - admonition\n  - codehilite(guess_lang=false, linenums=true)\n  - toc(permalink=true)\n  - pymdownx.arithmatex\n  - pymdownx.betterem(smart_enable=all)\n  - pymdownx.caret\n  - pymdownx.critic\n  - pymdownx.emoji:\n      emoji_generator: !!python/name:pymdownx.emoji.to_svg\n  - pymdownx.inlinehilite\n  - pymdownx.magiclink\n  - pymdownx.mark\n  - pymdownx.smartsymbols\n  - pymdownx.superfences\n  - pymdownx.tasklist(custom_checkbox=true)\n  - pymdownx.tilde", 
             "title": "How to document"
         }, 
         {
             "location": "/how-to-document/#make-a-pull-request", 
-            "text": "Add  .md  files to  ./docs  (on Github or locally)  Add the path to  pages  in  ./mkdocs.yml  Make a pull request  Sempai  @sirmerr  or others will deploy it", 
+            "text": "Add  .md  files to  ./docs  (on Github or locally)  Add the path to  pages  in  ./mkdocs.yml  Make a pull request  Senpai  @sirmerr  or others will deploy it", 
             "title": "Make a pull request"
         }, 
         {
@@ -2066,6 +2066,41 @@
             "title": "References"
         }, 
         {
+            "location": "/Mobile-Development/assignments/assignment3/", 
+            "text": "Dawson Student App  2017\n\n\nOverview\n\n\nThis app is intended to be useful for new and current Dawson students. The purpose of this project is to create an application that will exercise what you have learned about the Android framework  and Mobile software development. It is to be integrated with your final project for PHP. In phase 1 you will implement most app only components, \nin phase 2 you will integrate with your PHP and PostgresSL server side data\n.    \n\n\nGeneral functionality\n\n\nOn first launch the app will have the user input their \nname\n, an \nemail address\n as \nuserid\n, and a \npassword\n.   \nDo not use a splash page for this\n, check and if there is no remembered information (\nSharedPrefs\n) launch an \nActivity\n to collect this information.   Once this is input the \nMainActivity\n displays a menu and series of buttons per the UI specification  to invoke various functionality. On button click most will launch an activity, maybe containing fragments, the design of the UIs is up to you but make it clean and neat, aligned and looking nice.  If you want to do something I have not requested or use some additional Android classes (example: Material Design) that I have not covered please check with me first.  I am open to agile-type design decisions but you must meet the spec .  \nI am your Project Manager,  you must report to me for anything that is outside the spec.\n\n\nOn Startup\n\n\n\n\n1\nst\n launch: ask for last name, first name, email address and password  save it in shared preferences with date stamp,  \n(phase 2 will involve checking the back end web REST resources from the PHP project for updates and downloading data, using this information)\n\n\nSubsequent launch you will not ask for authentication, the auth data will be used for access to the back end.  \n\n\n\n\nGeneral\n\n\n\n\n Unique App Name: Dawson\n\n\n Unique repo name: must include TeamName\n\n\n Unique Launcher icon, (you may make your own) \nhttp://romannurik.github.io/AndroidAssetStudio/\n\n\n Include appropriate inline documentation and JavaDocs for your methods and classes.\n\n\n All images should be scalable (png, or jpg) and must resize on rotate\n\n\n All UI strings and integers must be resources, no constants.\n\n\n All code-internal data must be constants, no literals, even for logging.\n\n\n Use logging with a unique tag for each Activity/Fragment\n\n\n You are required to use Fragments in at least one UI\n\n\n Maintain state on rotation and wherever necessary for all UIs\n\n\n\n\n\n\nNote\n\n\nSame as the PHP side of the project\n\n\n\n\nPart of your grade will reflect how you are able to organize your work and advance during the time that has been allocated. You must be able to show progress (procrastinators will be penalized). \nPlease be prepared to attend your scheduled lab session for spot checks.\n\n\nYou must use the protected branch workflow as in the assignments but you will be 4 now so it changes the game a little.   The penultimate Monday you will be expected to demo the full android progject.   We will also organize combined demonstrations on the last Monday of the semester (with the PHP project). These are demos are scheduled before the final project due date. This means that:\n\n\n\n\nyou may still be missing some functionality (but not a lot) \n\n\nYour UI should be finalized, the underlying code must be as complete as possible\n\n\nyou must be prepared to explain what is remaining to do or fix (it should not be much at this point in time)\n\n\n\n\nPhase 1 (to start)\n\n\n\n\n Choose a team name, check it with the teacher\n\n\n Create a private, shared repository on gitlab or github with all team members as contributors add campbe13,  I will be checking it sporadically.  You may want to protect your master branch to avoid pushing errors. I suggest you designate one person as the github controller.\n\n\n Design your UX see the UI Layout\n\n\n Create / gather / modify the necessary images for your main activity UI and the About page.\n\n\n Create the UI associated resources and code that launches stub activities for all buttons you will implement.\n\n\n Create your firebase database using the phonebook json file. \n\n\n Create your SQLite database DAO. \n\n\n Implement  startup check for shared preferences, input user info.\n\n\n Implement the Menu \n\n\n For the Menu \n UI implement stub Activities then focus on one at a time of the following:\n\n\n Implement the About Activity\n\n\n Implement the Settings Activity\n\n\n Implement the Activites/Fragments  associated with the actions  for phase 1in the main UI  (buttons or  \u2026)\n\n\n Implement the main UI have each component launch a stub Activity\n\n\n\n\n\n\n\n\nThe preceeding is how to setup the skeleton for phase 1.   Once you have the skeleton ready distribute the work and implement the details in \nPhase 1 Specification\n\n\nWe may not use all of the following apis, you may delay getting keys until you need them.\n- [ ] Sign up for an API key for Open Weather Map \nhttps://openweathermap.org/api\n\n- [ ] Sign up for an API key for Google Places  \nhttps://developers.google.com/places/android-api/start\n\n    - [ ] Use PlacePicker \nhttps://developers.google.com/places/android-api/placepicker\n\n    - [ ] Use CurrentPlace \nhttps://developers.google.com/places/android-api/current-place\n\n\nNext: \nPhase 1 Specification", 
+            "title": "Assignment3"
+        }, 
+        {
+            "location": "/Mobile-Development/assignments/assignment3/#dawson-student-app-2017", 
+            "text": "", 
+            "title": "Dawson Student App  2017"
+        }, 
+        {
+            "location": "/Mobile-Development/assignments/assignment3/#overview", 
+            "text": "This app is intended to be useful for new and current Dawson students. The purpose of this project is to create an application that will exercise what you have learned about the Android framework  and Mobile software development. It is to be integrated with your final project for PHP. In phase 1 you will implement most app only components,  in phase 2 you will integrate with your PHP and PostgresSL server side data .", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/Mobile-Development/assignments/assignment3/#general-functionality", 
+            "text": "On first launch the app will have the user input their  name , an  email address  as  userid , and a  password .    Do not use a splash page for this , check and if there is no remembered information ( SharedPrefs ) launch an  Activity  to collect this information.   Once this is input the  MainActivity  displays a menu and series of buttons per the UI specification  to invoke various functionality. On button click most will launch an activity, maybe containing fragments, the design of the UIs is up to you but make it clean and neat, aligned and looking nice.  If you want to do something I have not requested or use some additional Android classes (example: Material Design) that I have not covered please check with me first.  I am open to agile-type design decisions but you must meet the spec .   I am your Project Manager,  you must report to me for anything that is outside the spec.", 
+            "title": "General functionality"
+        }, 
+        {
+            "location": "/Mobile-Development/assignments/assignment3/#on-startup", 
+            "text": "1 st  launch: ask for last name, first name, email address and password  save it in shared preferences with date stamp,   (phase 2 will involve checking the back end web REST resources from the PHP project for updates and downloading data, using this information)  Subsequent launch you will not ask for authentication, the auth data will be used for access to the back end.", 
+            "title": "On Startup"
+        }, 
+        {
+            "location": "/Mobile-Development/assignments/assignment3/#general", 
+            "text": "Unique App Name: Dawson   Unique repo name: must include TeamName   Unique Launcher icon, (you may make your own)  http://romannurik.github.io/AndroidAssetStudio/   Include appropriate inline documentation and JavaDocs for your methods and classes.   All images should be scalable (png, or jpg) and must resize on rotate   All UI strings and integers must be resources, no constants.   All code-internal data must be constants, no literals, even for logging.   Use logging with a unique tag for each Activity/Fragment   You are required to use Fragments in at least one UI   Maintain state on rotation and wherever necessary for all UIs    Note  Same as the PHP side of the project   Part of your grade will reflect how you are able to organize your work and advance during the time that has been allocated. You must be able to show progress (procrastinators will be penalized).  Please be prepared to attend your scheduled lab session for spot checks.  You must use the protected branch workflow as in the assignments but you will be 4 now so it changes the game a little.   The penultimate Monday you will be expected to demo the full android progject.   We will also organize combined demonstrations on the last Monday of the semester (with the PHP project). These are demos are scheduled before the final project due date. This means that:   you may still be missing some functionality (but not a lot)   Your UI should be finalized, the underlying code must be as complete as possible  you must be prepared to explain what is remaining to do or fix (it should not be much at this point in time)", 
+            "title": "General"
+        }, 
+        {
+            "location": "/Mobile-Development/assignments/assignment3/#phase-1-to-start", 
+            "text": "Choose a team name, check it with the teacher   Create a private, shared repository on gitlab or github with all team members as contributors add campbe13,  I will be checking it sporadically.  You may want to protect your master branch to avoid pushing errors. I suggest you designate one person as the github controller.   Design your UX see the UI Layout   Create / gather / modify the necessary images for your main activity UI and the About page.   Create the UI associated resources and code that launches stub activities for all buttons you will implement.   Create your firebase database using the phonebook json file.    Create your SQLite database DAO.    Implement  startup check for shared preferences, input user info.   Implement the Menu    For the Menu   UI implement stub Activities then focus on one at a time of the following:   Implement the About Activity   Implement the Settings Activity   Implement the Activites/Fragments  associated with the actions  for phase 1in the main UI  (buttons or  \u2026)   Implement the main UI have each component launch a stub Activity     The preceeding is how to setup the skeleton for phase 1.   Once you have the skeleton ready distribute the work and implement the details in  Phase 1 Specification  We may not use all of the following apis, you may delay getting keys until you need them.\n- [ ] Sign up for an API key for Open Weather Map  https://openweathermap.org/api \n- [ ] Sign up for an API key for Google Places   https://developers.google.com/places/android-api/start \n    - [ ] Use PlacePicker  https://developers.google.com/places/android-api/placepicker \n    - [ ] Use CurrentPlace  https://developers.google.com/places/android-api/current-place  Next:  Phase 1 Specification", 
+            "title": "Phase 1 (to start)"
+        }, 
+        {
             "location": "/Software-Project/introduction/", 
             "text": "Welcome to the Software Development Project. In this first week we will discuss the course in general, the project and the development tools that we will use. You should have all reviewed the project specification I sent out last week.\n\n\nIn the lab you will create the DDL statements for the database. As MySQL is slightly different from Oracle in its syntax I have a file in this week's  download with a set of DDL statements for a different problem. We will discuss how all of this works in the lab.\n\n\nFor homework, you will code a common dice game played in casinos in Java. The instructions for the assignment are in another file in this week's download.\n\n\nTechnologies required\n\n\nYou can use what you see fit in terms of IDE/tools\n\n\n\n\nJava 1.8\n\n\nJavaFX 2.2\n\n\nMySQL 5.7\n\n\nJDBC\n\n\nJUnit 4\n\n\nJavaMail / Jodd\n\n\nMaven\n\n\nGit\n\n\nGitlab    \n\n\n\n\n\n\nDanger\n\n\nKen won't let us use GitHub :c\n\n\n\n\nSteps to a project\n\n\n\n\nRead the Specs\n\n\nCreate the Database and Tables\n\n\nWrite the Java JDBC CRUD code while writing unit tests after every method is coded\n\n\nCreate\n\n\nRead\n\n\nUpdate\n\n\nDelete\n\n\n\n\n\n\n\n\nWeek One Lab\n\n\nWrite the SQL cripts to create the necessaru tables in MySQL and then email the scripts to \n by the end of the lab period\n\n\nImportant\n\n\nYou should have 50 account thingies per month\n\n\nSetting Up MySQL\n\n\n\n\nInstall MySQL Community edition\n\n\n\n\n1\n$ mysql -h\n\n\n\n\n\n\nEmail Requirements for JAM\n\n\n\n\nSearch for all appointments that start at the interval from the present time\n\n\nIf any are found, prepare an email for each appointment\n\n\nSend the email", 
             "title": "Introduction"
@@ -2099,246 +2134,6 @@
             "location": "/Software-Project/introduction/#email-requirements-for-jam", 
             "text": "Search for all appointments that start at the interval from the present time  If any are found, prepare an email for each appointment  Send the email", 
             "title": "Email Requirements for JAM"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/", 
-            "text": "Warning\n\n\n\ud83d\udea7 Under Construction\n\n\n\n\nContents\n\n\n1 Introduction 1\n\n\n1.1 System Overview 1\n\n\n1.2 Design Map 1\n\n\n1.3 Definitions and Acronyms 1\n\n\n1.4 Gmail Requirements 1\n\n\n2 Considerations 2\n\n\n2.1 Assumptions 2\n\n\n2.2 Constraints 2\n\n\n2.3 System Environment 2\n\n\n2.4 Repository and Naming 2\n\n\n2.4.1 GitLab Account Name 2\n\n\n2.4.2 Java Project Name 3\n\n\n2.4.3 GitLab Repository Name 3\n\n\n3 High Level Design 4\n\n\n3.1 Configuration Module 4\n\n\n3.2 Database Module 4\n\n\n3.3 Appointment Module 4\n\n\n3.4 Reminder Module 4\n\n\n3.5 Help Module 4\n\n\n3.6 Master GUI Module 4\n\n\n4 Low Level Design 5\n\n\n4.1 Configuration Module 5\n\n\n4.1.1 Database 5\n\n\n4.1.2 Email 5\n\n\n4.1.3 Appointment Group 5\n\n\n4.2 Database Module 5\n\n\n4.2.1 Email 5\n\n\n4.2.2 Appointment Group 6\n\n\n4.2.3 Appointments 6\n\n\n4.3 Appointment Module 6\n\n\n4.3.1 Monthly View 6\n\n\n4.3.2 Weekly View 6\n\n\n4.3.3 Daily View 6\n\n\n4.3.4 Appointment Dialog 6\n\n\n4.3.5 Search Dialog 6\n\n\n4.4 Reminder Module 7\n\n\n4.4.1 Timers 7\n\n\n4.5 Help Module 7\n\n\n4.6 Master GUI Module 7\n\n\n4.6.1 Menu 7\n\n\nFile 7\n\n\nView 7\n\n\nHelp 7\n\n\n4.6.2 Toolbar 8\n\n\n5 Data Structures 9\n\n\n5.1 DBMS Settings 9\n\n\n5.2 SMTP Settings 9\n\n\n5.3 Appointment Group Record 9\n\n\n5.4 Appointment Record 10\n\n\n5.5 Help Records 10\n\n\nIntroduction\n\n\nThe purpose of this project is to develop your individual skills as a\nJava application developer. The application described in this document\nis designed to have you apply what you have already learned in the\nComputer Science Technology Program and what you are continuing to learn\nthis semester. This is an individual student project in which you will\nwork alone.\n\n\nSystem Overview\n\n\n\n\nThe program that is\ndescribed in this document is called the Java Agenda Manager or JAM for\nshort. Its use case is to provide an interactive application in which\nappointments can be stored and reviewed along with reminders of upcoming\nevents. It will be written in the Java language and it is meant to be\nportable across all platforms that support Java\n\n\nDesign Map\n\n\nWithin this document you will find the features, specifications, and\ndesign of the JAM. The final product that you develop is required\nrespect this document. While you may add additional features, you are\nexpected to deliver the feature set described here. The following\nsections of this document will describe the features, organization and\nGUI design of the system.\n\n\nDefinitions and Acronyms\n\n\n\n\nAppointment\n\n\n\n\nAn event that the user of the program wishes to record and then be\nreminded of prior to its scheduled time.\n\n\n\n\nMonthly Calendar\n\n\n\n\nThe presentation of all the days in each month with an ordered list of\nany appointments presented for the specific day.\n\n\n\n\nWeekly Calendar\n\n\n\n\nThe presentation of the days in each week that shows the time\nintervals for the day and displays appointments at their specific day\nand time.\n\n\n\n\nDaily Calendar\n\n\n\n\nThe presentation of a single day that shows the time intervals for the\nday and displays appointments at their specific time.\n\n\n\n\nReminder\n\n\n\n\nA visual and audible alarm generated by the program to remind the user\nof an upcoming appointment. In addition, an email is sent to the user\nas a further reminder.\n\n\n\n\nAppointment Group\n\n\n\n\nAppointments can be grouped. A group displays a background color in\nthe display.\n\n\n\n\nGmail Requirements\n\n\nYou will need to create one Gmail account. This is the account thru\nwhich you will be sending reminders.\n\n\n\n\n\n\nConsiderations\n    ==============\n\n\n\n\nAssumptions\n    ---------------------------------------------------------------------------------------------------------\n\n\n\n\n\n\n\n\nThe program will be written using the standard features of the Java\nlanguage. Only third party open source libraries approved by your\ninstructor may be used. JUnit testing must be employed for all JDBC code\nyou write.\n\n\nConstraints\n\n\nThe primary constraint is\nthat the system must be completed by the end of week eight. You must\nlook for simplicity rather than complexity. Features not explicitly in\nthis document and not mentioned in class should be avoided unless they\nare recognized as critical to the operation of the program. Such changes\nmust be submitted to your instructor for approval.\n\n\nSystem Environment\n\n\nThe programming language will be Java\nversion 1.8 and the GUI will be JavaFX. You may use NetBeans or Eclipse\nfor your IDE. NetBeans is preferred.\n\n\nThe JAM will depend on an external DBMS for its appointment and contact\nstore. The DBMS will be MySQL.\n\n\nThe JAM is not dependent on any specific operating system. It should be\nable to run on any computer that supports Java. To be able to use the\nWaldo2 database server the computer must be connected to the Internet.\n\n\nRepository and Naming\n\n\nProjects must be stored in a Git repository. You are required to use a\nprivate repository on GitLab (gitlab.com). GitLab provides any developer\nwith a private repository. When you create your repository you must\ngrant the GitLab user \u201comniprof\u201d developer status. You may not use any\nother repository in this course. The naming rules are mandatory.\n\n\nGitLab Account Name\n\n\nYour GitLab account must be named \nJAM_Student Name\n. Use your name\nas it appears on college records. For example, if your name is Betty\nSmith then you must create an account named:\n\n\nJAM_BettySmith\n\n\nYou may leave out any middle names.\n\n\nJava Project Name\n\n\nWhen you create your project in the IDE it must be named \nJAM_Student\nID_Version\n. For example:\n\n\nJAM_9999999_1\n\n\nIf you must create a new project, for whatever reason, then use the same\nname with a different version number:\n\n\nJAM_9999999_2\n\n\nGitLab Repository Name\n\n\nThe repository that you create for your projects must have the same name\nas your Java project in the IDE. This means that when I need to retrieve\nyour code from GitLab the URL will look like:\n\n\nhttps://gitlab.com/JAM\n_BettySmith/JAM_9999999_1\n\n\nHigh Level Design\n\n\n===============================================================================================================\n\n\nThe overall design of the program will consist of modules that manage\nthe different features and functions of the program.\n\n\nConfiguration Module\n\n\nThis module is responsible for recording and storing information that\naffects the operation of the program. There will be GUI components in\nthis module.\n\n\nDatabase Module\n\n\nThis module is responsible for interacting with the DBMS on behalf of\nall other modules. It will provide specific services to meet the needs\nof other modules. There will not be any GUI components in this module.\n\n\nUnit testing of this module is required.\n\n\nAppointment Module\n\n\nThis module is responsible for the user interface for managing and\ndisplaying appointments. There will be GUI components in this module.\n\n\nReminder Module\n\n\nThis module is responsible for generating alarms prior to an\nappointment. There will not be any GUI components in this module.\n\n\nHelp Module\n\n\nThis module is responsible for displaying help screens. There will be\nGUI components in this module.\n\n\nMaster GUI Module\n\n\nThis module is responsible for the main application window, menus, and\ntoolbars. There will be GUI components in this module.\n\n\n\n\n\n\nLow Level Design\n    ================\n\n\n\n\nConfiguration Module\n    --------------------\n\n\n\n\n\n\n\n\nThis module will handle the data that configures the program. There are\nthree categories of configuration data. These are database, email and\nappointment group. Each category will require a GUI interface for input\nand editing.\n\n\nWhen the program is run for the very first time this module executes\nautomatically. This module can be accessed by the user at any time to\nmake changes to the configuration.\n\n\nDatabase\n\n\nThe program must have a MySQL database account ready to use. You can\ncreate a local account on your computer or use an account on a\ndepartment server. This information will be stored in a properties file\nusing the Properties API in Java. Properties files are plain text files.\nSee section 5.1 for the data that must be stored. You will need a popup\ndialog to enter or edit this data.\n\n\nEmail\n\n\nThe program, when running, will send an email to the program\u2019s user at a\npreset interval before an appointment. You will require an email account\non Gmail for this purpose. The necessary information will be stored in a\ntable in the database. You will need a popup dialog to enter or edit\nthis data.\n\n\nAppointment Group\n\n\nAn appointment group supports the concept of grouping appointments such\nas work appointments and personal appointments. The group determines the\nbackground colour of an appointment in the display. You must have five\ndefault groups with colors already assigned to them. You will need a\npopup dialog to enter or edit this data.\n\n\nDatabase Module\n\n\nThis module will manage the records for all modules. There should be a\nclass for each data table. It will create the required tables for the\ndatabase the first time the program is run. Then it will add or retrieve\nrecords based on requests from the other modules. Each of these modules\nmust have unit tests that demonstrate that the code functions as\nrequired.\n\n\nEmail\n\n\nThis module will be responsible for retrieving, inserting, updating or\ndeleting records for the Email configuration.\n\n\nAppointment Group\n\n\nThis module will be responsible for retrieving, inserting, updating or\ndeleting records for the Appointment Group configuration.\n\n\nAppointments\n\n\nThis module will be responsible for retrieving, inserting, updating or\ndeleting appointment records. There will need to be several retrieval\nroutines to match the various views. In addition, several search\nroutines will be required based on various criteria.\n\n\nAppointment Module\n\n\nThis module will be responsible for the user interface for inputting\nappointments and displaying appointments. It will consist of the\nfollowing:\n\n\nMonthly View\n\n\nThis will display a full month in a grid 6 rows by 7 columns. Titles of\nappointment will appear as a list in the day. In this display you will\nbe able to change months. Double clicking on a given day in a month will\nbring up the Daily View.\n\n\nWeekly View\n\n\nThis will display a full week. It should consist of 7 daily views.\nDouble clicking on a given day in a week will bring up the Daily View.\n\n\nDaily View\n\n\nThe daily view consists of a grid 2 x 48. The first column is the time\nand the second column will hold the appointment. There are 48 rows to\nrepresent every half hour in a day. Double clicking on anywhere in this\nview will bring up the Appointment Dialog. If the double click is on an\nexisting appointment then this is what will appear in the dialog.\nOtherwise a dialog without an appointment will appear.\n\n\nAppointment Dialog\n\n\nThis is a popup dialog that supports adding, editing or deleting an\nappointment. It will contain fields from the appointment data structure.\nThere needs to be a button to save an appointment and a button to delete\nan appointment. If the dialog contains an existing appointment, then\nsave will update the record otherwise a new record will be created.\n\n\nSearch Dialog\n\n\nThis is a popup dialog that supports searching for appointments by their\ntitle or description. The results of this search will be a list of\nmatching appointments. Double clicking on an appointment on this list\nwill display the Appointment Dialog with the selected appointment.\n\n\nReminder Module\n\n\nThis module will use timer events to generate alarms and reminders.\nWhenever the program is executed it will retrieve all future events and\nstart timer processes. When a timer process comes due the module will\ngenerate a visual and audible alarm.\n\n\nTimers\n\n\nWhen the program is loaded, this module will retrieve all the current\nday\u2019s appointments and create a timer event or thread for it. The\nthread, when its time is reached, will generate an audible and visual\nreminder as well as sending an email. Appointment records contain the\ninterval between an appointment and when a reminder must be issued.\n\n\nA special event is created to go off at midnight. If the program remains\nrunning continuously then at midnight it will retrieve the next day\u2019s\nappointments.\n\n\nHelp Module\n\n\nThis module will present the user with a list of the different tasks\nthat the program performs. Selecting a task will lead to a description\nof what this task is and how it is used. These descriptions will be\nformatted using HTML and stored in individual files in the project.\n\n\nMaster GUI Module\n\n\nThis module will act as the application manager. It will present all the\nvarious views of the program and receive user commands. The commands may\ncome either from a menu or a toolbar. The menus and toolbars will be\ndynamic. This means that the choices presented to the user may change\ndepending on the current view.\n\n\nMenu\n\n\nThe program main menu must contain the following:\n\n\nFile\n\n\n\n\nConfiguration\n\n\nNew Appointment\n\n\nExit\n\n\n\n\nView\n\n\n\n\nMonthly\n\n\nWeekly\n\n\nDaily\n\n\n\n\nHelp\n\n\n\n\nHelp Contents\n\n\nAbout\n\n\n\n\nAdditional menu items may be added as needed.\n\n\nToolbar\n\n\nThe toolbar must consist of the following items.\n\n\n\n\n\n\n### Configuration\n\n\n\n\n\n\n### New Appointment\n\n\n\n\n\n\n### Monthly\n\n\n\n\n\n\n### Weekly\n\n\n\n\n\n\n### Daily\n\n\n\n\n\n\n### Help Contents\n\n\n\n\n\n\nImages must be used in the toolbar.\n\n\n\n\n\n\nData Structures\n    ===============\n\n\n\n\nDBMS Settings\n    -------------\n\n\n\n\n\n\n\n\nStored in a properties file\n\n\n\n\n\n\nThe URL of the MySQL database\n\n\n\n\n\n\nThe database name\n\n\n\n\n\n\nThe port of the MySQL database (default 3306)\n\n\n\n\n\n\nThe user name for the MySQL database\n\n\n\n\n\n\nThe password for the MySQL database\n\n\n\n\nSMTP Settings\n    -------------\n\n\n\n\n\n\n\n\nStored in the DBMS\n\n\n\n\n\n\nThe user\u2019s name\n\n\n\n\n\n\nThe user\u2019s email address which is also the log in name for Gmail\n\n\n\n\n\n\nThe user\u2019s Gmail password\n\n\n\n\n\n\nThe URL of the SMTP server\n\n\n\n\n\n\nThe SMTP port number (default 465)\n\n\n\n\nAppointment Group Record\n    ------------------------\n\n\n\n\n\n\n\n\nStored in the DBMS\n\n\n\n\n\n\nGroup Number \u2013 int\n\n\n\n\n\n\nGroup Name \u2013 String\n\n\n\n\n\n\nColour - RGB color specified with an HTML or CSS attribute String\n\n\n\n\nAppointment Record\n    ------------------\n\n\n\n\n\n\n\n\nStored in the DBMS\n\n\n\n\n\n\nTitle - String\n\n\n\n\n\n\nLocation - String\n\n\n\n\n\n\nStart Time - Temporal\n\n\n\n\n\n\nEnd Time - Temporal\n\n\n\n\n\n\nDetails - String\n\n\n\n\n\n\nWhole Day \u2013 boolean\n\n\n\n\n\n\nAppointment Group \u2013 int\n\n\n\n\n\n\nReminder Interval - int\n\n\n\n\n\n\nAlarm Reminder Requested \u2013 Boolean\n\n\n\n\nHelp Records\n    ------------\n\n\n\n\n\n\n\n\nHelp information is text formatted with HTML. Each topic in the help\nlist is matched to a specific HTML file.", 
-            "title": "Jam specifications"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#contents", 
-            "text": "1 Introduction 1  1.1 System Overview 1  1.2 Design Map 1  1.3 Definitions and Acronyms 1  1.4 Gmail Requirements 1  2 Considerations 2  2.1 Assumptions 2  2.2 Constraints 2  2.3 System Environment 2  2.4 Repository and Naming 2  2.4.1 GitLab Account Name 2  2.4.2 Java Project Name 3  2.4.3 GitLab Repository Name 3  3 High Level Design 4  3.1 Configuration Module 4  3.2 Database Module 4  3.3 Appointment Module 4  3.4 Reminder Module 4  3.5 Help Module 4  3.6 Master GUI Module 4  4 Low Level Design 5  4.1 Configuration Module 5  4.1.1 Database 5  4.1.2 Email 5  4.1.3 Appointment Group 5  4.2 Database Module 5  4.2.1 Email 5  4.2.2 Appointment Group 6  4.2.3 Appointments 6  4.3 Appointment Module 6  4.3.1 Monthly View 6  4.3.2 Weekly View 6  4.3.3 Daily View 6  4.3.4 Appointment Dialog 6  4.3.5 Search Dialog 6  4.4 Reminder Module 7  4.4.1 Timers 7  4.5 Help Module 7  4.6 Master GUI Module 7  4.6.1 Menu 7  File 7  View 7  Help 7  4.6.2 Toolbar 8  5 Data Structures 9  5.1 DBMS Settings 9  5.2 SMTP Settings 9  5.3 Appointment Group Record 9  5.4 Appointment Record 10  5.5 Help Records 10", 
-            "title": "Contents"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#introduction", 
-            "text": "The purpose of this project is to develop your individual skills as a\nJava application developer. The application described in this document\nis designed to have you apply what you have already learned in the\nComputer Science Technology Program and what you are continuing to learn\nthis semester. This is an individual student project in which you will\nwork alone.", 
-            "title": "Introduction"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#system-overview", 
-            "text": "The program that is\ndescribed in this document is called the Java Agenda Manager or JAM for\nshort. Its use case is to provide an interactive application in which\nappointments can be stored and reviewed along with reminders of upcoming\nevents. It will be written in the Java language and it is meant to be\nportable across all platforms that support Java", 
-            "title": "System Overview"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#design-map", 
-            "text": "Within this document you will find the features, specifications, and\ndesign of the JAM. The final product that you develop is required\nrespect this document. While you may add additional features, you are\nexpected to deliver the feature set described here. The following\nsections of this document will describe the features, organization and\nGUI design of the system.", 
-            "title": "Design Map"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#definitions-and-acronyms", 
-            "text": "Appointment   An event that the user of the program wishes to record and then be\nreminded of prior to its scheduled time.   Monthly Calendar   The presentation of all the days in each month with an ordered list of\nany appointments presented for the specific day.   Weekly Calendar   The presentation of the days in each week that shows the time\nintervals for the day and displays appointments at their specific day\nand time.   Daily Calendar   The presentation of a single day that shows the time intervals for the\nday and displays appointments at their specific time.   Reminder   A visual and audible alarm generated by the program to remind the user\nof an upcoming appointment. In addition, an email is sent to the user\nas a further reminder.   Appointment Group   Appointments can be grouped. A group displays a background color in\nthe display.", 
-            "title": "Definitions and Acronyms"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#gmail-requirements", 
-            "text": "You will need to create one Gmail account. This is the account thru\nwhich you will be sending reminders.    Considerations\n    ==============   Assumptions\n    ---------------------------------------------------------------------------------------------------------     The program will be written using the standard features of the Java\nlanguage. Only third party open source libraries approved by your\ninstructor may be used. JUnit testing must be employed for all JDBC code\nyou write.", 
-            "title": "Gmail Requirements"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#constraints", 
-            "text": "The primary constraint is\nthat the system must be completed by the end of week eight. You must\nlook for simplicity rather than complexity. Features not explicitly in\nthis document and not mentioned in class should be avoided unless they\nare recognized as critical to the operation of the program. Such changes\nmust be submitted to your instructor for approval.", 
-            "title": "Constraints"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#system-environment", 
-            "text": "The programming language will be Java\nversion 1.8 and the GUI will be JavaFX. You may use NetBeans or Eclipse\nfor your IDE. NetBeans is preferred.  The JAM will depend on an external DBMS for its appointment and contact\nstore. The DBMS will be MySQL.  The JAM is not dependent on any specific operating system. It should be\nable to run on any computer that supports Java. To be able to use the\nWaldo2 database server the computer must be connected to the Internet.", 
-            "title": "System Environment"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#repository-and-naming", 
-            "text": "Projects must be stored in a Git repository. You are required to use a\nprivate repository on GitLab (gitlab.com). GitLab provides any developer\nwith a private repository. When you create your repository you must\ngrant the GitLab user \u201comniprof\u201d developer status. You may not use any\nother repository in this course. The naming rules are mandatory.", 
-            "title": "Repository and Naming"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#gitlab-account-name", 
-            "text": "Your GitLab account must be named  JAM_Student Name . Use your name\nas it appears on college records. For example, if your name is Betty\nSmith then you must create an account named:  JAM_BettySmith  You may leave out any middle names.", 
-            "title": "GitLab Account Name"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#java-project-name", 
-            "text": "When you create your project in the IDE it must be named  JAM_Student\nID_Version . For example:  JAM_9999999_1  If you must create a new project, for whatever reason, then use the same\nname with a different version number:  JAM_9999999_2", 
-            "title": "Java Project Name"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#gitlab-repository-name", 
-            "text": "The repository that you create for your projects must have the same name\nas your Java project in the IDE. This means that when I need to retrieve\nyour code from GitLab the URL will look like:  https://gitlab.com/JAM _BettySmith/JAM_9999999_1", 
-            "title": "GitLab Repository Name"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#high-level-design", 
-            "text": "===============================================================================================================  The overall design of the program will consist of modules that manage\nthe different features and functions of the program.", 
-            "title": "High Level Design"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#configuration-module", 
-            "text": "This module is responsible for recording and storing information that\naffects the operation of the program. There will be GUI components in\nthis module.", 
-            "title": "Configuration Module"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#database-module", 
-            "text": "This module is responsible for interacting with the DBMS on behalf of\nall other modules. It will provide specific services to meet the needs\nof other modules. There will not be any GUI components in this module.  Unit testing of this module is required.", 
-            "title": "Database Module"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#appointment-module", 
-            "text": "This module is responsible for the user interface for managing and\ndisplaying appointments. There will be GUI components in this module.", 
-            "title": "Appointment Module"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#reminder-module", 
-            "text": "This module is responsible for generating alarms prior to an\nappointment. There will not be any GUI components in this module.", 
-            "title": "Reminder Module"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#help-module", 
-            "text": "This module is responsible for displaying help screens. There will be\nGUI components in this module.", 
-            "title": "Help Module"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#master-gui-module", 
-            "text": "This module is responsible for the main application window, menus, and\ntoolbars. There will be GUI components in this module.    Low Level Design\n    ================   Configuration Module\n    --------------------     This module will handle the data that configures the program. There are\nthree categories of configuration data. These are database, email and\nappointment group. Each category will require a GUI interface for input\nand editing.  When the program is run for the very first time this module executes\nautomatically. This module can be accessed by the user at any time to\nmake changes to the configuration.", 
-            "title": "Master GUI Module"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#database", 
-            "text": "The program must have a MySQL database account ready to use. You can\ncreate a local account on your computer or use an account on a\ndepartment server. This information will be stored in a properties file\nusing the Properties API in Java. Properties files are plain text files.\nSee section 5.1 for the data that must be stored. You will need a popup\ndialog to enter or edit this data.", 
-            "title": "Database"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#email", 
-            "text": "The program, when running, will send an email to the program\u2019s user at a\npreset interval before an appointment. You will require an email account\non Gmail for this purpose. The necessary information will be stored in a\ntable in the database. You will need a popup dialog to enter or edit\nthis data.", 
-            "title": "Email"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#appointment-group", 
-            "text": "An appointment group supports the concept of grouping appointments such\nas work appointments and personal appointments. The group determines the\nbackground colour of an appointment in the display. You must have five\ndefault groups with colors already assigned to them. You will need a\npopup dialog to enter or edit this data.", 
-            "title": "Appointment Group"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#database-module_1", 
-            "text": "This module will manage the records for all modules. There should be a\nclass for each data table. It will create the required tables for the\ndatabase the first time the program is run. Then it will add or retrieve\nrecords based on requests from the other modules. Each of these modules\nmust have unit tests that demonstrate that the code functions as\nrequired.", 
-            "title": "Database Module"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#email_1", 
-            "text": "This module will be responsible for retrieving, inserting, updating or\ndeleting records for the Email configuration.", 
-            "title": "Email"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#appointment-group_1", 
-            "text": "This module will be responsible for retrieving, inserting, updating or\ndeleting records for the Appointment Group configuration.", 
-            "title": "Appointment Group"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#appointments", 
-            "text": "This module will be responsible for retrieving, inserting, updating or\ndeleting appointment records. There will need to be several retrieval\nroutines to match the various views. In addition, several search\nroutines will be required based on various criteria.", 
-            "title": "Appointments"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#appointment-module_1", 
-            "text": "This module will be responsible for the user interface for inputting\nappointments and displaying appointments. It will consist of the\nfollowing:", 
-            "title": "Appointment Module"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#monthly-view", 
-            "text": "This will display a full month in a grid 6 rows by 7 columns. Titles of\nappointment will appear as a list in the day. In this display you will\nbe able to change months. Double clicking on a given day in a month will\nbring up the Daily View.", 
-            "title": "Monthly View"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#weekly-view", 
-            "text": "This will display a full week. It should consist of 7 daily views.\nDouble clicking on a given day in a week will bring up the Daily View.", 
-            "title": "Weekly View"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#daily-view", 
-            "text": "The daily view consists of a grid 2 x 48. The first column is the time\nand the second column will hold the appointment. There are 48 rows to\nrepresent every half hour in a day. Double clicking on anywhere in this\nview will bring up the Appointment Dialog. If the double click is on an\nexisting appointment then this is what will appear in the dialog.\nOtherwise a dialog without an appointment will appear.", 
-            "title": "Daily View"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#appointment-dialog", 
-            "text": "This is a popup dialog that supports adding, editing or deleting an\nappointment. It will contain fields from the appointment data structure.\nThere needs to be a button to save an appointment and a button to delete\nan appointment. If the dialog contains an existing appointment, then\nsave will update the record otherwise a new record will be created.", 
-            "title": "Appointment Dialog"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#search-dialog", 
-            "text": "This is a popup dialog that supports searching for appointments by their\ntitle or description. The results of this search will be a list of\nmatching appointments. Double clicking on an appointment on this list\nwill display the Appointment Dialog with the selected appointment.", 
-            "title": "Search Dialog"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#reminder-module_1", 
-            "text": "This module will use timer events to generate alarms and reminders.\nWhenever the program is executed it will retrieve all future events and\nstart timer processes. When a timer process comes due the module will\ngenerate a visual and audible alarm.", 
-            "title": "Reminder Module"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#timers", 
-            "text": "When the program is loaded, this module will retrieve all the current\nday\u2019s appointments and create a timer event or thread for it. The\nthread, when its time is reached, will generate an audible and visual\nreminder as well as sending an email. Appointment records contain the\ninterval between an appointment and when a reminder must be issued.  A special event is created to go off at midnight. If the program remains\nrunning continuously then at midnight it will retrieve the next day\u2019s\nappointments.", 
-            "title": "Timers"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#help-module_1", 
-            "text": "This module will present the user with a list of the different tasks\nthat the program performs. Selecting a task will lead to a description\nof what this task is and how it is used. These descriptions will be\nformatted using HTML and stored in individual files in the project.", 
-            "title": "Help Module"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#master-gui-module_1", 
-            "text": "This module will act as the application manager. It will present all the\nvarious views of the program and receive user commands. The commands may\ncome either from a menu or a toolbar. The menus and toolbars will be\ndynamic. This means that the choices presented to the user may change\ndepending on the current view.", 
-            "title": "Master GUI Module"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#menu", 
-            "text": "The program main menu must contain the following:", 
-            "title": "Menu"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#file", 
-            "text": "Configuration  New Appointment  Exit", 
-            "title": "File"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#view", 
-            "text": "Monthly  Weekly  Daily", 
-            "title": "View"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#help", 
-            "text": "Help Contents  About   Additional menu items may be added as needed.", 
-            "title": "Help"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#toolbar", 
-            "text": "The toolbar must consist of the following items.", 
-            "title": "Toolbar"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#configuration", 
-            "text": "", 
-            "title": "### Configuration"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#new-appointment", 
-            "text": "", 
-            "title": "### New Appointment"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#monthly", 
-            "text": "", 
-            "title": "### Monthly"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#weekly", 
-            "text": "", 
-            "title": "### Weekly"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#daily", 
-            "text": "", 
-            "title": "### Daily"
-        }, 
-        {
-            "location": "/Software-Project/jam-specifications/#help-contents", 
-            "text": "Images must be used in the toolbar.    Data Structures\n    ===============   DBMS Settings\n    -------------     Stored in a properties file    The URL of the MySQL database    The database name    The port of the MySQL database (default 3306)    The user name for the MySQL database    The password for the MySQL database   SMTP Settings\n    -------------     Stored in the DBMS    The user\u2019s name    The user\u2019s email address which is also the log in name for Gmail    The user\u2019s Gmail password    The URL of the SMTP server    The SMTP port number (default 465)   Appointment Group Record\n    ------------------------     Stored in the DBMS    Group Number \u2013 int    Group Name \u2013 String    Colour - RGB color specified with an HTML or CSS attribute String   Appointment Record\n    ------------------     Stored in the DBMS    Title - String    Location - String    Start Time - Temporal    End Time - Temporal    Details - String    Whole Day \u2013 boolean    Appointment Group \u2013 int    Reminder Interval - int    Alarm Reminder Requested \u2013 Boolean   Help Records\n    ------------     Help information is text formatted with HTML. Each topic in the help\nlist is matched to a specific HTML file.", 
-            "title": "### Help Contents"
         }, 
         {
             "location": "/Software-Project/logging/", 
@@ -2689,6 +2484,261 @@
             "location": "/Software-Project/outline/#10-isep", 
             "text": "The Institutional Student Evaluation Policy (ISEP) is designed to promote equitable and effective evaluation of student learning and is therefore a crucial policy to read and understand. The policy describes the rights and obligations of students, faculty, departments, programs, and the College administration with regard to evaluation in all your courses, including grade reviews and resolution of academic grievance. The ISEP is available on the Dawson website.", 
             "title": "10.        ISEP**"
+        }, 
+        {
+            "location": "/Software-Project/assignments/assignment2/", 
+            "text": "Final Assignment The Evaluator\n\n\nDescription\n\n\nWrite the classes necessary to convert an infix expression to a postfix expression and then evaluate the postfix expression. The input to the evaluator is a queue containing the infix expression and the output is a queue with the result as the only entry.\n\n\nThe infix expression is made up of floating point numbers and four operators. The operators are add(+), subtract(-), multiply(*) and division(/). You will also implement parenthesis () on the calculator.\n\n\nCreate a suite of Unit Tests that proves that the Evaluator and all of its components work as expected. Use parameterized testing so that you can carry out at least 25 different infix expressions in the testing. \n\n\nIf the infix queue is not properly formatted then throw a named exception. Test that this exception is being thrown in at least 5 cases in addition to the 25 cases for evaluating a properly formatted queue.\n\n\nYou must write your own Stack and Queue for this assignment. You may not use the Java Collections for this assignment. \n\n\nThere is no user interface just unit testing.\n\n\nDue Date:\nFriday, December 8, 2017 at 11:59 PM.", 
+            "title": "Assignment2"
+        }, 
+        {
+            "location": "/Software-Project/assignments/assignment2/#final-assignment-the-evaluator", 
+            "text": "", 
+            "title": "Final Assignment The Evaluator"
+        }, 
+        {
+            "location": "/Software-Project/assignments/assignment2/#description", 
+            "text": "Write the classes necessary to convert an infix expression to a postfix expression and then evaluate the postfix expression. The input to the evaluator is a queue containing the infix expression and the output is a queue with the result as the only entry.  The infix expression is made up of floating point numbers and four operators. The operators are add(+), subtract(-), multiply(*) and division(/). You will also implement parenthesis () on the calculator.  Create a suite of Unit Tests that proves that the Evaluator and all of its components work as expected. Use parameterized testing so that you can carry out at least 25 different infix expressions in the testing.   If the infix queue is not properly formatted then throw a named exception. Test that this exception is being thrown in at least 5 cases in addition to the 25 cases for evaluating a properly formatted queue.  You must write your own Stack and Queue for this assignment. You may not use the Java Collections for this assignment.   There is no user interface just unit testing.  Due Date:\nFriday, December 8, 2017 at 11:59 PM.", 
+            "title": "Description"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/", 
+            "text": "Warning\n\n\n\ud83d\udea7 Under Construction\n\n\n\n\nContents\n\n\n1 Introduction 1\n\n\n1.1 System Overview 1\n\n\n1.2 Design Map 1\n\n\n1.3 Definitions and Acronyms 1\n\n\n1.4 Gmail Requirements 1\n\n\n2 Considerations 2\n\n\n2.1 Assumptions 2\n\n\n2.2 Constraints 2\n\n\n2.3 System Environment 2\n\n\n2.4 Repository and Naming 2\n\n\n2.4.1 GitLab Account Name 2\n\n\n2.4.2 Java Project Name 3\n\n\n2.4.3 GitLab Repository Name 3\n\n\n3 High Level Design 4\n\n\n3.1 Configuration Module 4\n\n\n3.2 Database Module 4\n\n\n3.3 Appointment Module 4\n\n\n3.4 Reminder Module 4\n\n\n3.5 Help Module 4\n\n\n3.6 Master GUI Module 4\n\n\n4 Low Level Design 5\n\n\n4.1 Configuration Module 5\n\n\n4.1.1 Database 5\n\n\n4.1.2 Email 5\n\n\n4.1.3 Appointment Group 5\n\n\n4.2 Database Module 5\n\n\n4.2.1 Email 5\n\n\n4.2.2 Appointment Group 6\n\n\n4.2.3 Appointments 6\n\n\n4.3 Appointment Module 6\n\n\n4.3.1 Monthly View 6\n\n\n4.3.2 Weekly View 6\n\n\n4.3.3 Daily View 6\n\n\n4.3.4 Appointment Dialog 6\n\n\n4.3.5 Search Dialog 6\n\n\n4.4 Reminder Module 7\n\n\n4.4.1 Timers 7\n\n\n4.5 Help Module 7\n\n\n4.6 Master GUI Module 7\n\n\n4.6.1 Menu 7\n\n\nFile 7\n\n\nView 7\n\n\nHelp 7\n\n\n4.6.2 Toolbar 8\n\n\n5 Data Structures 9\n\n\n5.1 DBMS Settings 9\n\n\n5.2 SMTP Settings 9\n\n\n5.3 Appointment Group Record 9\n\n\n5.4 Appointment Record 10\n\n\n5.5 Help Records 10\n\n\nIntroduction\n\n\nThe purpose of this project is to develop your individual skills as a\nJava application developer. The application described in this document\nis designed to have you apply what you have already learned in the\nComputer Science Technology Program and what you are continuing to learn\nthis semester. This is an individual student project in which you will\nwork alone.\n\n\nSystem Overview\n\n\n\n\nThe program that is\ndescribed in this document is called the Java Agenda Manager or JAM for\nshort. Its use case is to provide an interactive application in which\nappointments can be stored and reviewed along with reminders of upcoming\nevents. It will be written in the Java language and it is meant to be\nportable across all platforms that support Java\n\n\nDesign Map\n\n\nWithin this document you will find the features, specifications, and\ndesign of the JAM. The final product that you develop is required\nrespect this document. While you may add additional features, you are\nexpected to deliver the feature set described here. The following\nsections of this document will describe the features, organization and\nGUI design of the system.\n\n\nDefinitions and Acronyms\n\n\n\n\nAppointment\n\n\n\n\nAn event that the user of the program wishes to record and then be\nreminded of prior to its scheduled time.\n\n\n\n\nMonthly Calendar\n\n\n\n\nThe presentation of all the days in each month with an ordered list of\nany appointments presented for the specific day.\n\n\n\n\nWeekly Calendar\n\n\n\n\nThe presentation of the days in each week that shows the time\nintervals for the day and displays appointments at their specific day\nand time.\n\n\n\n\nDaily Calendar\n\n\n\n\nThe presentation of a single day that shows the time intervals for the\nday and displays appointments at their specific time.\n\n\n\n\nReminder\n\n\n\n\nA visual and audible alarm generated by the program to remind the user\nof an upcoming appointment. In addition, an email is sent to the user\nas a further reminder.\n\n\n\n\nAppointment Group\n\n\n\n\nAppointments can be grouped. A group displays a background color in\nthe display.\n\n\n\n\nGmail Requirements\n\n\nYou will need to create one Gmail account. This is the account thru\nwhich you will be sending reminders.\n\n\n\n\n\n\nConsiderations\n    ==============\n\n\n\n\nAssumptions\n    ---------------------------------------------------------------------------------------------------------\n\n\n\n\n\n\n\n\nThe program will be written using the standard features of the Java\nlanguage. Only third party open source libraries approved by your\ninstructor may be used. JUnit testing must be employed for all JDBC code\nyou write.\n\n\nConstraints\n\n\nThe primary constraint is\nthat the system must be completed by the end of week eight. You must\nlook for simplicity rather than complexity. Features not explicitly in\nthis document and not mentioned in class should be avoided unless they\nare recognized as critical to the operation of the program. Such changes\nmust be submitted to your instructor for approval.\n\n\nSystem Environment\n\n\nThe programming language will be Java\nversion 1.8 and the GUI will be JavaFX. You may use NetBeans or Eclipse\nfor your IDE. NetBeans is preferred.\n\n\nThe JAM will depend on an external DBMS for its appointment and contact\nstore. The DBMS will be MySQL.\n\n\nThe JAM is not dependent on any specific operating system. It should be\nable to run on any computer that supports Java. To be able to use the\nWaldo2 database server the computer must be connected to the Internet.\n\n\nRepository and Naming\n\n\nProjects must be stored in a Git repository. You are required to use a\nprivate repository on GitLab (gitlab.com). GitLab provides any developer\nwith a private repository. When you create your repository you must\ngrant the GitLab user \u201comniprof\u201d developer status. You may not use any\nother repository in this course. The naming rules are mandatory.\n\n\nGitLab Account Name\n\n\nYour GitLab account must be named \nJAM_Student Name\n. Use your name\nas it appears on college records. For example, if your name is Betty\nSmith then you must create an account named:\n\n\nJAM_BettySmith\n\n\nYou may leave out any middle names.\n\n\nJava Project Name\n\n\nWhen you create your project in the IDE it must be named \nJAM_Student\nID_Version\n. For example:\n\n\nJAM_9999999_1\n\n\nIf you must create a new project, for whatever reason, then use the same\nname with a different version number:\n\n\nJAM_9999999_2\n\n\nGitLab Repository Name\n\n\nThe repository that you create for your projects must have the same name\nas your Java project in the IDE. This means that when I need to retrieve\nyour code from GitLab the URL will look like:\n\n\nhttps://gitlab.com/JAM\n_BettySmith/JAM_9999999_1\n\n\nHigh Level Design\n\n\n===============================================================================================================\n\n\nThe overall design of the program will consist of modules that manage\nthe different features and functions of the program.\n\n\nConfiguration Module\n\n\nThis module is responsible for recording and storing information that\naffects the operation of the program. There will be GUI components in\nthis module.\n\n\nDatabase Module\n\n\nThis module is responsible for interacting with the DBMS on behalf of\nall other modules. It will provide specific services to meet the needs\nof other modules. There will not be any GUI components in this module.\n\n\nUnit testing of this module is required.\n\n\nAppointment Module\n\n\nThis module is responsible for the user interface for managing and\ndisplaying appointments. There will be GUI components in this module.\n\n\nReminder Module\n\n\nThis module is responsible for generating alarms prior to an\nappointment. There will not be any GUI components in this module.\n\n\nHelp Module\n\n\nThis module is responsible for displaying help screens. There will be\nGUI components in this module.\n\n\nMaster GUI Module\n\n\nThis module is responsible for the main application window, menus, and\ntoolbars. There will be GUI components in this module.\n\n\n\n\n\n\nLow Level Design\n    ================\n\n\n\n\nConfiguration Module\n    --------------------\n\n\n\n\n\n\n\n\nThis module will handle the data that configures the program. There are\nthree categories of configuration data. These are database, email and\nappointment group. Each category will require a GUI interface for input\nand editing.\n\n\nWhen the program is run for the very first time this module executes\nautomatically. This module can be accessed by the user at any time to\nmake changes to the configuration.\n\n\nDatabase\n\n\nThe program must have a MySQL database account ready to use. You can\ncreate a local account on your computer or use an account on a\ndepartment server. This information will be stored in a properties file\nusing the Properties API in Java. Properties files are plain text files.\nSee section 5.1 for the data that must be stored. You will need a popup\ndialog to enter or edit this data.\n\n\nEmail\n\n\nThe program, when running, will send an email to the program\u2019s user at a\npreset interval before an appointment. You will require an email account\non Gmail for this purpose. The necessary information will be stored in a\ntable in the database. You will need a popup dialog to enter or edit\nthis data.\n\n\nAppointment Group\n\n\nAn appointment group supports the concept of grouping appointments such\nas work appointments and personal appointments. The group determines the\nbackground colour of an appointment in the display. You must have five\ndefault groups with colors already assigned to them. You will need a\npopup dialog to enter or edit this data.\n\n\nDatabase Module\n\n\nThis module will manage the records for all modules. There should be a\nclass for each data table. It will create the required tables for the\ndatabase the first time the program is run. Then it will add or retrieve\nrecords based on requests from the other modules. Each of these modules\nmust have unit tests that demonstrate that the code functions as\nrequired.\n\n\nEmail\n\n\nThis module will be responsible for retrieving, inserting, updating or\ndeleting records for the Email configuration.\n\n\nAppointment Group\n\n\nThis module will be responsible for retrieving, inserting, updating or\ndeleting records for the Appointment Group configuration.\n\n\nAppointments\n\n\nThis module will be responsible for retrieving, inserting, updating or\ndeleting appointment records. There will need to be several retrieval\nroutines to match the various views. In addition, several search\nroutines will be required based on various criteria.\n\n\nAppointment Module\n\n\nThis module will be responsible for the user interface for inputting\nappointments and displaying appointments. It will consist of the\nfollowing:\n\n\nMonthly View\n\n\nThis will display a full month in a grid 6 rows by 7 columns. Titles of\nappointment will appear as a list in the day. In this display you will\nbe able to change months. Double clicking on a given day in a month will\nbring up the Daily View.\n\n\nWeekly View\n\n\nThis will display a full week. It should consist of 7 daily views.\nDouble clicking on a given day in a week will bring up the Daily View.\n\n\nDaily View\n\n\nThe daily view consists of a grid 2 x 48. The first column is the time\nand the second column will hold the appointment. There are 48 rows to\nrepresent every half hour in a day. Double clicking on anywhere in this\nview will bring up the Appointment Dialog. If the double click is on an\nexisting appointment then this is what will appear in the dialog.\nOtherwise a dialog without an appointment will appear.\n\n\nAppointment Dialog\n\n\nThis is a popup dialog that supports adding, editing or deleting an\nappointment. It will contain fields from the appointment data structure.\nThere needs to be a button to save an appointment and a button to delete\nan appointment. If the dialog contains an existing appointment, then\nsave will update the record otherwise a new record will be created.\n\n\nSearch Dialog\n\n\nThis is a popup dialog that supports searching for appointments by their\ntitle or description. The results of this search will be a list of\nmatching appointments. Double clicking on an appointment on this list\nwill display the Appointment Dialog with the selected appointment.\n\n\nReminder Module\n\n\nThis module will use timer events to generate alarms and reminders.\nWhenever the program is executed it will retrieve all future events and\nstart timer processes. When a timer process comes due the module will\ngenerate a visual and audible alarm.\n\n\nTimers\n\n\nWhen the program is loaded, this module will retrieve all the current\nday\u2019s appointments and create a timer event or thread for it. The\nthread, when its time is reached, will generate an audible and visual\nreminder as well as sending an email. Appointment records contain the\ninterval between an appointment and when a reminder must be issued.\n\n\nA special event is created to go off at midnight. If the program remains\nrunning continuously then at midnight it will retrieve the next day\u2019s\nappointments.\n\n\nHelp Module\n\n\nThis module will present the user with a list of the different tasks\nthat the program performs. Selecting a task will lead to a description\nof what this task is and how it is used. These descriptions will be\nformatted using HTML and stored in individual files in the project.\n\n\nMaster GUI Module\n\n\nThis module will act as the application manager. It will present all the\nvarious views of the program and receive user commands. The commands may\ncome either from a menu or a toolbar. The menus and toolbars will be\ndynamic. This means that the choices presented to the user may change\ndepending on the current view.\n\n\nMenu\n\n\nThe program main menu must contain the following:\n\n\nFile\n\n\n\n\nConfiguration\n\n\nNew Appointment\n\n\nExit\n\n\n\n\nView\n\n\n\n\nMonthly\n\n\nWeekly\n\n\nDaily\n\n\n\n\nHelp\n\n\n\n\nHelp Contents\n\n\nAbout\n\n\n\n\nAdditional menu items may be added as needed.\n\n\nToolbar\n\n\nThe toolbar must consist of the following items.\n\n\n\n\n\n\n### Configuration\n\n\n\n\n\n\n### New Appointment\n\n\n\n\n\n\n### Monthly\n\n\n\n\n\n\n### Weekly\n\n\n\n\n\n\n### Daily\n\n\n\n\n\n\n### Help Contents\n\n\n\n\n\n\nImages must be used in the toolbar.\n\n\n\n\n\n\nData Structures\n    ===============\n\n\n\n\nDBMS Settings\n    -------------\n\n\n\n\n\n\n\n\nStored in a properties file\n\n\n\n\n\n\nThe URL of the MySQL database\n\n\n\n\n\n\nThe database name\n\n\n\n\n\n\nThe port of the MySQL database (default 3306)\n\n\n\n\n\n\nThe user name for the MySQL database\n\n\n\n\n\n\nThe password for the MySQL database\n\n\n\n\nSMTP Settings\n    -------------\n\n\n\n\n\n\n\n\nStored in the DBMS\n\n\n\n\n\n\nThe user\u2019s name\n\n\n\n\n\n\nThe user\u2019s email address which is also the log in name for Gmail\n\n\n\n\n\n\nThe user\u2019s Gmail password\n\n\n\n\n\n\nThe URL of the SMTP server\n\n\n\n\n\n\nThe SMTP port number (default 465)\n\n\n\n\nAppointment Group Record\n    ------------------------\n\n\n\n\n\n\n\n\nStored in the DBMS\n\n\n\n\n\n\nGroup Number \u2013 int\n\n\n\n\n\n\nGroup Name \u2013 String\n\n\n\n\n\n\nColour - RGB color specified with an HTML or CSS attribute String\n\n\n\n\nAppointment Record\n    ------------------\n\n\n\n\n\n\n\n\nStored in the DBMS\n\n\n\n\n\n\nTitle - String\n\n\n\n\n\n\nLocation - String\n\n\n\n\n\n\nStart Time - Temporal\n\n\n\n\n\n\nEnd Time - Temporal\n\n\n\n\n\n\nDetails - String\n\n\n\n\n\n\nWhole Day \u2013 boolean\n\n\n\n\n\n\nAppointment Group \u2013 int\n\n\n\n\n\n\nReminder Interval - int\n\n\n\n\n\n\nAlarm Reminder Requested \u2013 Boolean\n\n\n\n\nHelp Records\n    ------------\n\n\n\n\n\n\n\n\nHelp information is text formatted with HTML. Each topic in the help\nlist is matched to a specific HTML file.", 
+            "title": "Jam specifications"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#contents", 
+            "text": "1 Introduction 1  1.1 System Overview 1  1.2 Design Map 1  1.3 Definitions and Acronyms 1  1.4 Gmail Requirements 1  2 Considerations 2  2.1 Assumptions 2  2.2 Constraints 2  2.3 System Environment 2  2.4 Repository and Naming 2  2.4.1 GitLab Account Name 2  2.4.2 Java Project Name 3  2.4.3 GitLab Repository Name 3  3 High Level Design 4  3.1 Configuration Module 4  3.2 Database Module 4  3.3 Appointment Module 4  3.4 Reminder Module 4  3.5 Help Module 4  3.6 Master GUI Module 4  4 Low Level Design 5  4.1 Configuration Module 5  4.1.1 Database 5  4.1.2 Email 5  4.1.3 Appointment Group 5  4.2 Database Module 5  4.2.1 Email 5  4.2.2 Appointment Group 6  4.2.3 Appointments 6  4.3 Appointment Module 6  4.3.1 Monthly View 6  4.3.2 Weekly View 6  4.3.3 Daily View 6  4.3.4 Appointment Dialog 6  4.3.5 Search Dialog 6  4.4 Reminder Module 7  4.4.1 Timers 7  4.5 Help Module 7  4.6 Master GUI Module 7  4.6.1 Menu 7  File 7  View 7  Help 7  4.6.2 Toolbar 8  5 Data Structures 9  5.1 DBMS Settings 9  5.2 SMTP Settings 9  5.3 Appointment Group Record 9  5.4 Appointment Record 10  5.5 Help Records 10", 
+            "title": "Contents"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#introduction", 
+            "text": "The purpose of this project is to develop your individual skills as a\nJava application developer. The application described in this document\nis designed to have you apply what you have already learned in the\nComputer Science Technology Program and what you are continuing to learn\nthis semester. This is an individual student project in which you will\nwork alone.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#system-overview", 
+            "text": "The program that is\ndescribed in this document is called the Java Agenda Manager or JAM for\nshort. Its use case is to provide an interactive application in which\nappointments can be stored and reviewed along with reminders of upcoming\nevents. It will be written in the Java language and it is meant to be\nportable across all platforms that support Java", 
+            "title": "System Overview"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#design-map", 
+            "text": "Within this document you will find the features, specifications, and\ndesign of the JAM. The final product that you develop is required\nrespect this document. While you may add additional features, you are\nexpected to deliver the feature set described here. The following\nsections of this document will describe the features, organization and\nGUI design of the system.", 
+            "title": "Design Map"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#definitions-and-acronyms", 
+            "text": "Appointment   An event that the user of the program wishes to record and then be\nreminded of prior to its scheduled time.   Monthly Calendar   The presentation of all the days in each month with an ordered list of\nany appointments presented for the specific day.   Weekly Calendar   The presentation of the days in each week that shows the time\nintervals for the day and displays appointments at their specific day\nand time.   Daily Calendar   The presentation of a single day that shows the time intervals for the\nday and displays appointments at their specific time.   Reminder   A visual and audible alarm generated by the program to remind the user\nof an upcoming appointment. In addition, an email is sent to the user\nas a further reminder.   Appointment Group   Appointments can be grouped. A group displays a background color in\nthe display.", 
+            "title": "Definitions and Acronyms"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#gmail-requirements", 
+            "text": "You will need to create one Gmail account. This is the account thru\nwhich you will be sending reminders.    Considerations\n    ==============   Assumptions\n    ---------------------------------------------------------------------------------------------------------     The program will be written using the standard features of the Java\nlanguage. Only third party open source libraries approved by your\ninstructor may be used. JUnit testing must be employed for all JDBC code\nyou write.", 
+            "title": "Gmail Requirements"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#constraints", 
+            "text": "The primary constraint is\nthat the system must be completed by the end of week eight. You must\nlook for simplicity rather than complexity. Features not explicitly in\nthis document and not mentioned in class should be avoided unless they\nare recognized as critical to the operation of the program. Such changes\nmust be submitted to your instructor for approval.", 
+            "title": "Constraints"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#system-environment", 
+            "text": "The programming language will be Java\nversion 1.8 and the GUI will be JavaFX. You may use NetBeans or Eclipse\nfor your IDE. NetBeans is preferred.  The JAM will depend on an external DBMS for its appointment and contact\nstore. The DBMS will be MySQL.  The JAM is not dependent on any specific operating system. It should be\nable to run on any computer that supports Java. To be able to use the\nWaldo2 database server the computer must be connected to the Internet.", 
+            "title": "System Environment"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#repository-and-naming", 
+            "text": "Projects must be stored in a Git repository. You are required to use a\nprivate repository on GitLab (gitlab.com). GitLab provides any developer\nwith a private repository. When you create your repository you must\ngrant the GitLab user \u201comniprof\u201d developer status. You may not use any\nother repository in this course. The naming rules are mandatory.", 
+            "title": "Repository and Naming"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#gitlab-account-name", 
+            "text": "Your GitLab account must be named  JAM_Student Name . Use your name\nas it appears on college records. For example, if your name is Betty\nSmith then you must create an account named:  JAM_BettySmith  You may leave out any middle names.", 
+            "title": "GitLab Account Name"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#java-project-name", 
+            "text": "When you create your project in the IDE it must be named  JAM_Student\nID_Version . For example:  JAM_9999999_1  If you must create a new project, for whatever reason, then use the same\nname with a different version number:  JAM_9999999_2", 
+            "title": "Java Project Name"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#gitlab-repository-name", 
+            "text": "The repository that you create for your projects must have the same name\nas your Java project in the IDE. This means that when I need to retrieve\nyour code from GitLab the URL will look like:  https://gitlab.com/JAM _BettySmith/JAM_9999999_1", 
+            "title": "GitLab Repository Name"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#high-level-design", 
+            "text": "===============================================================================================================  The overall design of the program will consist of modules that manage\nthe different features and functions of the program.", 
+            "title": "High Level Design"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#configuration-module", 
+            "text": "This module is responsible for recording and storing information that\naffects the operation of the program. There will be GUI components in\nthis module.", 
+            "title": "Configuration Module"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#database-module", 
+            "text": "This module is responsible for interacting with the DBMS on behalf of\nall other modules. It will provide specific services to meet the needs\nof other modules. There will not be any GUI components in this module.  Unit testing of this module is required.", 
+            "title": "Database Module"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#appointment-module", 
+            "text": "This module is responsible for the user interface for managing and\ndisplaying appointments. There will be GUI components in this module.", 
+            "title": "Appointment Module"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#reminder-module", 
+            "text": "This module is responsible for generating alarms prior to an\nappointment. There will not be any GUI components in this module.", 
+            "title": "Reminder Module"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#help-module", 
+            "text": "This module is responsible for displaying help screens. There will be\nGUI components in this module.", 
+            "title": "Help Module"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#master-gui-module", 
+            "text": "This module is responsible for the main application window, menus, and\ntoolbars. There will be GUI components in this module.    Low Level Design\n    ================   Configuration Module\n    --------------------     This module will handle the data that configures the program. There are\nthree categories of configuration data. These are database, email and\nappointment group. Each category will require a GUI interface for input\nand editing.  When the program is run for the very first time this module executes\nautomatically. This module can be accessed by the user at any time to\nmake changes to the configuration.", 
+            "title": "Master GUI Module"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#database", 
+            "text": "The program must have a MySQL database account ready to use. You can\ncreate a local account on your computer or use an account on a\ndepartment server. This information will be stored in a properties file\nusing the Properties API in Java. Properties files are plain text files.\nSee section 5.1 for the data that must be stored. You will need a popup\ndialog to enter or edit this data.", 
+            "title": "Database"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#email", 
+            "text": "The program, when running, will send an email to the program\u2019s user at a\npreset interval before an appointment. You will require an email account\non Gmail for this purpose. The necessary information will be stored in a\ntable in the database. You will need a popup dialog to enter or edit\nthis data.", 
+            "title": "Email"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#appointment-group", 
+            "text": "An appointment group supports the concept of grouping appointments such\nas work appointments and personal appointments. The group determines the\nbackground colour of an appointment in the display. You must have five\ndefault groups with colors already assigned to them. You will need a\npopup dialog to enter or edit this data.", 
+            "title": "Appointment Group"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#database-module_1", 
+            "text": "This module will manage the records for all modules. There should be a\nclass for each data table. It will create the required tables for the\ndatabase the first time the program is run. Then it will add or retrieve\nrecords based on requests from the other modules. Each of these modules\nmust have unit tests that demonstrate that the code functions as\nrequired.", 
+            "title": "Database Module"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#email_1", 
+            "text": "This module will be responsible for retrieving, inserting, updating or\ndeleting records for the Email configuration.", 
+            "title": "Email"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#appointment-group_1", 
+            "text": "This module will be responsible for retrieving, inserting, updating or\ndeleting records for the Appointment Group configuration.", 
+            "title": "Appointment Group"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#appointments", 
+            "text": "This module will be responsible for retrieving, inserting, updating or\ndeleting appointment records. There will need to be several retrieval\nroutines to match the various views. In addition, several search\nroutines will be required based on various criteria.", 
+            "title": "Appointments"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#appointment-module_1", 
+            "text": "This module will be responsible for the user interface for inputting\nappointments and displaying appointments. It will consist of the\nfollowing:", 
+            "title": "Appointment Module"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#monthly-view", 
+            "text": "This will display a full month in a grid 6 rows by 7 columns. Titles of\nappointment will appear as a list in the day. In this display you will\nbe able to change months. Double clicking on a given day in a month will\nbring up the Daily View.", 
+            "title": "Monthly View"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#weekly-view", 
+            "text": "This will display a full week. It should consist of 7 daily views.\nDouble clicking on a given day in a week will bring up the Daily View.", 
+            "title": "Weekly View"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#daily-view", 
+            "text": "The daily view consists of a grid 2 x 48. The first column is the time\nand the second column will hold the appointment. There are 48 rows to\nrepresent every half hour in a day. Double clicking on anywhere in this\nview will bring up the Appointment Dialog. If the double click is on an\nexisting appointment then this is what will appear in the dialog.\nOtherwise a dialog without an appointment will appear.", 
+            "title": "Daily View"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#appointment-dialog", 
+            "text": "This is a popup dialog that supports adding, editing or deleting an\nappointment. It will contain fields from the appointment data structure.\nThere needs to be a button to save an appointment and a button to delete\nan appointment. If the dialog contains an existing appointment, then\nsave will update the record otherwise a new record will be created.", 
+            "title": "Appointment Dialog"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#search-dialog", 
+            "text": "This is a popup dialog that supports searching for appointments by their\ntitle or description. The results of this search will be a list of\nmatching appointments. Double clicking on an appointment on this list\nwill display the Appointment Dialog with the selected appointment.", 
+            "title": "Search Dialog"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#reminder-module_1", 
+            "text": "This module will use timer events to generate alarms and reminders.\nWhenever the program is executed it will retrieve all future events and\nstart timer processes. When a timer process comes due the module will\ngenerate a visual and audible alarm.", 
+            "title": "Reminder Module"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#timers", 
+            "text": "When the program is loaded, this module will retrieve all the current\nday\u2019s appointments and create a timer event or thread for it. The\nthread, when its time is reached, will generate an audible and visual\nreminder as well as sending an email. Appointment records contain the\ninterval between an appointment and when a reminder must be issued.  A special event is created to go off at midnight. If the program remains\nrunning continuously then at midnight it will retrieve the next day\u2019s\nappointments.", 
+            "title": "Timers"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#help-module_1", 
+            "text": "This module will present the user with a list of the different tasks\nthat the program performs. Selecting a task will lead to a description\nof what this task is and how it is used. These descriptions will be\nformatted using HTML and stored in individual files in the project.", 
+            "title": "Help Module"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#master-gui-module_1", 
+            "text": "This module will act as the application manager. It will present all the\nvarious views of the program and receive user commands. The commands may\ncome either from a menu or a toolbar. The menus and toolbars will be\ndynamic. This means that the choices presented to the user may change\ndepending on the current view.", 
+            "title": "Master GUI Module"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#menu", 
+            "text": "The program main menu must contain the following:", 
+            "title": "Menu"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#file", 
+            "text": "Configuration  New Appointment  Exit", 
+            "title": "File"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#view", 
+            "text": "Monthly  Weekly  Daily", 
+            "title": "View"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#help", 
+            "text": "Help Contents  About   Additional menu items may be added as needed.", 
+            "title": "Help"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#toolbar", 
+            "text": "The toolbar must consist of the following items.", 
+            "title": "Toolbar"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#configuration", 
+            "text": "", 
+            "title": "### Configuration"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#new-appointment", 
+            "text": "", 
+            "title": "### New Appointment"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#monthly", 
+            "text": "", 
+            "title": "### Monthly"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#weekly", 
+            "text": "", 
+            "title": "### Weekly"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#daily", 
+            "text": "", 
+            "title": "### Daily"
+        }, 
+        {
+            "location": "/Software-Project/assignments/jam-specifications/#help-contents", 
+            "text": "Images must be used in the toolbar.    Data Structures\n    ===============   DBMS Settings\n    -------------     Stored in a properties file    The URL of the MySQL database    The database name    The port of the MySQL database (default 3306)    The user name for the MySQL database    The password for the MySQL database   SMTP Settings\n    -------------     Stored in the DBMS    The user\u2019s name    The user\u2019s email address which is also the log in name for Gmail    The user\u2019s Gmail password    The URL of the SMTP server    The SMTP port number (default 465)   Appointment Group Record\n    ------------------------     Stored in the DBMS    Group Number \u2013 int    Group Name \u2013 String    Colour - RGB color specified with an HTML or CSS attribute String   Appointment Record\n    ------------------     Stored in the DBMS    Title - String    Location - String    Start Time - Temporal    End Time - Temporal    Details - String    Whole Day \u2013 boolean    Appointment Group \u2013 int    Reminder Interval - int    Alarm Reminder Requested \u2013 Boolean   Help Records\n    ------------     Help information is text formatted with HTML. Each topic in the help\nlist is matched to a specific HTML file.", 
+            "title": "### Help Contents"
         }, 
         {
             "location": "/Software-Project/labs/warmup-dice-game/", 

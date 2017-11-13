@@ -4,7 +4,7 @@ You have a few options. **Make sure you have permissions** with the Wiki repo he
 1. Add `.md` files to `./docs` (on Github or locally)
 2. Add the path to `pages` in `./mkdocs.yml`
 3. Make a pull request
-4. Sempai [@sirmerr](https://github.com/sirMerr) or others will deploy it
+4. Senpai [@sirmerr](https://github.com/sirMerr) or others will deploy it
 
 ## Deploy it yourself
 

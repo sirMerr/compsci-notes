@@ -22,6 +22,7 @@ On first launch the app will have the user input their `name`, an `email address
 - [ ] Maintain state on rotation and wherever necessary for all UIs
 
 ## Grading  
+
 !!!note
     Same as the PHP side of the project
 

@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "CompSci HQ \nfor all things confusing\n\n\nIntroduction\n\n\nWelcome to the wiki! \ud83c\udf89\n\n\nThese are my notes for Semester 5 of Dawson's Computer Science program. It consists, among other things, of PHP, Java, Android and Git.\n\n\nThis is a work in progress! To contribute or any other issues, ask \n@sirMerr", 
+            "text": "CompSci HQ \nfor all things confusing\n\n\nIntroduction\n\n\nWelcome to the wiki! \ud83c\udf89\n\n\nThese are my notes for Semester 5 of Dawson's Computer Science program. It consists, among other things, of PHP, Java, Android and Git.\n\n\nThis is a work in progress! To contribute or any other issues, ask \n@sirMerr\n\n\nUnfortunately, many of the class notes use powerpoint, with many images, which are both a pain to transfer into Markdown since I have to upload images to a cdn, go through each pane to format the notes and delimiter the headers. Additionally, I may be too busy to keep the notes up to date. As so, you should rely on your own notes primarily (contributions always appreciated!)", 
             "title": "Home"
         }, 
         {
@@ -12,7 +12,7 @@
         }, 
         {
             "location": "/#introduction", 
-            "text": "Welcome to the wiki! \ud83c\udf89  These are my notes for Semester 5 of Dawson's Computer Science program. It consists, among other things, of PHP, Java, Android and Git.  This is a work in progress! To contribute or any other issues, ask  @sirMerr", 
+            "text": "Welcome to the wiki! \ud83c\udf89  These are my notes for Semester 5 of Dawson's Computer Science program. It consists, among other things, of PHP, Java, Android and Git.  This is a work in progress! To contribute or any other issues, ask  @sirMerr  Unfortunately, many of the class notes use powerpoint, with many images, which are both a pain to transfer into Markdown since I have to upload images to a cdn, go through each pane to format the notes and delimiter the headers. Additionally, I may be too busy to keep the notes up to date. As so, you should rely on your own notes primarily (contributions always appreciated!)", 
             "title": "Introduction"
         }, 
         {
@@ -77,8 +77,13 @@
         }, 
         {
             "location": "/Data-Communications/introduction/", 
-            "text": "DTE \n DCE\n\n\n\n\ndata terminal equipment\n\n\ndata communications equipment\n\n\n\n\nNetwork Utilities\n\n\nProtocol and Pinging\n\n\nSet of rules governing sending and receiving packets\n\n\nPing\n\n\nPing can be used for diagnosing if a website is down or for self diagnosis.\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n$ ping \n127\n.0.0.1\n$ ping localhost\n\n// Response\n\n64\n bytes from \n127\n.0.0.1: \nicmp_seq\n=\n0\n \nttl\n=\n64\n \ntime\n=\n0\n.053 ms\n\n64\n bytes from \n127\n.0.0.1: \nicmp_seq\n=\n1\n \nttl\n=\n64\n \ntime\n=\n0\n.044 ms\n^C\n--- localhost ping statistics ---\n\n2\n packets transmitted, \n2\n packets received, \n0\n.0% packet loss\nround-trip min/avg/max/stddev \n=\n \n0\n.044/0.049/0.053/0.004 ms\n\n\n\n\n\n\ntimeout\n\n\nMore time elapsed between an event and a response event than expected\n\n\n127.0.0.1 and localhost\n\n\nThis refers to yourself. So if you ping that, you're pinging yourself. \n\n\nFQDN\n\n\nFully Qualified Domain Name \n \nwww\n like from \nwww.microsoft.com\n\n* It's not 1 machine for 1 FQDN\n* It's possible to have more than 1 FQDN on a machine\n* Opposite also possible, common for big sites\n\n\nDNS\n\n\n\n\nImportant service that serves as a resolver. \n\n\nYou take a FQDN, give it to DNS to resolve and it gives an ip number. \n\n\nYou can do the inverse too.\n\n\nIP# = DNS(FQDN)\n\n\n\n\ntracert\n\n\nstrace route\n\n\nShows router path from sender to receiver \n looked pinging with increasing TTLs (time to live)\n\n\npathping\n\n\nipconfig\n\n\n\n\nTells you a lot about yourself. \n\n\n/all\n is all information\n\n\n/displaydns\n cacheing\n\n\n/flushdns\n casheing\n\n\n/release\n -- gave up DHCP lease\n\n\nDynamic Host Configuration Protocol\n\n\n\n\n\n\n/reverse\n\n\n\n\nnetstat\n\n\n\n\n-e\n\n\n-a\n\n\nInfo on TCP activity\n\n\nTCP is an important protocol\n\n\n\n\n\n\nAdvanced\n\n\n\n\nroute print\n\n\n1\n2\nrouting\ntable info\n\n\n\n\n\n\nIdentifiers\n\n\n\n\n\n\n\n\nLevels\n\n\nIdentifiers\n\n\n\n\n\n\n\n\n\n\n7\n\n\n6\n\n\n\n\n\n\n6\n\n\nFQDN\n\n\n\n\n\n\n5\n\n\n\n\n\n\n\n\n\n\n^ dns v\n\n\n\n\n\n\n4\n\n\nport #\n\n\n\n\n\n\n3\n\n\nIP #\n\n\n\n\n\n\n\n\n^ arp v\n\n\n\n\n\n\n2\n\n\n\n\n\n\n\n\n1\n\n\nMAC address", 
+            "text": "Important\n\n\nThere are no notes but class notes, so this will not be updated as much. All assignments will be up to date though.\n\n\nDTE \n DCE\n\n\n\n\ndata terminal equipment\n\n\ndata communications equipment\n\n\n\n\nNetwork Utilities\n\n\nProtocol and Pinging\n\n\nSet of rules governing sending and receiving packets\n\n\nPing\n\n\nPing can be used for diagnosing if a website is down or for self diagnosis.\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n$ ping \n127\n.0.0.1\n$ ping localhost\n\n// Response\n\n64\n bytes from \n127\n.0.0.1: \nicmp_seq\n=\n0\n \nttl\n=\n64\n \ntime\n=\n0\n.053 ms\n\n64\n bytes from \n127\n.0.0.1: \nicmp_seq\n=\n1\n \nttl\n=\n64\n \ntime\n=\n0\n.044 ms\n^C\n--- localhost ping statistics ---\n\n2\n packets transmitted, \n2\n packets received, \n0\n.0% packet loss\nround-trip min/avg/max/stddev \n=\n \n0\n.044/0.049/0.053/0.004 ms\n\n\n\n\n\n\ntimeout\n\n\nMore time elapsed between an event and a response event than expected\n\n\n127.0.0.1 and localhost\n\n\nThis refers to yourself. So if you ping that, you're pinging yourself. \n\n\nFQDN\n\n\nFully Qualified Domain Name \n \nwww\n like from \nwww.microsoft.com\n\n* It's not 1 machine for 1 FQDN\n* It's possible to have more than 1 FQDN on a machine\n* Opposite also possible, common for big sites\n\n\nDNS\n\n\n\n\nImportant service that serves as a resolver. \n\n\nYou take a FQDN, give it to DNS to resolve and it gives an ip number. \n\n\nYou can do the inverse too.\n\n\nIP# = DNS(FQDN)\n\n\n\n\ntracert\n\n\nstrace route\n\n\nShows router path from sender to receiver \n looked pinging with increasing TTLs (time to live)\n\n\npathping\n\n\nipconfig\n\n\n\n\nTells you a lot about yourself. \n\n\n/all\n is all information\n\n\n/displaydns\n cacheing\n\n\n/flushdns\n casheing\n\n\n/release\n -- gave up DHCP lease\n\n\nDynamic Host Configuration Protocol\n\n\n\n\n\n\n/reverse\n\n\n\n\nnetstat\n\n\n\n\n-e\n\n\n-a\n\n\nInfo on TCP activity\n\n\nTCP is an important protocol\n\n\n\n\n\n\nAdvanced\n\n\n\n\nroute print\n\n\n1\n2\nrouting\ntable info\n\n\n\n\n\n\nIdentifiers\n\n\n\n\n\n\n\n\nLevels\n\n\nIdentifiers\n\n\n\n\n\n\n\n\n\n\n7\n\n\n6\n\n\n\n\n\n\n6\n\n\nFQDN\n\n\n\n\n\n\n5\n\n\n\n\n\n\n\n\n\n\n^ dns v\n\n\n\n\n\n\n4\n\n\nport #\n\n\n\n\n\n\n3\n\n\nIP #\n\n\n\n\n\n\n\n\n^ arp v\n\n\n\n\n\n\n2\n\n\n\n\n\n\n\n\n1\n\n\nMAC address", 
             "title": "Introduction"
+        }, 
+        {
+            "location": "/Data-Communications/introduction/#important", 
+            "text": "There are no notes but class notes, so this will not be updated as much. All assignments will be up to date though.", 
+            "title": "Important"
         }, 
         {
             "location": "/Data-Communications/introduction/#dte-dce", 
@@ -2012,8 +2017,13 @@
         }, 
         {
             "location": "/Mobile-Development/introduction/", 
-            "text": "", 
+            "text": "Important\n\n\nThis will not be updated fairly often as the notes are in powerpoint with a lot of images which makes them a pain to markdown. \ud83d\ude1e", 
             "title": "Introduction"
+        }, 
+        {
+            "location": "/Mobile-Development/introduction/#important", 
+            "text": "This will not be updated fairly often as the notes are in powerpoint with a lot of images which makes them a pain to markdown. \ud83d\ude1e", 
+            "title": "Important"
         }, 
         {
             "location": "/Mobile-Development/assignments/assignment1/", 
@@ -2242,8 +2252,18 @@
         }, 
         {
             "location": "/Software-Project/introduction/", 
-            "text": "Welcome to the Software Development Project. In this first week we will discuss the course in general, the project and the development tools that we will use. You should have all reviewed the project specification I sent out last week.\n\n\nIn the lab you will create the DDL statements for the database. As MySQL is slightly different from Oracle in its syntax I have a file in this week's  download with a set of DDL statements for a different problem. We will discuss how all of this works in the lab.\n\n\nFor homework, you will code a common dice game played in casinos in Java. The instructions for the assignment are in another file in this week's download.\n\n\nTechnologies required\n\n\nYou can use what you see fit in terms of IDE/tools\n\n\n\n\nJava 1.8\n\n\nJavaFX 2.2\n\n\nMySQL 5.7\n\n\nJDBC\n\n\nJUnit 4\n\n\nJavaMail / Jodd\n\n\nMaven\n\n\nGit\n\n\nGitlab    \n\n\n\n\n\n\nDanger\n\n\nKen won't let us use GitHub :c\n\n\n\n\nSteps to a project\n\n\n\n\nRead the Specs\n\n\nCreate the Database and Tables\n\n\nWrite the Java JDBC CRUD code while writing unit tests after every method is coded\n\n\nCreate\n\n\nRead\n\n\nUpdate\n\n\nDelete\n\n\n\n\n\n\n\n\nWeek One Lab\n\n\nWrite the SQL cripts to create the necessaru tables in MySQL and then email the scripts to \n by the end of the lab period\n\n\nImportant\n\n\nYou should have 50 account thingies per month\n\n\nSetting Up MySQL\n\n\n\n\nInstall MySQL Community edition\n\n\n\n\n1\n$ mysql -h\n\n\n\n\n\n\nEmail Requirements for JAM\n\n\n\n\nSearch for all appointments that start at the interval from the present time\n\n\nIf any are found, prepare an email for each appointment\n\n\nSend the email", 
+            "text": "Important\n\n\nThese notes are powerpoint with many images, making it difficult to transfer into markdown, so updates will be less frequent here. Assignments should be up to date though!\n\n\nOverview\n\n\nWelcome to the Software Development Project. In this first week we will discuss the course in general, the project and the development tools that we will use. You should have all reviewed the project specification I sent out last week.\n\n\nIn the lab you will create the DDL statements for the database. As MySQL is slightly different from Oracle in its syntax I have a file in this week's  download with a set of DDL statements for a different problem. We will discuss how all of this works in the lab.\n\n\nFor homework, you will code a common dice game played in casinos in Java. The instructions for the assignment are in another file in this week's download.\n\n\nTechnologies required\n\n\nYou can use what you see fit in terms of IDE/tools\n\n\n\n\nJava 1.8\n\n\nJavaFX 2.2\n\n\nMySQL 5.7\n\n\nJDBC\n\n\nJUnit 4\n\n\nJavaMail / Jodd\n\n\nMaven\n\n\nGit\n\n\nGitlab    \n\n\n\n\n\n\nDanger\n\n\nKen won't let us use GitHub :c\n\n\n\n\nSteps to a project\n\n\n\n\nRead the Specs\n\n\nCreate the Database and Tables\n\n\nWrite the Java JDBC CRUD code while writing unit tests after every method is coded\n\n\nCreate\n\n\nRead\n\n\nUpdate\n\n\nDelete\n\n\n\n\n\n\n\n\nWeek One Lab\n\n\nWrite the SQL cripts to create the necessaru tables in MySQL and then email the scripts to \n by the end of the lab period\n\n\nSetting Up MySQL\n\n\n\n\nInstall MySQL Community edition\n\n\n\n\n1\n$ mysql -h\n\n\n\n\n\n\nEmail Requirements for JAM\n\n\n\n\nSearch for all appointments that start at the interval from the present time\n\n\nIf any are found, prepare an email for each appointment\n\n\nSend the email", 
             "title": "Introduction"
+        }, 
+        {
+            "location": "/Software-Project/introduction/#important", 
+            "text": "These notes are powerpoint with many images, making it difficult to transfer into markdown, so updates will be less frequent here. Assignments should be up to date though!", 
+            "title": "Important"
+        }, 
+        {
+            "location": "/Software-Project/introduction/#overview", 
+            "text": "Welcome to the Software Development Project. In this first week we will discuss the course in general, the project and the development tools that we will use. You should have all reviewed the project specification I sent out last week.  In the lab you will create the DDL statements for the database. As MySQL is slightly different from Oracle in its syntax I have a file in this week's  download with a set of DDL statements for a different problem. We will discuss how all of this works in the lab.  For homework, you will code a common dice game played in casinos in Java. The instructions for the assignment are in another file in this week's download.", 
+            "title": "Overview"
         }, 
         {
             "location": "/Software-Project/introduction/#technologies-required", 
@@ -2259,11 +2279,6 @@
             "location": "/Software-Project/introduction/#week-one-lab", 
             "text": "Write the SQL cripts to create the necessaru tables in MySQL and then email the scripts to   by the end of the lab period", 
             "title": "Week One Lab"
-        }, 
-        {
-            "location": "/Software-Project/introduction/#important", 
-            "text": "You should have 50 account thingies per month", 
-            "title": "Important"
         }, 
         {
             "location": "/Software-Project/introduction/#setting-up-mysql", 

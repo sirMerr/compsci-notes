@@ -1213,17 +1213,17 @@ storage folder as well as .env. There are reasons for this:</p>
     GitHub repo</p>
 <p>e.  other teammates will git clone – this will set the remote called
     origin the the github repo automatically</p>
-<p>f.  other teammates copy the .env.example file and rename if .env.</p>
+<p>f.  other teammates copy the <code>.env.example</code> file and rename if <code>.env</code>.</p>
 <p>g.  other teammates run composer update to install all the dependancies</p>
 <h2 id="github-vs-heroku">GitHub vs Heroku<a class="headerlink" href="#github-vs-heroku" title="Permanent link">&para;</a></h2>
 <p>After step 1, you will all have your remote called origin referring
 to GitHub. All we need to do is add a second remote that referrers
 to heroku.</p>
 <p>For one team mate:</p>
-<p>heroku create nameofapp will create the team’s heroku app, and also
-sets a git remote called heroku.</p>
-<p>All other team mates: git remote add heroku
-    <a href="https://urlofheroku.git">https://urlofheroku.git</a></p>
+<p><code>heroku create &lt;nameofapp&gt;</code> will create the team’s heroku app, and also
+sets a git remote called <code>heroku</code>.</p>
+<p>All other team mates: <code>git remote add heroku
+    &lt;https://urlofheroku.git&gt;</code></p>
 <p>From this point all, you will all have a remote called origin
 referring to GitHub, and a remote called heroku referring to Heroku.</p>
 <p>(git allows you to have a remote refer to 2 places so both are

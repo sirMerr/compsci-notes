@@ -98,6 +98,7 @@ https://developer.android.com/guide/topics/providers/calendar-provider.html
 
 ## Academic Calendar
 Load the url for the academic calendar in a `WebView`.
+
 - [ ] By default load the current term (fall 2017) have 
 - [ ] widgets to allow for entering the year and a  radio button for fall/winter and a Button.  
 - [ ] Change the widget in the `WebView`  when the button is hit.

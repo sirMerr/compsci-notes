@@ -1,3 +1,6 @@
+## Important
+There are no notes but class notes, so this will not be updated as much. All assignments will be up to date though.
+
 ## DTE & DCE
 * data terminal equipment
 * data communications equipment

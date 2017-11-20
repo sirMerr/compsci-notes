@@ -1,3 +1,7 @@
+## Important
+These notes are powerpoint with many images, making it difficult to transfer into markdown, so updates will be less frequent here. Assignments should be up to date though!
+
+## Overview
 Welcome to the Software Development Project. In this first week we will discuss the course in general, the project and the development tools that we will use. You should have all reviewed the project specification I sent out last week.
 
 In the lab you will create the DDL statements for the database. As MySQL is slightly different from Oracle in its syntax I have a file in this week's  download with a set of DDL statements for a different problem. We will discuss how all of this works in the lab.
@@ -32,9 +36,6 @@ You can use what you see fit in terms of IDE/tools
 ## Week One Lab
 Write the SQL cripts to create the necessaru tables in MySQL and then email the scripts to kfogel@dawsoncollege.qc.ca by the end of the lab period
 
-## Important
-You should have 50 account thingies per month
-
 ## Setting Up MySQL
 
 * Install MySQL Community edition
@@ -42,8 +43,6 @@ You should have 50 account thingies per month
 ```bash
 $ mysql -h
 ```
-
-
 
 ## Email Requirements for JAM
 

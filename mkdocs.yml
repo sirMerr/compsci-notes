@@ -12,8 +12,8 @@ theme: 'material'
 # Options
 extra:
   palette:
-    primary: 'blue-grey'
-    accent: 'blue'
+    primary: 'purple'
+    accent: 'indigo'
 
 # Extensions
 markdown_extensions:

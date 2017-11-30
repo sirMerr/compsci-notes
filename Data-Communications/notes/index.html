@@ -1,0 +1,3768 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Notes for Semester 5 of Computer Science at Dawson">
+      
+      
+        <link rel="canonical" href="https://sirmerr.github.io/compsci-notes/Data-Communications/notes/">
+      
+      
+        <meta name="author" content="sirMerr">
+      
+      
+        <link rel="shortcut icon" href="../../assets/images/favicon.ico">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.4">
+    
+    
+      
+        <title>Notes - CompSci HQ</title>
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr-1df76c4e58.js"></script>
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application-769c285a91.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-02c2a4388f.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="purple" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="https://sirmerr.github.io/compsci-notes/" title="CompSci HQ" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  Data Communications
+                </span>
+              
+            
+            Notes
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/sirMerr/compsci-notes" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      sirmerr/compsci-notes
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    CompSci HQ
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/sirMerr/compsci-notes" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      sirmerr/compsci-notes
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../how-to-document/" title="How to document" class="md-nav__link">
+      How to document
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Data Communications
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Data Communications
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Notes
+      </label>
+    
+    <a href="./" title="Notes" class="md-nav__link md-nav__link--active">
+      Notes
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#communication" title="Communication" class="md-nav__link">
+    Communication
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simplex" title="Simplex" class="md-nav__link">
+    Simplex
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#half-duplex-hdx" title="Half Duplex (HDX)" class="md-nav__link">
+    Half Duplex (HDX)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-duplex-fdx" title="Full Duplex (FDX)" class="md-nav__link">
+    Full Duplex (FDX)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#telecomm-and-datacomm" title="Telecomm and Datacomm" class="md-nav__link">
+    Telecomm and Datacomm
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#telecomm-tc" title="Telecomm (TC)" class="md-nav__link">
+    Telecomm (TC)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datacomm-dc" title="Datacomm (DC)" class="md-nav__link">
+    Datacomm (DC)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iso-osi-model-architecture" title="ISO / OSI model / architecture" class="md-nav__link">
+    ISO / OSI model / architecture
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#packet" title="Packet" class="md-nav__link">
+    Packet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dc-utilities" title="DC Utilities" class="md-nav__link">
+    DC Utilities
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ping" title="ping" class="md-nav__link">
+    ping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tracert-traceroute-linux" title="tracert / traceroute (Linux)" class="md-nav__link">
+    tracert / traceroute (Linux)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ttl" title="TTL" class="md-nav__link">
+    TTL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pathping" title="pathping" class="md-nav__link">
+    pathping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ipconfigifconfig-or-ip-linux" title="ipconfig/ifconfig or ip (Linux)" class="md-nav__link">
+    ipconfig/ifconfig or ip (Linux)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#netstat" title="netstat" class="md-nav__link">
+    netstat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#route" title="route" class="md-nav__link">
+    route
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arp" title="arp" class="md-nav__link">
+    arp
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firewalls" title="Firewalls" class="md-nav__link">
+    Firewalls
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dns" title="DNS" class="md-nav__link">
+    DNS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#standards" title="Standards" class="md-nav__link">
+    Standards
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standards-bodies" title="Standards Bodies" class="md-nav__link">
+    Standards Bodies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#networks" title="Networks" class="md-nav__link">
+    Networks
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#network-types" title="Network types" class="md-nav__link">
+    Network types
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pan" title="PAN" class="md-nav__link">
+    PAN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lan" title="LAN" class="md-nav__link">
+    LAN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#man" title="MAN" class="md-nav__link">
+    MAN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wan" title="WAN" class="md-nav__link">
+    WAN
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-metrics" title="Network metrics" class="md-nav__link">
+    Network metrics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types-of-nets" title="Types of Nets" class="md-nav__link">
+    Types of Nets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#protocols" title="Protocols" class="md-nav__link">
+    Protocols
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#internet-protocol" title="Internet Protocol" class="md-nav__link">
+    Internet Protocol
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#domain-names" title="Domain Names" class="md-nav__link">
+    Domain Names
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-concise-guide-to-the-major-internet-bodies" title="A Concise Guide to the Major Internet Bodies" class="md-nav__link">
+    A Concise Guide to the Major Internet Bodies
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lan_1" title="LAN" class="md-nav__link">
+    LAN
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#topology" title="Topology" class="md-nav__link">
+    Topology
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#utp" title="UTP" class="md-nav__link">
+    UTP
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tcp-and-udp" title="TCP and UDP" class="md-nav__link">
+    TCP and UDP
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-messages" title="Types of Messages" class="md-nav__link">
+    Types of Messages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#servers" title="Servers" class="md-nav__link">
+    Servers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#history" title="History" class="md-nav__link">
+    History
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#laws" title="Laws" class="md-nav__link">
+    Laws
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intellectual-property-ip-protection" title="Intellectual property (IP) protection" class="md-nav__link">
+    Intellectual property (IP) protection
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#copyright" title="Copyright" class="md-nav__link">
+    Copyright
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#patent" title="Patent" class="md-nav__link">
+    Patent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trademark" title="Trademark" class="md-nav__link">
+    Trademark
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trade-secret" title="Trade secret" class="md-nav__link">
+    Trade secret
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#telephony" title="Telephony" class="md-nav__link">
+    Telephony
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ethernet" title="Ethernet" class="md-nav__link">
+    Ethernet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#signals" title="Signals" class="md-nav__link">
+    Signals
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#characteristics" title="Characteristics" class="md-nav__link">
+    Characteristics
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frequency" title="Frequency" class="md-nav__link">
+    Frequency
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bandwidth" title="Bandwidth" class="md-nav__link">
+    Bandwidth
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#band" title="Band" class="md-nav__link">
+    Band
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amplitude" title="Amplitude" class="md-nav__link">
+    Amplitude
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase" title="Phase" class="md-nav__link">
+    Phase
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition-1" title="Definition 1" class="md-nav__link">
+    Definition 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definition-2" title="Definition 2" class="md-nav__link">
+    Definition 2
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bandwidth_1" title="Bandwidth" class="md-nav__link">
+    Bandwidth
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modulation" title="Modulation" class="md-nav__link">
+    Modulation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nyquists-theorem" title="Nyquist's Theorem" class="md-nav__link">
+    Nyquist's Theorem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shannons-law" title="Shannon's law" class="md-nav__link">
+    Shannon's law
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#last-mile-problem" title="Last mile problem" class="md-nav__link">
+    Last mile problem
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modem" title="Modem" class="md-nav__link">
+    Modem
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#factors-causing-distortion" title="Factors causing distortion" class="md-nav__link">
+    Factors causing distortion
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vpn" title="VPN" class="md-nav__link">
+    VPN
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#physical-media" title="Physical media" class="md-nav__link">
+    Physical media
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definitions" title="Definitions" class="md-nav__link">
+    Definitions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#multiplexxing" title="Multiplexxing" class="md-nav__link">
+    Multiplexxing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mux" title="Mux" class="md-nav__link">
+    Mux
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fdm" title="FDM" class="md-nav__link">
+    FDM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tdm" title="TDM" class="md-nav__link">
+    TDM
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wired" title="Wired" class="md-nav__link">
+    Wired
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wireless" title="Wireless" class="md-nav__link">
+    Wireless
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#switch" title="Switch" class="md-nav__link">
+    Switch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#routers" title="Routers" class="md-nav__link">
+    Routers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service-model" title="Service Model" class="md-nav__link">
+    Service Model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#switches" title="Switches" class="md-nav__link">
+    Switches
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
+    
+    <label class="md-nav__link" for="nav-3-3">
+      Assignments
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        Assignments
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../assignments/assignment1/" title="Assignment1" class="md-nav__link">
+      Assignment1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../assignments/assignment2/" title="Assignment2" class="md-nav__link">
+      Assignment2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../assignments/assignment3/" title="Assignment3" class="md-nav__link">
+      Assignment3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../assignments/program-narative/" title="Program narative" class="md-nav__link">
+      Program narative
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3-5" type="checkbox" id="nav-3-3-5">
+    
+    <label class="md-nav__link" for="nav-3-3-5">
+      Helpers
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-3-5">
+        Helpers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../assignments/helpers/EchoProtocol2/" title="EchoProtocol2" class="md-nav__link">
+      EchoProtocol2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../assignments/helpers/TCPEchoServerThread2/" title="TCPEchoServerThread2" class="md-nav__link">
+      TCPEchoServerThread2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Internet App Dev III
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Internet App Dev III
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/01-Introduction/" title="01 Introduction" class="md-nav__link">
+      01 Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/02-String/" title="02 String" class="md-nav__link">
+      02 String
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/02-Term-definitions/" title="02 Term definitions" class="md-nav__link">
+      02 Term definitions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/03-References/" title="03 References" class="md-nav__link">
+      03 References
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/03-arrays/" title="03 arrays" class="md-nav__link">
+      03 arrays
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/03-constructs/" title="03 constructs" class="md-nav__link">
+      03 constructs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/06-forms/" title="06 forms" class="md-nav__link">
+      06 forms
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/07-functions/" title="07 functions" class="md-nav__link">
+      07 functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/08-cURL_DOMDocumentation/" title="08 cURL DOMDocumentation" class="md-nav__link">
+      08 cURL DOMDocumentation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/09-using_postgres/" title="09 using postgres" class="md-nav__link">
+      09 using postgres
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/10-pagination/" title="10 pagination" class="md-nav__link">
+      10 pagination
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/11-classes/" title="11 classes" class="md-nav__link">
+      11 classes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/__Outline/" title="  Outline" class="md-nav__link">
+        Outline
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/midterm_prep/" title="Midterm prep" class="md-nav__link">
+      Midterm prep
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-15" type="checkbox" id="nav-4-15">
+    
+    <label class="md-nav__link" for="nav-4-15">
+      Assignments
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-15">
+        Assignments
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/assignments/dont-eat-that/" title="Dont eat that" class="md-nav__link">
+      Dont eat that
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/assignments/speed-reader/" title="Speed reader" class="md-nav__link">
+      Speed reader
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-15-3" type="checkbox" id="nav-4-15-3">
+    
+    <label class="md-nav__link" for="nav-4-15-3">
+      Final assignment
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-15-3">
+        Final assignment
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/assignments/final_assignment/GithubHerokuLaravelSetup/" title="GithubHerokuLaravelSetup" class="md-nav__link">
+      GithubHerokuLaravelSetup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/assignments/final_assignment/phase1/" title="Phase1" class="md-nav__link">
+      Phase1
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-16" type="checkbox" id="nav-4-16">
+    
+    <label class="md-nav__link" for="nav-4-16">
+      Labs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-16">
+        Labs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/labs/getting-started/" title="Getting started" class="md-nav__link">
+      Getting started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/labs/lab2/" title="Lab2" class="md-nav__link">
+      Lab2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/labs/lab3/" title="Lab3" class="md-nav__link">
+      Lab3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/labs/lab4/" title="Lab4" class="md-nav__link">
+      Lab4
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/labs/lab5/" title="Lab5" class="md-nav__link">
+      Lab5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/labs/lab6/" title="Lab6" class="md-nav__link">
+      Lab6
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Internet-App-Dev-III/labs/lab7/" title="Lab7" class="md-nav__link">
+      Lab7
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Mobile Development
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Mobile Development
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mobile-Development/07-03-multiple-screens/" title="07 03 multiple screens" class="md-nav__link">
+      07 03 multiple screens
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mobile-Development/19-android-content-providers/" title="19 android content providers" class="md-nav__link">
+      19 android content providers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mobile-Development/introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4">
+    
+    <label class="md-nav__link" for="nav-5-4">
+      Assignments
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-4">
+        Assignments
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mobile-Development/assignments/assignment1/" title="Assignment1" class="md-nav__link">
+      Assignment1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mobile-Development/assignments/assignment2/" title="Assignment2" class="md-nav__link">
+      Assignment2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-4-3" type="checkbox" id="nav-5-4-3">
+    
+    <label class="md-nav__link" for="nav-5-4-3">
+      Final assignment
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-4-3">
+        Final assignment
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mobile-Development/assignments/final-assignment/overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mobile-Development/assignments/final-assignment/phase-1-specs/" title="Phase 1 specs" class="md-nav__link">
+      Phase 1 specs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Mobile-Development/assignments/final-assignment/ui/" title="Ui" class="md-nav__link">
+      Ui
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Software Project
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Software Project
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Software-Project/introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Software-Project/logging/" title="Logging" class="md-nav__link">
+      Logging
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Software-Project/maven/" title="Maven" class="md-nav__link">
+      Maven
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Software-Project/outline/" title="Outline" class="md-nav__link">
+      Outline
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      Assignments
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        Assignments
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Software-Project/assignments/assignment2/" title="Assignment2" class="md-nav__link">
+      Assignment2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Software-Project/assignments/jam-specifications/" title="Jam specifications" class="md-nav__link">
+      Jam specifications
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-6" type="checkbox" id="nav-6-6">
+    
+    <label class="md-nav__link" for="nav-6-6">
+      Labs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-6">
+        Labs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Software-Project/labs/warmup-dice-game/" title="Warmup dice game" class="md-nav__link">
+      Warmup dice game
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#communication" title="Communication" class="md-nav__link">
+    Communication
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simplex" title="Simplex" class="md-nav__link">
+    Simplex
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#half-duplex-hdx" title="Half Duplex (HDX)" class="md-nav__link">
+    Half Duplex (HDX)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-duplex-fdx" title="Full Duplex (FDX)" class="md-nav__link">
+    Full Duplex (FDX)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#telecomm-and-datacomm" title="Telecomm and Datacomm" class="md-nav__link">
+    Telecomm and Datacomm
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#telecomm-tc" title="Telecomm (TC)" class="md-nav__link">
+    Telecomm (TC)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datacomm-dc" title="Datacomm (DC)" class="md-nav__link">
+    Datacomm (DC)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iso-osi-model-architecture" title="ISO / OSI model / architecture" class="md-nav__link">
+    ISO / OSI model / architecture
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#packet" title="Packet" class="md-nav__link">
+    Packet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dc-utilities" title="DC Utilities" class="md-nav__link">
+    DC Utilities
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ping" title="ping" class="md-nav__link">
+    ping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tracert-traceroute-linux" title="tracert / traceroute (Linux)" class="md-nav__link">
+    tracert / traceroute (Linux)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ttl" title="TTL" class="md-nav__link">
+    TTL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pathping" title="pathping" class="md-nav__link">
+    pathping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ipconfigifconfig-or-ip-linux" title="ipconfig/ifconfig or ip (Linux)" class="md-nav__link">
+    ipconfig/ifconfig or ip (Linux)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#netstat" title="netstat" class="md-nav__link">
+    netstat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#route" title="route" class="md-nav__link">
+    route
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arp" title="arp" class="md-nav__link">
+    arp
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firewalls" title="Firewalls" class="md-nav__link">
+    Firewalls
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dns" title="DNS" class="md-nav__link">
+    DNS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#standards" title="Standards" class="md-nav__link">
+    Standards
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standards-bodies" title="Standards Bodies" class="md-nav__link">
+    Standards Bodies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#networks" title="Networks" class="md-nav__link">
+    Networks
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#network-types" title="Network types" class="md-nav__link">
+    Network types
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pan" title="PAN" class="md-nav__link">
+    PAN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lan" title="LAN" class="md-nav__link">
+    LAN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#man" title="MAN" class="md-nav__link">
+    MAN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wan" title="WAN" class="md-nav__link">
+    WAN
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-metrics" title="Network metrics" class="md-nav__link">
+    Network metrics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types-of-nets" title="Types of Nets" class="md-nav__link">
+    Types of Nets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#protocols" title="Protocols" class="md-nav__link">
+    Protocols
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#internet-protocol" title="Internet Protocol" class="md-nav__link">
+    Internet Protocol
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#domain-names" title="Domain Names" class="md-nav__link">
+    Domain Names
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-concise-guide-to-the-major-internet-bodies" title="A Concise Guide to the Major Internet Bodies" class="md-nav__link">
+    A Concise Guide to the Major Internet Bodies
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lan_1" title="LAN" class="md-nav__link">
+    LAN
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#topology" title="Topology" class="md-nav__link">
+    Topology
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#utp" title="UTP" class="md-nav__link">
+    UTP
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tcp-and-udp" title="TCP and UDP" class="md-nav__link">
+    TCP and UDP
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-messages" title="Types of Messages" class="md-nav__link">
+    Types of Messages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#servers" title="Servers" class="md-nav__link">
+    Servers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#history" title="History" class="md-nav__link">
+    History
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#laws" title="Laws" class="md-nav__link">
+    Laws
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intellectual-property-ip-protection" title="Intellectual property (IP) protection" class="md-nav__link">
+    Intellectual property (IP) protection
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#copyright" title="Copyright" class="md-nav__link">
+    Copyright
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#patent" title="Patent" class="md-nav__link">
+    Patent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trademark" title="Trademark" class="md-nav__link">
+    Trademark
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trade-secret" title="Trade secret" class="md-nav__link">
+    Trade secret
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#telephony" title="Telephony" class="md-nav__link">
+    Telephony
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ethernet" title="Ethernet" class="md-nav__link">
+    Ethernet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#signals" title="Signals" class="md-nav__link">
+    Signals
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#characteristics" title="Characteristics" class="md-nav__link">
+    Characteristics
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frequency" title="Frequency" class="md-nav__link">
+    Frequency
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bandwidth" title="Bandwidth" class="md-nav__link">
+    Bandwidth
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#band" title="Band" class="md-nav__link">
+    Band
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amplitude" title="Amplitude" class="md-nav__link">
+    Amplitude
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase" title="Phase" class="md-nav__link">
+    Phase
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition-1" title="Definition 1" class="md-nav__link">
+    Definition 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definition-2" title="Definition 2" class="md-nav__link">
+    Definition 2
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bandwidth_1" title="Bandwidth" class="md-nav__link">
+    Bandwidth
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modulation" title="Modulation" class="md-nav__link">
+    Modulation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nyquists-theorem" title="Nyquist's Theorem" class="md-nav__link">
+    Nyquist's Theorem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shannons-law" title="Shannon's law" class="md-nav__link">
+    Shannon's law
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#last-mile-problem" title="Last mile problem" class="md-nav__link">
+    Last mile problem
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modem" title="Modem" class="md-nav__link">
+    Modem
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#factors-causing-distortion" title="Factors causing distortion" class="md-nav__link">
+    Factors causing distortion
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vpn" title="VPN" class="md-nav__link">
+    VPN
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#physical-media" title="Physical media" class="md-nav__link">
+    Physical media
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definitions" title="Definitions" class="md-nav__link">
+    Definitions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#multiplexxing" title="Multiplexxing" class="md-nav__link">
+    Multiplexxing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mux" title="Mux" class="md-nav__link">
+    Mux
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fdm" title="FDM" class="md-nav__link">
+    FDM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tdm" title="TDM" class="md-nav__link">
+    TDM
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wired" title="Wired" class="md-nav__link">
+    Wired
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wireless" title="Wireless" class="md-nav__link">
+    Wireless
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#switch" title="Switch" class="md-nav__link">
+    Switch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#routers" title="Routers" class="md-nav__link">
+    Routers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service-model" title="Service Model" class="md-nav__link">
+    Service Model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#switches" title="Switches" class="md-nav__link">
+    Switches
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Notes</h1>
+                
+                <div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>From <a href="https://jeegnathebug.github.io/miniature-pancake/datacomm.html#01">https://jeegnathebug.github.io/miniature-pancake/datacomm.html#01</a></p>
+</div>
+<h2 id="communication">Communication<a class="headerlink" href="#communication" title="Permanent link">&para;</a></h2>
+<p>Sending info from a sender to a receiver (Face-to-face conversation)</p>
+<ul>
+<li>4 elements:<ol>
+<li>Sender</li>
+<li>Medium</li>
+<li>Message</li>
+<li>Receiver</li>
+</ol>
+</li>
+<li>3 types</li>
+</ul>
+<h3 id="simplex">Simplex<a class="headerlink" href="#simplex" title="Permanent link">&para;</a></h3>
+<p>Communication in one direction</p>
+<h3 id="half-duplex-hdx">Half Duplex (HDX)<a class="headerlink" href="#half-duplex-hdx" title="Permanent link">&para;</a></h3>
+<p>Communication in both directions, but only one at a time</p>
+<h3 id="full-duplex-fdx">Full Duplex (FDX)<a class="headerlink" href="#full-duplex-fdx" title="Permanent link">&para;</a></h3>
+<p>Communication in both directions, at the same time (Most devices)</p>
+<p><mark>FDX on a modem means the modem sends characters back for verification</mark></p>
+<h2 id="telecomm-and-datacomm">Telecomm and Datacomm<a class="headerlink" href="#telecomm-and-datacomm" title="Permanent link">&para;</a></h2>
+<h3 id="telecomm-tc">Telecomm (TC)<a class="headerlink" href="#telecomm-tc" title="Permanent link">&para;</a></h3>
+<p>communication via electronic means (Telephone)</p>
+<h3 id="datacomm-dc">Datacomm (DC)<a class="headerlink" href="#datacomm-dc" title="Permanent link">&para;</a></h3>
+<p>communication where at least one end is a computer (IRC)</p>
+<ul>
+<li>Datacomm is a type of telecomm (which is a type of communication)</li>
+<li>Generally done with: packets/frames/blocks</li>
+<li>Protocol: set of rules governing transmission and reception of data between computers</li>
+</ul>
+<h2 id="iso-osi-model-architecture">ISO / OSI model / architecture<a class="headerlink" href="#iso-osi-model-architecture" title="Permanent link">&para;</a></h2>
+<p><strong>7 layers</strong></p>
+<ul>
+<li>Way to organize DC tasks in a clear way</li>
+<li>Most tasks are in one level; some in more than 1</li>
+<li>Protocols and configuration parameters must match at each level</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>OSI Model</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7</td>
+<td>Application Layer</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Presentation Layer</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Session Layer</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Transport Layer</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Netowrk Layer</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Data-link Layer</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Physical Layer</td>
+</tr>
+</tbody>
+</table>
+<p><mark>Acronym: All people seem to need data processing</mark></p>
+<h2 id="packet">Packet<a class="headerlink" href="#packet" title="Permanent link">&para;</a></h2>
+<p>Header layer (There's always a header)</p>
+<p>Data    </p>
+<p>Trailer layer (Usually not present)</p>
+<ul>
+<li>
+<p>Headers and trailers control the info
+The process of adding more and more info (headers) as you go down the OSI model is called <mark>PACKET ENCAPSULATION</mark></p>
+</li>
+<li>
+<p>The process of stripping headers is called <mark>DENCAPSULATION</mark></p>
+</li>
+<li>At layer 1 (Physical layer), the data is sent away, or received</li>
+</ul>
+<h2 id="dc-utilities">DC Utilities<a class="headerlink" href="#dc-utilities" title="Permanent link">&para;</a></h2>
+<h3 id="ping">ping<a class="headerlink" href="#ping" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Uses Internet Control Message Protocol (ICMP)</li>
+<li>Part of the Transmission Control Protocol (TCP) stack</li>
+<li>If the command works, it means up until layer 4, the two machines are the same</li>
+<li>"Timed out" (error) each protocol has a set timeout period<ul>
+<li>Where more time occurs between an event and the response event than expected</li>
+</ul>
+</li>
+</ul>
+<h3 id="tracert-traceroute-linux">tracert / traceroute (Linux)<a class="headerlink" href="#tracert-traceroute-linux" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Shows the router path</li>
+<li>Internet traffic cops</li>
+<li>Looped pinging with increasing TTLs</li>
+<li>Sends packet to a router with TTL <ol>
+<li>Goes to 1 router, returns a message. Sends another packet with TTL </li>
+<li>Goes to first, then second server. Returns info of second router</li>
+</ol>
+</li>
+</ul>
+<h3 id="ttl">TTL<a class="headerlink" href="#ttl" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Time to live</strong></li>
+<li>Like an expiry date</li>
+<li>In seconds or in router hops (u)</li>
+</ul>
+<h3 id="pathping">pathping<a class="headerlink" href="#pathping" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Like traceroute but with hundreds of packets</li>
+</ul>
+<h3 id="ipconfigifconfig-or-ip-linux">ipconfig/ifconfig or ip (Linux)<a class="headerlink" href="#ipconfigifconfig-or-ip-linux" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Shows your machine's DC info</li>
+<li>DNS caches data. Maintains information for speed</li>
+<li>ipconfig /release -&gt; release DHCP lease</li>
+<li>ipconfig /renew -&gt; get a new IP address</li>
+<li>ipconfig /displaydns -&gt; displays DNS</li>
+<li>ipconfig /flushdns -&gt; wipes cache data</li>
+</ul>
+<h3 id="netstat">netstat<a class="headerlink" href="#netstat" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Machine's TZP? info</li>
+</ul>
+<h3 id="route">route<a class="headerlink" href="#route" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Shows machine's routing tables</li>
+</ul>
+<h3 id="arp">arp<a class="headerlink" href="#arp" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Address Resolution Protocol</strong></li>
+<li>Shows machine's ARP table</li>
+<li>Identifiers:<ul>
+<li>DNS translates between layer 5 to layer 4. (FQDN to IP)</li>
+<li>ARP translates between layer 3 and 2. (IP to MAC address)</li>
+</ul>
+</li>
+</ul>
+<h2 id="firewalls">Firewalls<a class="headerlink" href="#firewalls" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Watch all packets coming in and going out of the network</li>
+<li>Could be configured to reject ping, and/or some other kind of packet</li>
+<li>Could help stop DDos attacks</li>
+</ul>
+<h3 id="dns">DNS<a class="headerlink" href="#dns" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Translates an FQDN to an IP address</li>
+</ul>
+<h2 id="standards">Standards<a class="headerlink" href="#standards" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Two "types" of standards:<ul>
+<li><strong>Proprietary (Windows)</strong></li>
+<li><strong>Open (C++, Linux distros)</strong></li>
+</ul>
+</li>
+<li>Standards are good</li>
+<li>Standards are intellectual property</li>
+</ul>
+<h3 id="standards-bodies">Standards Bodies<a class="headerlink" href="#standards-bodies" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The ISO<ul>
+<li>Date format (yyyy-mm-dd)</li>
+</ul>
+</li>
+<li>W3C<ul>
+<li>Web standards</li>
+</ul>
+</li>
+<li>ACM</li>
+<li>IEEE<ul>
+<li>Hardware standards</li>
+<li>IEEE 754: doubles, floats</li>
+<li>IEEE 802.3: Ethernet</li>
+<li>IEEE 802.5: Token Ring</li>
+<li>IEEE 802.11: WiFi, radio</li>
+</ul>
+</li>
+</ul>
+<h2 id="networks">Networks<a class="headerlink" href="#networks" title="Permanent link">&para;</a></h2>
+<h3 id="network-types">Network types<a class="headerlink" href="#network-types" title="Permanent link">&para;</a></h3>
+<h4 id="pan">PAN<a class="headerlink" href="#pan" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Personal Area Networks
+Bluetooth, NFC</li>
+</ul>
+<h4 id="lan">LAN<a class="headerlink" href="#lan" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Local Area Networks</li>
+<li>Home setup</li>
+</ul>
+<h4 id="man">MAN<a class="headerlink" href="#man" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Metropolitan Area Network</li>
+</ul>
+<h4 id="wan">WAN<a class="headerlink" href="#wan" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Wide Area Networks</li>
+<li>Internet</li>
+</ul>
+<h3 id="network-metrics">Network metrics<a class="headerlink" href="#network-metrics" title="Permanent link">&para;</a></h3>
+<p>Metric -&gt; standard for measurement</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>broadband (fast)      client-server
+                 ^  ^
+       wired &lt;-  | /
+   PAN  LAN  networking  MAN  WAN
+   &lt;---------          ----------&gt;
+               /   |  -&gt; wireless
+              v    v
+            P2P   baseband (slow)
+</pre></div>
+</td></tr></table>
+
+<h3 id="types-of-nets">Types of Nets<a class="headerlink" href="#types-of-nets" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Intranet<ul>
+<li>Network used strictly within an organisation</li>
+</ul>
+</li>
+<li>Extranet<ul>
+<li>Network used strictly with some trusted outsiders (partners, suppliers, ...)</li>
+<li>Like a DMZ</li>
+</ul>
+</li>
+<li>Internet<ul>
+<li>Inter-networking. A network of networks</li>
+</ul>
+</li>
+</ul>
+<h2 id="protocols">Protocols<a class="headerlink" href="#protocols" title="Permanent link">&para;</a></h2>
+<ul>
+<li>RIP<ul>
+<li>Routing Information Protocol</li>
+<li>Runs only on routers</li>
+<li>Limits the number of routing loops</li>
+</ul>
+</li>
+<li>SNMP<ul>
+<li>Simple Network Management Protocol</li>
+<li>Manages and organises information about devices on the network</li>
+<li>Network: set of nodes connected by edges<ul>
+<li>Nodes:<ul>
+<li>DTE: where data is displayed (like client machines and servers)</li>
+<li>DCE: where data is transfered between machines, like routers and switches)</li>
+<li><code>traceroute</code> shows us some of this information</li>
+</ul>
+</li>
+<li>Edges:<ul>
+<li>DC links</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Air-gapped/standalone machine<ul>
+<li>Not connected to any network</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>IETF<ul>
+<li>DNS</li>
+<li>TCP</li>
+<li>SMTP</li>
+</ul>
+</li>
+<li>Protocols are documented in what are called RFCs<ul>
+<li>RFC Editor</li>
+</ul>
+</li>
+</ul>
+<h3 id="internet-protocol">Internet Protocol<a class="headerlink" href="#internet-protocol" title="Permanent link">&para;</a></h3>
+<ul>
+<li>IPv4 - 32 bit</li>
+<li>IPv6 - 64 bit</li>
+<li>Port numbers</li>
+</ul>
+<h2 id="domain-names">Domain Names<a class="headerlink" href="#domain-names" title="Permanent link">&para;</a></h2>
+<ul>
+<li>FQDN<ul>
+<li>Fully Qualified Domain Name</li>
+<li>2 flavours:</li>
+<li>GTLD<ul>
+<li>Generic Top Level Domain Name</li>
+<li>.com, .org, .edu</li>
+</ul>
+</li>
+<li>CCTLD<ul>
+<li>Country Code Top Level Domain Name</li>
+<li>.ca, .us, .co.uk</li>
+</ul>
+</li>
+<li>ICANN<ul>
+<li>Internet Corporation of Assigned Names and Numbers</li>
+<li>In charge of distributing domain names</li>
+</ul>
+</li>
+<li>IANA</li>
+<li>Internet Assigned Numbers Authority</li>
+<li>IPv4, IPv6</li>
+</ul>
+</li>
+</ul>
+<h2 id="a-concise-guide-to-the-major-internet-bodies">A Concise Guide to the Major Internet Bodies<a class="headerlink" href="#a-concise-guide-to-the-major-internet-bodies" title="Permanent link">&para;</a></h2>
+<h3 id="lan_1">LAN<a class="headerlink" href="#lan_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Characteristics<ul>
+<li>Typically housed in (part of) a building or building complex</li>
+<li>Set of LAN segments (which can be connected)</li>
+</ul>
+</li>
+<li>No license requirement from a regulatory body</li>
+<li>Shared by all DTEs and DCEs of the LAN transmission for baseband LANS have high quality medium</li>
+<li>Baseband LAN is one where you have one large wire that every DTE taps into</li>
+<li>MAC problem<ul>
+<li>Media Access Control</li>
+<li>Packet collision<ul>
+<li>When two packets are sent at the same time from different computers</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>MAC strategy<ul>
+<li>CSMA/CD-&gt; Ethernet (Wired LAN)<ul>
+<li>If there are more nodes on the LAN segment, the odds of collisions are increased</li>
+<li>Small amounts of nodes are better with ethernet, lots of nodes increase chance of collision, and therefore increase the response time</li>
+<li>To avoid really high response times, create LAN segments (attached with the right DCE)</li>
+</ul>
+</li>
+<li>Token passing<ul>
+<li>The response time is rather flat even if there are a lot of nodes on LAN segment</li>
+<li>There are never collisions because everything is done by one system</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Response time<ul>
+<li>(user and system can have a dialogue can interact) interactive systems</li>
+<li>time</li>
+</ul>
+</li>
+<li>response {begin/end}-time<ul>
+<li>Begins: hit <code>ENTER</code></li>
+<li>Ends: When data is received</li>
+</ul>
+</li>
+<li>turn-around time: -&gt; batch os<ul>
+<li>time job</li>
+<li>returns: time job submitted</li>
+</ul>
+</li>
+<li>availability<ul>
+<li><code>(time available / stated time available) * 100</code></li>
+</ul>
+</li>
+<li>Usage<ul>
+<li><code>(time used / time available) * 100</code></li>
+</ul>
+</li>
+<li>Throughput<ul>
+<li>Throughput = work/time (how much work you can do in a given amount of time)</li>
+<li>Elevated throughput could equal elevated response time</li>
+</ul>
+</li>
+<li><mark>speed: bps</mark></li>
+</ul>
+<h2 id="topology">Topology<a class="headerlink" href="#topology" title="Permanent link">&para;</a></h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>                                      o  o  o
+                                       \ | /
+                                       (hub)
+                                       /   \
+Ethernet   |  bus                |    o     o
+           | (physical topology) | (star topology)
+-----------+----------------------------------------
+Token Ring | ring                | star
+</pre></div>
+</td></tr></table>
+
+<h3 id="utp">UTP<a class="headerlink" href="#utp" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Ethernet wires</li>
+<li>Various grades/categories<ul>
+<li>CAT5</li>
+<li>CAT6</li>
+</ul>
+</li>
+<li>Hub<ul>
+<li>DCE that is a repeater of packets</li>
+<li>Hub is a dumber switch</li>
+</ul>
+</li>
+<li>Rationale for LANs<ol>
+<li>Improved communication</li>
+<li>Ability to economically share valuable resources<ul>
+<li>File servers (H:/ Drive), print server, etc.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>application   application
+    v              v
+ socket         socket
+   \            /
+    \          /
+     \        /
+ Layer 4    TCP
+          v
+ Layer 3     IP
+</pre></div>
+</td></tr></table></li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>At layer 4 you operate "end-to-end" (end being the application that wanted the packet)</li>
+<li>At layer 3 you operate "host-to-host" (host being any machine)</li>
+</ul>
+</div>
+<h2 id="tcp-and-udp">TCP and UDP<a class="headerlink" href="#tcp-and-udp" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>TCP</th>
+<th>UDP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><ul><li>port number</li><li>IP number (from layer 3)</li></ul></td>
+<td><ul><li>port number</li><li>IP number</li></ul></td>
+</tr>
+<tr>
+<td><ul><li>session/connection oriented</li><li> like a telephone conversation (waits for responses)</li></ul></td>
+<td><ul><li>session/connection-less</li><li>like postal mail (sends a packet and that's it)</li></ul></td>
+</tr>
+<tr>
+<td><ul><li>reliable</li><li>guaranteed delivery of packet</li><li>handles errors</li></ul></td>
+<td><ul><li>not reliable</li><li>operates on a "best-efforts" basis</li><li>does not handle errors</li><li>packets can be lost, duplicated, corrupted, out of order</li></ul></td>
+</tr>
+<tr>
+<td><ul><li>less "efficient"</li><li>time consuming when you wait for responses for every call</li></ul></td>
+<td><ul><li>more efficient</li><li>it just sends the packets and doesn't give a shit afterward</li></ul></td>
+</tr>
+<tr>
+<td><ul><li>does not neccessarily preserve packet write boundaries</li><li>TCP may do packet splitting or packet nagling or merging (changes the size of your packet by putting them together/taking them apart so that there is less to send over</li></td>
+<td><li>does respect packet write boundaries</li><li>does not change the packet sizes</li><li>mainly because it doesn't give a shit</td>
+</tr>
+<tr>
+<td>packets are arrays of bytes only</li></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="types-of-messages">Types of Messages<a class="headerlink" href="#types-of-messages" title="Permanent link">&para;</a></h2>
+<ul>
+<li>unicast<ul>
+<li>1-to-1</li>
+</ul>
+</li>
+<li>multicast<ul>
+<li>1-to-n (where n is not all)</li>
+</ul>
+</li>
+<li>broadcast<ul>
+<li>1-to-all machines on the network</li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>IP and UDP work in very similar fashion</p>
+<ul>
+<li>UDP is better for broadcasting because you don't want responses from everyone about corrupted data, or received packets<ul>
+<li>Time-service apps</li>
+<li>Real-time apps</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="servers">Servers<a class="headerlink" href="#servers" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Nodes are peers</li>
+<li>Peer to peer connections<ul>
+<li>DTE<ul>
+<li><strong>Data Terminal/Termination Equipment</strong></li>
+<li>Client/Workstation</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>DCE<ul>
+<li>Data Communication Equipment</li>
+<li>Servers<ul>
+<li>File servers<ul>
+<li>$</li>
+<li>NAS<ul>
+<li><strong>Network Attached Storage</strong></li>
+<li>$$</li>
+<li>Large file server with multiple HDDs</li>
+</ul>
+</li>
+<li>SAN<ul>
+<li><strong>Storage Area Network</strong></li>
+<li>$$$</li>
+<li>Fault-tolerance (something breaks, there's another one to take over)</li>
+<li>Redundant components (computers, HDD controllers, HDD channels, HDDs)</li>
+<li>Large</li>
+<li>Expensive</li>
+<li>Turnkey or self-created</li>
+<li>Popular</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Print servers<ul>
+<li>Queue</li>
+<li>FIFO structure</li>
+</ul>
+</li>
+<li>Compute servers<ul>
+<li>Mainframes, clusters, ...</li>
+<li>For number-crunching</li>
+<li>Cluster: more than 1 computer acting as 1</li>
+</ul>
+</li>
+<li>"Internet" servers<ul>
+<li>Email servers</li>
+<li>FTP servers</li>
+<li>Web servers</li>
+</ul>
+</li>
+<li>"Infrastructure" Servers<ul>
+<li>The following servers basically make up the internet</li>
+<li>Authentication servers<ul>
+<li><strong>3 A's of security</strong><ul>
+<li><mark>Authentication</mark><ul>
+<li>Authentic -&gt; original</li>
+</ul>
+</li>
+<li><mark>Authorization</mark><ul>
+<li>Control of resource use</li>
+<li>ACL</li>
+</ul>
+</li>
+<li><mark>Auditing</mark><ul>
+<li>Logging</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Modem Pool server<ul>
+<li>Obsolete</li>
+<li>Server controlling many telephone modems</li>
+</ul>
+</li>
+<li>DNS servers<ul>
+<li>World wide distributed DBMS</li>
+<li>Takes an FQDN and returns an IP address</li>
+</ul>
+</li>
+<li>Caching server<ul>
+<li>Remembers page data for speed<blockquote>
+<p>Gotta go fast 
+-<strong>Sonic the Hedgehog</strong></p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>DHCP servers<ul>
+<li>Dynamic Host Configuration Protocol</li>
+<li>issues IP addresses ("leases")</li>
+<li>Client machine broadcasts a message and DHCP is listening for that certain type of message. When DHCP finds the client's message, it gives it an IP address</li>
+</ul>
+</li>
+<li>Firewall server<ul>
+<li>Does packet filtering based on IP address, domain name, protocol, port, ...</li>
+<li>Essential for security</li>
+</ul>
+</li>
+<li>Proxy Server<ul>
+<li>NAT<ul>
+<li><strong>Network Address Translation</strong></li>
+<li>Takes an internal IP address and returns a public IP address</li>
+<li>Outsiders never know inside IP numbers</li>
+<li>Any organization can use the private IP's internally</li>
+<li>Routers will drop all packets with private IP numbers as sending or destination IP numbers</li>
+</ul>
+</li>
+<li>PAT<ul>
+<li><strong>Port Address Translation</strong></li>
+<li>Takes a public IP address and port number and returns a local IP address and port number</li>
+<li>Increased security</li>
+<li>"Increases" external IP address allocation</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>~50 clients per server</li>
+</ul>
+<p><mark>HVAC: Server rooms use this</mark></p>
+<h2 id="history">History<a class="headerlink" href="#history" title="Permanent link">&para;</a></h2>
+<ul>
+<li>1440's<ul>
+<li>Gutenberg - movable-type printing press</li>
+</ul>
+</li>
+<li>1639<ul>
+<li>US government postal service</li>
+<li>Given mail monopoly</li>
+<li>Exclusive trading privilege</li>
+<li>Two types of monopolies<ul>
+<li>Natural</li>
+</ul>
+</li>
+<li>Just happens because they're too good</li>
+<li>"The company corners the market"</li>
+<li>More than 50% of market shares</li>
+<li>Google</li>
+<li>Anti-trust laws<ul>
+<li>You can't be a monopoly, and if you are, we can fine you and shit</li>
+</ul>
+</li>
+<li>Artificial<ul>
+<li>Government gives monopoly</li>
+<li>Done with oversight</li>
+<li>Subject to public regulations via regulatory bodies</li>
+<li>CRTC: Canadian Radio-Television Telecommunications</li>
+<li>(US) FCC - Federal Communications Commission</li>
+</ul>
+</li>
+<li>Monopolies are contrary to public interest<ul>
+<li>Because they can increase prices of goods/services and screw with people</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>1800<ul>
+<li>France - Chappe Tower semaphore network</li>
+<li>England - Murray Tower network used by British Admiralty</li>
+</ul>
+</li>
+<li>1837<ul>
+<li>Morse invents the telegraph</li>
+<li>First major example of telecommunication</li>
+<li>Morse code<ul>
+<li>Variable length</li>
+<li>To differentiate characters<ul>
+<li>Count field</li>
+<li>Delimeters</li>
+</ul>
+</li>
+<li>Shortest encodings given to most frequently used characters</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>1850<ul>
+<li>Western Union Corp. formed</li>
+<li>Common communications carrier - privately-owned, publicly-accessible communication network</li>
+</ul>
+</li>
+<li>1876<ul>
+<li>Alexander Graham Bell demonstrates telephone</li>
+</ul>
+</li>
+<li>1877<ul>
+<li>Bell Tel. Co formed</li>
+</ul>
+</li>
+<li>1885<ul>
+<li>AT&amp;T<ul>
+<li>American Telephone and Telegraph</li>
+</ul>
+</li>
+<li>Telco conglomerate begins</li>
+</ul>
+</li>
+<li>1898<ul>
+<li>Wireless Telegraph and Signal Co. formed</li>
+</ul>
+</li>
+<li>1901<ul>
+<li>Marconi - Transatlantic wireless broadcast</li>
+</ul>
+</li>
+<li>1947<ul>
+<li>AT&amp;T Bell Labs invented transistor -&gt; miniaturization</li>
+<li>Like a Redstone Repeater</li>
+</ul>
+</li>
+<li>1959<ul>
+<li>Integrated circuit</li>
+<li>Chip</li>
+</ul>
+</li>
+<li>1971<ul>
+<li>Intel microprocessor</li>
+<li>CPU on a chip</li>
+</ul>
+</li>
+<li>1982<ul>
+<li>The AT&amp;T divestiture</li>
+</ul>
+</li>
+</ul>
+<h2 id="laws">Laws<a class="headerlink" href="#laws" title="Permanent link">&para;</a></h2>
+<h3 id="intellectual-property-ip-protection">Intellectual property (IP) protection<a class="headerlink" href="#intellectual-property-ip-protection" title="Permanent link">&para;</a></h3>
+<h4 id="copyright">Copyright<a class="headerlink" href="#copyright" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Protects form, the actual words, sounds, images, etc.</li>
+</ul>
+<h4 id="patent">Patent<a class="headerlink" href="#patent" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Protects content, like algorithms, ideas, etc.</li>
+<li>Given a monopoly for a given time (~17 years)</li>
+</ul>
+<h4 id="trademark">Trademark<a class="headerlink" href="#trademark" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Protects logos, slogans, characters, etc.</li>
+</ul>
+<h4 id="trade-secret">Trade secret<a class="headerlink" href="#trade-secret" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Protects recipes, formulas, etc.</li>
+</ul>
+<h2 id="telephony">Telephony<a class="headerlink" href="#telephony" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Earliest networks: point-to-point<ul>
+<li>The more nodes you have, the more connections you have. Hard to scale</li>
+</ul>
+</li>
+<li>Later: switchboard<ul>
+<li>However many nodes you have, that's how many connections you have</li>
+<li>But you need a human to make connections between nodes</li>
+<li>If you have way too many nodes, add another switchboard</li>
+</ul>
+</li>
+<li>Tree structure<ul>
+<li>Having departments take care of certain tasks and then a department taking care of the other departments</li>
+</ul>
+</li>
+<li>Telcos have very large UPS (uniterruptable power supply) systems</li>
+<li>Office -&gt; ESS (electronic switching system) computer for telephony</li>
+<li>PBX (private branch exchange) -&gt; private ESS<ul>
+<li>Like when you have a local phone line. A locale. 4-digit number that stays inside the building</li>
+</ul>
+</li>
+<li>Telephone systems engineered for approximately 12% capacity<ul>
+<li>Only 12% of phones can be in use at once</li>
+<li>Not 100% because it's expensive</li>
+</ul>
+</li>
+</ul>
+<h2 id="ethernet">Ethernet<a class="headerlink" href="#ethernet" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Ethernet descriptions</li>
+<li>10 BASE-T</li>
+<li>10: speed in Mbps</li>
+<li>BASE: baseband signalling</li>
+<li>T: Medium-UTP</li>
+<li>10 BASE 2</li>
+<li>10 BASE 5</li>
+<li>10 BASE T</li>
+<li>100 BASE T</li>
+<li>1000 BASE T</li>
+<li>10G BASE T</li>
+<li>100 BASE SX</li>
+<li>40G BASE-CRX</li>
+</ul>
+<h2 id="signals">Signals<a class="headerlink" href="#signals" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Signals<ul>
+<li>Analogue: "continuous" (smooth)</li>
+</ul>
+</li>
+<li>Versus<ul>
+<li>Discrete/digital</li>
+<li>Only certain values allowed and nothing in between</li>
+<li>Eg. 0 and 1</li>
+</ul>
+</li>
+</ul>
+<h2 id="characteristics">Characteristics<a class="headerlink" href="#characteristics" title="Permanent link">&para;</a></h2>
+<h3 id="frequency">Frequency<a class="headerlink" href="#frequency" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Cycles per second measured in hertz (Hz)</li>
+<li>Each time the wave goes to zero, it is half a cycle</li>
+</ul>
+<h3 id="bandwidth">Bandwidth<a class="headerlink" href="#bandwidth" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Size of range of supported frequencies in a device</li>
+<li>POTS bandwidth</li>
+<li>3100 Hz</li>
+</ul>
+<h3 id="band">Band<a class="headerlink" href="#band" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>* Range of supported frequencies in a device
+* Eg. POTS (Plain old telephone service)
+    * 300 - 3400 Hz
+</pre></div>
+</td></tr></table>
+
+<h3 id="amplitude">Amplitude<a class="headerlink" href="#amplitude" title="Permanent link">&para;</a></h3>
+<ul>
+<li>&frac12; * max(y-displacement)</li>
+<li>The distance between 0 and max, or 0 and min</li>
+</ul>
+<h3 id="phase">Phase<a class="headerlink" href="#phase" title="Permanent link">&para;</a></h3>
+<h4 id="definition-1">Definition 1<a class="headerlink" href="#definition-1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Measure of signal synchronisation</li>
+<li>2 signals are in phase when they are the same</li>
+<li>2 signals are out of phase by a certain (0° to 360°) when they are not the same</li>
+</ul>
+<h4 id="definition-2">Definition 2<a class="headerlink" href="#definition-2" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Phase change in 1 signal</li>
+<li>How much the phase skipped measured in degrees</li>
+</ul>
+<h2 id="bandwidth_1">Bandwidth<a class="headerlink" href="#bandwidth_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li>BPS ∝ Bandwidth</li>
+<li>baud = signalling rate <code>(signals/sec)</code></li>
+<li>bps = <code>baud * bits/signal</code><ul>
+<li>bps = baud if bits being sent because 1 bit being sent per second in one signal = 1 baud</li>
+<li><code>bits/signal = log(base 2)(number of signal state)</code></li>
+</ul>
+</li>
+<li>more than 1 bits/signal = multibit modulation</li>
+</ul>
+<h3 id="modulation">Modulation<a class="headerlink" href="#modulation" title="Permanent link">&para;</a></h3>
+<ul>
+<li>AM Radio</li>
+<li>Amplitude Shift-Keying (ASK) same thing as AM</li>
+<li>Frequency modulation (FM)</li>
+<li>Phase modulation (PM)</li>
+<li>Change 0s and 1s to analogue</li>
+<li>High frequency = 1, low frequency = 0</li>
+</ul>
+<h3 id="nyquists-theorem">Nyquist's Theorem<a class="headerlink" href="#nyquists-theorem" title="Permanent link">&para;</a></h3>
+<p><code>baud &lt;= 2 * bandwidth</code> on an ideal channel (no noise) POTS -&gt; 300 to 3100 Hz 6200 baud max</p>
+<h3 id="shannons-law">Shannon's law<a class="headerlink" href="#shannons-law" title="Permanent link">&para;</a></h3>
+<p><code>bps = bandwidth * log(base 2)(1 + S/N))</code> where S/N is the signal to noise ratio</p>
+<h3 id="last-mile-problem">Last mile problem<a class="headerlink" href="#last-mile-problem" title="Permanent link">&para;</a></h3>
+<p>The connection between the client and the first office Not as fast as connections between offices To fix this, you would have to change every client-to-office (copper) connection medium to a better one like fibre optics</p>
+<h2 id="modem">Modem<a class="headerlink" href="#modem" title="Permanent link">&para;</a></h2>
+<ul>
+<li>modulator/demodulator</li>
+<li>comp-&gt;modem-&gt;(weird swirly shit)-&gt;modem-&gt;computer</li>
+<li>changes signal from digital to analogue and vice-versa</li>
+<li>roll-off: when a digital signal loses it's squareness (sharpness)</li>
+<li>modulation: process of varying one signal (carrier signal) in accordance with another (data signal) in order to encode and transmit the data signal</li>
+</ul>
+<h2 id="factors-causing-distortion">Factors causing distortion<a class="headerlink" href="#factors-causing-distortion" title="Permanent link">&para;</a></h2>
+<ul>
+<li>farther: higher error rates</li>
+<li>faster: higher error rates</li>
+<li>attenuation: loss of amplitude over distance and time</li>
+<li>delay: signal slows over time and distance</li>
+<li>these problems affect higher frequencies more than lower frequencies</li>
+<li>noise: generally random signals that interfere with the data signal<ul>
+<li>white/gaussian/thermal noise, due to molecular vibration</li>
+<li>present in all matter</li>
+<li>S/N: signal-to-noise ratio. Higher is better</li>
+</ul>
+</li>
+<li>impulse noise: not random<ul>
+<li>HVAC - refrigerators, strong electric motors</li>
+<li>There's a burst of radio waves when an electronic device turns on</li>
+<li>like the noise you hear when you turn on a tube tv</li>
+</ul>
+</li>
+<li>echoing</li>
+<li>crosstalk<ul>
+<li>inadequate insulation between media allowing "leakage" (induction) of signals into one another (also applies to radio)</li>
+</ul>
+</li>
+</ul>
+<h2 id="vpn">VPN<a class="headerlink" href="#vpn" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Virtual Private Network</strong></li>
+<li>Software</li>
+<li>Allows an external computer to pretend to be internal via an encrypted DC link</li>
+</ul>
+<h2 id="physical-media">Physical media<a class="headerlink" href="#physical-media" title="Permanent link">&para;</a></h2>
+<h3 id="definitions">Definitions<a class="headerlink" href="#definitions" title="Permanent link">&para;</a></h3>
+<h4 id="multiplexxing">Multiplexxing<a class="headerlink" href="#multiplexxing" title="Permanent link">&para;</a></h4>
+<p>Combining multiple slow-speed channels into a high-speed channel and vice-versa</p>
+<h4 id="mux">Mux<a class="headerlink" href="#mux" title="Permanent link">&para;</a></h4>
+<p>DCE layer 1 device
+Allows volume discount savings</p>
+<h4 id="fdm">FDM<a class="headerlink" href="#fdm" title="Permanent link">&para;</a></h4>
+<p>Frequency division multiplexers</p>
+<h4 id="tdm">TDM<a class="headerlink" href="#tdm" title="Permanent link">&para;</a></h4>
+<p>Time division multiplexers</p>
+<h3 id="wired">Wired<a class="headerlink" href="#wired" title="Permanent link">&para;</a></h3>
+<ol>
+<li>open wire - older/rural<ul>
+<li>bare copper</li>
+<li>strung from poles-performance affected by weather</li>
+</ul>
+</li>
+<li>twisted pair<ul>
+<li>UTP - copper pairs</li>
+<li>twisted and insulated with plastic cladding</li>
+<li>various grades (CAT5, CAT6)</li>
+<li>can be grouped into larger cables</li>
+<li>buried or strung</li>
+<li>less susceptible to noise because of the twisting</li>
+</ul>
+</li>
+<li>Coaxial cables<ul>
+<li>copper wire in aluminum shielding cladded in plastic</li>
+<li>at higher frequencies, crosstalk becomes a problem</li>
+<li>solution: coax</li>
+</ul>
+</li>
+<li>Optic fibre<ul>
+<li>fibre optic cable</li>
+<li>transluscent glass/plastic core surrounded by plastic</li>
+<li>laser light travels down the core - straight (bundled into cables, buried for trans-oceanic) or bouncing</li>
+<li>very high bandwidth</li>
+<li>expensvie</li>
+<li>more secure</li>
+<li>excellent network "backbones"
+<img src="https://jeegnathebug.github.io/miniature-pancake/data/datacomm/notes/img/em_spectrum.jpg"></li>
+</ul>
+</li>
+</ol>
+<p>Electromagnetic Spectrum</p>
+<p><code>bps ∝ baud ∝ bandwidth (Δ frequency)</code></p>
+<p>x-rays, gamma rays, cosmic rays are ionizing rays. They can penetrate human bodies and knock off ions from cells when they are splitting</p>
+<h2 id="wireless">Wireless<a class="headerlink" href="#wireless" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Radio</li>
+<li>AM and FM broadcast good for 1-to-many entertainment but not for DC</li>
+<li>Terrestrial Microwaves (µ-wave)</li>
+<li>2-5 GHz</li>
+<li>"Beam-radio". can be shaped into tight beams ≈ 5°</li>
+<li>Can be focused to travel in a "line of sight"</li>
+<li>Microwave repeater/relay towers</li>
+<li>Must be close because</li>
+<li>Low power used to avoid interference</li>
+<li>Curvature of Earth</li>
+<li>Noise due to moisture in atmosphere</li>
+<li>Satellite microwave</li>
+<li>Comsats (Communication satellites)</li>
+<li>Smart microwave mirror</li>
+<li>Have multiple microwave transponders (transmitters/receivers)</li>
+<li>Geosynchronous orbit at a height of approximately 22,300 miles</li>
+<li>They need to be separated by about 3°</li>
+<li>3 needed to cover Earth, because if you had only 2, they could not communicate with each other</li>
+<li>Less susceptible to moisture, because there is no moisture in space. There is nothing. Only pain.</li>
+<li>Excellent for 1-to-many transmission</li>
+<li>Microwave bandwidth can be multipluxed (muxxed/muxxing)</li>
+<li>Good for "moving" applications like GPS or geological exploration</li>
+<li>MEO's and LEO's</li>
+<li>Low Earth Orbit satellites</li>
+<li>Tried but not really successful</li>
+<li>Cellular phone technology</li>
+<li>Urban/rural areas divided into "cells"</li>
+<li>Each cell has cellular masts/antennae and a microcomputer controller</li>
+<li>mobile technology. You can move around and still get the signal</li>
+<li>"hand offs" between cells can cause protocol problems</li>
+<li>Early generations used analogue tech, digital later</li>
+<li>Advanced features</li>
+<li>2G</li>
+<li>3G</li>
+<li>4G</li>
+<li>All IP</li>
+<li>QoS-quality of service</li>
+<li>Support fast-moving, mobile</li>
+<li>Speeds: ≈1Gbps, ≈100Mbps</li>
+<li>Uses microwaves: 2.4Ghz</li>
+<li>Uses TDM and FDM</li>
+<li>Uses MIMO (Multiple In - Multiple Out) antennae</li>
+<li>Converging with wifi and wiMac
+WiFi and WLANs
+A, B, G, N
+unlicensed
+low power
+supports mobile
+2.5GHz or 5GHz
+≤ 600 Mbps
+indoor: ≈70m
+outdoor: ≈250m
+FDM used
+Variation of CSMA/CD used (prevents collisions)
+Topologies
+IBSS - NIC to NIC
+BSS - Access point to wireless router and 1 or more NICs
+ESS - &gt; 1 BSS
+Uses MIMO
+Uses spread spectrum frequency hopping
+Out of the box/clean install WiFi security is terrible. Must be enhanced
+Enhancements
+Static IPs -&gt; change to dynamic
+MAC filtering
+WEP -&gt; Do not use. Use WPA2
+Disable Access Point broadcast
+WiMAX
+Worldwide interoperability for microwave access
+WMAN
+Licensed/unlicensed
+&lt;= 100 Mbps - mobile
+&lt;= 1 Gbps - stationary
+&lt;= 50 km
+2 to 66 GHz
+not CSMA/CD - prevents strategy
+FDM and TDM
+AM and PM
+MIMO
+DSC and Cable modems
+Digital subscriber line (telcos)
+Various types - most common -&gt; ADSL asymmetric
+More bandwidth devoted to downlink (downloading) than uplinking, so it's asymmetric
+home/office                           local office
+  8KHz - 1MHz
+_______|_____                        __________
+| ADSL modem | ______local loop______| DSLAM  |
+|____________|                       | ESS    |
+                                     |________|</li>
+</ul>
+<h2 id="switch">Switch<a class="headerlink" href="#switch" title="Permanent link">&para;</a></h2>
+<p>Layer 2+
+DCE replacing hubs
+Learns MAC address to port #
+Mappings to minimise broadcasts and collisions
+VLAN</p>
+<p>Virtual LAN
+Separating sets of ports into well-segregated sub-LANs
+Physical plant = the actual systems that are needed, like the computers, the cooling systems, etc.</p>
+<p>Data Codes
+Encoding characters into bytes
+ASCII - 7 databits + 1 paritybit per byte
+Extended-ASCII - 8 databits per byte
+PCs
+Most computer hardware had it built-in
+EBCDIC -&gt; 8 databits per character
+IBM Mainframes
+Unicode -&gt; 2+ bytes
+Modern
+Needed because Asian languages don't use characters, but rather idiograms (sounds and words) as their alphabet
+Data Integrity Checks
+2 major strategies for dealing with errors:
+Detect and retransmit</p>
+<p>Consequences
+Buffer (an area of RAM used for I/O) management is complex especially for FDX
+Timeouts are important
+Number of retries must be limited
+Parity Checking</p>
+<p>VRC (Vertical redundancy check
+even/odd/mark/space/none -&gt; same-effectiveness, useless
+older
+Add 1 bit to every character
+Sender: number of 1 bits in data bits is totalled. If odd-P is used, and number is odd, set parity bit to 0, otherwise set it to 1.
+Receiver: Total number of 1 bits in entire char. If odd-P is used, and result is odd, probably no errors. Otherwise, errors
+Checksum</p>
+<p>Block/Packet/Frame checking
+CHECKSUM-16, -32, ...
+Used by TCP
+Sender: treat all bytes in packet as integers. Add all together, keeping only the least-significant 16(32,000) bits of the sum. Include the 16,000/32,000 bits in the packet header.
+Receiver: Do the same additions as the sender. If computed sum bits = sent sum bits, probably ok. Otherwise, ye fucked up
+CRC (Cyclic Redundancy Checking</p>
+<p>Polynomial Checking
+Modern
+Widely used
+Very effective
+Pick a "binary polynomial"/binary number (x^16 + x^15 + x^2 + 1 = 11000000000000101), prime integer, ...
+Sender: treat each block as a large binary number. Divide the block by the prime and record the remainder. Send the 16 (32,000)-bit remainder in the header
+Receiver: do the same division. If computed remainder = sent remainder, probably ok. Otherwise, ye fucked up
+FEC (Forward error-correction)</p>
+<p>Sufficient extra bits are added to the packet after it has gone through the aforementioned error checks so that some errors can be detected and corrected at receiver
+Used where time delays are unacceptable
+Deep space stuff
+Used where bits are inexpensive
+DVD, CD, disk
+sliding window algorithm allows a maximum of N outstanding unacknowledged packets</p>
+<p>Data compression
+"Squeezing" info into a more compact form
+2 main strategies
+Run-length encoding
+Older
+AABAAAAA -&gt; AAB*5A
+* - escape character
+5 - length
+A - repeated character
+Statistical encoding
+assign shortest encoding to most-frequently occurring characters + dynamic dictionaries + ...
+LZ algorithms
+LZH
+ZIP
+Not compressed                  Compressed
+Video   Graphic/Image   Music/Sound Text    Executable files    Compressed files
+Highly compressible                 Not compressible Video graphic/image sound/music text exec. files compressed files Highly compressible Not compressible &lt;--------------------------------------------------------------------------&gt; Compression ratio is calculated by: original file size / compressed file size. Effective bps = physical bps * compression ratio. Pros: - DataComm speed - Secondary storage Cons: - Time it takes to compress and decompress Lossy versus Lossless
+Lossy</p>
+<p>Compressing a file and then decompressing it will result in a different file, but the difference between the two will not be noticeable
+Lossless</p>
+<p>Compressing a file and then decompressing it will result in the exact same file
+Encryption
+Changing/hiding info so that it is indeciphirable to anyone but the intended recevier
+Cryptology
+Making secret messages
+Steganography (hiding)
+Cryptography
+Substitution (Change symbols)
+Transposition (Shuffle symbols)
+Cryptanalysis (breaking secret messages
+Plain text -&gt; encryption algorithm -&gt; cipher text -&gt; decryption algorithm -&gt; plain text
+Subtitution</p>
+<p>ex. ABC...XYZ CDE...ZAB key: +2 CAT -&gt; FCV
+Transposition</p>
+<p>Plain text length / key length = chars per column
+Key is looked at in alphabetical order
+Keys are the most vital and weakest point of encryption
+ex. Plain text: JOESENTME
+Key:    4. P    3. O    1. E    2. M    5. S
+1   J   O   E   S   E
+2   N   T   M   E   * Result: EMSEOTJNE*
+Cryptanalysis</p>
+<p>Statistical/frequency attack
+The more cipher text that is captured, the more likely it is to be broken
+Changing keys often makes text harder to break
+Longer keys are harder to break
+US - NSA (National Security Agency) UK - GCHQ (Government Communications Headquarters) Canada - CSE (Communications Security Establishment)</p>
+<h2 id="routers">Routers<a class="headerlink" href="#routers" title="Permanent link">&para;</a></h2>
+<ul>
+<li>DCE - layer 3
+( General purpose computers + *nix usually + routing protocols + multiple "interfaces"
+"gateway"</li>
+<li>responsible for packet path selection and forwarding
+small (<span>\() to large (\)</span>$$)
+workstation get e.g. URL with FQDN and port number from user
+IP number = DNS(FQDN)
+DNS Clients are called resolvers -&gt; web browser is a DNS client/resolver
+Destination MAC address?</li>
+</ul>
+<p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>if ((workstation-IP number &amp; subnetmask) == (destination-IP# &amp; subnetmask))
+    then destination-MAC-address = ARP(IP) 
+else 
+    destination-MAC-address = ARP(default gateway IP address)
+</pre></div>
+</td></tr></table>
+ -&gt; this is cached so it never has to do it again end if
+Cloud computing
+e.g. Amazon,, AWS, MS Azure, Google
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>                    SaaS
+                      ^
+                      |         __________ community
+                      |        /
+                      | hybrid
+private    &lt;--------------+------------&gt;public         delivery/deployment model
+                      | PaaS          \
+                      |                --------------&gt; metered CPU/HD/networking at a 
+                      |                             reasonable cost. Good security,
+                      |                              reliable, scalable
+                     \/
+                    Iaas
+               service model
+</pre></div>
+</td></tr></table></p>
+<h2 id="service-model">Service Model<a class="headerlink" href="#service-model" title="Permanent link">&para;</a></h2>
+<p>IaaS -&gt; infrastructure as a Service
+Bare machine (physical or VM) and optional OS
+PaaS -&gt; Platform as a Service
+Bare machine and OS and some software (Web server, FTP server)
+SaaS -&gt; Software as a Service
+Bare machine and OS and lots of software (MS Office, Google Chrome)</p>
+<h2 id="switches">Switches<a class="headerlink" href="#switches" title="Permanent link">&para;</a></h2>
+<p>Switch parts can be segmented to create VLANs -&gt; virtual LANs - packets are not transmitted between VLAN's</p>
+<p><strong>VPN</strong> -&gt; Virtual Private Network-&gt; encrypted software channel that allows an external machine to be "inside" an organization's externet network</p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../introduction/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Introduction
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../assignments/assignment1/" title="Assignment1" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Assignment1
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application-c35428f87f.js"></script>
+      
+      
+      <script>app.initialize({url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

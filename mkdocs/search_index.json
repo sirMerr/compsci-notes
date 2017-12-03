@@ -2666,6 +2666,36 @@
             "title": "Weather"
         }, 
         {
+            "location": "/Mobile-Development/assignments/final-assignment/phase2/", 
+            "text": "The second phase consists of using the backend you have created for the PHP project.  Jaya gave you an \nAPI specification\n for the PHP project.   You will use an AsyncTask and the HTTP* classes to consume data via this RESTful API as follows:\n\n\nFor the new \u201cbuttons\u201d you can add a button at the bottom of the UI or add it to the menu\n\n\nWhat you click on \u201cbutton\u201d  -\n Code response, action\n\n\nNew\n\n\nFind Friends\n\n\nFindFriends\n -\n \nAdapterView\n showing all friends, data retrieved via the API\n\n\n\n\n \nonItemClick\n find where the friend is at this time (or \u201cUnknown Whereabouts\u201d)  retrieve data via the API \n\n\n Display all information returned by the API\n\n\n This can be two separate Activities / Fragments  or all in one, design is up to you \n\n\n\n\nWhos Free\n\n\nWhosFree\n -\n find friends on a break \n\n\n\n\n Display input fields for\n\n\n Day (Monday to Friday)  Radio, spinner or \u2026\n\n\n Start time \n\n\n End time\n\n\n A find button should invoke the appropriate API\n\n\n Display all friends available in an \nAdapterView\n or pop up a dialog saying \u201cno one available\u201d   \n\n\n The onItemClick will invoke an email intent \nsubject: \nappname\n  \n\n\n This can be two separate Activities / Fragments  or all in one, design is up to you \n\n\n\n\nMods to Phase 1 spec changes in bold\n\n\nNote this is not the full info, see Phase 1 for the rest of the spec \n\n\nClass Cancelation\n\n\nClass Cancelation-\n CanceledActivity using the RSS feed from \nhttps://www.dawsoncollege.qc.ca/registrar/online-services/class-cancellations/\n\n\n\n\nCanceledActivity is an Activity/Fragment to display the canceled classes from the feed.\n\n\nAdapterView onItemClick remains as specified\n\n\nAdd onItemLongClick it will invoke a search for friends in this course  using the data from the API\n\n\nDisplay all friends in this course in an \nAdapterView\n or pop up a dialog saying \u201cno one available\u201d   The \nonItemClick\n will invoke an email intent \nsubject: \nappname", 
+            "title": "Phase2"
+        }, 
+        {
+            "location": "/Mobile-Development/assignments/final-assignment/phase2/#new", 
+            "text": "", 
+            "title": "New"
+        }, 
+        {
+            "location": "/Mobile-Development/assignments/final-assignment/phase2/#find-friends", 
+            "text": "FindFriends  -   AdapterView  showing all friends, data retrieved via the API     onItemClick  find where the friend is at this time (or \u201cUnknown Whereabouts\u201d)  retrieve data via the API    Display all information returned by the API   This can be two separate Activities / Fragments  or all in one, design is up to you", 
+            "title": "Find Friends"
+        }, 
+        {
+            "location": "/Mobile-Development/assignments/final-assignment/phase2/#whos-free", 
+            "text": "WhosFree  -  find friends on a break     Display input fields for   Day (Monday to Friday)  Radio, spinner or \u2026   Start time    End time   A find button should invoke the appropriate API   Display all friends available in an  AdapterView  or pop up a dialog saying \u201cno one available\u201d      The onItemClick will invoke an email intent  subject:  appname      This can be two separate Activities / Fragments  or all in one, design is up to you", 
+            "title": "Whos Free"
+        }, 
+        {
+            "location": "/Mobile-Development/assignments/final-assignment/phase2/#mods-to-phase-1-spec-changes-in-bold", 
+            "text": "Note this is not the full info, see Phase 1 for the rest of the spec", 
+            "title": "Mods to Phase 1 spec changes in bold"
+        }, 
+        {
+            "location": "/Mobile-Development/assignments/final-assignment/phase2/#class-cancelation", 
+            "text": "Class Cancelation-  CanceledActivity using the RSS feed from  https://www.dawsoncollege.qc.ca/registrar/online-services/class-cancellations/   CanceledActivity is an Activity/Fragment to display the canceled classes from the feed.  AdapterView onItemClick remains as specified  Add onItemLongClick it will invoke a search for friends in this course  using the data from the API  Display all friends in this course in an  AdapterView  or pop up a dialog saying \u201cno one available\u201d   The  onItemClick  will invoke an email intent  subject:  appname", 
+            "title": "Class Cancelation"
+        }, 
+        {
             "location": "/Mobile-Development/assignments/final-assignment/ui/", 
             "text": "All of the following, except the Menu and Weather at the bottom..., should be  image buttons  they must resize on rotate and fill the screen.   This is my starting point if you wish to use some special feature of \nmaterial design\n  such as \ntabs\n or \nnavigation drawers\n instead or as a complement to the UI you may do so provided you implement all of the app functionality specified and  it is visually appealing.    \n\n\nThere are whole \ncourses on UX design\n, I do not expect you to be experts  but there must be some effort.\n\n\n\n\nDawson image from \nhttp://www.confuciusinstitute.qc.ca/wp-content/themes/confuciusdawson/imgs/Dawson_EN_black.png", 
             "title": "Ui"

@@ -253,18 +253,30 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../../notes/" title="Notes" class="md-nav__link">
+      Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3" checked>
     
-    <label class="md-nav__link" for="nav-3-2">
+    <label class="md-nav__link" for="nav-3-3">
       Assignments
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-2">
+      <label class="md-nav__title" for="nav-3-3">
         Assignments
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -379,6 +391,54 @@
     <a href="../program-narative/" title="Program narative" class="md-nav__link">
       Program narative
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3-5" type="checkbox" id="nav-3-3-5">
+    
+    <label class="md-nav__link" for="nav-3-3-5">
+      Helpers
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-3-5">
+        Helpers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../helpers/EchoProtocol2/" title="EchoProtocol2" class="md-nav__link">
+      EchoProtocol2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../helpers/TCPEchoServerThread2/" title="TCPEchoServerThread2" class="md-nav__link">
+      TCPEchoServerThread2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -935,6 +995,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../../Mobile-Development/assignments/final-assignment/phase2/" title="Phase2" class="md-nav__link">
+      Phase2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../../Mobile-Development/assignments/final-assignment/ui/" title="Ui" class="md-nav__link">
       Ui
     </a>
@@ -1242,41 +1314,29 @@
 22
 23
 24
-25
-26
-27
-28
-29
-30
-31</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ThreadExample</span> <span class="kd">implements</span> <span class="n">Runnable</span> <span class="o">{</span>
+25</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ThreadExample</span> <span class="kd">implements</span> <span class="n">Runnable</span> <span class="o">{</span>
 
   <span class="kd">private</span> <span class="n">String</span> <span class="n">greeting</span><span class="o">;</span>      <span class="c1">// Message to display</span>
 
-  <span class="kd">public</span> <span class="nf">ThreadExample</span><span class="o">(</span><span class="n">String</span> <span class="n">greeting</span><span class="o">)</span>
-  <span class="o">{</span>
+  <span class="kd">public</span> <span class="nf">ThreadExample</span><span class="o">(</span><span class="n">String</span> <span class="n">greeting</span><span class="o">)</span> <span class="o">{</span>
     <span class="k">this</span><span class="o">.</span><span class="na">greeting</span> <span class="o">=</span> <span class="n">greeting</span><span class="o">;</span>
   <span class="o">}</span>
 
-  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span>
-  <span class="o">{</span>
-    <span class="k">for</span> <span class="o">(;;)</span>
-    <span class="o">{</span>
-      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">Thread</span><span class="o">.</span><span class="na">currentThread</span><span class="o">().</span><span class="na">getName</span><span class="o">()</span> <span class="o">+</span>
-<span class="s">&quot;:  &quot;</span> <span class="o">+</span> <span class="n">greeting</span><span class="o">);</span>
-      <span class="k">try</span>
-      <span class="o">{</span>
-        <span class="n">Thread</span><span class="o">.</span><span class="na">sleep</span><span class="o">((</span><span class="kt">long</span><span class="o">)</span> <span class="o">(</span><span class="n">Math</span><span class="o">.</span><span class="na">random</span><span class="o">()</span> <span class="o">*</span> <span class="mi">100</span><span class="o">));</span>
-<span class="c1">//Sleep 0 to 99 milliseconds</span>
-      <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">InterruptedException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{}</span>
-<span class="c1">// Will not happen</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">for</span> <span class="o">(;;)</span> <span class="o">{</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">Thread</span><span class="o">.</span><span class="na">currentThread</span><span class="o">().</span><span class="na">getName</span><span class="o">()</span> <span class="o">+</span> <span class="s">&quot;:  &quot;</span> <span class="o">+</span> <span class="n">greeting</span><span class="o">);</span>
+        <span class="k">try</span> <span class="o">{</span>
+            <span class="n">Thread</span><span class="o">.</span><span class="na">sleep</span><span class="o">((</span><span class="kt">long</span><span class="o">)</span> <span class="o">(</span><span class="n">Math</span><span class="o">.</span><span class="na">random</span><span class="o">()</span> <span class="o">*</span> <span class="mi">100</span><span class="o">));</span>
+            <span class="c1">//Sleep 0 to 99 milliseconds</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">InterruptedException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{}</span>
+        <span class="c1">// Will not happen</span>
     <span class="o">}</span>
   <span class="o">}</span>
 
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span>
-  <span class="o">{</span>
-    <span class="k">new</span> <span class="n">Thread</span><span class="o">(</span><span class="k">new</span> <span class="n">ThreadExample</span><span class="o">(</span><span class="s">&quot;Hello&quot;</span><span class="o">)).</span><span class="na">start</span><span class="o">();</span>
-    <span class="k">new</span> <span class="n">Thread</span><span class="o">(</span><span class="k">new</span> <span class="n">ThreadExample</span><span class="o">(</span><span class="s">&quot;Aloha&quot;</span><span class="o">)).</span><span class="na">start</span><span class="o">();</span>
-    <span class="k">new</span> <span class="n">Thread</span><span class="o">(</span><span class="k">new</span> <span class="n">ThreadExample</span><span class="o">(</span><span class="s">&quot;Ciao&quot;</span><span class="o">)).</span><span class="na">start</span><span class="o">();</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+      <span class="k">new</span> <span class="n">Thread</span><span class="o">(</span><span class="k">new</span> <span class="n">ThreadExample</span><span class="o">(</span><span class="s">&quot;Hello&quot;</span><span class="o">)).</span><span class="na">start</span><span class="o">();</span>
+      <span class="k">new</span> <span class="n">Thread</span><span class="o">(</span><span class="k">new</span> <span class="n">ThreadExample</span><span class="o">(</span><span class="s">&quot;Aloha&quot;</span><span class="o">)).</span><span class="na">start</span><span class="o">();</span>
+      <span class="k">new</span> <span class="n">Thread</span><span class="o">(</span><span class="k">new</span> <span class="n">ThreadExample</span><span class="o">(</span><span class="s">&quot;Ciao&quot;</span><span class="o">)).</span><span class="na">start</span><span class="o">();</span>
   <span class="o">}</span>
 <span class="o">}</span>
 </pre></div>

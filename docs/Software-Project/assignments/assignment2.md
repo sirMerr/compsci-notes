@@ -3,7 +3,7 @@
 ## Description
 Write the classes necessary to convert an infix expression to a postfix expression and then evaluate the postfix expression. The input to the evaluator is a queue containing the infix expression and the output is a queue with the result as the only entry.
 
-The infix expression is made up of floating point numbers and four operators. The operators are add(+), subtract(-), multiply(*) and division(/). You will also implement parenthesis () on the calculator.
+The infix expression is made up of floating point numbers and four operators. The operators are `add(+)`, `subtract(-)`, `multiply(*)` and `division(/)`. You will also implement parenthesis `()` on the calculator.
 
 Create a suite of Unit Tests that proves that the Evaluator and all of its components work as expected. Use parameterized testing so that you can carry out at least 25 different infix expressions in the testing. 
 

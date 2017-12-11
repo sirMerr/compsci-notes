@@ -64,8 +64,7 @@ discard.
 - [ ] `TeacherContactActivity`  display all information from the firebase database for this teacher
     - [ ] The fragment will be used in two places 
     - [ ] Widgets as needed for all fields
-onClick for email address launches an implicit intent for email
-    `subject:  "from <yourappname>"`
+    - [ ] onClick for email address launches an implicit intent for email `subject:  "from <yourappname>"`
     - [ ] `onClick` for local launches an implicit intent to make a phonecall `tel://number,local`
 	See https://developer.android.com/guide/components/intents-common.html
 

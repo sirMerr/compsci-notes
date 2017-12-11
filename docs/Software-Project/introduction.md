@@ -49,3 +49,12 @@ $ mysql -h
 1. Search for all appointments that start at the interval from the present time
 2. If any are found, prepare an email for each appointment
 3. Send the email
+
+## Midterm
+- Binding for javafx (bidirectional and not)
+- Basic algorithms using data structures using the collections (given input, output)
+- Linear accesss (On)
+- Binary access (Logn)
+- Another once I forget (O1)?
+- Even if O1, can perform more poorly if that unit of time was like 1 hour and the other was 2 minutes
+- 
